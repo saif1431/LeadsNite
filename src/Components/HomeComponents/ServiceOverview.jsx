@@ -41,8 +41,8 @@ export default function ServiceOverview() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="w-full min-h-screen lg:px-22 py-12 relative">
-      <div className=" mx-auto px-4 h-full flex flex-col">
+    <section className="w-full lg:h-[140vh] lg:px-22 py-12 relative">
+      <div className="mx-auto px-4 h-full flex flex-col">
         <h1 className="text-2xl md:text-4xl font-bold text-center mb-8">Service Overview</h1>
 
         <div className="flex-1 relative">
@@ -58,9 +58,10 @@ export default function ServiceOverview() {
             onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
             className="h-full w-full"
           >
-            {services.map((service, index) => (
+            {services.map((service) => (
               <SwiperSlide key={service.id}>
                 <div className="h-full flex flex-col lg:flex-row items-start gap-8 py-14">
+                  {/* Image Container */}
                   <div className="w-full lg:w-[80%] h-[80vh]">
                     <div className="h-full bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-300">
                       <img
@@ -70,16 +71,17 @@ export default function ServiceOverview() {
                       />
                     </div>
                   </div>
-
-                  <div className="w-full lg:w-[40%] lg:absolute lg:left-[55%] lg:top-[80%] lg:transform lg:-translate-y-1/2 mt-4 lg:mt-0">
-                    <div className="bg-white border-[#01ACE4]  rounded-xl shadow-lg p-8 border ">
-                      <h2 className="text-3xl font-bold mb-4">{service.title}</h2>
-                      <p className="text-gray-600 mb-6">{service.description}</p>
+                  
+                  {/* Card Container - now part of the same slide */}
+                  <div className="w-full lg:w-[40%] lg:absolute lg:left-[55%] lg:top-[70%] lg:transform lg:-translate-y-1/2 mt-4 lg:mt-0 z-10">
+                    <div className="bg-white border-[#01ACE4] rounded-xl shadow-lg py-16 px-8 border">
+                      <h2 className="text-4xl font-bold mb-4">{service.title}</h2>
+                      <p className="text-gray-600 font-semibold text-lg mb-6">{service.description}</p>
                       <ul className="space-y-2">
                         {service.technologies.map((tech, techIndex) => (
                           <li key={techIndex} className="flex items-center">
-                            <span className="h-2 w-2 rounded-full bg-blue-600 mr-3"></span>
-                            <span>{tech}</span>
+                            <span className="h-3 w-3 rounded-full bg-blue-600 mr-3"></span>
+                            <span className="text-gray-600 font-semibold text-lg">{tech}</span>
                           </li>
                         ))}
                       </ul>

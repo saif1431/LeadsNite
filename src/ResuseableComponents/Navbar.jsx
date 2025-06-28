@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-[#00ACE4] shadow-md py-4 px-4 lg:px-44 md:px-20   flex items-center justify-between">
+      <nav className="bg-[#00ACE4] shadow-md py-5 px-8 lg:px-46 md:px-20   flex items-center justify-between">
         {/* Left Side - Logo */}
         <div className="flex-shrink-0">
           <Link to="/" className="text-2xl font-bold text-blue-600">
@@ -22,16 +22,16 @@ const Navbar = () => {
 
         {/* Center - Navigation Links (hidden on mobile) */}
         <div className="hidden  md:flex text-xl space-x-12 mx-auto">
-          <Link to="/" className="text-white hover:text-black font-medium">
+          <Link to="/" className="text-white hover:text-black font-bold">
             Services
           </Link>
-          <Link to="/about" className="text-white hover:text-black font-medium">
+          <Link to="/about" className="text-white hover:text-black font-bold">
             Projects
           </Link>
-          <Link to="/services" className="text-white hover:text-black font-medium">
+          <Link to="/services" className="text-white hover:text-black font-bold">
             About Us
           </Link>
-          <Link to="/contact" className="text-white hover:text-black font-medium">
+          <Link to="/contact" className="text-white hover:text-black font-bold">
             Contact Us
           </Link>
         </div>

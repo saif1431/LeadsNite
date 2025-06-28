@@ -46,7 +46,7 @@ export default function OrbitAnimation() {
                     ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white"
                     : "bg-white border-2 border-blue-200 text-blue-500"
                 }`}
-                whileHover={{ scale: 1.05 }}
+                // whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
                 {step.icon}

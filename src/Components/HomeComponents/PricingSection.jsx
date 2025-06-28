@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence, time } from "framer-motion"
+import Button from "../../ResuseableComponents/Button"
 
 export default function PricingSection() {
   const [activeTab, setActiveTab] = useState("marketing")
@@ -55,16 +56,16 @@ export default function PricingSection() {
           {/* Tab control */}
           <div className="bg-blue-100 rounded-full p-1 flex w-fit">
             <button
-              className={`px-6 py-3 rounded-full text-sm font-medium transition-colors ${
-                activeTab === "marketing" ? "bg-blue-500 text-white" : "text-gray-700 hover:bg-blue-200"
+              className={`px-6 py-3 rounded-full text-lg font-medium transition-colors ${
+                activeTab === "marketing" ? "bg-blue-500 text-white" : "text-gray-700 "
               }`}
               onClick={() => setActiveTab("marketing")}
             >
               Marketing
             </button>
             <button
-              className={`px-6 py-3 rounded-full text-sm font-medium transition-colors ${
-                activeTab === "optimize" ? "bg-blue-500 text-white" : "text-gray-700 hover:bg-blue-200"
+              className={`px-6 py-3 rounded-full text-lg font-medium transition-colors ${
+                activeTab === "optimize" ? "bg-blue-500 text-white" : "text-gray-700 "
               }`}
               onClick={() => setActiveTab("optimize")}
             >
@@ -97,9 +98,7 @@ export default function PricingSection() {
 
                 <p className="text-gray-600 text-md mt-12 mb-8">{pricingData.free.description}</p>
 
-                <button className="w-fit border text-lg border-gray-300 rounded-md  py-3 px-4 text-center text-gray-900 font-medium hover:bg-gray-50 transition-colors">
-                  Contact Us
-                </button>
+              <Button children="Contact Us"/>
 
                 {pricingData.free.features.map((feature, index) => (
                   <p key={index} className="text-gray-900 font-medium mt-4">
@@ -121,9 +120,7 @@ export default function PricingSection() {
 
                 <p className="text-gray-600 text-md mb-10">{pricingData.basic.description}</p>
 
-                <button className="w-fit text-lg border border-gray-300 rounded-md py-3 px-4 text-center text-gray-900 font-medium hover:bg-gray-50 transition-colors mb-4">
-                  Contact Us
-                </button>
+             <Button children="Contact Us"/>
 
                 {pricingData.basic.features.map((feature, index) => (
                   <p key={index} className="text-lg font-medium mt-2">

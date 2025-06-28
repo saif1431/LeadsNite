@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FiArrowRightCircle } from 'react-icons/fi';
 import { ImArrowUpRight } from "react-icons/im";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
@@ -55,7 +56,7 @@ const ServiceCard = ({ title, description, imageUrl, route }) => {
   return (
     <div 
       onClick={handleClick}
-      className="group cursor-pointer rounded-3xl overflow-hidden shadow-md transition-transform duration-500 hover:shadow-xl p-6  bg-white"
+      className="group cursor-pointer rounded-4xl overflow-hidden shadow-md transition-transform duration-500 hover:shadow-xl p-6  bg-white"
     >
       
       <div className="p-8 space-y-6">
@@ -66,6 +67,7 @@ const ServiceCard = ({ title, description, imageUrl, route }) => {
           className="w-24 h-24 object-cover "
         />
         <ImArrowUpRight className='text-3xl text-[#2667FF]' />
+        {/* <FontAwesomeIcon icon="fa-solid fa-arrow-right-long" className='text-3xl text-[#2667FF]'  /> */}
 
            </div>
         <h3 className="text-xl  font-bold text-gray-800 mt-12">{title}</h3>

@@ -1,5 +1,6 @@
 import { ArrowRight, Linkedin } from "lucide-react"
-import { LiaLinkedin } from "react-icons/lia"
+import { FaLinkedin } from "react-icons/fa"
+// import { LiaLinkedin } from "react-icons/lia"
 
  function Footer() {
   return (
@@ -72,7 +73,6 @@ import { LiaLinkedin } from "react-icons/lia"
                 </li>
               </ul>
             </div>
-      
           {/* Right column - Contact form */}
           <div>
             <h3 className="text-white text-2xl font-bold mb-4">Contact Us</h3>
@@ -92,13 +92,12 @@ import { LiaLinkedin } from "react-icons/lia"
       <div className="bg-black py-4 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex justify-center">
           <a href="#" className="text-white hover:text-gray-300 transition-colors" aria-label="LinkedIn">
-            <LiaLinkedin className="h-6 w-6" />
+                       <FaLinkedin className="text-2xl " />
           </a>
         </div>
       </div>
     </footer>
   )
 }
-
 
 export default Footer

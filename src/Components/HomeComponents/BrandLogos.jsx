@@ -24,8 +24,8 @@ const BrandLogos = () => {
   const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <div className="relative mt-6 w-[90%] mx-auto overflow-hidden py-8 ">
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-50 via-transparent to-gray-50 z-10 pointer-events-none" />
+    <div className="relative mt-12 w-[90%] mx-auto overflow-hidden py-8 ">
+      <div className="absolute inset-0 bg-gradient-to-l from-white via-transparent to-white z-1 pointer-events-none" />
       
       <motion.div
         className="flex"
