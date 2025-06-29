@@ -97,10 +97,10 @@ export default function LatestProject() {
   );
 
   return (
-    <div className="bg-secondary w-full py-16">
+    <div className="bg-secondary w-full lg:px-24 px-6 md:py-32 py-12">
       <div className="">
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 px-6 md:px-20">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 ">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

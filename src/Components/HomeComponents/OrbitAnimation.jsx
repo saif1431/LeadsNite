@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Settings, FileText, Rocket, HandshakeIcon } from "lucide-react";
 import { motion } from "framer-motion";
@@ -32,52 +32,89 @@ export default function OrbitAnimation() {
   ];
 
   return (
-    <div className="container mx-auto lg:px-10 px-4 py-16 max-w-8xl">
+    <div className="mx-auto lg:px-24 px-6 lg:py-18 md-12 max-w-8xl">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">How We Work</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {steps.map((step, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <div className="relative mb-8">
-              {/* Main circle */}
-              <motion.div
-                className={`w-32 h-32 rounded-full flex items-center justify-center ${
-                  step.gradient
-                    ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white"
-                    : "bg-white border-2 border-blue-200 text-blue-500"
-                }`}
-                // whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
-                {step.icon}
-              </motion.div>
+        {steps.map((step, index) => {
+          const isHoverOnly =
+            step.title === "Design Ideation" || step.title === "Quality Assured";
 
-              {/* Small rotating circle using Framer Motion */}
-              <motion.div
-                className={`absolute w-4 h-4 rounded-full ${
-                  step.gradient ? "bg-white border border-blue-300" : "bg-blue-500"
-                }`}
-                initial={{ rotate: 0, x: 0, y: 0 }}
-                animate={{ rotate: 360 }}
-                transition={{
-                  duration: 8,
-                  ease: "linear",
-                  repeat: Number.POSITIVE_INFINITY,
-                }}
-                style={{
-                  top: "16px", // Position at the top edge of the large circle
-                  left: "8px", // Center horizontally (half of 128px width)
-                  transformOrigin: "60px 48px", // Center of the large circle (x: 64px, y: 48px)
-                }}
-              />
-            </div>
+          return (
+            <div key={index} className="flex flex-col items-center group">
+              <div className="relative mb-8">
+                {/* Main circle */}
+                <motion.div
+                  className={`w-34 h-34 rounded-full flex items-center justify-center transition-all duration-300 ${
+                    step.gradient
+                      ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white"
+                      : "bg-white border-2 border-blue-200 text-blue-500"
+                  }`}
+                >
+                  {step.icon}
+                </motion.div>
 
-            <div className="text-center relative">
-              <div className="counting text-7xl font-thin text-gray-200 mb-2">{step.number}</div>
-              <h3 className="text-lg font-semibold">{step.title}</h3>
+                {/* Orbiting circle logic */}
+                {isHoverOnly ? (
+                  // Hidden by default, appears and rotates on hover
+                  <motion.div
+                    className={`absolute w-4 h-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
+                      step.gradient
+                        ? "bg-white border border-blue-300"
+                        : "bg-blue-500"
+                    }`}
+                    initial={{ rotate: 0 }}
+                    animate={{ rotate: 360 }}
+                    transition={{
+                      duration: 8,
+                      ease: "linear",
+                      repeat: Number.POSITIVE_INFINITY,
+                    }}
+                    style={{
+                      top: "16px",
+                      left: "8px",
+                      transformOrigin: "60px 48px",
+                    }}
+                  />
+                ) : (
+                  // Always visible and rotating
+                  <motion.div
+                    className={`absolute w-4 h-4 rounded-full ${
+                      step.gradient
+                        ? "bg-white border border-blue-300"
+                        : "bg-blue-500"
+                    }`}
+                    initial={{ rotate: 0 }}
+                    animate={{ rotate: 360 }}
+                    transition={{
+                      duration: 8,
+                      ease: "linear",
+                      repeat: Number.POSITIVE_INFINITY,
+                    }}
+                    style={{
+                      top: "16px",
+                      left: "8px",
+                      transformOrigin: "60px 48px",
+                    }}
+                  />
+                )}
+              </div>
+
+              {/* Centered line between number and title */}
+             <div className="text-center relative flex flex-col items-center w-full">
+  <div className="relative flex items-center justify-center w-full mb-6">
+    <div className="flex-grow h-[1px] mt-10 bg-gray-300"></div>
+   <div className="counting text-7xl font-thin text-gray-200">{step.number}</div>
+
+
+    <div className="flex-grow h-[1px] mt-10 bg-gray-200"></div>
+  </div>
+  <h3 className="text-xl font-bold">{step.title}</h3>
+</div>
+
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

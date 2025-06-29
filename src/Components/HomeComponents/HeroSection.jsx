@@ -94,9 +94,9 @@ function HeroSection() {
   };
 
   return (
-    <div className='md:h-[180vh] h-[90vh] bg-none '>
+    <div className='md:h-[160vh] h-[90vh] xl:h-[150vh] bg-none '>
       <section 
-        className="relative h-[80vh] md:h-[158vh] bg-no-repeat"
+        className="relative h-[80vh] md:h-[158vh] lg:h-[160vh] xl:h-[145vh] bg-no-repeat"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: 'cover',
@@ -168,7 +168,7 @@ function HeroSection() {
         />
         
         <motion.div 
-          className='absolute z-10 left-1/2 transform -translate-x-1/2 bg-white lg:w-[20%] w-[40%]   p-1 border rounded-3xl overflow-hidden border-gray-100 shadow-md'
+          className='absolute z-10 left-1/2 transform -translate-x-1/2 bg-white lg:w-[20%] w-[40%]  -bottom-20 p-1 border rounded-3xl overflow-hidden border-gray-100 shadow-md'
           initial="hidden"
           animate="visible"
           variants={img3Animation}

@@ -15,35 +15,38 @@ const logos = [
   '/brandLogo/logo11.png',
   '/brandLogo/logo12.png',
   '/brandLogo/logo13.png',
-
-  // Add more logos as needed
 ];
 
 const BrandLogos = () => {
-  // Duplicate the logos array to create seamless looping
   const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <div className="relative mt-12 w-[90%] mx-auto overflow-hidden py-8 ">
-      <div className="absolute inset-0 bg-gradient-to-l from-white via-transparent to-white z-1 pointer-events-none" />
-      
+    <div
+      className="relative mt-12 w-[90%] mx-auto overflow-hidden py-8"
+      style={{
+        WebkitMaskImage:
+          'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 10%, black 25%, black 75%, rgba(0,0,0,0.6) 90%, transparent 100%)',
+        maskImage:
+          'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 10%, black 25%, black 75%, rgba(0,0,0,0.6) 90%, transparent 100%)',
+      }}
+    >
       <motion.div
         className="flex"
         animate={{
-          x: ['0%', '-100%'], // Moves from 0 to -100% of container width
+          x: ['0%', '-100%'],
         }}
         transition={{
           duration: 20,
           ease: 'linear',
-          repeat: Infinity, // Infinite loop
+          repeat: Infinity,
         }}
       >
         {duplicatedLogos.map((logo, index) => (
           <div key={index} className="flex-shrink-0 px-12">
-            <img 
-              src={logo} 
-              alt={`Client logo ${index % logos.length + 1}`} 
-              className="h-8 object-contain opacity-80 hover:opacity-100 transition-opacity"
+            <img
+              src={logo}
+              alt={`Client logo ${index % logos.length + 1}`}
+              className="h-10 object-contain transition-opacity"
             />
           </div>
         ))}
@@ -53,5 +56,3 @@ const BrandLogos = () => {
 };
 
 export default BrandLogos;
-
-
