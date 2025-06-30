@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Space+Grotesk:wght@300..700&display=swap');
+
+
 @import "tailwindcss";
 
 
@@ -5,9 +8,21 @@
 .bg-primary {
   background-color: #01ACE4; 
 }
-
+*{
+      font-family: "Manrope", sans-serif;
+}
 .bg-secondary {
   background-color: #E9F1FA;
+}
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+}
+.bg-image{
+background-image: url('/public/AboutImage//serviceBg.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 .text-primary {
@@ -27,7 +42,6 @@
       display: inline-block;
     margin-bottom: 15px;
     font-weight: 900;
-    font-size: 60px;
     line-height: 1;
     margin-top: 40px;
     color: transparent;
@@ -50,7 +64,11 @@
   background-color: #01ACE4;
   color: #ffffff;
 }
+.check-list {
 
+    background:linear-gradient(90deg, #2667FF 20%, #6c19ef 100%);
+    
+}
 
 .btn {
  --color: #000;
@@ -69,6 +87,10 @@
  font-family: 'Roboto', 'Segoe UI', sans-serif;
  text-transform: uppercase;
  color: var(--color);
+}
+
+a.active{
+  color: #00A9E0
 }
 
 .btn::after, .btn::before {
@@ -108,3 +130,21 @@
  transform: scale(.98);
 }
 
+/* Custom pagination styles */
+.swiper-pagination {
+  position: relative !important;
+  /* bottom: 0 !important; */
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  opacity: 1;
+  /* margin: 0 4px !important; */
+}
+
+.swiper-pagination-bullet-active {
+  background: #3B82F6; /* Your primary color */
+}

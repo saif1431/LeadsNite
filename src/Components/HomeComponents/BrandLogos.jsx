@@ -55,4 +55,4 @@ const BrandLogos = () => {
   );
 };
 
-export default BrandLogos;
+export default BrandLogos; 

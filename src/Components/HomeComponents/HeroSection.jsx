@@ -94,9 +94,9 @@ function HeroSection() {
   };
 
   return (
-    <div className='md:h-[160vh] h-[90vh] xl:h-[150vh] bg-none '>
+    <div className='md:h-[160vh] h-[90vh] xl:h-[155vh] bg-none '>
       <section 
-        className="relative h-[80vh] md:h-[158vh] lg:h-[160vh] xl:h-[145vh] bg-no-repeat"
+        className="relative h-[80vh] md:h-[158vh] lg:h-[164vh] xl:h-[150vh] bg-no-repeat"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: 'cover',
