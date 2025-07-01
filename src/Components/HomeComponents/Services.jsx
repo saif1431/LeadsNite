@@ -20,35 +20,35 @@ const servicesData = [  // Changed from Services to servicesData
     title: "Machine Learning",
     imageUrl: "/servicesImg/img2.png",
     description: "Machine learning is an artificial intelligence technique where systems learn from data and improve over time without being explicitly programmed.",
-    route: "/services/mobile-apps"
+    route: "/services/machine-learning"
   },
   {
     id: 3,
     title: "App Development",
     imageUrl: "/servicesImg/img3.png",
     description: "App development involves creating software applications for mobile devices or computers, enabling users to perform various tasks or access specific services",
-    route: "/services/ui-ux-design"
+    route: "/services/app-development"
   },
   {
     id: 4,
     title: "Video Editing",
     imageUrl: "/servicesImg/img4.png",
     description: "Video editing involves manipulating and rearranging video footage to create a desired final product, such as movies, commercials, or social media content.",
-    route: "/services/ui-ux-design"
+    route: "/services/video-editing"
   },
   {
     id: 5,
     title: "Graphic Designing",
     imageUrl: "/servicesImg/img5.png",
     description: "Graphic designing is the art of visual communication using images, typography, and layout techniques to convey ideas effectively and creatively.",
-    route: "/services/ui-ux-design"
+    route: "/services/graphic-designing"
   },
   {
     id: 6,
     title: "Digital Marketing",
     imageUrl: "/servicesImg/img6.png",
     description: "Graphic designing is the art of visual communication using images, typography, and layout techniques to convey ideas effectively and creatively.",
-    route: "/services/ui-ux-design"
+    route: "/services/digital-marketing"
   },
 ];
 

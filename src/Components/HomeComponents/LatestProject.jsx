@@ -71,7 +71,7 @@ export default function LatestProject() {
       className={`break-inside-avoid mb-6 w-full group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300
         ${
           project.area === "stock" || project.area === "house"
-            ? "h-[280px] sm:h-[300px] lg:h-[350px]"
+            ? "h-[280px] sm:h-[300px] lg:h-[360px]"
             : "h-[200px] sm:h-[220px] lg:h-[360px]"
         }`}
     >

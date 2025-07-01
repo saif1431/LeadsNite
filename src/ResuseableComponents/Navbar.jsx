@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={` shadow-md py-5 px-8 lg:px-46 md:px-20 flex items-center justify-between ${ isHome ? 'bg-primary text-white' : 'bg-white text-black'} `}>
+      <nav className={` py-5 px-8 lg:px-46 md:px-20 flex items-center justify-between ${ isHome ? 'bg-primary text-white  shadow-md' : 'bg-white text-black'} `}>
         {/* Left Side - Logo */}
         <div className="flex-shrink-0">
           <Link to="/" className="text-2xl font-bold text-blue-600">

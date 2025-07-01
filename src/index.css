@@ -67,7 +67,10 @@ background-repeat: no-repeat;
 .check-list {
 
     background:linear-gradient(90deg, #2667FF 20%, #6c19ef 100%);
-    
+    transition: all ease-in 1s;
+}
+.check-list:hover{
+  background:linear-gradient(90deg, #2667FF 100%, #6c19ef 20%);
 }
 
 .btn {
@@ -147,4 +150,8 @@ a.active{
 
 .swiper-pagination-bullet-active {
   background: #3B82F6; /* Your primary color */
+}
+
+p{
+  line-height: 1.7;
 }

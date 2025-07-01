@@ -71,8 +71,6 @@ function AboutTestimonial() {
       <div className='lg:w-[50%] w-full relative'> {/* Added relative positioning */}
         <h1 className='text-5xl text-start font-bold mb-8'>TESTIMONIAL</h1>
         
-       
-        
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
