@@ -1,9 +1,9 @@
 import React from 'react'
 import RightSection from '../WebServices/RightSection'
-import Websites from '../../TechnologiesComponent/Websites'
 import VideoDescription from './VideoDescription'
 import VideoSection1 from './VideoSection1'
 import VideoFaqs from './VideoFaqs'
+import UiDesign from '../../TechnologiesComponent/UiDesign'
 
 function VideoServices() {
   return (
@@ -11,7 +11,7 @@ function VideoServices() {
     <div className='lg:w-[65%] w-full space-y-12'>
       <VideoSection1/>
       <div className='w-[80%] mx-auto lg:mt-24 mt-12'>
-        <Websites/>
+        <UiDesign/>
       </div>
       <VideoDescription/>
       <VideoFaqs/>

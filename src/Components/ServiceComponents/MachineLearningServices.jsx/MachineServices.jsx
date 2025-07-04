@@ -4,6 +4,8 @@ import Websites from '../../TechnologiesComponent/Websites'
 import RightSection from '../WebServices/RightSection'
 import MachineFaqs from './MachineFaqs'
 import Section1Image from '../WebServices/Section1Image'
+import MachineLearning from '../../TechnologiesComponent/MachineLearning'
+
 
 function MachineServices() {
   return (
@@ -11,7 +13,7 @@ function MachineServices() {
     <div className='lg:w-[65%] w-full space-y-12'>
       <Section1Image/>
       <div className='w-[80%] mx-auto lg:mt-24 mt-12'>
-        <Websites/>
+        <MachineLearning/>
       </div>
       <MachineDescription/>
       <MachineFaqs/>

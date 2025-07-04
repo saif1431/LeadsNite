@@ -1,11 +1,74 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 
-function MachineLearning() {
+const logos = [
+  '/TechnologiesLogo/MachineLogos/1.png',
+  '/TechnologiesLogo/MachineLogos/3.png',
+  '/TechnologiesLogo/MachineLogos/7.png',
+  '/TechnologiesLogo/MachineLogos/8.png',
+  '/TechnologiesLogo/MachineLogos/9.png',
+  '/TechnologiesLogo/MachineLogos/10.png',
+  '/TechnologiesLogo/MachineLogos/11.png',
+  '/TechnologiesLogo/MachineLogos/12.png',
+  '/TechnologiesLogo/MachineLogos/13.png',
+  '/TechnologiesLogo/MachineLogos/14.png',
+  '/TechnologiesLogo/MachineLogos/15.png',
+  '/TechnologiesLogo/MachineLogos/2.svg',
+  '/TechnologiesLogo/MachineLogos/4.svg',
+  '/TechnologiesLogo/MachineLogos/5.svg',
+  '/TechnologiesLogo/MachineLogos/6.svg',
+  '/TechnologiesLogo/MachineLogos/16.svg',
+  '/TechnologiesLogo/MachineLogos/19.svg',
+  '/TechnologiesLogo/MachineLogos/20.svg',
+
+
+  // Add more logos as needed
+];
+
+const MachineLearning = () => {
+  // Duplicate the logos array to create seamless looping
+  const duplicatedLogos = [...logos, ...logos];
+
   return (
-    <div>
-      <h1>Machine Learning</h1>
+    <div className="relative max-w-4xl mx-auto w-full py-4 overflow-hidden  "
+    style={{
+        WebkitMaskImage:
+          'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 10%, black 25%, black 75%, rgba(0,0,0,0.6) 90%, transparent 100%)',
+        maskImage:
+          'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 10%, black 25%, black 75%, rgba(0,0,0,0.6) 90%, transparent 100%)',
+      }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-l from-white-50 via-transparent to-white-50 z-10 pointer-events-none" />
+      
+      <motion.div
+        className="flex"
+        animate={{
+          x: ['0%', '-100%'], // Moves from 0 to -100% of container width
+        }}
+        transition={{
+          duration: 20,
+          ease: 'linear',
+          repeat: Infinity, // Infinite loop
+        }}
+      >
+        {duplicatedLogos.map((logo, index) => (
+          <div key={index} className="flex-shrink-0 px-20">
+            <img 
+              src={logo} 
+              alt={`Client logo ${index % logos.length + 1}`} 
+              className="h-10 object-contain opacity-80 hover:opacity-100 transition-opacity"
+            />
+          </div>
+        ))}
+      </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default MachineLearning
+export default MachineLearning;
+
+
+
+
+
+ 

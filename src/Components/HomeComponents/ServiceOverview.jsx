@@ -62,8 +62,8 @@ export default function ServiceOverview() {
               <SwiperSlide key={service.id}>
                 <div className="h-full flex flex-col lg:flex-row items-start gap-8 py-14">
                   {/* Image Container */}
-                  <div className="w-full lg:w-[80%] h-[80vh]">
-                    <div className="h-full bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-300">
+                  <div className="w-full ml-10 images  rounded-4xl lg:w-[80%] h-[83vh]">
+                    <div className="h-full  bg-white rounded-2xl   overflow-hidden">
                       <img
                         src={service.image}
                         alt={`${service.title} Illustration`}

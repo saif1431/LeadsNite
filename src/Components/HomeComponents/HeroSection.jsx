@@ -168,7 +168,7 @@ function HeroSection() {
         />
         
         <motion.div 
-          className='absolute z-10 left-1/2 transform -translate-x-1/2 bg-white lg:w-[20%] w-[40%]  -bottom-20 p-1 border rounded-3xl overflow-hidden border-gray-100 shadow-md'
+          className='absolute z-10 left-1/2 transform -translate-x-1/2 bg-white lg:w-[20%] w-[40%]  lg:-bottom-24 p-1 border rounded-3xl overflow-hidden border-gray-100 shadow-md'
           initial="hidden"
           animate="visible"
           variants={img3Animation}

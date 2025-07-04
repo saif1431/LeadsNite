@@ -47,7 +47,7 @@ export default function PricingSection() {
   const pricingData = activeTab === "marketing" ? marketingPricing : optimizePricing
 
   return (
-    <div className="bg-blue-50  flex items-center justify-center lg:px-24 px-6 md:py-32 py-12">
+    <div className="bg-blue-50  flex items-center justify-center lg:px-24 px-6 md:py-24 py-12">
       <div className=" w-full mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
         {/* Left side content */}
         <div className="max-w-sm w-full">

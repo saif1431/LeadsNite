@@ -1,9 +1,9 @@
 import React from 'react'
 import RightSection from '../WebServices/RightSection'
-import Websites from '../../TechnologiesComponent/Websites'
 import AppDescription from './AppDescription'
 import AppFaqs from './AppFaqs'
 import AppSection1 from './AppSection1'
+import MobileApps from '../../TechnologiesComponent/MobileApps'
 
 function AppServices() {
   return (
@@ -11,7 +11,7 @@ function AppServices() {
     <div className='lg:w-[65%] w-full space-y-12'>
       <AppSection1/>
       <div className='w-[80%] mx-auto lg:mt-24 mt-12'>
-        <Websites/>
+        <MobileApps/>
       </div>
       <AppDescription/>
       <AppFaqs/>

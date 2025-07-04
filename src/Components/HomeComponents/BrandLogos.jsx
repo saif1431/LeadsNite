@@ -15,6 +15,12 @@ const logos = [
   '/brandLogo/logo11.png',
   '/brandLogo/logo12.png',
   '/brandLogo/logo13.png',
+  '/brandLogo/14.png',
+  '/brandLogo/15.png',
+  '/brandLogo/16.png',
+  '/brandLogo/17.png',
+  '/brandLogo/18.png',
+  '/brandLogo/19.png',
 ];
 
 const BrandLogos = () => {
@@ -22,7 +28,7 @@ const BrandLogos = () => {
 
   return (
     <div
-      className="relative mt-12 w-[90%] mx-auto overflow-hidden py-8"
+      className="relative lg:mt-18 w-[90%] mx-auto overflow-hidden py-8"
       style={{
         WebkitMaskImage:
           'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 10%, black 25%, black 75%, rgba(0,0,0,0.6) 90%, transparent 100%)',
