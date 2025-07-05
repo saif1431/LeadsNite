@@ -4,7 +4,7 @@ import img from '/joinUsImg.jpg'
 
 function JoinUs() {
   return (
-    <div className='bg-secondary lg:h-[550px] h-fit  lg:px-24 px-6 md:py-32 py-12 flex items-center justify-center l '>
+    <div className='bg-secondary lg:h-[550px] h-fit  px-8 lg:px-78 md:px-16 md:py-32 py-12 flex items-center justify-center  '>
           <div className='  mx-auto flex items-center justify-center lg:flex-row flex-col lg:gap-32 gap-12'>
       <div className='lg:w-1/2 w-full rounded-lg bg-white px-8 py-12 '>
             <img className='rounded-lg' src={img} alt="" />

@@ -94,9 +94,9 @@ function HeroSection() {
   };
 
   return (
-    <div className='md:h-[160vh] h-[90vh] xl:h-[155vh] bg-none '>
+    <div className='md:h-[160vh] h-[90vh] xl:h-[130vh] bg-none '>
       <section 
-        className="relative h-[80vh] md:h-[158vh] lg:h-[164vh] xl:h-[150vh] bg-no-repeat"
+        className="relative h-[80vh] md:h-[158vh] lg:h-[150vh] xl:h-[125vh] bg-no-repeat"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: 'cover',
@@ -150,7 +150,7 @@ function HeroSection() {
       
       <div className='relative'>
         <motion.div 
-          className='absolute lg:bottom-84 bottom-16  z-10 left-1 lg:left-64 bg-white lg:w-[10%] w-[30%] p-1 border rounded-xl lg:rounded-3xl overflow-hidden border-gray-100'
+          className='absolute lg:bottom-84 bottom-16  z-10 left-1 lg:left-96  bg-white lg:w-[7%] w-[30%] p-1 border rounded-xl lg:rounded-xl overflow-hidden border-gray-100'
           initial="hidden"
           animate="visible"
           variants={img2Animation}
@@ -159,7 +159,7 @@ function HeroSection() {
         </motion.div>
         
         <motion.img 
-          className='absolute  shadow-lg rounded-lg bottom-1  left-1/2 lg:transform -translate-x-1/2 lg:w-[60%] w-[90%]'
+          className='absolute  shadow-lg rounded-lg bottom-1  left-1/2 lg:transform -translate-x-1/2 lg:w-[50%] w-[90%]'
           src={img1} 
           alt=""
           initial="hidden"
@@ -168,7 +168,7 @@ function HeroSection() {
         />
         
         <motion.div 
-          className='absolute z-10 left-1/2 transform -translate-x-1/2 bg-white lg:w-[20%] w-[40%]  lg:-bottom-24 p-1 border rounded-3xl overflow-hidden border-gray-100 shadow-md'
+          className='absolute z-10 left-1/2 transform -translate-x-1/2 bg-white lg:w-[15%] w-[40%]  lg:-bottom-28 p-1 border rounded-3xl overflow-hidden border-gray-100 shadow-md'
           initial="hidden"
           animate="visible"
           variants={img3Animation}

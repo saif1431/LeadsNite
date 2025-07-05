@@ -73,19 +73,19 @@ const ServiceCard = ({
       className={`group cursor-pointer mt-6 overflow-hidden shadow-md transition-transform duration-500 hover:shadow-xl lg:px-3 lg:py-8 bg-white rounded-3xl
        `}
     >
-      <div className="p-8 space-y-6">
-        <div className={`flex items-center justify-between  ${isHomePage ? 'mb-12' : 'mb-6'}`}>
+      <div className="py-10 px-8 ">
+        <div className={`flex items-center justify-between  ${isHomePage ? 'mb-14' : 'mb-6  '}`}>
           <img 
             src={imageUrl} 
             alt={`${title} service`}
-            className="w-24 h-24 object-cover"
+            className="w-25 h-25 object-cover"
           />
           <img className='w-10 h-10' src={arrow} alt="arrow" />
         </div>
         {showDescription && (
           <p className="text-gray-600 ">{description}</p>
         )}
-        <h3 className="text-xl font-bold text-gray-800">{title}</h3>
+        <h3 className="text-xl font-bold ">{title}</h3>
         
       </div>
     </div>
@@ -97,7 +97,7 @@ const Services = ({ showDescriptions = false }) => {
   const isHomePage = location.pathname === '/';
 
   return (
-    <div className={`container  mt-6 mx-auto  py-18 ${isHomePage ? 'lg:px-24 px-6 bg-secondary' : 'rounded-3xl lg:px-12 bg-image  px-4'}`}>
+    <div className={`  mt-6  py-18 ${isHomePage ? 'px-8 lg:px-78 md:px-16 bg-secondary' : 'rounded-3xl lg:px-12 bg-image  px-4'}`}>
       <h2 className={`text-3xl font-bold mb-12 text-center ${isHomePage ? 'lg:text-3xl  ' : 'text-4xl '}`}>
         {isHomePage ? "Find the Perfect Service" : "Here's What Sets Us Apart"}
       </h2>

@@ -47,8 +47,8 @@ export default function PricingSection() {
   const pricingData = activeTab === "marketing" ? marketingPricing : optimizePricing
 
   return (
-    <div className="bg-blue-50  flex items-center justify-center lg:px-24 px-6 md:py-24 py-12">
-      <div className=" w-full mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
+    <div className="bg-blue-50  flex items-center justify-center px-8 lg:px-78 md:px-16 md:py-24 py-12">
+      <div className=" w-full  flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
         {/* Left side content */}
         <div className="max-w-sm w-full">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Committed to giving the best price</h1>
@@ -86,7 +86,7 @@ export default function PricingSection() {
               className="flex flex-col gap-3 lg:flex-row"
             >
               {/* Free plan card */}
-              <div className="border border-black rounded-lg   p-12 w-full max-w-sm  md:mb-0 md:mr-16 relative z-10">
+              <div className="border border-black rounded-lg   px-12  py-14 w-full max-w-sm  md:mb-0 md:mr-16 relative z-10">
                 <div className="">
                   <h3 className="text-2xl font-semibold mb-4">{pricingData.free.name}</h3>
                   <div className="flex items-baseline">
