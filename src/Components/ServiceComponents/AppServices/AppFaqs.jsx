@@ -37,27 +37,32 @@ const AppFaqs = () => {
       
       <div className="space-y-4">
         {faqs.map((faq, index) => (
-          <div key={index} className=" pb-4 last:border-0">
+          <div key={index} className="pb-4 last:border-0">
             <div 
-              className="flex items-center border-b-2  justify-between cursor-pointer"
+              className="flex items-center border-b-2 justify-between cursor-pointer transition duration-300 ease-in-out"
               onClick={() => toggleFAQ(index)}
             >
               <div className="flex items-start mb-6">
-                <h3 className="lg:text-xl text-md font-bold  ">{faq.question}</h3>
-              
+                <h3 className="lg:text-xl text-md font-bold">{faq.question}</h3>
               </div>
-              {activeIndex === index ? (
-                <FaChevronUp className="font-thin ml-2" />
-              ) : (
-                <FaChevronDown className=" ml-2" />
-              )}
+              <div className="transition-transform duration-300">
+                {activeIndex === index ? (
+                  <FaChevronUp className="font-thin ml-2 transition-all duration-300" />
+                ) : (
+                  <FaChevronDown className="ml-2 transition-all duration-300" />
+                )}
+              </div>
             </div>
             
-            {activeIndex === index && (
-              <p className="mt-4 text-primary font-semibold animate-fadeIn">
-                {faq.answer}
-              </p>
-            )}
+            <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+              activeIndex === index ? 'max-h-96' : 'max-h-0'
+            }`}>
+              {activeIndex === index && (
+                <p className="mt-4 text-primary font-semibold">
+                  {faq.answer}
+                </p>
+              )}
+            </div>
           </div>
         ))}
       </div>
@@ -65,4 +70,4 @@ const AppFaqs = () => {
   );
 };
 
-export default AppFaqs; 
+export default AppFaqs;

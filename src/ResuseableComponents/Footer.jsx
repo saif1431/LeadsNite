@@ -1,5 +1,7 @@
 import { ArrowRight } from "lucide-react"
 import { FaLinkedin } from "react-icons/fa"
+import { FaInstagram } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -66,9 +68,17 @@ function Footer() {
        
       </footer>
        <div className=" bg-black py-4 px-4 md:px-8">
-          <div className="max-w-7xl mx-auto flex justify-center">
+          <div className="max-w-7xl space-x-4 mx-auto flex justify-center">
             <a href="#" className="text-white hover:text-gray-300 transition-colors">
               <FaLinkedin className="text-2xl" />
+            </a>
+            <a href="#" className="text-white hover:text-gray-300 transition-colors">
+              <FaInstagram 
+ className="text-2xl" />
+            </a>
+            <a href="#" className="text-white hover:text-gray-300 transition-colors">
+              <FaSquareXTwitter 
+ className="text-2xl" />
             </a>
           </div>
         </div>

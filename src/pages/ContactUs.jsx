@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Button from '../ResuseableComponents/Button';
 import { BsFacebook, BsFillSendFill, BsInstagram, BsLinkedin } from "react-icons/bs";
-import { FaFacebookF, FaLinkedinIn, FaPinterestP, FaTwitter } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -185,8 +186,8 @@ function ContactUs() {
 </h4>
             <div className='flex items-center gap-4'>
                   <FaFacebookF  className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]' />
-                  <FaTwitter  className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]'  />
-                  <FaPinterestP  className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]' />
+                  <FaXTwitter   className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]'  />
+                  <FaInstagram  className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]' />
                   <FaLinkedinIn   className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]'/>
             </div>
       </div>

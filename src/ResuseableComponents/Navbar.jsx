@@ -53,7 +53,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`py-5 px-8 lg:px-80 md:px-20 flex items-center justify-between ${isHome ? 'bg-primary text-white shadow-md' : 'bg-white text-black'}`}>
+      <nav className={`py-5 px-4  lg:px-38 md:px-20 flex items-center justify-between ${isHome ? 'bg-primary text-white shadow-md' : 'bg-white text-black'}`}>
         {/* Logo */}
         <div className="">
           <Link to="/" className="text-2xl font-bold text-blue-600">

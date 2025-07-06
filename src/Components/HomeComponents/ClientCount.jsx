@@ -46,7 +46,7 @@ const ClientCount = () => {
   }, []);
 
   return (
-    <div   className="lg:px-24 lg:w-[70%] w-full mx-auto   md:py-24 py-12  rounded-2xl"
+    <div   className="lg:px-24 lg:w-[85%] w-full mx-auto   md:py-24 py-12  rounded-2xl"
   style={{
     background: 'linear-gradient(90deg, #2667FF 20%, #6C19EF 100%)'
   }}>
