@@ -52,8 +52,8 @@ const Navbar = () => {
   };
 
   return (
-    <>
-      <nav className={`py-5 px-4  lg:px-38 md:px-20 flex items-center justify-between ${isHome ? 'bg-primary text-white shadow-md' : 'bg-white text-black'}`}>
+    <div className='bg-primary'>
+      <nav className={`py-5 px-4 max-w-9xl mx-auto lg:px-38 md:px-20 flex items-center justify-between ${isHome ? 'bg-primary text-white shadow-md' : 'bg-white text-black'}`}>
         {/* Logo */}
         <div className="">
           <Link to="/" className="text-2xl font-bold text-blue-600">
@@ -199,7 +199,7 @@ const Navbar = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </>
+    </div>
   );
 };
 

@@ -102,7 +102,7 @@ const Services = ({ showDescriptions = false }) => {
         {isHomePage ? "Find the Perfect Service" : "Here's What Sets Us Apart"}
       </h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {servicesData.map(card => (
           <ServiceCard 
             key={card.id}
