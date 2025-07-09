@@ -78,9 +78,10 @@ export default function ServiceOverview() {
             ))}
           </Swiper>
 
+
           {services.map((service) => (
-             <div className="w-full lg:w-[40%] lg:absolute lg:left-[58%] lg:top-[75%] lg:transform lg:-translate-y-1/2 mt-4 lg:mt-0  z-40">
-                    <div className="bg-white border-[#01ACE4] rounded-xl shadow-lg py-16 px-8 border">
+             <div className="w-full lg:w-[40%] lg:absolute lg:left-[58%] lg:top-[75%] lg:transform lg:-translate-y-1/2 mt-4 lg:mt-0  z-40  ">
+                    <div className="bg-white border-[#01ACE4] rounded-xl shadow-lg py-10 px-8  border">
                       <h2 className="text-4xl font-bold mb-4">{service.title}</h2>
                       <p className="text-gray-600 font-semibold text-lg mb-6">{service.description}</p>
                       <ul className="space-y-2">

@@ -47,13 +47,13 @@ export default function PricingSection() {
   const pricingData = activeTab === "marketing" ? marketingPricing : optimizePricing
 
   return (
-    <div className="bg-blue-50  flex items-center justify-center px-4 lg:px-36 md:px-16 md:py-24 py-12">
+    <div className="bg-blue-50  flex items-center justify-center px-4 lg:px-24 md:px-16 md:py-24 py-12">
       <div className=" w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
         {/* Left side content */}
-        <div className="max-w-sm w-full">
+        <div className="max-w-md px-6 w-full"> 
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Committed to giving the best price</h1>
 
-          {/* Tab control */}
+          {/* Tab control */} 
           <div className="bg-blue-100 rounded-full p-1 flex w-fit">
             <button
               className={`px-6 py-3 rounded-full text-lg font-medium transition-colors ${
@@ -83,10 +83,10 @@ export default function PricingSection() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="flex flex-col gap-3 lg:flex-row"
+              className="flex flex-col gap-3 lg:flex-row "
             >
               {/* Free plan card */}
-              <div className="border border-black rounded-lg   px-12  py-14 w-full max-w-sm  md:mb-0 md:mr-16 relative z-10">
+              <div className="border border-black rounded-lg   px-12  py-14 w-full max-w-sm  md:mb-0 md:mr-12 relative z-10">
                 <div className="">
                   <h3 className="text-2xl font-semibold mb-4">{pricingData.free.name}</h3>
                   <div className="flex items-baseline">
