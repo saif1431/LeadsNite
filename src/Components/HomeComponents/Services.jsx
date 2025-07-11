@@ -74,7 +74,7 @@ const ServiceCard = ({
        `}
     >
       <div className="py-10 px-8 ">
-        <div className={`flex items-center justify-between  ${isHomePage ? 'mb-14' : 'mb-6  '}`}>
+        <div className={`flex items-start    justify-between  ${isHomePage ? 'mb-14' : 'mb-6  '}`}>
           <img 
             src={imageUrl} 
             alt={`${title} service`}

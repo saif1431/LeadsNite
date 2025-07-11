@@ -150,7 +150,7 @@ function HeroSection() {
       
       <div className='relative'>
         <motion.div 
-          className='absolute lg:bottom-84 bottom-16  z-10 left-1 lg:left-96  bg-white lg:w-[7%] w-[30%] p-1 border rounded-xl lg:rounded-xl overflow-hidden border-gray-100'
+          className='absolute lg:bottom-96 bottom-16  z-10 left-1 lg:left-96   bg-white lg:w-[7%] w-[30%] p-1 border rounded-xl lg:rounded-xl overflow-hidden border-gray-100'
           initial="hidden"
           animate="visible"
           variants={img2Animation}
@@ -181,3 +181,55 @@ function HeroSection() {
 }
 
 export default HeroSection;
+
+
+const projects = [
+    {
+      id: 1,
+      title: "Email Communication",
+      description: "Machine Learning",
+      image: "https://leadsnite.com/wp-content/uploads/2024/03/8.-email-1.png",
+      categories: ["Marketing", "Website"],
+      area: "email"
+    },
+    {
+      id: 2,
+      title: "Moosa . rent a car",
+      description: "Website Development",
+      image: "https://leadsnite.com/wp-content/uploads/2024/03/car-web.png",
+      categories: ["Website", "Marketing"],
+      area: "car"
+    },
+    {
+      id: 3,
+      title: "DLX Print",
+      description: "Marketing",
+      image: "https://leadsnite.com/wp-content/uploads/2024/03/printing-marketing.png",
+      categories: ["Marketing"],
+      area: "print"
+    },
+    {
+      id: 4,
+      title: "Astock",
+      description: "Machine Learning",
+      image: "https://leadsnite.com/wp-content/uploads/2024/03/1.-stock-trading.png",
+      categories: ["MachineLearning", "Website"],
+      area: "stock"
+    },
+    {
+      id: 5,
+      title: "MIKYAJY",
+      description: "Marketing",
+      image: "https://leadsnite.com/wp-content/uploads/2024/03/marketing-2.png",
+      categories: ["Marketing", "Website"],
+      area: "seo"
+    },
+    {
+      id: 6,
+      title: "Sheba.xyz",
+      description: "Website Development",
+      image: "https://leadsnite.com/wp-content/uploads/2024/03/house-web-2.png",
+      categories: ["MachineLearning"],
+      area: "house"
+    }
+  ];

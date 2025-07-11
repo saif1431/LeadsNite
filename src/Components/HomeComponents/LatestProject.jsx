@@ -68,10 +68,14 @@ export default function LatestProject() {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
       transition={{ duration: 0.3 }}
-      className={`break-inside-avoid mb-6 w-full group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300
+      className={`break-inside-avoid lg:mb-6  w-full group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300
         ${
-          project.area === "stock" || project.area === "house"
-            ? "h-[280px] sm:h-[300px] lg:h-[360px]"
+          project.area === "stock" 
+            ? "h-[200px] sm:h-[300px] lg:h-[360px]" // Stock remains same
+            : project.area === "house"
+            ? "h-[180px] sm:h-[420px] lg:h-[420px] lg:mt-[-60px]" // Sheba.xyz - taller and shifted up
+            : project.area === "print"
+            ? "h-[240px] sm:h-[260px] lg:h-[300px] " // DLX Print - shorter
             : "h-[200px] sm:h-[220px] lg:h-[360px]"
         }`}
     >
@@ -154,17 +158,23 @@ export default function LatestProject() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className=" gap-6 grid-cols-4 auto-rows-auto lg:grid hidden "
+            className="gap-6 grid-cols-4 auto-rows-auto lg:grid hidden"
             style={{
               gridTemplateAreas: `
                 "email car car print"
                 "stock stock seo house"
               `,
-              
+              alignItems: "start"
             }}
           >
             {filteredProjects.map((project) => (
-              <div key={project.id} style={{ gridArea: project.area }}>
+              <div 
+                key={project.id} 
+                style={{ 
+                  gridArea: project.area,
+                  alignSelf: project.area === "house" ? "start" : "stretch"
+                }}
+              >
                 <ProjectCard project={project} />
               </div>
             ))}
@@ -173,4 +183,4 @@ export default function LatestProject() {
       </div>
     </div>
   );
-}
+} 

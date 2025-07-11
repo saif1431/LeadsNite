@@ -41,11 +41,11 @@ export default function ServiceOverview() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="w-full  px-4  lg:px-26 md:px-20 py-28">
-      <div className=" px-4 max-w-7xl mx-auto h-full flex flex-col">
+    <section className="w-full px-4     lg:px-26 md:px-20 py-28">
+      <div className="px-4 max-w-7xl   mx-auto  flex flex-col">
         <h1 className="text-2xl md:text-5xl font-bold text-center mb-8">Service Overview</h1>
 
-        <div className="flex-1 relative">
+        <div className="flex-1   relative">
           <Swiper
             modules={[Autoplay]}
             spaceBetween={30}
@@ -60,28 +60,19 @@ export default function ServiceOverview() {
           >
             {services.map((service) => (
               <SwiperSlide key={service.id}>
-                <div className="h-full flex flex-col lg:flex-row items-start gap-8 py-14">
+                <div className="h-full flex flex-col lg:flex-row items-start gap-8 py-32 relative">
                   {/* Image Container */}
-                  <div className="w-full lg:ml-10 images  rounded-4xl lg:w-[80%]">
-                      <img
-                        src={service.image}
-                        alt={`${service.title} Illustration`}
-                        className="w-full h-full rounded-4xl object-cover"
-                      />
-                    
+                  <div className="w-full lg:ml-10 images rounded-4xl lg:w-[80%]">
+                    <img  
+                      src={service.image}
+                      alt={`${service.title} Illustration`}
+                      className="w-full h-full rounded-4xl object-cover"
+                    />
                   </div>
                   
                   {/* Card Container - now part of the same slide */}
-                 
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-
-          {services.map((service) => (
-             <div className="w-full lg:w-[40%] lg:absolute lg:left-[58%] lg:top-[75%] lg:transform lg:-translate-y-1/2 mt-4 lg:mt-0  z-40  ">
-                    <div className="bg-white border-[#01ACE4] rounded-xl shadow-lg py-10 px-8  border">
+                  <div className="w-full lg:w-[40%] lg:absolute lg:left-[58%] lg:top-[75%] lg:transform lg:-translate-y-1/2 mt-4 lg:mt-0 z-40">
+                    <div className="bg-white border-[#01ACE4] rounded-xl shadow-lg py-10 px-8 border">
                       <h2 className="text-4xl font-bold mb-4">{service.title}</h2>
                       <p className="text-gray-600 font-semibold text-lg mb-6">{service.description}</p>
                       <ul className="space-y-2">
@@ -94,7 +85,10 @@ export default function ServiceOverview() {
                       </ul>
                     </div>
                   </div>
-          ))}
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
           {/* Vertical pagination - right side */}
           <div className="absolute top-[10%] right-4 transform -translate-y-1/2 z-40">
@@ -120,4 +114,4 @@ export default function ServiceOverview() {
       </div>
     </section>
   );
-}
+}   

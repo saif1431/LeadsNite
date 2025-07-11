@@ -27,7 +27,7 @@ function HomePage() {
 <ClientCount/>
 </div>
 <LatestProject/>
-<TrustedReview/>
+<TrustedReview/>    
           </div>
   )
 }
