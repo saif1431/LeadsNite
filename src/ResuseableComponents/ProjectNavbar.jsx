@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'; // Added for animations
 import logo from '/logo.png';
 import altLogo from '/AboutImage/logo2.png';
 
-const Navbar = () => {
+const ProjectNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const isHome = location.pathname === '/';
@@ -68,37 +68,30 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex text-xl space-x-12 mx-auto">
           <Link 
-            to="/services" 
-            className={`font-bold transition ease-in duration-100 ${
-              isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
-            }`}
-          >
-            Services
-          </Link>
-          <Link 
             to="/app-development" 
             className={`font-bold transition ease-in duration-100 ${
               isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
             }`}
           >
-            Projects
+            App Development
           </Link>
           <Link 
-            to="/about-us" 
+            to="/web-development" 
             className={`font-bold transition ease-in duration-100 ${
               isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
             }`}
           >
-            About Us
+            Web Development
           </Link>
           <Link 
-            to="/ContactUs" 
-            className={`font-bold transition ease-in duration-200 ${
+            to="/machine-learning" 
+            className={`font-bold transition ease-in duration-100 ${
               isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
             }`}
           >
-            Contact Us
+            Machine Learning
           </Link>
+      
         </div>
  <a 
             href="https://www.linkedin.com/" 
@@ -153,46 +146,35 @@ const Navbar = () => {
             >
               <motion.div variants={linkVariants}>
                 <Link 
-                  to="/services" 
+                  to="/app-development" 
                   className={`block font-medium py-2 ${
                     isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
-                  Services
+                  App Development
                 </Link>
               </motion.div>
               <motion.div variants={linkVariants}>
                 <Link 
-                  to="/app-development  " 
+                  to="web-development" 
                   className={`block font-medium py-2 ${
                     isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
-                  Projects
+                  Web Development
                 </Link>
               </motion.div>
               <motion.div variants={linkVariants}>
                 <Link 
-                  to="/about-us" 
+                  to="/machine-learning" 
                   className={`block font-medium py-2 ${
                     isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
-                  About Us
-                </Link>
-              </motion.div>
-              <motion.div variants={linkVariants}>
-                <Link 
-                  to="/ContactUs" 
-                  className={`block font-medium py-2 ${
-                    isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  Contact Us
+                  Machine Learning
                 </Link>
               </motion.div>
             </motion.div>
@@ -203,4 +185,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default ProjectNavbar;

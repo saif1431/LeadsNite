@@ -4,7 +4,7 @@ import { BsFacebook, BsFillSendFill, BsInstagram, BsLinkedin } from "react-icons
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
-function ContactUs() {
+function ContactUs({padding}) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -87,7 +87,7 @@ function ContactUs() {
   };
 
   return (
-    <div className='lg:px-24 px-4 lg:py-32 py-12 gap-6 flex flex-col md:flex-row items-center  justify-around' style={{backgroundImage: "url(/map.png)"}}>
+    <div className={`${padding} lg:py-32 py-12 gap-6 flex flex-col md:flex-row items-center  justify-between`} style={{backgroundImage: "url(/map.png)"}}>
       <form onSubmit={handleSubmit} className='bg-white  shadow-xl py-32 px-16 space-y-6'>
         <h2 className='lg:text-4xl text-3xl font-bold'>Ask us Anything</h2>
         

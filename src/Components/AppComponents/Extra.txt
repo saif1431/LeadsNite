@@ -1,0 +1,153 @@
+<div className="min-h-screen bg-gray-50 py-12 px-4">
+      <div className="max-w-6xl mx-auto">
+        {/* Title */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold text-gray-800 italic underline">FOR APP DESIGNS</h1>
+        </div>
+
+        {/* Flowchart Container */}
+        <div className="relative">
+          {/* Research Card */}
+          <div className="lg:absolute top-0 left-0">
+            <div className="bg-emerald-400 rounded-2xl p-6 w-72 h-48 text-white">
+              <div className="text-sm mb-4 opacity-90">Analyzed the market, competitors, and user needs.</div>
+              <h2 className="text-3xl font-bold">Research</h2>
+            </div>
+            {/* 2 Days Badge */}
+            <div className="lg:absolute -bottom-4 left-8">
+              <div className="bg-teal-300 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">2 Days</div>
+            </div>
+          </div>
+
+          {/* Arrow from Research to User Flow */}
+          <div className="lg:absolute top-64 left-44">
+            <svg width="120" height="80" className="text-gray-400 rotate-180">
+              <path
+                d="M 10 10 Q 60 10 110 60"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+                markerEnd="url(#arrowhead)"
+              />
+              <defs>
+                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
+                </marker>
+              </defs>
+            </svg>
+          </div>
+
+          {/* UI Design Card */}
+          <div className="lg:absolute top-0 left-[55%]">
+            <div className="bg-sky-400 rounded-2xl p-6 w-72 h-48 text-white">
+              <div className="text-sm mb-4 opacity-90">
+                Developed the visual style, color palette, typography, and interactive components.
+              </div>
+              <h2 className="text-3xl font-bold">UI Design</h2>
+            </div>
+            {/* 2 Days Badge */}
+            <div className="absolute -bottom-4 right-8">
+              <div className="bg-sky-300 text-sky-800 px-3 py-1 rounded-full text-sm font-medium">2 Days</div>
+            </div>
+          </div>
+
+          {/* Arrow from UI Design to User Flow */}
+          <div className="lg:absolute top-40 left-[45%]">
+            <svg width="120" height="80" className="text-gray-400">
+              <path
+                d="M 110 10 Q 60 10 10 60"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+                markerEnd="url(#arrowhead2)"
+              />
+              <defs>
+                <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
+                </marker>
+              </defs>
+            </svg>
+          </div>
+
+          {/* User Flow & Wireframes Card */}
+          <div className="lg:absolute lg:top-64 lg:left-[40%] lg:transform lg:-translate-x-1/2">
+            <div className="bg-indigo-600 rounded-2xl p-6 w-72 h-48 text-white">
+              <div className="text-sm mb-4 opacity-90">
+                Mapped out the user journey and created low-fidelity wireframes.
+              </div>
+              <h2 className="text-3xl font-bold leading-tight">
+                User Flow &<br />
+                Wireframes
+              </h2>
+            </div>
+          </div>
+
+          {/* Arrow from User Flow to Prototyping */}
+          <div className="lg:absolute top-40 right-22">
+            <svg width="140" height="100" className="text-gray-400">
+              <path
+                d="M 10 10 Q 70 10 130 80"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+                markerEnd="url(#arrowhead3)"
+              />
+              <defs>
+                <marker id="arrowhead3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
+                </marker>
+              </defs>
+            </svg>
+            {/* 3 Days Badge */}
+            <div className="absolute top-8 left-16">
+              <div className="bg-teal-300 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">3 Days</div>
+            </div>
+          </div>
+
+          {/* Prototyping Card */}
+          <div className="lg:absolute top-64 right-0">
+            <div className="bg-gray-800 rounded-2xl p-6 w-72 h-48 text-white">
+              <div className="text-sm mb-4 opacity-90">
+                Built an interactive prototype in Figma for demonstration and testing.
+              </div>
+              <h2 className="text-3xl font-bold">Prototyping</h2>
+            </div>
+          </div>
+
+          {/* Arrow from Prototyping to Testing */}
+          <div className="lg:absolute top-[400px] right-72">
+            <svg width="140" height="100" className="text-gray-400">
+              <path
+                d="M 130 10 Q 70 10 10 80"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+                markerEnd="url(#arrowhead4)"
+              />
+              <defs>
+                <marker id="arrowhead4" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
+                </marker>
+              </defs>
+            </svg>
+            {/* Final Badge */}
+            <div className="absolute top-8 right-16">
+              <div className="bg-teal-300 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">Final</div>
+            </div>
+          </div>
+
+          {/* Testing & Feedback Card */}
+          <div className="lg:absolute top-[500px] left-[55%]">
+            <div className="bg-emerald-600 rounded-2xl p-6 w-80 h-48 text-white">
+              <div className="text-sm mb-4 opacity-90">
+                Conducted user testing and improved the design based on insights.
+              </div>
+              <h2 className="text-3xl font-bold leading-tight">
+                Testing &<br />
+                Feedback
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
