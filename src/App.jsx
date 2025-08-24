@@ -12,14 +12,11 @@ import DigitalServices from './Components/ServiceComponents/DigitalServices/Digi
 import ScrollHover from './ResuseableComponents/ScrollHover'
 import ContactUs from './pages/ContactUs'
 import Navbar from './ResuseableComponents/Navbar'
-import ProjectNavbar from './ResuseableComponents/ProjectNavbar'
 import Footer from './ResuseableComponents/Footer'
-import { useLocation } from 'react-router-dom'
 import AppDevelopmentPage from './pages/AppDevelopmentPage'
 import WebDevelopmentPage from './pages/WebDevelopmentPage'
 import MlPage from './pages/MlPage'
 import ProjectDetail from './Components/AppComponents/ProjectDetail'
-import ShowProject from './pages/ShowProject'
 import WebCardDetail from './Components/WebComponent/WebCardDetail'
 
 
