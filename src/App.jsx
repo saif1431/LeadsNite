@@ -18,6 +18,7 @@ import WebDevelopmentPage from './pages/WebDevelopmentPage'
 import MlPage from './pages/MlPage'
 import ProjectDetail from './Components/AppComponents/ProjectDetail'
 import WebCardDetail from './Components/WebComponent/WebCardDetail'
+import ShowProject from './pages/ShowProject'
 
 
 function App() {
