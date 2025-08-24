@@ -6,7 +6,7 @@ import MobileApps from "../TechnologiesComponent/MobileApps";
 import AppDesignFlowchart from "../AppComponents/AppDesignFlowchart";
 import AppFeatures from "../AppComponents/AppFeatures";
 import ContactUs from "../../pages/ContactUs";
-function ProjectDetail() {
+function WebCardDetail() {
   const { id } = useParams();
   const project = allProjects.find((p) => p.id === parseInt(id));
 
@@ -69,4 +69,6 @@ function ProjectDetail() {
   );
 }
 
-export default ProjectDetail;
+
+
+export default WebCardDetail;

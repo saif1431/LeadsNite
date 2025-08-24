@@ -36,7 +36,7 @@ function AppFeatures() {
       </div>
 </div>
       </div>
-      <div className='lg:w-[50%] bg-gray-300 p-2 rounded-lg w-full'>
+      <div className='lg:w-[50%] bg-gray-200 p-2 rounded-lg w-full'>
 <img className='rounded-lg w-full' src="https://plus.unsplash.com/premium_photo-1721080251127-76315300cc5c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fEFwcCUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww" alt="" />
       </div>
     </div>
