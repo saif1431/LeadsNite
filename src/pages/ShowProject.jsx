@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import WebCard from '../Components/ShowProjectComponents/webCard';
+import WebCard from '../Components/ShowProjectComponents/WebCard';
 import AppCard from '../Components/ShowProjectComponents/AppCard';
 import MlCard from '../Components/ShowProjectComponents/MlCard';
 
 function ShowProject() {
   const [activeTab, setActiveTab] = useState('website');
-
-  
 
   return (
     <div className='lg:px-38 px-4 md:px-20 lg:py-18 py-4'>
