@@ -20,7 +20,7 @@ function MlCard() {
   };
 
   return (
-    <div className="p-6">
+    <div className="">
       {/* Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {allCards.slice(0, visible).map((card) => (
@@ -28,7 +28,7 @@ function MlCard() {
             key={card.id}
             onClick={() => {
               window.scrollTo(0, 0); // top pe scroll
-              navigate(`/projects/${card.id}`); // id ke sath navigate
+              navigate(`/ml-projects/${card.id}`); // id ke sath navigate
             }}
             className="cursor-pointer bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition"
           >

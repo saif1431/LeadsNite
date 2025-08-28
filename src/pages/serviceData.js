@@ -18,9 +18,14 @@ export const webData = {
   challenges: "SEO optimization, performance",
   solution: "SSR, caching strategies",
   cta: "Start your web project today!",
-  relatedProjects: [
-    { id: 1, title: "Portfolio Website", image: "/images/web1.png" },
-    { id: 2, title: "Business Dashboard", image: "/images/web2.png" },
+   relatedProjects: [
+    { id: 8, title: "Corporate Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-1.png" },
+    { id: 9, title: "Food Delivery Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
+    { id: 10, title: "LMS Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
+    { id: 11, title: "Education Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
+    { id: 12, title: "Blogging Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
+    { id: 13, title: "Blogging Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
+    { id: 14, title: "Blogging Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
   ],
 };
 
@@ -295,8 +300,8 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     solution: "Next.js static site generation, optimized images",
     cta: "Build your portfolio website today!",
     relatedProjects: [
-      { id: 9, title: "E-learning Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px.png" },
-      { id: 10, title: "Corporate Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px.jpg" },
+      { id: 1, title: "E-learning Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px.jpg" },
+      { id: 2, title: "Corporate Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px.jpg" },
     ],
   },
   {
@@ -467,6 +472,209 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
       { id: 16, title: "Healthcare Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px.png" },
     ],
   },
-  
+  // Add after id: 14
+{
+  id: 15,
+  category: "ML",
+  hero: {
+    title: "Healthcare Prediction System",
+    subtitle:
+      "AI-driven healthcare app that predicts potential diseases using patient history and medical data, providing preventive care recommendations.",
+    image:
+      "/mlImage/1.png",
+  },
+  overview: {
+    heading1: "Predictive analytics for patient health monitoring.",
+    heading2: "Integrated with EHR systems for seamless diagnosis support.",
+    projectTitle: ["AI", "Machine Learning", "Healthcare"],
+    location: "Boston, USA",
+    project: "MediAI",
+    category: "Healthcare",
+    designBy: "AI Innovators",
+    Date: "12 Sep 2024",
+  },
+  challenges: "Handling sensitive patient data, accuracy in predictions",
+  solution: "HIPAA-compliant cloud storage, deep learning models",
+  cta: "Revolutionize healthcare with AI!",
+  relatedProjects: [
+    { id: 16, title: "Finance Fraud Detection", image: "https://leadsnite.com/wp-content/uploads/2025/07/finance-ml.png" },
+    { id: 17, title: "Retail Recommendation Engine", image: "https://leadsnite.com/wp-content/uploads/2025/07/retail-ml.png" },
+  ],
+},
+
+{
+  id: 16,
+  category: "ML",
+  hero: {
+    title: "Finance Fraud Detection",
+    subtitle:
+      "A fraud detection system that identifies suspicious transactions in real-time using ML algorithms.",
+    image:
+      "/mlImage/2.png",
+  },
+  overview: {
+    heading1: "Secure financial transactions with anomaly detection.",
+    heading2: "Real-time alerts for fraud prevention.",
+    projectTitle: ["Finance", "AI", "Fraud Detection"],
+    location: "New York, USA",
+    project: "SafePay",
+    category: "Finance",
+    designBy: "DataSec AI",
+    Date: "20 Oct 2024",
+  },
+  challenges: "False positives, real-time performance",
+  solution: "Ensemble models with stream processing",
+  cta: "Protect your customers from fraud with AI!",
+  relatedProjects: [
+    { id: 15, title: "Healthcare Prediction System", image: "https://leadsnite.com/wp-content/uploads/2025/07/healthcare-ml.png" },
+    { id: 18, title: "Autonomous Driving System", image: "https://leadsnite.com/wp-content/uploads/2025/07/autonomous-ml.png" },
+  ],
+},
+
+{
+  id: 17,
+  category: "ML",
+  hero: {
+    title: "Retail Recommendation Engine",
+    subtitle:
+      "Personalized product recommendation engine for e-commerce platforms using collaborative filtering and deep learning.",
+    image:
+      "/mlImage/3.png",
+  },
+  overview: {
+    heading1: "Increase sales with tailored recommendations.",
+    heading2: "Analyzes user behavior and purchase history.",
+    projectTitle: ["E-commerce", "AI", "Personalization"],
+    location: "Berlin, Germany",
+    project: "SmartCart",
+    category: "Retail",
+    designBy: "Retail AI Labs",
+    Date: "2 Nov 2024",
+  },
+  challenges: "Cold start problem, handling large-scale data",
+  solution: "Hybrid ML models, real-time data pipelines",
+  cta: "Boost your e-commerce sales with AI recommendations!",
+  relatedProjects: [
+    { id: 15, title: "Healthcare Prediction System", image: "https://leadsnite.com/wp-content/uploads/2025/07/healthcare-ml.png" },
+    { id: 19, title: "Smart Agriculture Monitoring", image: "https://leadsnite.com/wp-content/uploads/2025/07/agriculture-ml.png" },
+  ],
+},
+
+{
+  id: 18,
+  category: "ML",
+  hero: {
+    title: "Autonomous Driving System",
+    subtitle:
+      "Self-driving car software using deep learning for object detection, lane recognition, and real-time decision making.",
+    image:
+      "/mlImage/4.png",
+  },
+  overview: {
+    heading1: "AI-powered mobility for autonomous navigation.",
+    heading2: "Integrated with Lidar, Radar, and camera systems.",
+    projectTitle: ["AI", "Autonomous Cars", "Deep Learning"],
+    location: "Tokyo, Japan",
+    project: "DriveAI",
+    category: "Automotive",
+    designBy: "Mobility AI",
+    Date: "15 Dec 2024",
+  },
+  challenges: "Safety, real-time object detection",
+  solution: "YOLOv8 + reinforcement learning models",
+  cta: "Transform transportation with AI-powered cars!",
+  relatedProjects: [
+    { id: 16, title: "Finance Fraud Detection", image: "https://leadsnite.com/wp-content/uploads/2025/07/finance-ml.png" },
+    { id: 20, title: "AI Chatbot Assistant", image: "https://leadsnite.com/wp-content/uploads/2025/07/chatbot-ml.png" },
+  ],
+},
+
+{
+  id: 19,
+  category: "ML",
+  hero: {
+    title: "Smart Agriculture Monitoring",
+    subtitle:
+      "AI-based agriculture solution that predicts crop yield, detects plant diseases, and optimizes irrigation.",
+    image:
+      "/mlImage/5.png",
+  },
+  overview: {
+    heading1: "Enhance farming with AI predictions.",
+    heading2: "Supports drone-based crop monitoring.",
+    projectTitle: ["Agriculture", "AI", "IoT"],
+    location: "Sydney, Australia",
+    project: "AgriAI",
+    category: "Agriculture",
+    designBy: "GreenTech AI",
+    Date: "5 Jan 2025",
+  },
+  challenges: "Data collection in rural areas, accuracy in plant disease detection",
+  solution: "Computer vision with CNNs, IoT-based data sensors",
+  cta: "Empower farmers with AI-driven agriculture!",
+  relatedProjects: [
+    { id: 17, title: "Retail Recommendation Engine", image: "https://leadsnite.com/wp-content/uploads/2025/07/retail-ml.png" },
+    { id: 21, title: "AI Energy Optimization", image: "https://leadsnite.com/wp-content/uploads/2025/07/energy-ml.png" },
+  ],
+},
+
+{
+  id: 20,
+  category: "ML",
+  hero: {
+    title: "AI Chatbot Assistant",
+    subtitle:
+      "Conversational AI chatbot for businesses to automate customer support and lead generation.",
+    image:
+      "/mlImage/6.png",
+  },
+  overview: {
+    heading1: "Automate support with natural language understanding.",
+    heading2: "Supports multiple languages and platforms.",
+    projectTitle: ["AI", "NLP", "Chatbots"],
+    location: "San Francisco, USA",
+    project: "ChatX",
+    category: "Customer Service",
+    designBy: "BotWorks",
+    Date: "25 Jan 2025",
+  },
+  challenges: "Context switching, multi-language support",
+  solution: "Transformer models, RAG-based retrieval systems",
+  cta: "Reduce costs with AI-powered chatbots!",
+  relatedProjects: [
+    { id: 18, title: "Autonomous Driving System", image: "https://leadsnite.com/wp-content/uploads/2025/07/autonomous-ml.png" },
+    { id: 21, title: "AI Energy Optimization", image: "https://leadsnite.com/wp-content/uploads/2025/07/energy-ml.png" },
+  ],
+},
+
+{
+  id: 21,
+  category: "ML",
+  hero: {
+    title: "AI Energy Optimization",
+    subtitle:
+      "Machine learning system that optimizes energy consumption in smart cities and industries.",
+    image:
+      "/mlImage/7.png",
+  },
+  overview: {
+    heading1: "Reduce energy waste with predictive AI.",
+    heading2: "Integrates with IoT-based smart meters.",
+    projectTitle: ["AI", "Energy", "IoT"],
+    location: "Dubai, UAE",
+    project: "SmartGridAI",
+    category: "Energy",
+    designBy: "Eco AI Solutions",
+    Date: "12 Feb 2025",
+  },
+  challenges: "Real-time optimization, large-scale IoT data",
+  solution: "Reinforcement learning + cloud edge computing",
+  cta: "Make your city smarter with AI energy solutions!",
+  relatedProjects: [
+    { id: 19, title: "Smart Agriculture Monitoring", image: "https://leadsnite.com/wp-content/uploads/2025/07/agriculture-ml.png" },
+    { id: 20, title: "AI Chatbot Assistant", image: "https://leadsnite.com/wp-content/uploads/2025/07/chatbot-ml.png" },
+  ],
+},
+
 ];
 

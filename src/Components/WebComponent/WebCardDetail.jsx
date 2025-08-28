@@ -1,11 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { allProjects ,appData } from "./../../pages/serviceData";
+import { allProjects , webData } from "./../../pages/serviceData";
 import RelatedProject from "../AppComponents/RelatedProject";
 import MobileApps from "../TechnologiesComponent/MobileApps";
 import AppDesignFlowchart from "../AppComponents/AppDesignFlowchart";
-import AppFeatures from "../AppComponents/AppFeatures";
 import ContactUs from "../../pages/ContactUs";
+import ScrollImageBoxGrid from "../../ResuseableComponents/ScrollHover";
 function WebCardDetail() {
   const { id } = useParams();
   const project = allProjects.find((p) => p.id === parseInt(id));
@@ -60,10 +60,11 @@ function WebCardDetail() {
           <MobileApps/>
         </div>
       </div>
-      <AppDesignFlowchart/>
-      <AppFeatures/>
+      <ScrollImageBoxGrid/>
+        <AppDesignFlowchart/>
+
       <ContactUs padding="lg:px-0 px-0" />
-      <RelatedProject data={appData}/>
+      <RelatedProject data={webData}/>
       
     </div>
   );

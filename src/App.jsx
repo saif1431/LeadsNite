@@ -19,6 +19,7 @@ import MlPage from './pages/MlPage'
 import ProjectDetail from './Components/AppComponents/ProjectDetail'
 import WebCardDetail from './Components/WebComponent/WebCardDetail'
 import ShowProject from './pages/ShowProject'
+import MlProjectDetail from './Components/MlComponent/MlProjectDetail'
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path="/machine-learning" element={<MlPage />} />
         <Route path="/app-projects/:id" element={<ProjectDetail />} />
         <Route path="/web-projects/:id" element={<WebCardDetail />} />
+        <Route path="/ml-projects/:id" element={<MlProjectDetail />} />
         </Routes>
       <Footer/>
     </BrowserRouter>

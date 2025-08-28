@@ -3,9 +3,10 @@ import { useParams } from "react-router-dom";
 import { allProjects ,appData } from "./../../pages/serviceData";
 import RelatedProject from "../AppComponents/RelatedProject";
 import MobileApps from "../TechnologiesComponent/MobileApps";
-import AppFeatures from "../AppComponents/AppFeatures";
 import ContactUs from "../../pages/ContactUs";
-function ProjectDetail() {
+import Template1 from "./Template1";
+import AppDesignFlowchart from "../AppComponents/AppDesignFlowchart";
+function MlProjectDetail() {
   const { id } = useParams();
   const project = allProjects.find((p) => p.id === parseInt(id));
 
@@ -14,14 +15,14 @@ function ProjectDetail() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto py-18 ">
+    <div className="px-4  lg:px-48 md:px-20 py-18 ">
       {/* Hero */}
      <section className=" flex flex-col lg:flex-row items-start lg:justify-between   lg:gap-22 gap-4">
-      <div className="lg:w-[30%] w-full space-y-4"> 
+      <div className="lg:w-[35%] w-full space-y-4"> 
               <h1 className="lg:text-4xl text-3xl leading-tight font-bold">{project.hero.title}</h1>
         <p className="text-lg text-primary text-justify">{project.hero.subtitle}</p>
       </div>
-     <div className="lg:w-[70%] w-full bg-gray-200 p-2 rounded-md">
+     <div className="lg:w-[65%] w-full bg-gray-200 p-2 rounded-md">
          <img className="rounded-md h-[600px] object-cover w-full" src={project.hero.image} alt={project.hero.title} />
 
      </div>
@@ -51,7 +52,9 @@ function ProjectDetail() {
          </div>
        </div>
       </section>
-
+<div className="w-full mt-12 h-screen">
+     <img className="object-cover w-full h-full rounded-lg" src="https://plus.unsplash.com/premium_photo-1682124651258-410b25fa9dc0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TWFjaGluZSUyMExlYXJuaW5nfGVufDB8fDB8fHww" alt="" />
+</div>
 
 <div className="bg-secondary py-3 rounded-lg space-y-8 mt-12">
         <h2 className="text-2xl font-bold text-center">Technology Used</h2>
@@ -59,8 +62,8 @@ function ProjectDetail() {
           <MobileApps/>
         </div>
       </div>
-    
-      <AppFeatures/>
+    <Template1/>
+
       <ContactUs padding="lg:px-0 px-0" />
       <RelatedProject data={appData}/>
       
@@ -68,4 +71,4 @@ function ProjectDetail() {
   );
 }
 
-export default ProjectDetail;
+export default MlProjectDetail

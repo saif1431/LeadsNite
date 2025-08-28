@@ -18,7 +18,7 @@ function AppCard() {
   };
 
   return (
-    <div className="p-6">
+    <div className="">
       {/* Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {allCards.slice(0, visible).map((card) => (
