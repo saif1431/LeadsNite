@@ -1,6 +1,6 @@
 export default function Template1() {
   return (
-    <div className=" lg:py-12  mt-12">
+    <div className=" lg:py-12  mt-20">
       <div className="">
 
 

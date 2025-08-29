@@ -63,7 +63,7 @@ const testimonials = [
 
 function AboutTestimonial() {
   return (
-    <div className='lg:px-24 px-4 py-24 flex items-start justify-around flex-col lg:flex-row'>
+    <div className='lg:px-24 px-4 py-24 flex items-center justify-around flex-col lg:flex-row'>
       <div className='lg:w-[25%] w-full mb-8 lg:mb-0'>
         <img src={img} alt="Testimonial illustration" className='w-full' />
       </div>

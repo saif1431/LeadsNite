@@ -56,13 +56,11 @@ const ScrollImageBoxGrid = () => {
     { id: 1, image: "/landingpage.png", title: "The Huddle" },
     { id: 2, image: "/landingpage.png", title: "The Huddle" },
     { id: 3, image: "/landingpage.png", title: "The Huddle" },
-    { id: 4, image: "/landingpage.png", title: "The Huddle" },
-    { id: 5, image: "/landingpage.png", title: "The Huddle" },
-    { id: 6, image: "/landingpage.png", title: "The Huddle" },
+
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 p-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 p-6 mt-20">
       {dummyCards.map((card) => (
         <ScrollImageCard key={card.id} image={card.image} title={card.title} />
       ))}

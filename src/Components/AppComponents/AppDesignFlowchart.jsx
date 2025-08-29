@@ -3,8 +3,8 @@ import mobImage from '/app/mob.png'
 
 export default function AppDesignFlowchart() {
   return (
-    <div className='mt-12 lg:w-[90%] w-full'>
-      <div className='hidden lg:block'>
+    <div className='mt-20 lg:w-[80%] mx-auto w-full'>
+      <div className='hidden   lg:block'>
         <img src={pcImage} alt="" />
       </div>
       <div className='lg:hidden block'>

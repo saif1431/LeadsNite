@@ -14,7 +14,7 @@ function ProjectDetail() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto py-18 ">
+    <div className="max-w-7xl mx-auto lg:py-12 px-2 ">
       {/* Hero */}
      <section className=" flex flex-col lg:flex-row items-start lg:justify-between   lg:gap-22 gap-4">
       <div className="lg:w-[30%] w-full space-y-4"> 
@@ -29,7 +29,7 @@ function ProjectDetail() {
 
 
       {/* Overview */}
-      <section className="flex flex-col lg:flex-row items-start  lg:gap-12 justify-between gap-4 mt-12">
+      <section className="flex flex-col lg:flex-row items-start  lg:gap-12 justify-between gap-4 mt-20">
        <div className="lg:w-[50%] w-full space-y-4 ">
             <h2 className="text-2xl font-bold">OverView</h2>
             <p className="lg:w-[70%] w-full text-lg text-primary">{project.overview.heading1}</p>
@@ -53,7 +53,7 @@ function ProjectDetail() {
       </section>
 
 
-<div className="bg-secondary py-3 rounded-lg space-y-8 mt-12">
+<div className="bg-secondary py-3 rounded-lg space-y-8 mt-20">
         <h2 className="text-2xl font-bold text-center">Technology Used</h2>
         <div>
           <MobileApps/>
