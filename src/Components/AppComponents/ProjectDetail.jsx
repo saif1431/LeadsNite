@@ -17,7 +17,7 @@ function ProjectDetail() {
     <div className="max-w-7xl mx-auto lg:py-12 px-2 ">
       {/* Hero */}
      <section className=" flex flex-col lg:flex-row items-start lg:justify-between   lg:gap-22 gap-4">
-      <div className="lg:w-[30%] w-full space-y-4"> 
+      <div className="lg:w-[30%] h-[620px]  bg-red-400  w-full space-y-4"> 
               <h1 className="lg:text-4xl text-3xl leading-tight font-bold">{project.hero.title}</h1>
         <p className="text-lg text-primary text-justify">{project.hero.subtitle}</p>
       </div>
@@ -26,6 +26,7 @@ function ProjectDetail() {
 
      </div>
       </section>
+
 
 
       {/* Overview */}
