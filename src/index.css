@@ -191,3 +191,14 @@ p{
   background-color: red;
   width: 10px;
 }
+
+
+
+@media screen and (max-width: 1024px) {
+  
+
+.swiper-button-prev:after, .swiper-button-next:after{
+  display: none !important;
+}
+
+}

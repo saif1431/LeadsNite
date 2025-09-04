@@ -5,7 +5,10 @@ import { CiSettings } from "react-icons/ci";
 
 function AppFeatures() {
   return (
-    <div className='mt-20 flex items-center justify-between gap-12 flex-col lg:flex-row'>
+      <div className='mt-20'>
+           <h2 className='text-2xl text-center font-bold'>Key Features</h2>
+
+    <div className='mt-12 flex items-center justify-between gap-12 flex-col lg:flex-row'>
       <div className='lg:w-[50%] w-full'>
 <h2 className='text-xl font-bold'>Carefully executed features</h2>
 <div className='flex items-center space-x-4 mt-6'>
@@ -39,6 +42,8 @@ function AppFeatures() {
       <div className='lg:w-[50%] bg-gray-200 p-2 rounded-lg w-full'>
 <img className='rounded-lg w-full' src="https://plus.unsplash.com/premium_photo-1721080251127-76315300cc5c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fEFwcCUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww" alt="" />
       </div>
+    </div>
+
     </div>
   )
 }

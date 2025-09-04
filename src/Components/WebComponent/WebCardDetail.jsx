@@ -15,15 +15,15 @@ function WebCardDetail() {
   }
 
   return (
-    <div className="lg:max-w-7xl mx-auto lg:py-12 px-4 ">
+    <div className="lg:px-38 px-6 md:px-20 lg:py-18 py-4   ">
       {/* Hero */}
      <section className=" flex flex-col lg:flex-row items-start lg:justify-between   lg:gap-22 gap-4">
-      <div className="lg:w-[35%] h-[620px] w-full space-y-4"> 
-              <h1 className="lg:text-4xl text-3xl leading-tight font-bold">{project.hero.title}</h1>
+      <div className="lg:w-[25%] h-[550px] overflow-hidden  w-full space-y-4"> 
+              <h1 className="lg:text-3xl  text-2xl leading-tight font-bold">{project.hero.title}</h1>
         <p className="text-lg text-primary text-justify">{project.hero.subtitle}</p>
       </div>
-     <div className="lg:w-[65%] w-full bg-gray-200 p-2 rounded-md">
-         <img className="rounded-md h-[600px] object-cover w-full" src={project.hero.image} alt={project.hero.title} />
+     <div className="lg:w-[75%] w-full bg-gray-200 p-2 rounded-md">
+         <img className="rounded-md h-[530px] object-cover w-full" src={project.hero.image} alt={project.hero.title} />
 
      </div>
       </section>
@@ -38,9 +38,9 @@ function WebCardDetail() {
        </div>
        <div className="lg:w-[50%] w-full space-y-4">
             <h2 className="text-2xl font-bold">Project</h2>
-         <ul className="space-y-2 grid grid-cols-2 lg:grid-cols-4 gap-4">
+         <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
            {project.overview.projectTitle.map((title, i) => (
-             <li className=" border border-gray-600  py-3 px-3 rounded-full text-center font-semibold" key={i}>{title}</li>
+             <li style={{borderRadius: "9999px"}} className=" btn  py-3 px-3 rounded-full text-center font-semibold" key={i}>{title}</li>
            ))}
          </ul>
          <div className="space-y-2 mt-8">

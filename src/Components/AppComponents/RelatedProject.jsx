@@ -16,11 +16,11 @@ function RelatedProject({ data }) {
 
       <div className="relative ">
         {/* Custom Navigation Arrows */}
-        <div className="swiper-button-prev  absolute flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
-       
+        <div className="swiper-button-prev  hidden lg:flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
+
         </div>
 
-        <div className="swiper-button-next absolute  flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
+        <div className="swiper-button-next  hidden lg:flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
 
         </div>
 
@@ -32,28 +32,34 @@ function RelatedProject({ data }) {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           }}
+          autoplay={{
+            delay: 2500, // 2.5 seconds
+            disableOnInteraction: false,
+          }}
           breakpoints={{
-            640: {
-              slidesPerView: 2,
+            320: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 1,
             },
             1024: {
               slidesPerView: 3,
             },
           }}
-          className="mySwiper"
+          className="mySwiper  h-[600px]"
         >
           {data.relatedProjects.map((relatedProject) => (
             <SwiperSlide key={relatedProject.id}>
-              <div className="flex flex-col rounded-md items-start shadow-xl  py-12 gap-4 ">
+              <div className="flex flex-col rounded-xl items-start shadow-lg py-6 gap-4 h-[550px]"> {/* Reduced py-12 to py-6 */}
                 <img
                   className="rounded-md w-full object-cover"
                   src={relatedProject.image || "/placeholder.svg"}
                   alt={relatedProject.title}
+                  style={{ height: "350px", objectFit: "cover" }} // Set a fixed height for images
                 />
-                <div className="px-6 space-y-4">
+                <div className="px-6 space-y-4 w-full">
                   <h3 className="text-2xl font-semibold">{relatedProject.title}</h3>
-
-                  {/* Project Detail Link */}
                   <button
                     className="btn font-semibold"
                     onClick={() => {

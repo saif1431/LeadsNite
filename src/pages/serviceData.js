@@ -2,7 +2,7 @@
 export const webData = {
   hero: {
     title: "Ai Power Scrum Master Assistant With Open Ai Stack and Asana integration",
-    subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere,",
+    subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt . Lorem ipsum dolor sit amet consectetur",
     image: "https://images.unsplash.com/photo-1561736778-92e52a7769ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww",
   },
   overview: {
@@ -32,7 +32,7 @@ export const webData = {
 export const appData = {
   hero: {
     title: "Ai Power Scrum Master Assistant With Open Ai Stack and Asana integration",
-    subtitle: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere,",
+    subtitle: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt . Lorem ipsum dolor sit amet consectetur",
     image: "https://images.unsplash.com/photo-1561736778-92e52a7769ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww",
   },
   overview: {
@@ -89,7 +89,7 @@ export const allProjects = [
     hero: {
       title: "E-commerce App ",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere,",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt . Lorem ipsum dolor sit amet consectetur",
       image:
         "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-1.png",
     },
@@ -130,7 +130,7 @@ export const allProjects = [
     hero: {
       title: "Food Delivery App ",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere,",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt . Lorem ipsum dolor sit amet consectetur ",
       image:
         "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg",
     },
@@ -168,7 +168,7 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     hero: {
       title: "LMS App ",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere,",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt . Lorem ipsum dolor sit amet consectetur",
       image:
         "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg",
     },
@@ -206,7 +206,7 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     hero: {
       title: "Education App ",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere,",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt . Lorem ipsum dolor sit amet consectetur",
       image:
         "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg",
     },
@@ -244,7 +244,7 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     hero: {
       title: "Blogging App ",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere,",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt . Lorem ipsum dolor sit amet consectetur",
       image:
         "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg",
     },
@@ -282,7 +282,7 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     hero: {
       title: "Portfolio Website",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere,",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt . Lorem ipsum dolor sit amet consectetur",
       image:
         "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px.jpg",
     },
@@ -310,7 +310,7 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     hero: {
       title: "E-learning Website",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere,",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt . Lorem ipsum dolor sit amet consectetur",
       image:
         "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px.png",
     },
@@ -338,7 +338,7 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     hero: {
       title: "Corporate Website",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Conseqauatur atque dolores officiis porro saepe facere,",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt.",
       image:
         "https://leadsnite.com/wp-content/uploads/2024/02/4.-Web-Casestudy-768x640.png",
     },
@@ -366,7 +366,7 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     hero: {
       title: "E-commerce Website",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Conseqauatur atque dolores officiis porro saepe facere,",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt.",
       image:
         "https://leadsnite.com/wp-content/uploads/2024/02/3.-Web-Casestudy-768x640.png",
     },
@@ -394,7 +394,7 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     hero: {
       title: "Real Estate Website",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Conseqauatur atque dolores officiis porro saepe facere,",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt .",
       image:
         "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px.png",
     },
@@ -422,7 +422,7 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     hero: {
       title: "News Portal Website",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Conseqauatur atque dolores officiis porro saepe facere,",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt . ",
       image:
         "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px.jpg",
     },
@@ -450,7 +450,7 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     hero: {
       title: "Travel Website",
       subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Conseqauatur atque dolores officiis porro saepe facere,",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt ",
       image:
         "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px.png",
     },
@@ -479,7 +479,7 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
   hero: {
     title: "Healthcare Prediction System",
     subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? onsequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Conseqauatur atque dolores officiis porro saepe facere,",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, enim quis? Consequatur atque dolores officiis porro saepe facere, vitae deserunt ",
     image:
       "/mlImage/1.png",
   },
