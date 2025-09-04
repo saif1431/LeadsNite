@@ -11,10 +11,12 @@ import Technologies from '../Components/HomeComponents/Technologies '
 import ClientCount from '../Components/HomeComponents/ClientCount'
 import LatestProject from '../Components/HomeComponents/LatestProject'
 import TrustedReview from '../Components/HomeComponents/TrustedReview'
+import SplashCursor from '../Components/HomeComponents/SplashCursor'
 
 function HomePage() {
   return (
     <div>
+      <SplashCursor/>
 <HeroSection/>
 <BrandLogos/>
 <ServicesGrid/>
