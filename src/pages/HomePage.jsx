@@ -16,7 +16,7 @@ import SplashCursor from '../Components/HomeComponents/SplashCursor'
 function HomePage() {
   return (
     <div>
-      <SplashCursor/>
+      {/* <SplashCursor/> */}
 <HeroSection/>
 <BrandLogos/>
 <ServicesGrid/>
