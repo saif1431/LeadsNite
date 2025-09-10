@@ -4,8 +4,8 @@ import { allProjects ,appData } from "./../../pages/serviceData";
 import RelatedProject from "../AppComponents/RelatedProject";
 import MobileApps from "../TechnologiesComponent/MobileApps";
 import ContactUs from "../../pages/ContactUs";
-import Template1 from "./Template1";
 import AppDesignFlowchart from "../AppComponents/AppDesignFlowchart";
+import ChallengesSolutions from "./ChallengesSolutions";
 function MlProjectDetail() {
   const { id } = useParams();
   const project = allProjects.find((p) => p.id === parseInt(id));
@@ -62,7 +62,7 @@ function MlProjectDetail() {
           <MobileApps/>
         </div>
       </div>
-    <Template1/>
+    <ChallengesSolutions/>
 
       <ContactUs padding="lg:px-0 px-0" />
       <RelatedProject data={appData}/>
