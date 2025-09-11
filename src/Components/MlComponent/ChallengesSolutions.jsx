@@ -82,7 +82,7 @@ const ChallengesSolutions = () => {
         {/* Header */}
         <header className="mb-8 md:mb-12">
           <h2 
-            className="text-2xl text-center text-black md:text-3xl lg:text-4xl font-bold leading-tight mb-2"
+            className="text-2xl text-center text-black lg:text-4xl font-bold leading-tight mb-2"
             // style={{
             //   background: 'linear-gradient(90deg, #7c5cff 0%, #00d4ff 100%)',
             //   WebkitBackgroundClip: 'text',
@@ -92,7 +92,7 @@ const ChallengesSolutions = () => {
           >
             Challenges & Solutions
           </h2>
-          <p className="text-slate-400 text-center141214 text-base">
+          <p className="text-slate-400 text-center text-base">
             Real startup problems—solved with design, code, and data.
           </p>
         </header>

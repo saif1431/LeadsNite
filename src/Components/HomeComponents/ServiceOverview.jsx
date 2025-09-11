@@ -43,7 +43,7 @@ export default function ServiceOverview() {
   return (
     <section className="w-full px-4     lg:px-26 md:px-20 py-28">
       <div className="px-4 max-w-7xl   mx-auto  flex flex-col">
-        <h1 className="text-2xl md:text-5xl font-bold text-center mb-8">Service Overview</h1>
+        <h1 className="lg:text-4xl text-2xl font-bold  text-center mb-8">Service Overview</h1>
 
         <div className="flex-1   relative">
           <Swiper

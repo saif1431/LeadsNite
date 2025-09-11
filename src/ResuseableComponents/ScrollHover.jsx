@@ -61,7 +61,7 @@ const ScrollImageBoxGrid = () => {
 
   return (
    <div className="mt-20">
-    <h2 className="text-center text-2xl font-bold">Page Previews
+    <h2 className="lg:text-4xl text-2xl font-bold text-center">Page Previews
 </h2>
      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 p-6 ">
       {dummyCards.map((card) => (
