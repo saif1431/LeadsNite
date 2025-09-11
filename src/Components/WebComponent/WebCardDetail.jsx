@@ -15,7 +15,7 @@ function WebCardDetail() {
   }
 
   return (
-    <div className="lg:px-38 px-6 md:px-20 lg:py-18 py-4   ">
+    <div className="max-w-7xl mx-auto lg:py-12 px-4 w-full  ">
       {/* Hero */}
      <section className=" flex flex-col lg:flex-row items-start lg:justify-between   lg:gap-22 gap-4">
       <div className="lg:w-[25%] h-[550px] overflow-hidden  w-full space-y-4"> 

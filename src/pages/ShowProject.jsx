@@ -13,7 +13,7 @@ function ShowProject() {
  
     <div className="bg-white w-full flex items-center justify-center    py-12">
   
-      <div className="max-w-7xl mx-auto lg:py-12 px-2 w-full">
+      <div className="max-w-7xl mx-auto lg:py-12 px-4 w-full">
         {/* Header Tabs */}
         <div className="flex lg:items-center lg:justify-end  gap-6 mb-6 flex-wrap text-lg ">
           <button
