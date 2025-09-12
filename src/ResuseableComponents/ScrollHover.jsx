@@ -5,10 +5,12 @@ const ScrollImageCard = ({ image, title }) => {
   const imageContainerRef = useRef(null);
   const scrollInterval = useRef(null);
   const scrollBackInterval = useRef(null);
+  const [isHovered, setIsHovered] = React.useState(false);
 
   const startScrolling = () => {
+    setIsHovered(true);
     const container = imageContainerRef.current;
-    clearInterval(scrollBackInterval.current); // stop upward scroll
+    clearInterval(scrollBackInterval.current);
     scrollInterval.current = setInterval(() => {
       if (
         container.scrollTop + container.clientHeight <
@@ -20,8 +22,9 @@ const ScrollImageCard = ({ image, title }) => {
   };
 
   const stopScrolling = () => {
+    setIsHovered(false);
     const container = imageContainerRef.current;
-    clearInterval(scrollInterval.current); // stop downward scroll
+    clearInterval(scrollInterval.current);
     scrollBackInterval.current = setInterval(() => {
       if (container.scrollTop > 0) {
         container.scrollTop -= 2;
@@ -32,12 +35,29 @@ const ScrollImageCard = ({ image, title }) => {
   };
 
   return (
-    <div className="flex flex-col  items-start">
+    <div className="flex flex-col items-start">
       <div
-        className=" h-[500px] overflow-hidden rounded-lg border-4 border-black mx-auto my-4 cursor-pointer"
+        className="h-[500px] overflow-hidden rounded-lg border-4 border-black mx-auto my-4 cursor-pointer relative"
         onMouseEnter={startScrolling}
         onMouseLeave={stopScrolling}
       >
+
+{/* Overlay */}
+{!isHovered && (
+  <div style={{background: "linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7))"}} className="absolute inset-0  flex flex-col items-center justify-center z-10 ease-in transition-opacity duration-900">
+    <span className="text-white text-xl font-semibold mb-2">Hover and Scroll it</span>
+    <svg
+      className="w-8 h-8 text-white animate-bounce"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </div>
+)}
+
         <div
           ref={imageContainerRef}
           className="w-full h-full overflow-y-scroll scroll-smooth no-scrollbar"
