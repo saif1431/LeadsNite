@@ -32,7 +32,7 @@ const ScrollImageCard = ({ image, title }) => {
   };
 
   return (
-    <div className="flex flex-col items-start">
+    <div className="flex flex-col  items-start">
       <div
         className=" h-[500px] overflow-hidden rounded-lg border-4 border-black mx-auto my-4 cursor-pointer"
         onMouseEnter={startScrolling}
@@ -60,7 +60,7 @@ const ScrollImageBoxGrid = () => {
   ];
 
   return (
-   <div className="mt-20">
+   <div className="mt-28">
     <h2 className="lg:text-4xl text-2xl font-bold text-center">Page Previews
 </h2>
      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 p-6 ">

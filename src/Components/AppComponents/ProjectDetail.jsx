@@ -16,7 +16,7 @@ function ProjectDetail() {
   return (
     <div className="max-w-7xl mx-auto md:px-8 lg:py-12 px-4 w-full  ">
       {/* Hero */}
-     <section className=" flex flex-col lg:flex-row items-start lg:justify-between   lg:gap-16 gap-4">
+     <section className="mt-12 flex flex-col lg:flex-row items-start lg:justify-between   lg:gap-16 gap-4">
       <div className="lg:w-[25%] lg:h-[550px] overflow-hidden  w-full space-y-4"> 
               <h1 className="lg:text-3xl text-2xl leading-tight font-bold">{project.hero.title}</h1>
         <p className="text-lg text-primary text-justify">{project.hero.subtitle}</p>
@@ -30,7 +30,7 @@ function ProjectDetail() {
 
 
       {/* Overview */}
-      <section className="flex flex-col lg:flex-row items-start  lg:gap-12 justify-between gap-4 mt-20">
+      <section className="flex flex-col lg:flex-row items-start  lg:gap-12 justify-between gap-4 mt-28">
        <div className="lg:w-[50%] w-full space-y-4 ">
             <h2 className="text-2xl font-bold">OverView</h2>
             <p className="lg:w-[70%] w-full text-lg text-primary">{project.overview.heading1}</p>
@@ -40,7 +40,7 @@ function ProjectDetail() {
             <h2 className="text-2xl font-bold">Project</h2>
          <ul className=" grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
            {project.overview.projectTitle.map((title, i) => (
-             <li style={{borderRadius: '9999px'}} className=" btn  rounded-full text-center font-semibold" key={i}>{title}</li>
+             <li style={{borderRadius: '9999px'}} className=" btn  rounded-full text-center text-nowrap font-semibold" key={i}>{title}</li>
            ))}
          </ul>
          <div className="space-y-2 mt-8">
@@ -54,7 +54,7 @@ function ProjectDetail() {
       </section>
 
 
-<div className="bg-secondary py-5 rounded-lg space-y-8 mt-20">
+<div className="bg-secondary py-5 rounded-lg space-y-8 mt-24">
         <h2 className="lg:text-4xl text-2xl font-bold text-center">Technology Used</h2>
         <div>
           <MobileApps/>

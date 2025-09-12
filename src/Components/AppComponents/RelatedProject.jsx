@@ -11,7 +11,7 @@ function RelatedProject({ data }) {
 
   return (
     <div 
-    className="mt-12 relative">
+    className="mt-28 relative">
       <h2 className="lg:text-4xl text-2xl mt-6 mb-6 font-bold text-center">Related Projects</h2>
 
       <div className="relative ">

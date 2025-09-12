@@ -17,7 +17,7 @@ function MlProjectDetail() {
   return (
     <div className="max-w-7xl mx-auto lg:py-12 md:px-8 px-4 w-full">
       {/* Hero */}
-     <section className=" flex flex-col lg:flex-row items-start lg:justify-between   lg:gap-16 gap-4">
+     <section className="mt-12 flex flex-col lg:flex-row items-start lg:justify-between   lg:gap-16 gap-4">
       <div className="lg:w-[25%] h-[550px] w-full space-y-4"> 
               <h1 className="lg:text-3xl text-2xl leading-tight font-bold">{project.hero.title}</h1>
         <p className="text-lg text-primary text-justify">{project.hero.subtitle}</p>
@@ -30,7 +30,7 @@ function MlProjectDetail() {
 
 
       {/* Overview */}
-      <section className="flex flex-col lg:flex-row items-start  lg:gap-12 justify-between gap-4 mt-20">
+      <section className="flex flex-col lg:flex-row items-start  lg:gap-12 justify-between gap-4 mt-28">
        <div className="lg:w-[50%] w-full space-y-4 ">
             <h2 className="text-2xl font-bold">OverView</h2>
             <p className="lg:w-[70%] w-full text-lg text-primary">{project.overview.heading1}</p>
@@ -40,7 +40,7 @@ function MlProjectDetail() {
             <h2 className="text-2xl font-bold">Project</h2>
          <ul className=" grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
            {project.overview.projectTitle.map((title, i) => (
-             <li style={{borderRadius: "9999px"}} className=" btn  rounded-full  text-center font-semibold" key={i}>{title}</li>
+             <li  style={{borderRadius: "9999px", }} className=" btn  rounded-full  text-center font-semibold text-nowrap" key={i}>{title}</li>
            ))}
          </ul>
          <div className="space-y-2 mt-8">
@@ -52,11 +52,12 @@ function MlProjectDetail() {
          </div>
        </div>
       </section>
-<div className="w-full mt-20 h-screen">
+<div className="w-full space-y-8 h-[70%] mt-28 ">
+  <h2 className="lg:text-4xl text-2xl font-bold text-center">WorkFlow</h2>
      <img className="object-cover w-full h-full rounded-lg" src="https://plus.unsplash.com/premium_photo-1682124651258-410b25fa9dc0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TWFjaGluZSUyMExlYXJuaW5nfGVufDB8fDB8fHww" alt="" />
 </div>
 
-<div className="bg-secondary py-5 rounded-lg space-y-8 mt-20">
+<div className="bg-secondary py-5 rounded-lg space-y-8 mt-24">
         <h2 className="lg:text-4xl text-2xl font-bold text-center">Technology Used</h2>
         <div>
           <MobileApps/>

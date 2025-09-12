@@ -5,7 +5,7 @@ import { CiSettings } from "react-icons/ci";
 
 function AppFeatures() {
   return (
-      <div className='mt-20'>
+      <div className='mt-28'>
            <h2 className='lg:text-4xl text-2xl font-bold text-center'>Key Features</h2>
 
     <div className='mt-12 flex items-center justify-between gap-12 flex-col lg:flex-row'>

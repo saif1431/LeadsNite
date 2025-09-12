@@ -75,7 +75,7 @@ const ChallengesSolutions = () => {
   return (
     <section 
       id="challenges" 
-      className=" text-slate-200 mt-12"
+      className=" text-slate-200 mt-28"
       
     >
       <div className="">
