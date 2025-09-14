@@ -13,14 +13,14 @@ function Footer() {
 
       {/* Footer Content */}
       <footer className="relative py-20 bg-[#00A9E0] text-white px-4 md:px-24 z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
-          <div className="">
+        <div className="flex flex-col md:flex-row justify-between mb-12">
+          <div className="lg:w-1/2 w-full mb-8 md:mb-0">
             <h2 className="text-xl font-semibold">
               Turn Your Startup into Success Story!
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
             <div>
             <h3 className="text-2xl font-bold mb-6">Quick Links</h3>
             <ul className="space-y-2">
@@ -69,7 +69,7 @@ function Footer() {
       </footer>
        <div className=" bg-black py-4 px-4 md:px-8">
           <div className="max-w-7xl space-x-4 mx-auto flex justify-center">
-            <a href="#" className="text-white hover:text-gray-300 transition-colors">
+            <a target='_blank' href="https://www.linkedin.com/company/leadsnite/" className="text-white hover:text-gray-300 transition-colors">
               <FaLinkedin className="text-2xl" />
             </a>
             <a href="#" className="text-white hover:text-gray-300 transition-colors">

@@ -23,9 +23,9 @@ function HeroSection() {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 1.5,
+        duration: 1,
         ease: "easeOut",
-        delay: 0.5,
+        delay: 0,
       },
     },
   };
@@ -38,7 +38,7 @@ function HeroSection() {
       transition: {
         duration: 1.5,
         ease: "easeOut",
-        delay: 1.0,
+        delay: 0.3  ,
       },
     },
   };
@@ -51,7 +51,7 @@ function HeroSection() {
       transition: {
         duration: 1.5,
         ease: "easeOut",
-        delay: 1.5,
+        delay: 0.5,
       },
     },
   };
@@ -64,7 +64,7 @@ function HeroSection() {
       opacity: 1,
       transition: { 
         duration: 0.8,
-        delay: 2.0
+        delay: 1
       }
     }
   };
@@ -137,7 +137,7 @@ function HeroSection() {
                   ...lineVariants.visible,
                   transition: {
                     ...lineVariants.visible.transition,
-                    delay: 2.0,
+                    delay: 1,
                   }
                 }
               }}
@@ -183,53 +183,53 @@ function HeroSection() {
 export default HeroSection;
 
 
-const projects = [
-    {
-      id: 1,
-      title: "Email Communication",
-      description: "Machine Learning",
-      image: "https://leadsnite.com/wp-content/uploads/2024/03/8.-email-1.png",
-      categories: ["Marketing", "Website"],
-      area: "email"
-    },
-    {
-      id: 2,
-      title: "Moosa . rent a car",
-      description: "Website Development",
-      image: "https://leadsnite.com/wp-content/uploads/2024/03/car-web.png",
-      categories: ["Website", "Marketing"],
-      area: "car"
-    },
-    {
-      id: 3,
-      title: "DLX Print",
-      description: "Marketing",
-      image: "https://leadsnite.com/wp-content/uploads/2024/03/printing-marketing.png",
-      categories: ["Marketing"],
-      area: "print"
-    },
-    {
-      id: 4,
-      title: "Astock",
-      description: "Machine Learning",
-      image: "https://leadsnite.com/wp-content/uploads/2024/03/1.-stock-trading.png",
-      categories: ["MachineLearning", "Website"],
-      area: "stock"
-    },
-    {
-      id: 5,
-      title: "MIKYAJY",
-      description: "Marketing",
-      image: "https://leadsnite.com/wp-content/uploads/2024/03/marketing-2.png",
-      categories: ["Marketing", "Website"],
-      area: "seo"
-    },
-    {
-      id: 6,
-      title: "Sheba.xyz",
-      description: "Website Development",
-      image: "https://leadsnite.com/wp-content/uploads/2024/03/house-web-2.png",
-      categories: ["MachineLearning"],
-      area: "house"
-    }
-  ];
+// const projects = [
+//     {
+//       id: 1,
+//       title: "Email Communication",
+//       description: "Machine Learning",
+//       image: "https://leadsnite.com/wp-content/uploads/2024/03/8.-email-1.png",
+//       categories: ["Marketing", "Website"],
+//       area: "email"
+//     },
+//     {
+//       id: 2,
+//       title: "Moosa . rent a car",
+//       description: "Website Development",
+//       image: "https://leadsnite.com/wp-content/uploads/2024/03/car-web.png",
+//       categories: ["Website", "Marketing"],
+//       area: "car"
+//     },
+//     {
+//       id: 3,
+//       title: "DLX Print",
+//       description: "Marketing",
+//       image: "https://leadsnite.com/wp-content/uploads/2024/03/printing-marketing.png",
+//       categories: ["Marketing"],
+//       area: "print"
+//     },
+//     {
+//       id: 4,
+//       title: "Astock",
+//       description: "Machine Learning",
+//       image: "https://leadsnite.com/wp-content/uploads/2024/03/1.-stock-trading.png",
+//       categories: ["MachineLearning", "Website"],
+//       area: "stock"
+//     },
+//     {
+//       id: 5,
+//       title: "MIKYAJY",
+//       description: "Marketing",
+//       image: "https://leadsnite.com/wp-content/uploads/2024/03/marketing-2.png",
+//       categories: ["Marketing", "Website"],
+//       area: "seo"
+//     },
+//     {
+//       id: 6,
+//       title: "Sheba.xyz",
+//       description: "Website Development",
+//       image: "https://leadsnite.com/wp-content/uploads/2024/03/house-web-2.png",
+//       categories: ["MachineLearning"],
+//       area: "house"
+//     }
+//   ];

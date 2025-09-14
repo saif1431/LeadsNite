@@ -63,13 +63,13 @@ const testimonials = [
 
 function AboutTestimonial() {
   return (
-    <div className='max-w-7xl mx-auto px-4 py-24 flex items-center justify-around flex-col lg:flex-row'>
+    <div className='max-w-7xl mx-auto px-4 py-24 flex items-center justify-between flex-col lg:flex-row'>
       <div className='lg:w-[25%] w-full mb-8 lg:mb-0'>
         <img src={img} alt="Testimonial illustration" className='w-full' />
       </div>
       
       <div className='lg:w-[50%] w-full relative'> {/* Added relative positioning */}
-        <h1 className='text-5xl text-start font-bold mb-8'>TESTIMONIAL</h1>
+        <h1 className='lg:text-4xl text-2xl text-start font-bold mb-8'>TESTIMONIAL</h1>
         
         <Swiper
           spaceBetween={30}

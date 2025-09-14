@@ -188,7 +188,9 @@ function ContactUs({padding}) {
                   <FaFacebookF  className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]' />
                   <FaXTwitter   className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]'  />
                   <FaInstagram  className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]' />
-                  <FaLinkedinIn   className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]'/>
+                  <a target='_blank' href="https://www.linkedin.com/company/leadsnite/">
+                    <FaLinkedinIn   className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]'/>
+                  </a>
             </div>
       </div>
    </div>

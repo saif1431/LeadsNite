@@ -158,7 +158,7 @@ export default function LatestProject() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="gap-6 grid-cols-4 auto-rows-auto lg:grid hidden"
+            className="space-x-6 grid-cols-4 auto-rows-auto lg:grid hidden"
             style={{
               gridTemplateAreas: `
                 "email car car print"

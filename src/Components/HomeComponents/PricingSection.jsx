@@ -56,7 +56,7 @@ export default function PricingSection() {
           {/* Tab control */} 
           <div className="bg-blue-100 rounded-full p-1 flex w-fit">
             <button
-              className={`px-6 py-3 rounded-full text-lg font-medium transition-colors ${
+              className={`px-6 py-3 cursor-pointer rounded-full text-lg font-medium transition-colors ${
                 activeTab === "marketing" ? "bg-blue-500 text-white" : "text-gray-700 "
               }`}
               onClick={() => setActiveTab("marketing")}
@@ -64,7 +64,7 @@ export default function PricingSection() {
               Marketing
             </button>
             <button
-              className={`px-6 py-3 rounded-full text-lg font-medium transition-colors ${
+              className={`px-6 py-3 cursor-pointer rounded-full text-lg font-medium transition-colors ${
                 activeTab === "optimize" ? "bg-blue-500 text-white" : "text-gray-700 "
               }`}
               onClick={() => setActiveTab("optimize")}
