@@ -4,8 +4,9 @@ import img from '/AboutImage/img6.png'
 
 function AboutUsSection2() {
   return (
-    <div className='bg-[#EAF1FA] flex flex-col lg:flex-row items-start justify-between lg:px-24 px-4  py-24'>
-      <div className='lg:w-[70%] w-full'>
+    <div className='bg-[#EAF1FA]   px-4  py-24'>
+    <div className='flex flex-col lg:flex-row max-w-7xl mx-auto items-start justify-between'>
+        <div className='lg:w-[70%] w-full'>
             <h2 className='text-3xl font-bold'>What Sets us Apart</h2>
             <div className=' mt-12'>
                  <div className='flex items-start gap-8'>
@@ -37,6 +38,7 @@ function AboutUsSection2() {
           <img className='w-[100%]' src={img} alt="" />
       </div>
       </div>
+    </div>
     </div>
   )
 }

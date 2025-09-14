@@ -45,8 +45,8 @@ const ScrollImageCard = ({ image, title }) => {
 {/* Overlay */}
 {!isHovered && (
  <div >
-   <div style={{background: "linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7))"}} className="absolute mx-auto top-64 inset-0 h-fit w-fit py-3 px-8 flex flex-col items-center justify-end rounded-lg z-10 ease-in transition-opacity duration-900">
-    <span className="text-white text-xl font-semibold mb-2">Hover and Scroll it</span>
+   <div style={{background: "linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7))"}} className="absolute mx-auto top-96 inset-0 h-fit w-fit py-2 px-6 flex flex-col items-center justify-end rounded-lg z-10 ease-in transition-opacity duration-900">
+    <span className="text-white text-lg font-semibold mb-2">Hover or Scroll</span>
     <svg
       className="w-8 h-8 text-white animate-bounce"
       fill="none"

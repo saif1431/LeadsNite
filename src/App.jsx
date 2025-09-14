@@ -37,7 +37,7 @@ function App() {
           <Route path="/services/graphic-designing" element={<GraphicsServices />} />
           <Route path="/services/digital-marketing" element={<DigitalServices />} />
           <Route path="/ScrollHover" element={<ScrollHover />} />
-          <Route path="/ContactUs" element={<ContactUs padding="lg:px-38 px-4" />} />
+          <Route path="/ContactUs" element={<ContactUs padding=" px-4" />} />
           <Route path="/app-development" element={<AppDevelopmentPage />} />
           <Route path="/web-development" element={<WebDevelopmentPage />} />
           <Route path="/Projects" element={<ShowProject />} />

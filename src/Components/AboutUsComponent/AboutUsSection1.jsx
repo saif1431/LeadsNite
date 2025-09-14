@@ -1,10 +1,19 @@
 import { ChevronRight } from "lucide-react"
+import { useNavigate } from "react-router-dom"
 
 export default function AboutUsSection1() {
-  const services = ["UI Designing", "Web Development", "App Development", "Machine Learning", "Digital Marketing"]
+  const navigate = useNavigate()
+  const services = [
+    { name: "Web Development", path: "/services/web-development" },
+    { name: "Machine Learning", path: "/services/machine-learning" },
+    { name: "App Development", path: "/services/app-development" },
+    { name: "Video Editing", path: "/services/video-editing" },
+    { name: "Graphic Designing", path: "/services/graphic-designing" },
+    { name: "Digital Marketing", path: "/services/digital-marketing" },
+  ]
 
   return (
-    <div className="container mx-auto   lg:px-24 px-4  lg:py-32 py-16 ">
+    <div className="max-w-7xl mx-auto  px-4  lg:py-32 py-16 ">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* Left side - Image with overlay */}
         <div className="relative flex flex-col gap-4">
@@ -48,8 +57,9 @@ export default function AboutUsSection1() {
               <div
                 key={index}
                 className="flex items-center justify-between lg:justify-start  py-2 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer group"
+                onClick={() => navigate(service.path)}
               >
-                <span className="hover:text-blue-400 transition ease-in duration-200 lg:w-[40%] font-bold text-lg">{service}</span>
+                <span className="hover:text-blue-400 transition ease-in duration-200 lg:w-[40%] font-bold text-lg">{service.name}</span>
                 <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" />
               </div>
             ))}
@@ -59,4 +69,4 @@ export default function AboutUsSection1() {
     </div>
   )
 }
- 
+

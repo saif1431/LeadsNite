@@ -58,7 +58,7 @@ const ServiceCard = ({
   imageUrl, 
   route, 
   showDescription = false,
-  showBorder = true 
+  // showBorder = true 
 }) => {
   const navigate = useNavigate();
   const location = useLocation();
