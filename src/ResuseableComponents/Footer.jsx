@@ -72,14 +72,14 @@ function Footer() {
             <a target='_blank' href="https://www.linkedin.com/company/leadsnite/" className="text-white hover:text-gray-300 transition-colors">
               <FaLinkedin className="text-2xl" />
             </a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors">
+            {/* <a href="#" className="text-white hover:text-gray-300 transition-colors">
               <FaInstagram 
  className="text-2xl" />
-            </a>
-            <a href="#" className="text-white hover:text-gray-300 transition-colors">
+            </a> */}
+            {/* <a href="#" className="text-white hover:text-gray-300 transition-colors">
               <FaSquareXTwitter 
  className="text-2xl" />
-            </a>
+            </a> */}
           </div>
         </div>
     </div>

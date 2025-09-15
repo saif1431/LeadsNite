@@ -64,7 +64,7 @@ function HeroSection() {
       opacity: 1,
       transition: { 
         duration: 0.8,
-        delay: 1
+        delay: 0.2 // was 1
       }
     }
   };
@@ -76,7 +76,7 @@ function HeroSection() {
       opacity: 1,
       transition: { 
         duration: 0.8,
-        delay: 2.3
+        delay: 0.4 // was 2.3
       }
     }
   };
@@ -88,7 +88,7 @@ function HeroSection() {
       opacity: 1,
       transition: { 
         duration: 0.8,
-        delay: 2.6
+        delay: 0.6 // was 2.6
       }
     }
   };
@@ -125,7 +125,16 @@ function HeroSection() {
           >
             <motion.p 
               className="text-lg md:text-3xl font-semibold mb-4 max-w-2xl"
-              variants={lineVariants}
+              variants={{
+                ...lineVariants,
+                visible: {
+                  ...lineVariants.visible,
+                  transition: {
+                    ...lineVariants.visible.transition,
+                    delay: 0.2, // was 0.5
+                  }
+                }
+              }}
             >
               Got a dream, Got a plan, but No Experts
             </motion.p>
@@ -137,7 +146,7 @@ function HeroSection() {
                   ...lineVariants.visible,
                   transition: {
                     ...lineVariants.visible.transition,
-                    delay: 1,
+                    delay: 0.4, // was 1
                   }
                 }
               }}
