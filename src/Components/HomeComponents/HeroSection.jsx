@@ -131,7 +131,7 @@ function HeroSection() {
                   ...lineVariants.visible,
                   transition: {
                     ...lineVariants.visible.transition,
-                    delay: 0.2, // was 0.5
+                    delay: 0, // was 0.5
                   }
                 }
               }}

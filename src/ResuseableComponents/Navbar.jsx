@@ -75,14 +75,14 @@ const Navbar = () => {
           >
             Services
           </Link>
-          <Link 
+          {/* <Link 
             to="/Projects" 
             className={`font-bold transition ease-in duration-100 ${
               isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
             }`}
           >
             Projects
-          </Link>
+          </Link> */}
           <Link 
             to="/about-us" 
             className={`font-bold transition ease-in duration-100 ${

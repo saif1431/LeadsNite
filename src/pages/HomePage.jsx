@@ -21,7 +21,7 @@ function HomePage() {
 <BrandLogos/>
 <ServicesGrid/>
 <ServiceOverview/>
-<PricingSection/>
+<PricingSection/> 
 <OrbitAnimation/>
 <JoinUs/>
 <div className='px-4 py-12'>
