@@ -2,8 +2,8 @@ import React from 'react'
 
 function OurProcess() {
   return (
-    <div className='w-full bg-secondary px-4 lg:px-36 md:px-16    lg:py-18 md-12 '>
-      <img className='w-full' src="/process.png" alt="" />
+    <div className='w-full h-fit bg-secondary px-4  md:px-16   lg:py-18 md-12 '>
+      <img className='w-full h-screen' src="/process.png" alt="" />
     </div>
   )
 }
