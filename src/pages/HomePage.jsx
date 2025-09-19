@@ -12,6 +12,7 @@ import ClientCount from '../Components/HomeComponents/ClientCount'
 import LatestProject from '../Components/HomeComponents/LatestProject'
 import TrustedReview from '../Components/HomeComponents/TrustedReview'
 import SplashCursor from '../Components/HomeComponents/SplashCursor'
+import OurProcess from '../Components/HomeComponents/OurProcess'
 
 function HomePage() {
   return (
@@ -20,9 +21,10 @@ function HomePage() {
 <HeroSection/>
 <BrandLogos/>
 <ServicesGrid/>
-<ServiceOverview/>
+{/* <ServiceOverview/> */}
 <JoinUs/>
-<OrbitAnimation/>
+{/* <OrbitAnimation/> */}
+<OurProcess/>
 <PricingSection/> 
 <div className='px-4 py-12'>
   <Technologies/>

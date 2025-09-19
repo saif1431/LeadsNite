@@ -76,7 +76,7 @@ background-repeat: no-repeat;
 .btn {
  --color: #000;
  --color2: #ffffff;
- padding: 0.7em 2em;
+ padding: 0.6em 2em;
  background-color: transparent;
  border-radius: 6px;
  border:1px solid rgba(128, 128, 128, 0.734);

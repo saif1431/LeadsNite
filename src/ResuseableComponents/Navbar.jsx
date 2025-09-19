@@ -68,6 +68,14 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex text-xl space-x-12 mx-auto">
           <Link 
+            to="/" 
+            className={`font-bold transition ease-in duration-100 ${
+              isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
+            }`}
+          >
+            Home
+          </Link>
+          <Link 
             to="/services" 
             className={`font-bold transition ease-in duration-100 ${
               isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
@@ -153,6 +161,17 @@ const Navbar = () => {
             >
               <motion.div variants={linkVariants}>
                 <Link 
+                  to="/" 
+                  className={`block font-medium py-2 ${
+                    isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Home
+                </Link>
+              </motion.div>
+              <motion.div variants={linkVariants}>
+                <Link 
                   to="/services" 
                   className={`block font-medium py-2 ${
                     isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
@@ -162,7 +181,7 @@ const Navbar = () => {
                   Services
                 </Link>
               </motion.div>
-              <motion.div variants={linkVariants}>
+              {/* <motion.div variants={linkVariants}>
                 <Link 
                   to="/Projects  " 
                   className={`block font-medium py-2 ${
@@ -172,7 +191,7 @@ const Navbar = () => {
                 >
                   Projects
                 </Link>
-              </motion.div>
+              </motion.div> */}
               <motion.div variants={linkVariants}>
                 <Link 
                   to="/about-us" 

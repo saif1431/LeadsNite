@@ -60,7 +60,7 @@ function Technologies() {
   ];
 
   return (
-    <div>
+    <div className='  '>
       <h1 className='lg:text-4xl text-2xl font-bold text-center'>Technologies We Use
 </h1>
  

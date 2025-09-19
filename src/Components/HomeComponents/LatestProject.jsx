@@ -104,17 +104,17 @@ export default function LatestProject() {
     <div className="bg-secondary w-full px-4 lg:px-36 md:px-16 md:py-32 py-12">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 ">
+        <div className="flex flex-col md:flex-row justify-center items-start md:items-center mb-12 ">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="lg:text-4xl text-2xl font-bold mb-6 md:mb-0"
+            className="lg:text-4xl text-2xl text-center font-bold mb-6 md:mb-0"
           >
-            Check our latest & Completed <br /> Projects
+            Check our latest & Completed  Projects
           </motion.h2>
 
           {/* Filters */}
-          <div className="flex flex-wrap gap-2">
+          {/* <div className="flex flex-wrap gap-2">
             {filters.map((filter) => (
               <motion.button
                 key={filter}
@@ -131,7 +131,7 @@ export default function LatestProject() {
                 <span className="px-1">/</span>
               </motion.button>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* 📱 Mobile View: 1 Column Grid */}
