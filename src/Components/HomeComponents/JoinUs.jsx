@@ -5,7 +5,7 @@ import { BiRightArrow, BiRightArrowAlt } from 'react-icons/bi'
 
 function JoinUs() {
   return (
-    <div className='bg-white max-w-7xl mx-auto h-fit  px-6 md:py-32 py-12   '>
+    <div className='bg-white max-w-7xl mx-auto h-fit  lg:px-8 px-4 md:py-32 py-12   '>
         <div className='text-center'>
            <h1 className='text-3xl md:text-4xl font-bold text-center mb-4'>Why LeadsNite</h1>
            <p>All the advantages of partnering with us.</p>
@@ -29,7 +29,7 @@ function JoinUs() {
         </div>
 
         <div className='flex items-center justify-center mt-12'>
-          <button style={{borderRadius: '9999px'}} className='btn rounded-full flex items-center gap-3'>Lets Talk 
+          <button  className='btn rounded-full flex items-center gap-3'>Lets Talk 
             <span><BiRightArrowAlt className="text-xl" /></span>
           </button>
         </div>
