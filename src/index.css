@@ -72,14 +72,14 @@ background-repeat: no-repeat;
 .check-list:hover{
   background:linear-gradient(90deg, #2667FF 100%, #6c19ef 20%);
 }
+
 .btn {
   --color: #000;
-  --color2: #ffffff;
+  --color2: #fff;
   padding: 0.6rem 2rem;
-  background-color: transparent;
-  border-radius: 6px;
-  border: 1px solid rgba(128, 128, 128, 0.734);
-  transition: all 0.3s ease;
+  background: transparent;
+  border-radius: 999px;
+  border: 1.5px solid #000;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -89,23 +89,20 @@ background-repeat: no-repeat;
   font-family: 'Roboto', 'Segoe UI', sans-serif;
   text-transform: uppercase;
   color: var(--color);
+  transition: color 0.3s cubic-bezier(0.4,0,0.2,1), border 0.3s;
 }
 
-a.active {
-  color: #00A9E0;
-}
-
-/* Clean slide-in effect */
+/* Gradient slide-in effect */
 .btn::before {
   content: '';
   position: absolute;
-  top: 0;
   left: -100%;
+  top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color);
-  transition: left 0.3s ease;
+  background: linear-gradient(90deg, #000 0%, #000 100%);
   z-index: -1;
+  transition: left 0.4s cubic-bezier(0.4,0,0.2,1);
 }
 
 .btn:hover::before {
@@ -114,13 +111,19 @@ a.active {
 
 .btn:hover {
   color: var(--color2);
-  border-color: var(--color);
+  border-color: black;
+  box-shadow: 0 8px 24px 0 rgba(39,103,255,0.15);
+  transform: translateY(-2px) scale(1.04) rotate(-1deg);
 }
 
 .btn:active {
-  filter: brightness(0.7);
-  transform: scale(0.98);
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.15s ease;
 }
+
+/* Remove old ::after glow effect if present */
+.btn::after { display: none !important; }
 
 /* Custom pagination styles */
 .swiper-pagination {
