@@ -97,7 +97,7 @@ const Services = ({ showDescriptions = false }) => {
   const isHomePage = location.pathname === '/';
 
   return (
-    <div className={`  mt-6  py-18 ${isHomePage ? 'px-4  lg:px-38 md:px-20 bg-secondary' : 'rounded-3xl lg:px-12 bg-image  px-4'}`}>
+    <div className={`  mt-6  py-18 ${isHomePage ? 'px-4  h-fit lg:px-38 md:px-20 bg-secondary' : 'rounded-3xl lg:px-12 bg-image  px-4'}`}>
       <h2 className={`text-3xl font-bold mb-12 text-center ${isHomePage ? 'lg:text-3xl  ' : 'text-4xl '}`}>
         {isHomePage ? "Find the Perfect Service" : "Here's What Sets Us Apart"}
       </h2>
