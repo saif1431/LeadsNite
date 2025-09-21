@@ -6,7 +6,7 @@ import { faSquareCheck } from "@fortawesome/free-regular-svg-icons"
 
 export default function ServiceSection1() {
   return (
-    <div className=" px-4 py-16">
+    <div className="  py-16">
       <div className="grid lg:grid-cols-2 space-y-20 lg:space-y-0  items-center justify-center">
         {/* Left side - Statistics Card */}
         <div className="bg-primary lg:w-[80%] flex flex-col items-center justify-center h-4/4 rounded-2xl  text-white">

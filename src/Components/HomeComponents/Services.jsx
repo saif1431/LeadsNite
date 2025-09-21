@@ -70,7 +70,7 @@ const ServiceCard = ({
   return (
     <div 
       onClick={handleClick}
-      className={`group cursor-pointer mt-6 overflow-hidden shadow-md transition-transform duration-500 hover:shadow-xl lg:px-3 lg:py-8 bg-white rounded-3xl
+      className={`group cursor-pointer mt-6 overflow-hidden shadow-md transition-transform duration-500 hover:shadow-xl  lg:py-8 bg-white rounded-3xl
        `}
     >
       <div className="py-10 px-8 ">
@@ -97,7 +97,7 @@ const Services = ({ showDescriptions = false }) => {
   const isHomePage = location.pathname === '/';
 
   return (
-    <div className={`  mt-6  py-18 ${isHomePage ? 'px-4  h-fit lg:px-38 md:px-20 bg-secondary' : 'rounded-3xl lg:px-12 bg-image  px-4'}`}>
+    <div className={`  mt-6  py-26 ${isHomePage ? 'px-4  h-fit lg:px-38 md:px-20 bg-secondary' : 'rounded-3xl lg:px-12 bg-image  px-4'}`}>
       <h2 className={`text-3xl font-bold mb-12 text-center ${isHomePage ? 'lg:text-3xl  ' : 'text-4xl '}`}>
         {isHomePage ? "Find the Perfect Service" : "Here's What Sets Us Apart"}
       </h2>

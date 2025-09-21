@@ -13,7 +13,7 @@ export default function AboutUsSection1() {
   ]
 
   return (
-    <div className="max-w-7xl mx-auto  px-4  lg:py-32 py-16 ">
+    <div className="max-w-7xl mx-auto lg:px-8 px-4   lg:py-32 py-16 ">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* Left side - Image with overlay */}
         <div className="relative flex flex-col gap-4">

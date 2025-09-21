@@ -46,12 +46,12 @@ const ClientCount = () => {
   }, []);
 
   return (
-  <div className='w-full px-4 lg:px-30 md:px-16  '>
-    <div   className="lg:px-24 max-w-7xl w-full mx-auto   md:py-24 py-12  rounded-2xl"
+  <div className='w-full px-4  h-fit lg:px-34 md:px-20  '>
+    <div   className=" md:py-24 py-12  rounded-2xl"
   style={{
     background: 'linear-gradient(90deg, #2667FF 20%, #6C19EF 100%)'
   }}>
-      <div className="max-w-7xl  mx-auto">
+      <div className="">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {counters.map((stat) => (
             <motion.div

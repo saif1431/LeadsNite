@@ -5,12 +5,12 @@ import img from '/AboutImage/img6.png'
 function AboutUsSection2() {
   return (
     <div className='bg-[#EAF1FA]   px-4  py-24'>
-    <div className='flex flex-col lg:flex-row max-w-7xl mx-auto items-start justify-between'>
+    <div className='flex flex-col lg:flex-row max-w-7xl mx-auto items-start justify-between lg:px-8 px-4'>
         <div className='lg:w-[70%] w-full'>
             <h2 className='text-3xl font-bold'>What Sets us Apart</h2>
             <div className=' mt-12'>
                  <div className='flex items-start gap-8'>
-                   <div className='rounded-full check-list flex items-center justify-center lg:w-[70px] lg:h-[53px] w-[75px] h-[30px]'>
+                   <div className='rounded-full check-list flex items-center justify-center lg:w-[70px] lg:h-[50px] w-[75px] h-[30px]'>
                         <TiTick className='text-white text-xl' />
                   </div>
                   <div className='space-y-4'>
@@ -20,7 +20,7 @@ function AboutUsSection2() {
                  </div>
                  <hr className='mt-4 border-gray-300 w-[60%]' />
                   <div className='flex items-start gap-8 mt-6'>
-                   <div className='rounded-full check-list flex items-center justify-center lg:w-[70px] lg:h-[53px] w-[75px] h-[30px]'>
+                   <div className='rounded-full check-list flex items-center justify-center lg:w-[70px] lg:h-[49px] w-[75px] h-[30px]'>
                         <TiTick className='text-white text-xl' />
                   </div>
                   <div className='space-y-4'>

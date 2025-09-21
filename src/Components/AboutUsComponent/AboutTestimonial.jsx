@@ -63,7 +63,7 @@ const testimonials = [
 
 function AboutTestimonial() {
   return (
-    <div className='max-w-7xl mx-auto px-4 py-24 flex items-center justify-between flex-col lg:flex-row'>
+    <div className='max-w-7xl mx-auto lg:px-8 px-4  py-24 flex items-center justify-between flex-col lg:flex-row'>
       <div className='lg:w-[25%] w-full mb-8 lg:mb-0'>
         <img src={img} alt="Testimonial illustration" className='w-full' />
       </div>
@@ -90,7 +90,7 @@ function AboutTestimonial() {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
-              <div className='p-8 h-full'>
+              <div className='py-8 h-full'>
                 <p className='text-2xl text-primary mb-6'>
                   {testimonial.text}
                 </p>

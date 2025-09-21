@@ -38,7 +38,7 @@ function HeroSection() {
       transition: {
         duration: 1.5,
         ease: "easeOut",
-        delay: 0.3  ,
+        delay: 0  ,
       },
     },
   };
@@ -51,7 +51,7 @@ function HeroSection() {
       transition: {
         duration: 1.5,
         ease: "easeOut",
-        delay: 0.5,
+        delay: 0,
       },
     },
   };
@@ -64,7 +64,7 @@ function HeroSection() {
       opacity: 1,
       transition: { 
         duration: 0.8,
-        delay: 0.2 // was 1
+        delay: 0// was 1
       }
     }
   };
@@ -146,7 +146,7 @@ function HeroSection() {
                   ...lineVariants.visible,
                   transition: {
                     ...lineVariants.visible.transition,
-                    delay: 0.4, // was 1
+                    delay: 0, // was 1
                   }
                 }
               }}
