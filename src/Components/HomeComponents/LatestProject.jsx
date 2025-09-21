@@ -101,7 +101,7 @@ export default function LatestProject() {
   );
 
   return (
-    <div className="bg-secondary w-full px-4 lg:px-38 md:px-16 md:py-32 py-12">
+    <div className="bg-secondary w-full px-4  md:px-16 md:py-32 py-12">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-center items-start md:items-center mb-12 ">
