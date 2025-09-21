@@ -101,7 +101,7 @@ export default function LatestProject() {
   );
 
   return (
-    <div className="bg-secondary w-full px-4  md:px-16 md:py-32 py-12">
+    <div className="bg-secondary w-full md:py-32 py-12">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-center items-start md:items-center mb-12 ">
@@ -158,7 +158,7 @@ export default function LatestProject() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="space-x-0 gap-4 grid-cols-4 auto-rows-auto lg:grid hidden"
+            className="space-x-0 gap-4 px-4 grid-cols-4 auto-rows-auto lg:grid hidden"
             style={{
               gridTemplateAreas: `
                 "email car car print"
