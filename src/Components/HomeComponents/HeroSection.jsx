@@ -36,7 +36,7 @@ function HeroSection() {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 1.5,
+        duration: 1,
         ease: "easeOut",
         delay: 0  ,
       },
@@ -49,7 +49,7 @@ function HeroSection() {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 1.5,
+        duration: 1,
         ease: "easeOut",
         delay: 0,
       },
@@ -76,7 +76,7 @@ function HeroSection() {
       opacity: 1,
       transition: { 
         duration: 0.8,
-        delay: 0.4 // was 2.3
+        delay: 0 // was 2.3
       }
     }
   };
@@ -88,7 +88,7 @@ function HeroSection() {
       opacity: 1,
       transition: { 
         duration: 0.8,
-        delay: 0.6 // was 2.6
+        delay: 0 // was 2.6
       }
     }
   };
