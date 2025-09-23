@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence, time } from "framer-motion"
 import Button from "../../ResuseableComponents/Button"
+import { Link } from "react-router-dom"
 
 export default function PricingSection() {
   const [activeTab, setActiveTab] = useState("marketing")
@@ -10,36 +11,36 @@ export default function PricingSection() {
   // Pricing data for Marketing tab
   const marketingPricing = {
     free: {
-      name: "FREE",
-      price: "0",
-      description: "You pay for the ads, we manage the rest. Profits will be split",
-      time : " Month",
+      name: "Development",
+      price: "20",
+      description: " Custom website development tailored to your needs - responsive design, backend setup, and modern frameworks",
+      time : " Hour",
       features: [],
     },
     basic: {
-      name: "Basic",
-      price: "299",
-      time: " Month",
-      description: "We run ads for you and manage your social media",
-      features: ["Free Copywriting"],
+      name: "Optimization",
+      price: "12",
+      time: " Hour",
+      description: " Website speed, SEO, security, and performance tuning to ensure your site runs smoothly and ranks better.",
+      features: [],
     },
   }
 
   // Pricing data for Optimize tab
   const optimizePricing = {
     free: {
-      name: "Basic",
+      name: "Development",
       price: "25",
-      description: "We will Optimize your WordPress website or Bubble.io App",
-      time : "Optimization",
-      features: [],
+      description: " End-to-end mobile app development — from UI/UX to backend APIs — built for startups and businesses.",
+      time : "Hour",
+      features:  [],
     },
     basic: {
-      name: "Premium",
-      price: "95",
-      description: "We will Optimize your Coded website or App.",
-       time : "Optimization",
-      features: ["Free Responsive",],
+      name: "Premium Launch",
+      price: "1200",
+      description: " A complete, production-ready mobile app with advanced features, integrations, and scalability to support growth.",
+       time : "Project",
+      features: [],
     },
   }
 
@@ -56,20 +57,20 @@ export default function PricingSection() {
           {/* Tab control */} 
           <div className="bg-blue-100 rounded-full p-1 flex w-fit">
             <button
-              className={`px-6 py-3 cursor-pointer rounded-full text-lg font-medium transition-colors ${
+              className={`px-6 py-3 cursor-pointer rounded-full text-md font-medium transition-colors ${
                 activeTab === "marketing" ? "bg-blue-500 text-white" : "text-gray-700 "
               }`}
               onClick={() => setActiveTab("marketing")}
             >
-              Marketing
+              Web Development
             </button>
             <button
-              className={`px-6 py-3 cursor-pointer rounded-full text-lg font-medium transition-colors ${
+              className={`px-6 py-3 cursor-pointer rounded-full text-md  font-medium transition-colors ${
                 activeTab === "optimize" ? "bg-blue-500 text-white" : "text-gray-700 "
               }`}
               onClick={() => setActiveTab("optimize")}
             >
-              Optimize
+              App Development
             </button>
           </div>
         </div>
@@ -91,14 +92,16 @@ export default function PricingSection() {
                   <h3 className="text-2xl font-semibold mb-4">{pricingData.free.name}</h3>
                   <div className="flex items-baseline">
                     <span className="text-gray-900 text-2xl font-medium">$</span>
-                    <span className="text-gray-900 text-7xl font-bold">{pricingData.free.price}</span>
-                    <span className=" text-lg font-semibold ml-2">/ {pricingData.free.time}</span>
+                    <span className="text-gray-900 text-6xl font-bold">{pricingData.free.price}</span>
+                    <span className=" text-md font-semibold ml-2">/ {pricingData.free.time}</span>
                   </div>
                 </div>
 
                 <p className="text-gray-600 text-md mt-12 mb-8">{pricingData.free.description}</p>
 
+           <Link to='/ContactUs'>
               <Button children="Contact Us"/>
+           </Link>
 
                 {pricingData.free.features.map((feature, index) => (
                   <p key={index} className="text-gray-900 font-medium mt-4">
@@ -113,8 +116,8 @@ export default function PricingSection() {
                   <h3 className="text-2xl font-semibold mb-4">{pricingData.basic.name}</h3>
                   <div className="flex items-baseline space-y-3">
                     <span className="text-gray-900 text-2xl font-medium">$</span>
-                    <span className="text-gray-900 text-7xl font-bold">{pricingData.basic.price}</span>
-                    <span className=" text-lg font-semibold ml-2">/ {pricingData.free.time}</span>
+                    <span className="text-gray-900 text-6xl font-bold">{pricingData.basic.price}</span>
+                    <span className=" text-md font-semibold ml-2">/ {pricingData.basic.time}</span>
                   </div>
                 </div>
 
