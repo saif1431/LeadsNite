@@ -97,7 +97,7 @@ function Technologies() {
                 : 'text-gray-600 hover:text-[#01ACE4] hover:border-b-2 hover:border-[#01ACE4]'
             }`}
           >
-            Machine Learning
+            AI Agents
           </button>
           <button
             onClick={() => setActiveTab('digitalMarketing')}
@@ -107,7 +107,7 @@ function Technologies() {
                 : 'text-gray-600 hover:text-[#01ACE4] hover:border-b-2 hover:border-[#01ACE4]'
             }`}
           >
-            Digital Marketing
+            UI/UX Design
           </button>
           <button
             onClick={() => setActiveTab('uiDesign')}

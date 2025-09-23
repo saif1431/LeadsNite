@@ -1,66 +1,84 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
 
 const logos = [
-  '/TechnologiesLogo/MachineLogos/1.png',
-  '/TechnologiesLogo/MachineLogos/3.png',
-  '/TechnologiesLogo/MachineLogos/7.png',
-  '/TechnologiesLogo/MachineLogos/8.png',
-  '/TechnologiesLogo/MachineLogos/9.png',
-  '/TechnologiesLogo/MachineLogos/10.png',
-  '/TechnologiesLogo/MachineLogos/11.png',
-  '/TechnologiesLogo/MachineLogos/12.png',
-  '/TechnologiesLogo/MachineLogos/13.png',
-  '/TechnologiesLogo/MachineLogos/14.png',
-  '/TechnologiesLogo/MachineLogos/15.png',
-  '/TechnologiesLogo/MachineLogos/2.svg',
-  '/TechnologiesLogo/MachineLogos/4.svg',
-  '/TechnologiesLogo/MachineLogos/5.svg',
-  '/TechnologiesLogo/MachineLogos/6.svg',
-  '/TechnologiesLogo/MachineLogos/16.svg',
-  '/TechnologiesLogo/MachineLogos/19.svg',
-  '/TechnologiesLogo/MachineLogos/20.svg',
-
-
-  // Add more logos as needed
+  "/New/New/AI agents/ai agents (1).png",
+  "/New/New/AI agents/ai agents (2).png",
+  "/New/New/AI agents/ai agents (3).png",
+  "/New/New/AI agents/ai agents (4).png",
+  "/New/New/AI agents/ai agents (5).png",
+  "/New/New/AI agents/ai agents (6).png",
+  "/New/New/AI agents/ai agents (7).png",
+  "/New/New/AI agents/ai agents (8).png",
+  "/New/New/AI agents/ai agents (9).png",
+  "/New/New/AI agents/ai agents (10).png",
+  "/New/New/AI agents/ai agents (11).png",
+  "/New/New/AI agents/ai agents (12).png",
 ];
 
 const MachineLearning = () => {
-  // Duplicate the logos array to create seamless looping
-  const duplicatedLogos = [...logos, ...logos];
+  const duplicated = [...logos, ...logos];
+  const duration = 40; // bigger = slower
+  const gap = 64; // px between logos
+  const slotMinWidth = 140; // consistent slot width to avoid seam
 
   return (
-    <div className="relative max-w-4xl mx-auto w-full py-4 overflow-hidden  "
-    style={{
+    <div
+      className="relative max-w-4xl mx-auto w-full py-4 overflow-hidden"
+      style={{
         WebkitMaskImage:
-          'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 10%, black 25%, black 75%, rgba(0,0,0,0.6) 90%, transparent 100%)',
+          "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 10%, black 25%, black 75%, rgba(0,0,0,0.6) 90%, transparent 100%)",
         maskImage:
-          'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 10%, black 25%, black 75%, rgba(0,0,0,0.6) 90%, transparent 100%)',
+          "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 10%, black 25%, black 75%, rgba(0,0,0,0.6) 90%, transparent 100%)",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-l from-white-50 via-transparent to-white-50 z-10 pointer-events-none" />
-      
-      <motion.div
-        className="flex"
-        animate={{
-          x: ['0%', '-100%'], // Moves from 0 to -100% of container width
-        }}
-        transition={{
-          duration: 20,
-          ease: 'linear',
-          repeat: Infinity, // Infinite loop
-        }}
-      >
-        {duplicatedLogos.map((logo, index) => (
-          <div key={index} className="flex-shrink-0 px-20">
-            <img 
-              src={logo} 
-              alt={`Client logo ${index % logos.length + 1}`} 
-              className="h-10 object-contain opacity-80 hover:opacity-100 transition-opacity"
-            />
+      <div className="absolute inset-0 bg-gradient-to-l from-white/50 via-transparent to-white/50 z-10 pointer-events-none" />
+
+      <style>{`
+        @keyframes scrollLogosML {
+          from { transform: translate3d(0, 0, 0); }
+          to   { transform: translate3d(-50%, 0, 0); } /* move exactly one set width */
+        }
+
+        .ml-scroll-track {
+          display: flex;
+          gap: ${gap}px;
+          align-items: center;
+          width: max-content;
+          will-change: transform;
+          animation: scrollLogosML ${duration}s linear infinite;
+          transform: translate3d(0,0,0);
+          backface-visibility: hidden;
+          -webkit-font-smoothing: antialiased;
+        }
+
+        .ml-logo-item {
+          flex: 0 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: ${slotMinWidth}px;
+        }
+
+        .ml-logo-item img {
+          display: block;
+          height: 42px;
+          width: auto;
+          object-fit: contain;
+          opacity: 0.95;
+          transition: opacity .2s ease;
+          -webkit-user-drag: none;
+          user-select: none;
+          pointer-events: none;
+        }
+      `}</style>
+
+      <div className="ml-scroll-track" aria-hidden>
+        {duplicated.map((logo, idx) => (
+          <div className="ml-logo-item" key={idx}>
+            <img src={logo} alt={`ml logo ${idx % logos.length + 1}`} />
           </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };
@@ -71,4 +89,4 @@ export default MachineLearning;
 
 
 
- 
+

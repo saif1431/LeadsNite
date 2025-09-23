@@ -17,7 +17,7 @@ const servicesData = [  // Changed from Services to servicesData
   },
   {
     id: 2,
-    title: "Machine Learning",
+    title: "AI Agents",
     imageUrl: "/servicesImg/img2.png",
     description: "Machine learning is an artificial intelligence technique where systems learn from data and improve over time without being explicitly programmed.",
     route: "/services/machine-learning"
@@ -31,8 +31,8 @@ const servicesData = [  // Changed from Services to servicesData
   },
   {
     id: 4,
-    title: "Video Editing",
-    imageUrl: "/servicesImg/img4.png",
+    title: "UI UX Design",
+    imageUrl: "/servicesImg/uiux.png",
     description: "Video editing involves manipulating and rearranging video footage to create a desired final product, such as movies, commercials, or social media content.",
     route: "/services/video-editing"
   },

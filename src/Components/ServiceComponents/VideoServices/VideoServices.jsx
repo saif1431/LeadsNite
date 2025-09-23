@@ -4,6 +4,7 @@ import VideoDescription from './VideoDescription'
 import VideoSection1 from './VideoSection1'
 import VideoFaqs from './VideoFaqs'
 import UiDesign from '../../TechnologiesComponent/UiDesign'
+import DigitalMarketing from '../../TechnologiesComponent/DigitalMarketing'
 
 function VideoServices() {
   return (
@@ -11,7 +12,7 @@ function VideoServices() {
     <div className='lg:w-[60%] w-full space-y-12'>
       <VideoSection1/>
       <div className='w-[80%] mx-auto lg:mt-24 mt-12'>
-        <UiDesign/>
+        <DigitalMarketing/>
       </div>
       <VideoDescription/>
       <VideoFaqs/>

@@ -115,6 +115,10 @@ export default function PricingSection() {
                 <div className="mb-6">
                   <h3 className="text-2xl font-semibold mb-4">{pricingData.basic.name}</h3>
                   <div className="flex items-baseline space-y-3">
+                    {/* show small "From" label only for the optimize (App Development) tab */}
+                    {activeTab === "optimize" && (
+                      <span className="text-sm font-semibold text-gray-500 mr-2 self-start">From</span>
+                    )}
                     <span className="text-gray-900 text-2xl font-medium">$</span>
                     <span className="text-gray-900 text-6xl font-bold">{pricingData.basic.price}</span>
                     <span className=" text-md font-semibold ml-2">/ {pricingData.basic.time}</span>
@@ -123,7 +127,9 @@ export default function PricingSection() {
 
                 <p className="text-gray-600 text-md mb-10">{pricingData.basic.description}</p>
 
-             <Button children="Contact Us"/>
+                   <Link to='/ContactUs'>
+              <Button children="Contact Us"/>
+           </Link>
 
                 {pricingData.basic.features.map((feature, index) => (
                   <p key={index} className="text-lg font-medium mt-2">

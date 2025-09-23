@@ -113,7 +113,7 @@ background-repeat: no-repeat;
   color: var(--color2);
   border-color: black;
   box-shadow: 0 8px 24px 0 rgba(39,103,255,0.15);
-  transform: translateY(-2px) scale(1.04) rotate(-1deg);
+  /* transform: translateY(-2px) scale(1.04) rotate(-1deg); */
 }
 
 .btn:active {
