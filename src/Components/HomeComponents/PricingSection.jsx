@@ -92,7 +92,7 @@ export default function PricingSection() {
                   <h3 className="text-2xl font-semibold mb-4">{pricingData.free.name}</h3>
                   <div className="flex items-baseline">
                     <span className="text-gray-900 text-2xl font-medium">$</span>
-                    <span className="text-gray-900 text-6xl font-bold">{pricingData.free.price}</span>
+                    <span className="text-gray-900 text-5xl font-bold">{pricingData.free.price}</span>
                     <span className=" text-md font-semibold ml-2">/ {pricingData.free.time}</span>
                   </div>
                 </div>
@@ -120,7 +120,7 @@ export default function PricingSection() {
                       <span className="text-sm font-semibold text-gray-500 mr-2 self-start">From</span>
                     )}
                     <span className="text-gray-900 text-2xl font-medium">$</span>
-                    <span className="text-gray-900 text-6xl font-bold">{pricingData.basic.price}</span>
+                    <span className="text-gray-900 text-5xl font-bold">{pricingData.basic.price}</span>
                     <span className=" text-md font-semibold ml-2">/ {pricingData.basic.time}</span>
                   </div>
                 </div>

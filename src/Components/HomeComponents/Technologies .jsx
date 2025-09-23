@@ -68,53 +68,53 @@ function Technologies() {
   
       <div className="max-w-8xl mx-auto lg:py-12  px-4 w-full">
         {/* Header Tabs */}
-        <div className="flex lg:items-center lg:justify-center lg:gap-18 gap-2 mb-6 flex-wrap text-lg ">
+        <div className="flex lg:items-center lg:justify-center lg:gap-28 gap-2 mb-6 flex-wrap text-lg ">
           <button
             onClick={() => setActiveTab('website')}
-            className={`px-4 py-2 whitespace-nowrap transition-colors  ${
+            className={`px-4 py-2 cursor-pointer whitespace-nowrap transition-colors  ${
               activeTab === 'website'
-                ? 'text-[#01ACE4] border-b-2 border-[#01ACE4]'
-                : 'text-gray-600 hover:text-[#01ACE4] hover:border-b-2 hover:border-[#01ACE4]'
+                ? 'text-[#01ACE4] border-b-2 w-12 flex items-center justify-center border-[#01ACE4]'
+                : 'text-gray-600 hover:text-[#01ACE4]  w-12 flex items-center justify-center hover:border-b-2 hover:border-[#01ACE4]'
             }`}
           >
             Website
           </button>
           <button
             onClick={() => setActiveTab('mobileApp')}
-            className={`px-4 py-2  whitespace-nowrap transition-colors ${
+            className={`px-4 py-2 cursor-pointer whitespace-nowrap transition-colors ${
               activeTab === 'mobileApp'
-                ? 'text-[#01ACE4] border-b-2 border-[#01ACE4]'
-                : 'text-gray-600 hover:text-[#01ACE4] hover:border-b-2 hover:border-[#01ACE4]'
+                ? 'text-[#01ACE4] w-12 flex items-center justify-center  border-b-2 border-[#01ACE4]'
+                : 'text-gray-600 hover:text-[#01ACE4] w-12 flex items-center justify-center hover:border-b-2 hover:border-[#01ACE4]'
             }`}
           >
             Mobile App
           </button>
           <button
             onClick={() => setActiveTab('machineLearning')}
-            className={`px-4 py-2  whitespace-nowrap transition-colors ${
+            className={`px-4 py-2 cursor-pointer whitespace-nowrap transition-colors ${
               activeTab === 'machineLearning'
-                ? 'text-[#01ACE4] border-b-2 border-[#01ACE4]'
-                : 'text-gray-600 hover:text-[#01ACE4] hover:border-b-2 hover:border-[#01ACE4]'
+                ? 'text-[#01ACE4] border-b-2 w-12 flex items-center justify-center border-[#01ACE4]'
+                : 'text-gray-600 hover:text-[#01ACE4] w-12 flex items-center justify-center hover:border-b-2 hover:border-[#01ACE4]'
             }`}
           >
             AI Agents
           </button>
           <button
             onClick={() => setActiveTab('digitalMarketing')}
-            className={`px-4 py-2  whitespace-nowrap transition-colors ${
+            className={`px-4 py-2 cursor-pointer whitespace-nowrap transition-colors ${
               activeTab === 'digitalMarketing'
-                ? 'text-[#01ACE4] border-b-2 border-[#01ACE4]'
-                : 'text-gray-600 hover:text-[#01ACE4] hover:border-b-2 hover:border-[#01ACE4]'
+                ? 'text-[#01ACE4] border-b-2 w-12 flex items-center justify-center border-[#01ACE4]'
+                : 'text-gray-600 hover:text-[#01ACE4] w-12 flex items-center justify-center hover:border-b-2 hover:border-[#01ACE4]'
             }`}
           >
             UI/UX Design
           </button>
           <button
             onClick={() => setActiveTab('uiDesign')}
-            className={`px-4 py-2  whitespace-nowrap transition-colors ${
+            className={`px-4 py-2 cursor-pointer whitespace-nowrap transition-colors ${
               activeTab === 'uiDesign'
-                ? 'text-[#01ACE4] border-b-2 border-[#01ACE4]'
-                : 'text-gray-600 hover:text-[#01ACE4] hover:border-b-2 hover:border-[#01ACE4]'
+                ? 'text-[#01ACE4] border-b-2 w-12 flex items-center justify-center border-[#01ACE4]'
+                : 'text-gray-600 hover:text-[#01ACE4] w-12 flex items-center justify-center hover:border-b-2 hover:border-[#01ACE4]'
             }`}
           >
             UI Design
