@@ -12,7 +12,7 @@ function Footer() {
       </div>
 
       {/* Footer Content */}
-      <footer className="relative py-20 bg-[#00A9E0] text-white px-4 md:px-24 z-10">
+      <footer className="relative py-12 bg-[#00A9E0] text-white px-4 md:px-24 z-10">
         <div className="flex flex-col md:flex-row justify-between mb-4">
           <div className="lg:w-1/2 w-full mb-8 md:mb-0">
             <h2 className="text-xl font-semibold">
