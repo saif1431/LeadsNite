@@ -29,7 +29,7 @@ function TeamMembers({ member }) {
   const membersToRender = member ? [member] : defaultTeam;
 
   return (
-    <div className={member ? "" : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto lg:px-8 px-4  py-12"}>
+    <div className={member ? "" : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto lg:px-8 px-4 "}>
       {membersToRender.map((m, idx) => (
         <div
           key={m.name + idx}
