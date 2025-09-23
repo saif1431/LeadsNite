@@ -194,3 +194,33 @@ p{
 }
 
 }
+
+/* ...existing code... */
+
+/* overlay show-then-fade animation */
+@keyframes overlayShowThenFade {
+  0%   { opacity: 0.60; }   /* start less strong */
+  70%  { opacity: 0.30; }   /* mid fade */
+  100% { opacity: 0; }      /* fully gone */
+}
+
+/* when group (card) is hovered, trigger the short animation */
+.group:hover .team-overlay {
+  /* show with reduced intensity then fade out over 1s */
+  opacity: 0.6;
+ animation: overlayShowThenFade 500ms ease-out forwards;
+}
+
+/* make sure overlay is reset when hover ends (so it can play again next hover) */
+.group .team-overlay {
+  opacity: 0;
+  animation: none;
+}
+
+/* ...existing code... */
+
+/* make sure overlay is reset when hover ends (so it can play again next hover) */
+.group .team-overlay {
+  opacity: 0;
+  animation: none;
+}
