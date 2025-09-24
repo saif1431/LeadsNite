@@ -58,13 +58,19 @@ const ServiceCard = ({
   imageUrl, 
   route, 
   showDescription = false,
-  // showBorder = true 
 }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const isHomePage = location.pathname === '/';
   const handleClick = () => {
     navigate(route);
+    // ensure new page is shown from top (works reliably after navigation)
+    window.requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+      // extra safety for some browsers
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    });
   };
 
   return (
@@ -105,6 +111,7 @@ const Services = ({ showDescriptions = false }) => {
       <div className="grid grid-cols-1 max-w-7xl mx-auto px-4 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
         {servicesData.map(card => (
           <ServiceCard 
+          
             key={card.id}
             title={card.title}
             description={card.description}

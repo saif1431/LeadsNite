@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '/servicesImg/machineService.png'
+import img from '/servicesImg/webService.png'
 
 function MachineSection1() {
   return (

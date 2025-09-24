@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '/servicesImg/webService.png'
+import img from '/servicesImg/machineService.png'
 
 function Section1Image() {
   return (
