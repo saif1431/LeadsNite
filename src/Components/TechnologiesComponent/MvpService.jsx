@@ -1,5 +1,4 @@
-
-import React from "react";
+import React from 'react'
 
 const logos = [
   "/New/New/MVP/mvp (1).svg",
@@ -21,8 +20,9 @@ const logos = [
       "/New/New/MVP/mvp (17).svg",
 ];
 
-const Mvp = () => {
-  const duplicated = [...logos, ...logos];
+
+function MvpService() {
+const duplicated = [...logos, ...logos];
   const duration = 40; // bigger = slower (adjust to taste)
   const gap = 64; // gap between logos in px
   const slotMinWidth = 140; // ensures consistent width to avoid seams
@@ -88,4 +88,4 @@ const Mvp = () => {
   );
 };
 
-export default Mvp
+export default MvpService

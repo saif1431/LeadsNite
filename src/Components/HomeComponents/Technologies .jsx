@@ -4,7 +4,8 @@ import MobileApps from '../TechnologiesComponent/MobileApps';
 import MachineLearning from '../TechnologiesComponent/MachineLearning';
 import DigitalMarketing from '../TechnologiesComponent/DigitalMarketing';
 import UiDesign from '../TechnologiesComponent/UiDesign';
-import Mvp from '../TechnologiesComponent/mvp';
+import MvpService from '../TechnologiesComponent/MvpService';
+
 
 
 function Technologies() {
@@ -141,7 +142,7 @@ function Technologies() {
           {activeTab === 'machineLearning' && <MachineLearning data={qualificationCriteria} />}
           {activeTab === 'digitalMarketing' && <DigitalMarketing data={emailTemplates} />}
           {activeTab === 'uiDesign' && <UiDesign data={emailTemplates} />} {/* Assuming similar data structure */}
-          {activeTab === 'mvp' && <Mvp data={emailTemplates} />} {/* Assuming similar data structure */}
+          {activeTab === 'mvp' && <MvpService data={emailTemplates} />} {/* Assuming similar data structure */}
         </div>
       </div>
     </div>

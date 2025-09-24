@@ -4,7 +4,7 @@ import Websites from '../../TechnologiesComponent/Websites'
 import DigitalSection1 from './DigitalSection1'
 import DigitalDescription from './DigitalDescription'
 import DigitalFqs from './DigitalFqs'
-import Mvp from '../../TechnologiesComponent/mvp'
+import MvpService from '../../TechnologiesComponent/MvpService'
 
 
 function DigitalServices() {
@@ -13,7 +13,7 @@ function DigitalServices() {
     <div className='lg:w-[60%] w-full space-y-12'>
       <DigitalSection1/>
       <div className='w-[80%] mx-auto lg:mt-24 mt-12'>
-        <Mvp/>
+        <MvpService/>
       </div>
       <DigitalDescription/>
       <DigitalFqs/>
