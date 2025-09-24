@@ -5,41 +5,50 @@ function DigitalDescription() {
   return (
  <div className='space-y-12'>
        <div className='space-y-4'>
-             <h1 className='text-4xl font-bold'>Digital marketing</h1>
-             <p className='text-primary font-semibold'>Our digital marketing service propels your brand to the forefront of the online landscape, connecting you with your target audience effectively. Through strategic planning and innovative tactics, we enhance your online presence and drive tangible results for your business.</p>
+             <h1 className='text-4xl font-bold'>MVP Development</h1>
+             <p className='text-primary font-semibold'>Our MVP (Minimum Viable Product) development service helps startups and businesses quickly transform ideas into functional products with essential features. By focusing on core functionality, we allow you to validate your concept, attract early users, and secure investment — all while saving time and reducing costs.
+</p>
        </div>
        <div className='flex items-start justify-between flex-col lg:flex-row gap-4'>
              <div className='lg:w-[50%] w-full'>
                    <h2 className='text-3xl font-bold'>Included Services</h2>
                    <p className='flex items-center gap-3 mt-4 font-semibold text-primary'>
                          <IoMdCheckmark className='text-blue-600' />
-                        Advertisement Campaigns
+                       Product Strategy & RoadMapping
 
                    </p>
                    <p className='flex items-center gap-3 mt-4 font-semibold text-primary'>
                          <IoMdCheckmark className='text-blue-600' />
-                        Content Creation
+                       Wireframing & Prototyping
+
                    </p>
                    <p className='flex items-center gap-3 mt-4 font-semibold text-primary'>
                          <IoMdCheckmark className='text-blue-600' />
-                     Social Media Management
+                     Rapid App & Web Development
+
                    </p>
                    <p className='flex items-center gap-3 mt-4 font-semibold text-primary'>
                          <IoMdCheckmark className='text-blue-600' />
-                     SEO Optimization
+                     MVP Testing & Validation
+
+                   </p>
+                   <p className='flex items-center gap-3 mt-4 font-semibold text-primary'>
+                         <IoMdCheckmark className='text-blue-600' />
+                   Iteration & Scaling Support
                    </p>
              </div>
              <div className='lg:w-[50%] w-full space-y-4'>
                    <h1 className='text-3xl font-bold'>The Challange
  </h1>
- <p className='font-medium leading-relaxed'>Digital marketing is hard because things keep changing. It’s tough to stand out online and keep people interested. Plus, figuring out if your marketing is working, tracking performance and measuring ROIs can be really tricky, especially for small businesses.</p>
+ <p className='font-medium leading-relaxed'>Launching a new product can be risky, time-consuming, and costly. Many businesses struggle with deciding which features to include, how to validate their ideas, and how to balance speed with quality. Without the right approach, there’s a risk of spending heavily on a product that doesn’t meet market needs.</p>
              </div>
        </div>
  
        <div className='space-y-4'>
              <h1 className='text-3xl font-bold'>
  What we do?</h1>
- <p className='font-medium text-primary'>We tackle these challenges by crafting tailored digital marketing strategies that resonate with your audience and align with your business goals. Our expertise in social media management and SEO ensures that your brand remains visible and relevant. Through targeted PPC campaigns and compelling content creation, we drive traffic and conversions, ultimately helping you achieve measurable success in the digital realm. With our guidance, you can navigate the complexities of digital marketing with ease and achieve sustainable growth for your business.</p>
+ <p className='font-medium text-primary'>We tackle these challenges by focusing on lean development principles. Our team helps you identify the must-have features, build a functional MVP quickly, and test it with real users. This ensures you receive valuable feedback early on, allowing you to improve and scale the product with confidence. With our approach, you minimize risks, save resources, and accelerate your time-to-market.
+</p>
        </div>
      </div>
   )

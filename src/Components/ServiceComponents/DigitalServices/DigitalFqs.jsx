@@ -6,24 +6,24 @@ const DigitalFqs = () => {
 
   const faqs = [
     {
-      question: "What specific digital marketing strategies do you offer?",
-      answer: "We do lots of different digital marketing things, like making sure your website shows up on Google, putting ads on social media, sending emails to people, and making cool stuff for your website."
+      question: "What makes your MVP development service unique?",
+      answer: "We prioritize speed and efficiency while ensuring quality. Our approach combines strategy, design, and development so you can launch a market-ready MVP faster than traditional methods."
     },
     {
-      question: "How can digital marketing benefit my business?",
-      answer: "Digital marketing can make more people know about your business online, get more people to visit your website, get more people interested in what you're selling, and make more money for your business. We help you do all that stuff!"
+      question: "How do you decide which features go into the MVP?",
+      answer: "We work closely with you to identify your product’s core value and only include features that are essential for testing and validation."
     },
     {
-      question: "What sets your digital marketing service apart from others?",
-      answer: "Our digital marketing is special because we use cool ideas, look at numbers to see what's working, and always try to make things better. We're really good at making fun ads, finding the right people to see them, and making sure your business gets noticed."
+      question: "Can you help us scale the MVP into a full product later?",
+      answer: "Yes! Once your MVP is validated, we assist in expanding it into a full-featured product with advanced functionalities."
     },
     {
-      question: "How do you measure the success of digital marketing campaigns?",
-      answer: "We look at important numbers to see if our digital marketing is doing a good job. We check things like how many people visit your website, how many people buy something, and how much money you make from the ads we put out."
+      question: "Do you provide prototyping before development?",
+      answer: "Absolutely. We create wireframes and clickable prototypes so you can visualize the product and make adjustments before coding begins."
     },
     {
-      question: "Can you help my business with ongoing digital marketing support?",
-      answer: "Of course! We're here to help your business for a long time. We keep checking on how things are going, making sure everything's working well, and keeping up with new ideas and changes. We're always here to help your business do great online!"
+      question: "How do you ensure the MVP aligns with our business goals?",
+      answer: "We start with strategy sessions to understand your vision, target audience, and goals, ensuring every step of the MVP aligns with your long-term objectives."
     }
   ];
 

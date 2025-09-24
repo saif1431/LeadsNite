@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 const ClientCount = () => {
   const stats = [
-    { id: 1, value: 500, suffix: '+', label: 'Client Count' },
-    { id: 2, value: 99, suffix: '%', label: 'Client Satisfaction' },
-    { id: 3, value: 31, suffix: '%', label: 'Referral Rate' },
-    { id: 4, value: 97, suffix: '%', label: 'Project Completion' },
+    { id: 1, value: 130, suffix: '+', label: 'Client Count' },
+    { id: 4, value: 97, suffix: '%', label: ' Project Completion' },
+    { id: 2, value: 98, suffix: '%', label: 'Client Satisfaction' },
+    { id: 3, value: 18, suffix: '%', label: ' Referral Rate' },
   ];
 
   const [counters, setCounters] = useState(

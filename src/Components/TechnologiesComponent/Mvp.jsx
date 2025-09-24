@@ -1,48 +1,27 @@
-import React from 'react';
-
 
 const logos = [
-  "/New/New/Mobile Application/1.png",
-  "/New/New/Mobile Application/2.png",
-  "/New/New/Mobile Application/3.png",
-  "/New/New/Mobile Application/4.png",
-  "/New/New/Mobile Application/5.png",
-  "/New/New/Mobile Application/6.png",
-  "/New/New/Mobile Application/7.png",
-  "/New/New/Mobile Application/8.png",
-  "/New/New/Mobile Application/9.png",
-  "/New/New/Mobile Application/10.png",
-  "/New/New/Mobile Application/11.png",
-  "/New/New/Mobile Application/12.png",
-  "/New/New/Mobile Application/13.png",
-  "/New/New/Mobile Application/14.png",
-   "/New/New/Website/1.png",
-  "/New/New/Website/2.png",
-  "/New/New/Website/3.png",
-  "/New/New/Website/4.png",
-  "/New/New/Website/5.png",
-  "/New/New/Website/6.png",
-  "/New/New/Website/7.png",
-  "/New/New/Website/8.png",
-  "/New/New/Website/9.png",
-  "/New/New/Website/10.png",
-  "/New/New/Website/11.png",
-  "/New/New/Website/12.png",
-  "/New/New/Website/13.png",
-  "/New/New/Website/14.png",
-  "/New/New/Website/15.png",
-  "/New/New/Website/16.png",
-  "/New/New/Website/17.png",
-  "/New/New/Website/18.png",
-  "/New/New/Website/19.png",
-  "/New/New/Website/20.png",
-  "/New/New/Website/21.png",
-  // Add more logos as needed
+  "/New/New/MVP/mvp (1).svg",
+      "/New/New/MVP/mvp (2).svg",
+      "/New/New/MVP/mvp (3).svg",
+      "/New/New/MVP/mvp (4).svg",
+      "/New/New/MVP/mvp (5).svg",
+      "/New/New/MVP/mvp (6).svg",
+      "/New/New/MVP/mvp (7).svg",
+      "/New/New/MVP/mvp (8).svg",
+      "/New/New/MVP/mvp (9).svg",
+      "/New/New/MVP/mvp (10).svg",
+      "/New/New/MVP/mvp (11).svg",
+      "/New/New/MVP/mvp (12).svg",
+      "/New/New/MVP/mvp (13).svg",
+      "/New/New/MVP/mvp (14).svg",
+      "/New/New/MVP/mvp (15).svg",
+      "/New/New/MVP/mvp (16).svg",
+      "/New/New/MVP/mvp (17).svg",
 ];
 
-const UiDesign = () => {
+const Mvp = () => {
   const duplicated = [...logos, ...logos];
-  const duration = 55; // bigger = slower (adjust to taste)
+  const duration = 40; // bigger = slower (adjust to taste)
   const gap = 64; // gap between logos in px
   const slotMinWidth = 140; // ensures consistent width to avoid seams
 
@@ -107,13 +86,4 @@ const UiDesign = () => {
   );
 };
 
-export default UiDesign;
-
-
-
-
-
- 
- 
- 
- 
+export default Mvp

@@ -4,6 +4,7 @@ import GraphicsSection1 from './GraphicsSection1'
 import GraphicsDescription from './GraphicsDescription'
 import GraphicsFaqs from './GraphicsFaqs'
 import DigitalMarketing from '../../TechnologiesComponent/DigitalMarketing'
+import UiDesign from '../../TechnologiesComponent/UiDesign'
 
 function GraphicsServices() {
   return (
@@ -11,7 +12,7 @@ function GraphicsServices() {
     <div className='lg:w-[60%] w-full space-y-12'>
       <GraphicsSection1/>
       <div className='w-[80%] mx-auto lg:mt-24 mt-12'>
-        <DigitalMarketing/>
+        <UiDesign/>
       </div>
       <GraphicsDescription/>
       <GraphicsFaqs/>

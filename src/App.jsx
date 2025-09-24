@@ -31,11 +31,11 @@ function App() {
           <Route path="/services" element={<ServicePage />} />
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/services/web-development" element={<WebServices />} />
-          <Route path="/services/machine-learning" element={<MachineServices />} />
+          <Route path="/services/ai-agents" element={<MachineServices />} />
           <Route path="/services/app-development" element={<AppServices />} />
-          <Route path="/services/video-editing" element={<VideoServices />} />
-          <Route path="/services/graphic-designing" element={<GraphicsServices />} />
-          <Route path="/services/digital-marketing" element={<DigitalServices />} />
+          <Route path="/services/ui&ux-design" element={<VideoServices />} />
+          <Route path="/services/SaaS-development" element={<GraphicsServices />} />
+          <Route path="/services/mvp-development" element={<DigitalServices />} />
           <Route path="/ScrollHover" element={<ScrollHover />} />
           <Route path="/ContactUs" element={<ContactUs padding=" px-4" />} />
           <Route path="/app-development" element={<AppDevelopmentPage />} />

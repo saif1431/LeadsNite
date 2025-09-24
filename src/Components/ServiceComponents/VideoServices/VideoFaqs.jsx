@@ -6,24 +6,24 @@ const VideoFaqs = () => {
 
   const faqs = [
     {
-      question: "What types of videos do you edit?",
-      answer: "We edit a wide range of videos, including corporate videos, social media content, vlogs, event highlights, and more. Whether it's a promotional video for your business or a personal project, we've got you covered with our versatile editing services."
+      question: "What makes your UI/UX design service unique?",
+      answer: "Our designs are not just visually attractive — they are based on real user research and behavior analysis. This ensures every interface we create is functional, user-friendly, and tailored to your target audience."
     },
     {
-      question: "How long does it take to edit a video?",
-      answer: "The time taken to edit a video depends on various factors such as the length of the footage, complexity of editing required, and any specific client requests. Generally, we aim to deliver high-quality edits within a reasonable timeframe, ensuring timely delivery without compromising on quality."
+      question: "How do you ensure your designs are user-friendly and effective?",
+      answer: "We conduct detailed user research, usability testing, and feedback sessions. This helps us refine the design until it meets both business goals and user expectations."
     },
     {
-      question: "Can you add special effects and graphics to my video?",
-      answer: "Absolutely! We specialize in adding special effects, graphics, text overlays, transitions, and other visual elements to enhance the overall appeal and impact of your video. Whether you're looking for subtle enhancements or eye-catching animations, we have the expertise to make your video stand out."
+      question: "Can you redesign or improve existing apps/websites?",
+      answer: "Yes! We specialize in revamping outdated designs to modern, responsive, and intuitive interfaces that boost engagement and customer satisfaction."
     },
     {
-      question: "Do you offer revisions if I'm not satisfied with the editing?",
-      answer: "Yes, customer satisfaction is our top priority. We provide revision rounds to ensure that the final edited video meets your expectations. We welcome your feedback and strive to incorporate any necessary changes to achieve the desired result, ensuring that you're completely satisfied with the end product."
+      question: "Do you conduct user testing before finalizing designs?",
+      answer: "Absolutely. We test prototypes with real users to identify pain points and improve usability before final delivery."
     },
     {
-      question: "How do I send my footage for editing?",
-      answer: "Sending your footage for editing is simple and convenient. You can upload your files securely to any online platform, or you can share them via cloud storage services such as Google Drive or Dropbox. Rest assured, your files will be handled with the utmost confidentiality and professionalism throughout the editing process."
+      question: "Do you provide ongoing design updates as technology evolves?",
+      answer: "Yes, we offer continuous support to keep your digital platforms updated with the latest trends, ensuring your business stays ahead in the market."
     }
   ];
 
