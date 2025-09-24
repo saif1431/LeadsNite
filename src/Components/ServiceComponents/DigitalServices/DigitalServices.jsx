@@ -6,6 +6,7 @@ import DigitalDescription from './DigitalDescription'
 import DigitalFqs from './DigitalFqs'
 import Mvp from '../../TechnologiesComponent/mvp'
 
+
 function DigitalServices() {
   return (
   <div className='max-w-7xl mx-auto px-4  lg:py-46 py-16 flex flex-col lg:flex-row items-start justify-evenly gap-24'>

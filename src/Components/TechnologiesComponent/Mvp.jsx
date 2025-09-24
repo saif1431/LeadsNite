@@ -1,4 +1,6 @@
 
+import React from "react";
+
 const logos = [
   "/New/New/MVP/mvp (1).svg",
       "/New/New/MVP/mvp (2).svg",
