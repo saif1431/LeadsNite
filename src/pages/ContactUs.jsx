@@ -87,116 +87,156 @@ function ContactUs({padding}) {
   };
 
   return (
-    <div className={`${padding} max-w-7xl mx-auto lg:py-32 py-12 gap-6 flex flex-col md:flex-row items-center  justify-between`} style={{backgroundImage: "url(/map.png)"}}>
-      <form onSubmit={handleSubmit} className='bg-white  shadow-xl py-32 px-16 space-y-6'>
-        <h2 className='lg:text-4xl text-3xl font-bold'>Ask us Anything</h2>
-        
-        <div>
-          <input 
-            type="text" 
-            name="name"
-            placeholder='Name' 
-            className='border-b border-gray-300 w-full outline-none px-2 py-2' 
-            value={formData.name}
-            onChange={handleChange}
-          />
-          {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
-        </div>
-        
-        <div className='flex flex-col md:flex-row items-center gap-8'>
-          <div className='w-full'>
+    <>
+      <div className={`${padding} max-w-7xl mx-auto lg:py-32 py-12 gap-6 flex flex-col md:flex-row items-center  justify-between`} style={{backgroundImage: "url(/map.png)"}}>
+        <form onSubmit={handleSubmit} className='bg-white  shadow-xl py-32 px-16 space-y-6'>
+          <h2 className='lg:text-4xl text-3xl font-bold'>Ask us Anything</h2>
+          
+          <div>
             <input 
               type="text" 
-              name="email"
-              placeholder='Email*' 
+              name="name"
+              placeholder='Name' 
               className='border-b border-gray-300 w-full outline-none px-2 py-2' 
-              value={formData.email}
+              value={formData.name}
               onChange={handleChange}
             />
-            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+            {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
           </div>
-          <div className='w-full'>
-            <input 
-              type="text" 
-              name="phone"
-              placeholder='Phone' 
+          
+          <div className='flex flex-col md:flex-row items-center gap-8'>
+            <div className='w-full'>
+              <input 
+                type="text" 
+                name="email"
+                placeholder='Email*' 
+                className='border-b border-gray-300 w-full outline-none px-2 py-2' 
+                value={formData.email}
+                onChange={handleChange}
+              />
+              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+            </div>
+            <div className='w-full'>
+              <input 
+                type="text" 
+                name="phone"
+                placeholder='Phone' 
+                className='border-b border-gray-300 w-full outline-none px-2 py-2' 
+                value={formData.phone}
+                onChange={handleChange}
+              />
+              {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
+            </div>
+          </div>
+          
+          <div>
+            <textarea 
+              name="message"
               className='border-b border-gray-300 w-full outline-none px-2 py-2' 
-              value={formData.phone}
+              placeholder='Tell Us About Project'
+              value={formData.message}
               onChange={handleChange}
-            />
-            {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
+            ></textarea>
+            {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
           </div>
-        </div>
-        
-        <div>
-          <textarea 
-            name="message"
-            className='border-b border-gray-300 w-full outline-none px-2 py-2' 
-            placeholder='Tell Us About Project'
-            value={formData.message}
-            onChange={handleChange}
-          ></textarea>
-          {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
-        </div>
-        
-        
-        
-        <button 
-          type="submit"
-          className='px-8 flex items-center gap-4 py-4 text-lg font-semibold text-white rounded-lg bg-blue-600 hover:bg-blue-700 transition-all ease-in duration-200'
-        >
-          <BsFillSendFill />
-          Get in Touch
-        </button>
-        {errors.form && (
-          <p className=" border-2 p-4 border-amber-300 text-sm mt-1">{errors.form}</p>
-        )}
-      </form>
+          
+          
+          
+          <button 
+            type="submit"
+            className='px-8 flex items-center gap-4 py-4 text-lg font-semibold text-white rounded-lg bg-blue-600 hover:bg-blue-700 transition-all ease-in duration-200'
+          >
+            <BsFillSendFill />
+            Get in Touch
+          </button>
+          {errors.form && (
+            <p className=" border-2 p-4 border-amber-300 text-sm mt-1">{errors.form}</p>
+          )}
+        </form>
 
-      <div className='space-y-8'>
-            <h1 className='lg:text-4xl text-3xl font-bold'>Contact Information</h1>
-            <p className='flex flex-col gap-1'>
-                  <span>Unlock the door to connect with ease!
+        <div className='space-y-8'>
+              <h1 className='lg:text-4xl text-3xl font-bold'>Contact Information</h1>
+              <p className='flex flex-col gap-1'>
+                    <span>Unlock the door to connect with ease!
 </span>
 <span>Reach out via any of the channels below</span>
-            </p>
+              </p>
 <div className='flex items-start flex-col lg:flex-row lg:gap-24 gap-6'>
-   <div className='space-y-6'>
-         <div className='space-y-4'>
-            <h4 className='font-bold text-xl'>Phone</h4>
-            <span className='text-lg'>+92 325 5176508</span>
-      </div>
-      <div className='space-y-4'>
-            <h4 className='font-bold text-xl'>Official Email
-</h4>
-            <span className='text-lg'>contact@leadsnite.com</span>
-      </div>
-   </div>
-   <div className='space-y-6'>
+     <div className='space-y-6'>
+           <div className='space-y-4'>
+              <h4 className='font-bold text-xl'>Phone</h4>
+              <span className='text-lg'>+92 325 5176508</span>
+        </div>
         <div className='space-y-4'>
-            <h4 className='font-bold text-xl'>Location
+              <h4 className='font-bold text-xl'>Official Email
 </h4>
-            <span className='text-lg'>Wah Cantt, Pakistan
+              <span className='text-lg'>contact@leadsnite.com</span>
+        </div>
+     </div>
+     <div className='space-y-6'>
+          <div className='space-y-4'>
+              <h4 className='font-bold text-xl'>Location
+</h4>
+              <span className='text-lg'>Wah Cantt, Pakistan
 
 </span>
+        </div>
+
+        <div className='space-y-4'>
+              <h4 className='font-bold text-xl'>Follow Us
+</h4>
+              <div className='flex items-center gap-4'>
+                    {/* <FaFacebookF  className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]' />
+                    <FaXTwitter   className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]'  />
+                    <FaInstagram  className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]' /> */}
+                    <a target='_blank' href="https://www.linkedin.com/company/leadsnite/">
+                      <FaLinkedinIn   className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]'/>
+                    </a>
+              </div>
+        </div>
+     </div>
+</div>
+        </div>
       </div>
 
-      <div className='space-y-4'>
-            <h4 className='font-bold text-xl'>Follow Us
-</h4>
-            <div className='flex items-center gap-4'>
-                  {/* <FaFacebookF  className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]' />
-                  <FaXTwitter   className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]'  />
-                  <FaInstagram  className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]' /> */}
-                  <a target='_blank' href="https://www.linkedin.com/company/leadsnite/">
-                    <FaLinkedinIn   className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4]'/>
-                  </a>
+      {/* Response Time Section */}
+      <div className=' py-16'>
+        <div className='max-w-7xl mx-auto px-4'>
+          <h2 className='text-center text-3xl font-bold mb-12 '>Our Response Time</h2>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+            {/* Email Response */}
+            <div className='text-center space-y-4'>
+              <div className='text-6xl font-bold '>
+                &lt; 1h
+              </div>
+              <div className='text-gray-600 text-lg'>
+                Email Response
+              </div>
             </div>
+
+            {/* Support Available */}
+            <div className='text-center space-y-4'>
+              <div className='text-6xl font-bold '>
+                24/7
+              </div>
+              <div className='text-gray-600 text-lg'>
+                Support Available
+              </div>
+            </div>
+
+            {/* Project Proposal */}
+            <div className='text-center space-y-4'>
+              <div className='text-6xl font-bold '>
+                24h
+              </div>
+              <div className='text-gray-600 text-lg'>
+                Project Proposal
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-   </div>
-</div>
-      </div>
-    </div>
+    </>
   );
 }
 

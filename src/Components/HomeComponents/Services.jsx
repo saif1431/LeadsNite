@@ -39,14 +39,14 @@ const servicesData = [  // Changed from Services to servicesData
   {
     id: 5,
     title: "SaaS Development",
-    imageUrl: "/servicesImg/img5.png",
+    imageUrl: "/servicesImg/saas.png",
     description: "Our SaaS solutions help businesses move faster, reduce costs, and scale easily by providing cloud-based applications that are accessible anytime, anywhere. ",
     route: "/services/SaaS-development"
   },
   {
     id: 6,
     title: "MVP Development",
-    imageUrl: "/servicesImg/img6.png",
+    imageUrl: "/servicesImg/mvp.png",
     description: "Our MVP (Minimum Viable Product) development service helps startups and businesses quickly transform ideas into functional products with essential features.",
     route: "/services/mvp-development"
   },

@@ -109,7 +109,7 @@ const Navbar = () => {
           </Link>
         </div>
  <a 
-            href="https://www.linkedin.com/" 
+            href="https://www.linkedin.com/company/leadsnite/" 
             target="_blank" 
             rel="noopener noreferrer"
             className={`  transition ${

@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '/servicesImg/marketingService.png'
+import img from '/servicesImg/mvp inner image.png'
 
 function DigitalSection1() {
   return (

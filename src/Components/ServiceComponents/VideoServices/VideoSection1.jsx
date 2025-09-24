@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '/servicesImg/videoService.png'
+import img from '/servicesImg/ui ux inner image.png'
 
 function VideoSection1() {
   return (

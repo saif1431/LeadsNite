@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '/servicesImg/graphicService.png'
+import img from '/servicesImg/saas inner image.png'
 
 function GraphicsSection1() {
   return (
