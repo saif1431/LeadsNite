@@ -100,7 +100,7 @@ export default function PricingSection() {
                 <p className="text-gray-600 text-md mt-12 mb-8">{pricingData.free.description}</p>
 
            <Link to='/ContactUs'>
-              <Button children="Contact Us"/>
+              <Button children="Lets Talk"/>
            </Link>
 
                 {pricingData.free.features.map((feature, index) => (
@@ -128,7 +128,7 @@ export default function PricingSection() {
                 <p className="text-gray-600 text-md mb-10">{pricingData.basic.description}</p>
 
                    <Link to='/ContactUs'>
-              <Button children="Contact Us"/>
+              <Button children="Lets Talk"/>
            </Link>
 
                 {pricingData.basic.features.map((feature, index) => (

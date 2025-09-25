@@ -5,11 +5,11 @@ export default function AboutUsSection1() {
   const navigate = useNavigate()
   const services = [
     { name: "Web Development", path: "/services/web-development" },
-    { name: "Machine Learning", path: "/services/machine-learning" },
+    { name: "AI Agents", path: "/services/ai-agents" },
     { name: "App Development", path: "/services/app-development" },
-    { name: "Video Editing", path: "/services/video-editing" },
-    { name: "Graphic Designing", path: "/services/graphic-designing" },
-    { name: "Digital Marketing", path: "/services/digital-marketing" },
+    { name: "UI UX Design", path: "/services/ui&ux-design" },
+    { name: "SaaS Development", path: "/services/SaaS-development" },
+    { name: "MVP Development", path: "/services/mvp-development" },
   ]
 
   return (

@@ -32,21 +32,21 @@ const servicesData = [  // Changed from Services to servicesData
   {
     id: 4,
     title: "UI UX Design",
-    imageUrl: "/servicesImg/uiux.png",
+    imageUrl: "/servicesImg/3.png",
     description: "Our UI/UX design service focuses on creating intuitive, engaging, and user-friendly digital experiences. We blend creativity with functionality to design interfaces.",
     route: "/services/ui&ux-design"
   },
   {
     id: 5,
     title: "SaaS Development",
-    imageUrl: "/servicesImg/saas.png",
+    imageUrl: "/servicesImg/1.png",
     description: "Our SaaS solutions help businesses move faster, reduce costs, and scale easily by providing cloud-based applications that are accessible anytime, anywhere. ",
     route: "/services/SaaS-development"
   },
   {
     id: 6,
     title: "MVP Development",
-    imageUrl: "/servicesImg/mvp.png",
+    imageUrl: "/servicesImg/2.png",
     description: "Our MVP (Minimum Viable Product) development service helps startups and businesses quickly transform ideas into functional products with essential features.",
     route: "/services/mvp-development"
   },
