@@ -10,7 +10,6 @@ import VideoServices from './Components/ServiceComponents/VideoServices/VideoSer
 import GraphicsServices from './Components/ServiceComponents/GraphicsServices/GraphicsServices'
 import DigitalServices from './Components/ServiceComponents/DigitalServices/DigitalServices'
 import ScrollHover from './ResuseableComponents/ScrollHover'
-import ContactUs from './pages/ContactUs'
 import Navbar from './ResuseableComponents/Navbar'
 import Footer from './ResuseableComponents/Footer'
 import AppDevelopmentPage from './pages/AppDevelopmentPage'
@@ -20,6 +19,7 @@ import ProjectDetail from './Components/AppComponents/ProjectDetail'
 import WebCardDetail from './Components/WebComponent/WebCardDetail'
 import ShowProject from './pages/ShowProject'
 import MlProjectDetail from './Components/MlComponent/MlProjectDetail'
+import ContactUs from './pages/ContactUs'
 
 
 function App() {

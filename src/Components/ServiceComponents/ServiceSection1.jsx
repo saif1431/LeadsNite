@@ -17,7 +17,7 @@ export default function ServiceSection1() {
                 <img className="lg:w-30 w-24 lg:h-30 h-24" src={img1} alt="" />
               </div>
               <div className="mb-4">
-                <div className="text-6xl font-bold">10+</div>
+                <div className="text-6xl font-bold">6</div>
                 <div className="text-lg font-bold">Services Provided</div>
               </div>
             </div>
@@ -32,7 +32,7 @@ export default function ServiceSection1() {
                 <img className="lg:w-30 w-24 lg:h-30 h-24" src={img2} alt="" />
               </div>
               <div>
-                <div className="text-6xl font-bold">32+</div>
+                <div className="text-6xl font-bold">25</div>
                 <div className="text-lg font-bold">Team Members</div>
               </div>
             </div>

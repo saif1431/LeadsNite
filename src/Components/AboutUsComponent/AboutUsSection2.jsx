@@ -10,12 +10,13 @@ function AboutUsSection2() {
             <h2 className='text-3xl font-bold'>What Sets us Apart</h2>
             <div className=' mt-12'>
                  <div className='flex items-start gap-8'>
-                   <div className='rounded-full check-list flex items-center justify-center lg:w-[70px] lg:h-[50px] w-[75px] h-[30px]'>
+                   <div className='rounded-full check-list flex items-center justify-center lg:w-[100px] lg:h-[45px] w-[75px] h-[30px]'>
                         <TiTick className='text-white text-xl' />
                   </div>
                   <div className='space-y-4'>
-                    <h5 className='text-xl font-bold'>Free Marketing</h5>
-                  <p className='lg:w-[50%] font-medium leading w-full'>Unlike others, we provide startups with complimentary marketing services, where they only pay for ads.</p>
+                    <h5 className='text-xl font-bold'>Free Consultation
+</h5>
+                  <p className='lg:w-[50%] font-medium leading w-full'>Unlike others, we offer startups a complimentary consultation to discuss your ideas and strategies, helping you plan the best path forward—no payment required.</p>
                   </div>
                  </div>
                  <hr className='mt-4 border-gray-300 w-[60%]' />

@@ -19,9 +19,9 @@ export default function AboutUsSection1() {
         <div className="relative flex flex-col gap-4">
           <div className="relative overflow-hidden">
             <img
-              src="/AboutImage/img5.png"
+              src="/aboutImg.jpg"
               alt="Team working with futuristic technology and data visualizations"
-              className="lg:w-[85%] h-4/4 object-cover"
+              className="lg:w-[85%] h-[70vh] object-cover"
             />
 
             {/* Experience overlay card */}
@@ -44,10 +44,8 @@ export default function AboutUsSection1() {
             <h2 className="text-4xl lg:text-5xl font-bold  mb-6">We Help Startups Shine</h2>
 
             <p className="text-primary font-semibold text-md leading-relaxed">
-              We are a team of experts who love helping businesses grow. With our skills in coding, marketing, and
-              business, we're here to support you. Whether you're just starting out or already established, we're
-              committed to making sure you succeed. When you work with us, you're getting a partner dedicated to helping
-              your business thrive.
+           We are a team of experts passionate about helping businesses grow. By combining our skills in technology, design, and strategy, we guide startups and established companies alike, turning ideas into successful products. When you work with us, you get a partner dedicated to your growth and long-term success.
+
             </p>
           </div>
 

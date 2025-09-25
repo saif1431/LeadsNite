@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react"
 import { FaLinkedin } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -24,10 +25,10 @@ function Footer() {
             <div>
             <h3 className="text-2xl font-bold mb-6">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:underline">Services</a></li>
-              <li><a href="#" className="hover:underline">Projects</a></li>
-              <li><a href="#" className="hover:underline">About Us</a></li>
-              <li><a href="#" className="hover:underline">Contact Us</a></li>
+              <li><Link to="/services" className="hover:underline">Services</Link></li>
+              {/* <li><Link to="#" className="hover:underline">Projects</Link></li> */}
+              <li><Link to="/about-us" className="hover:underline">About Us</Link></li>
+              <li><Link to="/ContactUs" className="hover:underline">Contact Us</Link></li>
             </ul>
           </div>
 

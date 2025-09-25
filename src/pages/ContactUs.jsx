@@ -3,6 +3,8 @@ import Button from '../ResuseableComponents/Button';
 import { BsFacebook, BsFillSendFill, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import ResponseTimeSection from '../Components/ContactComponents/ResponseTimeSection';
+import ContactFaqs from '../Components/ContactComponents/ContactFaqs';
 
 function ContactUs({padding}) {
   const [formData, setFormData] = useState({
@@ -200,42 +202,8 @@ function ContactUs({padding}) {
       </div>
 
       {/* Response Time Section */}
-      <div className=' py-16'>
-        <div className='max-w-7xl mx-auto px-4'>
-          <h2 className='text-center lg:text-4xl text-3xl font-bold mb-12 '>Our Response Time</h2>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
-            {/* Email Response */}
-            <div className='text-center space-y-4'>
-              <div className='text-4xl font-bold '>
-                &lt; 1h
-              </div>
-              <div className='text-gray-600 text-md'>
-                Email Response
-              </div>
-            </div>
-
-            {/* Support Available */}
-            <div className='text-center space-y-4'>
-              <div className='text-4xl font-bold '>
-                24/7
-              </div>
-              <div className='text-gray-600 text-md'>
-                Support Available
-              </div>
-            </div>
-
-            {/* Project Proposal */}
-            <div className='text-center space-y-4'>
-              <div className='text-4xl font-bold '>
-                24h
-              </div>
-              <div className='text-gray-600 text-md'>
-                Project Proposal
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+     <ResponseTimeSection/>
+     <ContactFaqs/>
     </>
   );
 }
