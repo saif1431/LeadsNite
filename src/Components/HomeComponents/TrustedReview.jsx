@@ -49,11 +49,11 @@ const TrustedReview = () => {
           }
           
           .review-card {
-            width: 600px;
+            width: 570px;
             height: 300px;
             border: 1px solid #d1d5db;
             border-radius: 8px;
-            padding: 16px;
+            // padding: 16px;
             background: white;
             display: flex;
             align-items: center;
