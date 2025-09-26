@@ -7,6 +7,7 @@ const logos = [
   "/New/New/UI UX/ui ux (4).png",
   "/New/New/UI UX/ui ux (5).png",
   "/New/New/UI UX/ui ux (6).png",
+  "/New/New/UI UX/ui ux (7).png",
 ];
 
 const DigitalMarketing = () => {

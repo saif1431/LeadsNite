@@ -26,7 +26,7 @@ const logos = [
 
 const Websites = () => {
   const duplicated = [...logos, ...logos];
-  const duration = 55; // bigger = slower
+  const duration = 60; // bigger = slower
   const gap = 64; // px between logos
   const slotMinWidth = 140; // consistent slot width to avoid seam
 

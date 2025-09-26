@@ -42,7 +42,7 @@ const logos = [
 
 const UiDesign = () => {
   const duplicated = [...logos, ...logos];
-  const duration = 55; // bigger = slower (adjust to taste)
+  const duration = 80; // bigger = slower (adjust to taste)
   const gap = 64; // gap between logos in px
   const slotMinWidth = 140; // ensures consistent width to avoid seams
 
