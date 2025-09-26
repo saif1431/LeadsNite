@@ -34,7 +34,7 @@ const TrustedReview = () => {
         <style jsx>{`
           @keyframes scroll {
             0% { transform: translateX(0); }
-            100% { transform: translateX(-20%); }
+            100% { transform: translateX(-10%); }
           }
           
           .scroll-track {
@@ -49,8 +49,8 @@ const TrustedReview = () => {
           }
           
           .review-card {
-            width: 550px;
-            height: 250px;
+            width: 600px;
+            height: 300px;
             border: 1px solid #d1d5db;
             border-radius: 8px;
             padding: 16px;
