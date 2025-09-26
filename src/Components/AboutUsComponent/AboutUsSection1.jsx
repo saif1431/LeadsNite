@@ -16,12 +16,12 @@ export default function AboutUsSection1() {
     <div className="max-w-7xl mx-auto lg:px-8 px-4   lg:py-32 py-16 ">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* Left side - Image with overlay */}
-        <div className="relative flex flex-col gap-4">
-          <div className="relative overflow-hidden">
+        <div className="relative h-[100%]  flex flex-col gap-4">
+          <div className="relative h-full overflow-hidden">
             <img
-              src="/aboutImg.jpg"
+              src="/aboutImg3.png "
               alt="Team working with futuristic technology and data visualizations"
-              className="lg:w-[85%] h-[70vh] object-cover"
+              className="lg:w-[85%] h-full object-top"
             />
 
             {/* Experience overlay card */}
