@@ -49,30 +49,30 @@ const TrustedReview = () => {
           }
           
           .review-card {
+             // padding: 16px;
             width: 570px;
             height: 300px;
-            border: 1px solid #d1d5db;
+           border: 1px solid #d1d5db;
             border-radius: 8px;
-            // padding: 16px;
-            background: white;
+            // background: white;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            // box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             transition: box-shadow 0.3s ease;
           }
           
           .review-card:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            // box-shadow: 0 4px 12px rgba(0,0,0,0.15);
           }
           
           .review-card img {
             max-height: 100%;
             max-width: 100%;
             object-fit: contain;
-            opacity: 0.8;
-            transition: opacity 0.3s ease;
+       
+            // transition: opacity 0.3s ease;
           }
           
           .review-card:hover img {

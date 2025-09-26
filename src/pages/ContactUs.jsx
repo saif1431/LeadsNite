@@ -92,7 +92,7 @@ function ContactUs({padding}) {
     <>
       <div className={`${padding} max-w-7xl mx-auto lg:py-32 py-12 gap-6 flex flex-col md:flex-row items-center  justify-between`} style={{backgroundImage: "url(/map.png)"}}>
         <form onSubmit={handleSubmit} className='bg-white  shadow-xl py-32 px-16 space-y-6'>
-          <h2 className='lg:text-4xl text-3xl font-bold'>Ask us Anything</h2>
+          <h2 className='lg:text-4xl text-3xl font-bold'>Let's Talk Business</h2>
           
           <div>
             <input 
