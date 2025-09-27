@@ -37,14 +37,14 @@ const processSteps = [
 
 const HowWeWork = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-white via-blue-50 to-white overflow-hidden">
+    <section className="py-20 px-4 bg-secondary overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h2 className="lg:text-4xl text-3xl  font-bold text-gray-900 mb-6 tracking-tight">
             How We Work
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-md text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Our proven process ensures exceptional results through strategic planning, 
             creative excellence, and technical expertise. Every project follows our 
             time-tested methodology for guaranteed success.
@@ -79,11 +79,11 @@ const HowWeWork = () => {
                     
                     {/* Icon and Title */}
                     <div className={`flex items-center gap-4 mb-6 ${isEven ? 'lg:flex-row-reverse' : ''}`}>
-                      <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl flex items-center justify-center text-white shadow-lg">
+                      <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl flex items-center justify-center text-white shadow-lg">
                         <IconComponent size={32} />
                       </div>
                       <div>
-                        <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
+                        <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
                           {step.title}
                         </h3>
                         <div className={`w-16 h-1 bg-gradient-to-r from-blue-600 to-blue-400 ${isEven ? 'lg:ml-auto' : ''}`}></div>
@@ -91,7 +91,7 @@ const HowWeWork = () => {
                     </div>
 
                     {/* Description */}
-                    <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                    <p className="text-md text-gray-600 leading-relaxed mb-8">
                       {step.description}
                     </p>
 
@@ -120,16 +120,16 @@ const HowWeWork = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-20 pt-16 border-t border-gray-200">
+        <div className="text-center mt-20 pt-16 border-t border-gray-300">
           <div className="relative">
             {/* Background Decoration */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-600/5 to-transparent rounded-3xl"></div>
+            <div className="absolute inset-0  rounded-3xl"></div>
             
             <div className="relative py-16 px-8">
-              <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
                 Ready to Start Your Project?
               </h3>
-              <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-md text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
                 Let's discuss how our proven process can bring your vision to life. 
                 Get in touch today for a free consultation and project estimate.
               </p>
