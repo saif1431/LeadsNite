@@ -13,6 +13,7 @@ import LatestProject from '../Components/HomeComponents/LatestProject'
 import TrustedReview from '../Components/HomeComponents/TrustedReview'
 import SplashCursor from '../Components/HomeComponents/SplashCursor'
 import OurProcess from '../Components/HomeComponents/OurProcess'
+import LetsTalk from '../Components/HomeComponents/LetsTalk'
 
 function HomePage() {
   return (
@@ -26,6 +27,7 @@ function HomePage() {
 {/* <OrbitAnimation/> */}
 <OurProcess/>
 <PricingSection/> 
+<LetsTalk/>
 <div className='px-4 mt-4 lg:px-0 py-20'>
   <Technologies/>
 <ClientCount/>

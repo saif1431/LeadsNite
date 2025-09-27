@@ -16,10 +16,19 @@ function Footer() {
       <footer className="relative py-12 bg-[#00A9E0] text-white px-4 md:px-24 z-10">
         <div className="flex flex-col md:flex-row justify-between mb-4">
           <div className="lg:w-1/2 w-full mb-8 md:mb-0">
+            <div className="">
+                    <Link to="/" className="text-2xl font-bold text-blue-600">
+                      <img 
+                        className='w-24' 
+                        src='/logo.png' 
+                        alt="Logo" 
+                      />
+                    </Link>
+                  </div>
             <h2 className="text-xl font-semibold">
               Turn Your Startup into Success Story!
             </h2>
-            <p className="text-sm lg:w-[70%] w-full mt-2">We build smart digital solutions that help businesses grow, from modern apps to powerful AI-driven platforms.</p>
+            <p className="text-sm  mt-2">We build smart digital solutions that help businesses grow, <br /> from modern apps to powerful AI-driven platforms.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
