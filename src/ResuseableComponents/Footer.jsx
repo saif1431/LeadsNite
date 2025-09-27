@@ -19,16 +19,39 @@ function Footer() {
             <h2 className="text-xl font-semibold">
               Turn Your Startup into Success Story!
             </h2>
+            <p className="text-sm lg:w-[70%] w-full mt-2">We build smart digital solutions that help businesses grow, from modern apps to powerful AI-driven platforms.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div>
             <h3 className="text-2xl font-bold mb-6">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/services" className="hover:underline">Services</Link></li>
+              <li><Link to="/services" className="hover:underline">Service</Link></li>
               {/* <li><Link to="#" className="hover:underline">Projects</Link></li> */}
               <li><Link to="/about-us" className="hover:underline">About Us</Link></li>
               <li><Link to="/ContactUs" className="hover:underline">Contact Us</Link></li>
+            </ul>
+          </div>
+            <div>
+            <h3 className="text-2xl font-bold mb-6">Services</h3>
+            <ul className="space-y-2">
+              <li><Link to="/services/web-development" className="hover:underline">Web Development</Link></li>
+              {/* <li><Link to="#" className="hover:underline">Projects</Link></li> */}
+              <li><Link 
+              onClick={() => window.scrollTo(0, 0)}
+              to="/services/ai-agents" className="hover:underline">AI Agents</Link></li>
+              <li><Link 
+               onClick={() => window.scrollTo(0, 0)}
+              to="/services/app-development" className="hover:underline">App Development</Link></li>
+              <li><Link 
+               onClick={() => window.scrollTo(0, 0)}
+              to="/services/ui&ux-design" className="hover:underline">UI UX Design</Link></li>
+              <li><Link  
+               onClick={() => window.scrollTo(0, 0)}
+              to="/services/SaaS-development" className="hover:underline">SaaS Development</Link></li>
+              <li><Link  
+               onClick={() => window.scrollTo(0, 0)}
+              to="/services/mvp-development" className="hover:underline">MVP Development</Link></li>
             </ul>
           </div>
 

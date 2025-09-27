@@ -7,6 +7,8 @@ import {
   TestTube, 
   Rocket 
 } from "lucide-react";
+import { BiRightArrowAlt, BiSupport } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 const processSteps = [
   {
@@ -19,25 +21,26 @@ const processSteps = [
     id: 2,
     title: "Design",
     description: "Our creative team crafts user-centered designs that are visually stunning and deliver exceptional user experiences.",
-    icon: Target,
+    icon: Palette,
   },
   {
     id: 3,
     title: "Development & Testing",
     description: "We bring designs to life using cutting-edge technologies and best practices. Rigorous quality assurance ensures flawless performance across all devices and browsers.",
-    icon: Palette,
+    icon: Code,
   },
   {
     id: 4,
     title: "Launch & Support",
     description: "We handle deployment smoothly and provide ongoing support to ensure your project continues to succeed",
-    icon: Code,
+    icon: BiSupport,
   },
 ];
 
 const HowWeWork = () => {
   return (
-    <section className="py-20 px-4 bg-secondary overflow-hidden">
+<div>
+      <section className="py-20 px-4 bg-secondary overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20">
@@ -120,7 +123,11 @@ const HowWeWork = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-20 pt-16 border-t border-gray-300">
+     
+      </div>
+
+    </section>
+   <div className="text-center bg-white  pt-16 px-4">
           <div className="relative">
             {/* Background Decoration */}
             <div className="absolute inset-0  rounded-3xl"></div>
@@ -135,19 +142,23 @@ const HowWeWork = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <button className="btn2">
-                  Start Your Project
-                </button>
-                <button className="btn">
-                  View Our Work
-                </button>
+                <Link 
+                onClick={() => window.scrollTo(0, 0)}
+                to="/about-us" className="btn2">
+                  About Us
+                </Link>
+                <Link
+                onClick={() => window.scrollTo(0, 0)}
+                to="/contactUs" className="btn flex items-center">
+                  Lets Talk
+                  <BiRightArrowAlt className="ml-2 text-lg" />
+                </Link>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-  );
+        </div> 
+</div> 
+);
 };
 
 export default HowWeWork;

@@ -26,7 +26,7 @@ function HomePage() {
 {/* <OrbitAnimation/> */}
 <OurProcess/>
 <PricingSection/> 
-<div className='px-4 lg:px-0 py-12'>
+<div className='px-4 mt-4 lg:px-0 py-20'>
   <Technologies/>
 <ClientCount/>
 </div>
