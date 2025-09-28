@@ -23,7 +23,7 @@ function LetsTalk() {
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <Link 
                 onClick={() => window.scrollTo(0, 0)}
-                to="/about-us" className="bg-black py-3 px-8 rounded-full text-white font-medium hover:bg-gray-800 transition">
+                to="/about-us" className="bg-black py-3 px-8 rounded-full text-white font-medium transition">
                   About Us
                 </Link>
                 <Link
