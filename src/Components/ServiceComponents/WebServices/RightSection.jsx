@@ -11,7 +11,7 @@ function RightSection() {
 </p>
 <a className='text-lg text-underline' href="">info@leadsnite.com</a>
 </div>
-<button className='check-list rounded-full px-10 text-md font-bold py-4 text-white w-fit mt-4 transition ease-in duration-200 '>ChatNow</button>
+<button className='btn2 w-fit mt-4 '>ChatNow</button>
       </div>
       <div>
       <h3 className='text-3xl font-bold'>OR</h3>
@@ -21,7 +21,7 @@ function RightSection() {
 <p className='text-md font-medium'>Running Short on Time? Schedule a Meeting for Your Convenience.
 
 </p>
-<button className='check-list rounded-full px-10 text-md font-bold py-4 text-white w-fit mt-4'>Book Now</button>
+<button className='btn2 w-fit mt-4'>Book Now</button>
       </div>
     </div>
   )
