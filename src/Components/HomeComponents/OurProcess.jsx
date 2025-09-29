@@ -14,25 +14,25 @@ const processSteps = [
   {
     id: 1,
     title: "Discovery & Strategy",
-    description: "We dive deep into understanding your business goals, target audience, and project requirements through research and stakeholder interviews. Based on our findings, we develop a strategic roadmap that aligns with your objectives and creates a clear path to success.",
+    description: "We carefully analyze your goals, audience, and requirements through detailed research and interviews, then create a strategic roadmap designed to achieve measurable, long-term success.",
     icon: Search,
   },
   {
     id: 2,
     title: "Design",
-    description: "Our creative team crafts user-centered designs that are visually stunning and deliver exceptional user experiences.",
+    description: "Our creative team transforms ideas into user-friendly, visually striking designs that prioritize seamless experiences, ensuring your digital presence resonates strongly with users and enhances engagement effectively.",
     icon: Palette,
   },
   {
     id: 3,
     title: "Development & Testing",
-    description: "We bring designs to life using cutting-edge technologies and best practices. Rigorous quality assurance ensures flawless performance across all devices and browsers.",
+    description: "We develop high-performance solutions with modern technologies, then conduct rigorous testing to guarantee flawless functionality, reliability, and compatibility across multiple platforms, devices, and web browsers.",
     icon: Code,
   },
   {
     id: 4,
     title: "Launch & Support",
-    description: "We handle deployment smoothly and provide ongoing support to ensure your project continues to succeed",
+    description: "We manage deployment smoothly, monitor performance closely, and provide continuous support to maintain stability, security, and growth while ensuring your project consistently delivers successful outcomes.",
     icon: BiSupport,
   },
 ];
@@ -69,7 +69,7 @@ const HowWeWork = () => {
                 className={`relative mb-16 lg:mb-24 ${isEven ? 'lg:pr-1/2' : 'lg:pl-1/2'}`}
               >
                 {/* Large Step Number Background */}
-                <div className={`absolute top-0 ${isEven ? 'right-0 lg:right-1/2 lg:mr-8' : 'left-0 lg:left-1/2 lg:ml-8'} text-[12rem] lg:text-[16rem] font-black text-blue-600/5 leading-none pointer-events-none select-none`}>
+                <div className={`absolute top-0 ${isEven ? 'right-0 lg:right-1/2 lg:mr-8' : 'left-0 lg:left-1/2 lg:ml-8'} text-[8rem] lg:text-[12rem] font-black text-blue-600/5 leading-none pointer-events-none select-none`}>
                   {step.id}
                 </div>
                 

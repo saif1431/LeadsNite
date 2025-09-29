@@ -91,7 +91,7 @@ const ServiceCard = ({
         {showDescription && (
           <p className="text-gray-600 ">{description}</p>
         )}
-        <h3 className="text-xl font-bold ">{title}</h3>
+        <h3 className="text-xl mt-3 font-bold ">{title}</h3>
         
       </div>
     </div>
