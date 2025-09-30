@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function RightSection() {
   return (
@@ -11,7 +12,7 @@ function RightSection() {
 </p>
 <a className='text-lg text-underline' href="">info@leadsnite.com</a>
 </div>
-<button className='btn2 w-fit mt-4 '>ChatNow</button>
+<Link to='/contactUs' className='btn2 w-fit mt-4 '>ChatNow</Link>
       </div>
       <div>
       <h3 className='text-3xl font-bold'>OR</h3>
