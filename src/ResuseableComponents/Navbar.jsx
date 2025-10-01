@@ -66,7 +66,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex text-xl space-x-12 mx-auto">
+        <div className="hidden md:flex text-lg space-x-12 mx-auto">
           <Link 
             to="/" 
             className={`font-bold transition ease-in duration-100 ${

@@ -64,7 +64,7 @@ function Technologies() {
 
   return (
     <div className='  '>
-      <h1 className='lg:text-4xl text-2xl font-bold text-center'>Technologies We Use
+      <h1 className='title'>Technologies We Use
 </h1>
  
     <div className="bg-white w-full flex items-center justify-center lg:h-[300px] h-fit py-12">

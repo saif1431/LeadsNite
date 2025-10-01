@@ -8,7 +8,7 @@ function JoinUs() {
   return (
     <div className='px-4  h-fit max-w-7xl mx-auto  md:py-32 py-12   '>
         <div className='text-center'>
-           <h1 className='text-3xl md:text-4xl font-bold text-center mb-4'>Why LeadsNite</h1>
+           <h1 className='title'>Why LeadsNite</h1>
            <p>All the advantages of partnering with us.</p>
         </div>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-8'>

@@ -22,7 +22,7 @@ export default function AboutUsSection1() {
               src="/aboutImg3.png "
               alt="Team working with futuristic technology and data visualizations"
               className="lg:w-[85%] h-full object-top"
-            />
+            />  
 
             {/* Experience overlay card */}
             <div className="lg:absolute mt-6 lg:mt-0 top-12 right-4 bg-[#0E1E2A] backdrop-blur-sm  px-12 py-8    text-white">
@@ -32,7 +32,7 @@ export default function AboutUsSection1() {
           </div>
 
           {/* Decorative chart bars */}
-          <div className="absolute hidden  -bottom-4 left-[90%] lg:flex items-end gap-2">
+          <div className="absolute hidden  -bottom-0 left-[90%] lg:flex items-end gap-2">
             <div className="w-5 h-64 bg-[#2767FF] "></div>
             <div className="w-5 h-48 bg-[#C8C6FC] "></div>
           </div>

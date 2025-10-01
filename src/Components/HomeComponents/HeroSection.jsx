@@ -113,7 +113,7 @@ function HeroSection() {
           variants={containerVariants}
         >
           <motion.h1 
-            className="lg:text-6xl text-3xl leading-tight md:text-6xl font-bold mb-4"
+            className="lg:text-6xl headingFont font-semibold text-3xl leading-tight md:text-6xl  mb-4"
             variants={headingVariants}
           >
             Turn Your Startup into <br />
@@ -125,7 +125,7 @@ function HeroSection() {
             variants={paragraphVariants}
           >
             <motion.p 
-              className="text-lg md:text-3xl font-semibold mb-4 max-w-2xl"
+              className="text-lg md:text-2xl font-semibold mb-4 max-w-2xl"
               variants={{
                 ...lineVariants,
                 visible: {
@@ -140,23 +140,25 @@ function HeroSection() {
               Got a dream, Got a plan, but No Experts
             </motion.p>
             <motion.p 
-              className='text-xl md:text-3xl font-semibold'
+              className='text-xl md:text-2xl font-semibold'
               variants={{
                 ...lineVariants,
                 visible: {
                   ...lineVariants.visible,
                   transition: {
                     ...lineVariants.visible.transition,
-                    delay: 0, // was 1
+                    delay: 0, 
                   }
                 }
               }}
             >
               We're here for you!
             </motion.p>
-     <Link to='/contactUs' className='btn2 '>
+    <div className='relative flex items-center justify-center'>
+       <Link style={{color:'white', border:'1px solid #444'}} to='/contactUs' className='btn '>
      Lest's Talk
      </Link>
+    </div>
           </motion.div>
         </motion.div>
       </section>

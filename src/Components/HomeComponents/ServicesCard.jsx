@@ -76,23 +76,24 @@ const ServiceCard = ({
   return (
     <div 
       onClick={handleClick}
-      className="group mt-6 overflow-hidden shadow-md transition-all duration-500 hover:shadow-xl bg-white rounded-3xl"
+      className="group mt-6 cursor-pointer overflow-hidden shadow-md transition-all duration-500 hover:shadow-xl bg-white rounded-3xl"
     >
       <div className="py-8 px-8">
         {/* Image at top - small */}
-        <div className="flex justify-start mb-4">
+        <div className="flex items-center gap-4 justify-start mb-6">
           <img 
             src={imageUrl} 
             alt={`${title} service`}
-            className="w-16 h-16 object-contain"
+            className="w-12 h-12 object-contain"
           />
+           <h3 className="text-2xl font-bold text-start mb-3">{title}</h3>
         </div>
         
         {/* Title */}
-        <h3 className="text-xl font-bold text-start mb-3">{title}</h3>
+       
         
         {/* Description - 2 lines */}
-        <p className="text-gray-600 text-sm text-start mb-6 line-clamp-2">
+        <p className="text-gray-600 text-sm text-start mb-6 line-clamp-3">
           {description}
         </p>
         
@@ -126,7 +127,7 @@ const ServicesCard = ({ showDescriptions = false }) => {
 
   return (
     <div className={`mt-6 py-26 ${isHomePage ? 'h-fit bg-secondary' : 'rounded-3xl lg:px-12 bg-image px-4'}`}>
-      <h2 className={`text-3xl font-bold mb-12 text-center ${isHomePage ? 'lg:text-3xl' : 'text-4xl'}`}>
+      <h2 style={{fontWeight:'800'}} className={`title2 headingFont2 ${isHomePage ? 'lg:text-3xl' : 'text-4xl'}`}>
         {isHomePage ? "Find the Perfect Service" : "Here's What Sets Us Apart"}
       </h2>
       

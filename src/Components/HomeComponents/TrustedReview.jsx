@@ -26,7 +26,7 @@ const TrustedReview = () => {
 
   return (
     <div className="bg-white py-12">
-      <div className="lg:text-4xl text-2xl font-bold text-center mb-8">
+      <div className="title">
         <h1>Trusted Reviews</h1>
       </div>
 

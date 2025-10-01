@@ -44,7 +44,7 @@ const HowWeWork = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="lg:text-4xl text-3xl  font-bold text-gray-900 mb-6 tracking-tight">
+          <h2 className="title2">
             How We Work
           </h2>
           <p className="text-md text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -94,7 +94,7 @@ const HowWeWork = () => {
                     </div>
 
                     {/* Description */}
-                    <p className={`text-md lg:w-[90%] text-gray-600 leading-relaxed mb-8 ${isEven ? 'lg:ml-auto' : ''}`}>
+                    <p className={`text-md line-clamp-3 lg:w-[90%] text-gray-600 leading-relaxed mb-8 ${isEven ? 'lg:ml-auto' : ''}`}>
                       {step.description}
                     </p>
 
