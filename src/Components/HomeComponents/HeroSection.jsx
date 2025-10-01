@@ -4,6 +4,7 @@ import backgroundImage from '/backgroundImg1.png';
 import img1 from '/HomeImage/1-1.jpg';
 import img2 from '/HomeImage/d1.jpg';
 import img3 from '/HomeImage/d2.jpg';
+import { Link } from 'react-router-dom';
 
 function HeroSection() {
   // Original text animations (unchanged)
@@ -94,9 +95,9 @@ function HeroSection() {
   };
 
   return (
-    <div className='md:h-[160vh] h-[90vh] xl:h-[130vh] bg-none '>
+    <div className='md:h-[120vh] h-[90vh] lg:h-[110vh] xl:h-[130vh] bg-none '>
       <section 
-        className="relative h-[80vh] md:h-[158vh] lg:h-[150vh] xl:h-[125vh] bg-no-repeat"
+        className="relative h-[80vh] md:h-[100vh] lg:h-[100vh] xl:h-[125vh] bg-no-repeat"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: 'cover',
@@ -120,7 +121,7 @@ function HeroSection() {
           </motion.h1>
           
           <motion.div 
-            className='mt-5'
+            className='mt-5 relative space-y-6'
             variants={paragraphVariants}
           >
             <motion.p 
@@ -153,6 +154,9 @@ function HeroSection() {
             >
               We're here for you!
             </motion.p>
+     <Link to='/contactUs' className='btn2 '>
+     Lest's Talk
+     </Link>
           </motion.div>
         </motion.div>
       </section>

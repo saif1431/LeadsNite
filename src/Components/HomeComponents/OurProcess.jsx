@@ -69,7 +69,7 @@ const HowWeWork = () => {
                 className={`relative mb-16 lg:mb-24 ${isEven ? 'lg:pr-1/2' : 'lg:pl-1/2'}`}
               >
                 {/* Large Step Number Background */}
-                <div className={`absolute top-0 ${isEven ? 'right-0 lg:right-1/2 lg:mr-8' : 'left-0 lg:left-1/2 lg:ml-8'} text-[8rem] lg:text-[12rem] font-black text-blue-600/5 leading-none pointer-events-none select-none`}>
+                <div className={`absolute top-0 ${isEven ? 'right-0 lg:right-1/2 lg:mr-8' : 'left-0 lg:left-1/2 lg:ml-8'} text-[6rem] lg:text-[10rem] font-black text-blue-600/5 leading-none pointer-events-none select-none`}>
                   {step.id}
                 </div>
                 
@@ -77,7 +77,7 @@ const HowWeWork = () => {
                 <div className="absolute left-1/2 top-8 w-6 h-6 bg-gradient-to-br from-blue-600 to-blue-400 rounded-full transform -translate-x-1/2 hidden lg:block shadow-lg border-4 border-white z-10"></div>
                 
                 {/* Content Container */}
-                <div className={`relative z-20 ${isEven ? 'lg:text-right lg:pr-16' : 'lg:text-left lg:pl-16'}`}>
+                <div className={`relative z-20 ${isEven ? 'lg:text-right lg:pr-4  xl:pr-16 mb-[-100px]' : 'lg:text-left lg:pl-4  xl:pl-16 mb-[-100px]'}`}>
                   <div className={`inline-block max-w-lg ${isEven ? 'lg:ml-auto' : 'lg:mr-auto'}`}>
                     
                     {/* Icon and Title */}
@@ -94,13 +94,13 @@ const HowWeWork = () => {
                     </div>
 
                     {/* Description */}
-                    <p className="text-md text-gray-600 leading-relaxed mb-8">
+                    <p className={`text-md lg:w-[90%] text-gray-600 leading-relaxed mb-8 ${isEven ? 'lg:ml-auto' : ''}`}>
                       {step.description}
                     </p>
 
                     {/* Step Indicator */}
-                    <div className={`flex items-center gap-3 ${isEven ? 'lg:justify-end' : ''}`}>
-                      <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
+                    <div className={`flex mt-4   items-center gap-3 ${isEven ? 'lg:justify-end' : ''}`}>
+                      <span className="text-sm  font-semibold text-blue-600 uppercase tracking-wider">
                         Step {step.id} of {processSteps.length}
                       </span>
                       <div className="flex gap-1">

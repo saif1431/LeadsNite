@@ -69,12 +69,12 @@ function Technologies() {
  
     <div className="bg-white w-full flex items-center justify-center lg:h-[300px] h-fit py-12">
   
-      <div className="max-w-8xl mx-auto lg:py-12  px-4 w-full">
+      <div className="lg:max-w-8xl mx-auto lg:py-12  px-4 w-full">
         {/* Header Tabs */}
-        <div className="flex lg:items-center lg:justify-center lg:gap-28 gap-2 mb-6 flex-wrap text-lg ">
+        <div className="lg:flex grid grid-cols-3 px-4 lg:items-center md:justify-center lg:gap-28 gap-2 mb-6  text-lg ">
           <button
             onClick={() => setActiveTab('website')}
-            className={`px-4 py-2 cursor-pointer whitespace-nowrap transition-colors  ${
+            className={`px-4 py-2 flex   cursor-pointer whitespace-nowrap transition-colors  ${ 
               activeTab === 'website'
                 ? 'text-[#01ACE4] border-b-2 w-12 flex items-center justify-center border-[#01ACE4]'
                 : 'text-gray-600 hover:text-[#01ACE4]  w-12 flex items-center justify-center hover:border-b-2 hover:border-[#01ACE4]'

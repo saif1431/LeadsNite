@@ -1,5 +1,6 @@
 import React from 'react'
 import { BiRightArrow, BiRightArrowAlt } from 'react-icons/bi'
+import { Link } from 'react-router-dom'
 
 
 
@@ -34,9 +35,9 @@ function JoinUs() {
         </div>
 
         <div className='flex items-center justify-center mt-12'>
-          <button  className='btn rounded-full flex items-center gap-3'>Lets Talk 
+          <Link to='contactUs'  className='btn rounded-full flex items-center gap-3'>Lets Talk 
             <span><BiRightArrowAlt className="text-xl" /></span>
-          </button>
+          </Link>
         </div>
     </div>
   )

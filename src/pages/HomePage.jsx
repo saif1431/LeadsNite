@@ -14,6 +14,7 @@ import TrustedReview from '../Components/HomeComponents/TrustedReview'
 import SplashCursor from '../Components/HomeComponents/SplashCursor'
 import OurProcess from '../Components/HomeComponents/OurProcess'
 import LetsTalk from '../Components/HomeComponents/LetsTalk'
+import ServicesCard from '../Components/HomeComponents/ServicesCard'
 
 function HomePage() {
   return (
@@ -21,7 +22,7 @@ function HomePage() {
       {/* <SplashCursor/> */}
 <HeroSection/>
 <BrandLogos/>
-<ServicesGrid/>
+<ServicesCard/>
 {/* <ServiceOverview/> */}
 <JoinUs/>
 {/* <OrbitAnimation/> */}

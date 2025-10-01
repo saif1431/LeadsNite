@@ -3,7 +3,9 @@
 
 @import "tailwindcss";
 
-
+body{
+  overflow-x: hidden;
+}
 
 .bg-primary {
   background-color: #01ACE4; 

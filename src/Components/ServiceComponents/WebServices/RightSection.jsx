@@ -10,9 +10,9 @@ function RightSection() {
 <div className=''>
       <p className='lg:text-4xl text-3xl font-bold py-3'>+92 325 5176508
 </p>
-<a className='text-lg text-underline' href="">info@leadsnite.com</a>
+<a className='text-lg text-underline' href="mailto:contact@leadsnite.com">contact@leadsnite.com</a>
 </div>
-<Link to='/contactUs' className='btn2 w-fit mt-4 '>ChatNow</Link>
+<Link to='/contactUs' className='btn w-fit mt-4 '>ChatNow</Link>
       </div>
       <div>
       <h3 className='text-3xl font-bold'>OR</h3>
@@ -22,7 +22,7 @@ function RightSection() {
 <p className='text-md font-medium'>Running Short on Time? Schedule a Meeting for Your Convenience.
 
 </p>
-<button className='btn2 w-fit mt-4'>Book Now</button>
+<button className='btn w-fit mt-4'>Book Now</button>
       </div>
     </div>
   )

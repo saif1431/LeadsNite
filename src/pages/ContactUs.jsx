@@ -182,7 +182,9 @@ function ContactUs({padding = "px-4"}) {
         </div>
         <div className='space-y-4'>
               <h4 className='font-bold text-xl'>Official Email</h4>
-              <span className='text-lg'>contact@leadsnite.com</span>
+        <a href="mailto:contact@leadsnite.com" className="hover:underline">
+                   contact@leadsnite.com
+                  </a>
         </div>
      </div>
      <div className='space-y-6'>

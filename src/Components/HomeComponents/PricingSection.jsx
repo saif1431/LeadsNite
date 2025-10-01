@@ -49,7 +49,7 @@ export default function PricingSection() {
 
   return (
     <div className="bg-white  flex items-center justify-between px-4 lg:px-24 md:px-16 md:py-36 py-12">
-      <div className=" w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
+      <div className=" w-full max-w-7xl mx-auto flex flex-col xl:flex-row items-center justify-between gap-8 lg:gap-16">
         {/* Left side content */}
         <div className="max-w-md px-6 w-full"> 
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Committed to giving the best price</h1>
