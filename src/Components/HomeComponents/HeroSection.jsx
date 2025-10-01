@@ -113,7 +113,7 @@ function HeroSection() {
           variants={containerVariants}
         >
           <motion.h1 
-            className="lg:text-6xl headingFont font-semibold text-3xl leading-tight md:text-6xl  mb-4"
+            className="lg:text-6xl  font-extrabold text-3xl leading-tight md:text-6xl  mb-4"
             variants={headingVariants}
           >
             Turn Your Startup into <br />
@@ -155,7 +155,7 @@ function HeroSection() {
               We're here for you!
             </motion.p>
     <div className='relative flex items-center justify-center'>
-       <Link style={{color:'white', border:'1px solid #444'}} to='/contactUs' className='btn '>
+       <Link  to='/contactUs' className='btn3 '>
      Lest's Talk
      </Link>
     </div>

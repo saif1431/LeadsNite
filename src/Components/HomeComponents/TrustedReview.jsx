@@ -1,4 +1,8 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/autoplay';
 
 const TrustedReview = () => {
   const logos = [
@@ -25,84 +29,52 @@ const TrustedReview = () => {
   ];
 
   return (
-    <div className="bg-white py-12">
+    <div className="bg-white py-12 overflow-hidden">
       <div className="title">
         <h1>Trusted Reviews</h1>
       </div>
 
-      <div className="relative mt-6 w-full overflow-hidden py-8">
-        <style jsx>{`
-          @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-10%); }
-          }
-          
-          .scroll-track {
-            display: flex;
-            gap: 16px;
-            animation: scroll 25s linear infinite;
-            width: max-content;
-          }
-          
-          .scroll-track:hover {
-            animation-play-state: paused;
-          }
-          
-          .review-card {
-             // padding: 16px;
-            width: 570px;
-            height: 300px;
-           border: 1px solid #d1d5db;
-            border-radius: 8px;
-            // background: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            // box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            transition: box-shadow 0.3s ease;
-          }
-          
-          .review-card:hover {
-            // box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-          }
-          
-          .review-card img {
-            max-height: 100%;
-            max-width: 100%;
-            object-fit: contain;
-       
-            // transition: opacity 0.3s ease;
-          }
-          
-          .review-card:hover img {
-            opacity: 1;
-          }
-        `}</style>
-        
-        <div className="scroll-track">
-          {/* First set */}
+      <div className="relative mt-6 w-full py-8">
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={30}
+          slidesPerView={'auto'}
+          loop={true}
+          autoplay={{
+            delay: 1, // Using 1ms delay for a continuous feel
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          speed={3000} // Adjust this value to control the scroll speed
+          breakpoints={{
+            // On mobile, show fewer slides to avoid crowding
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            // On tablet, show a bit more
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            // On desktop, let it be auto or a fixed number
+            1024: { // On desktop, show 3 slides
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+        >
           {logos.map((logo, index) => (
-            <div key={`first-${index}`} className="review-card">
+            <SwiperSlide key={index} style={{ width: '570px', height: '300px' }}>
               <img
                 src={logo}
                 alt={`Review ${index + 1}`}
                 loading="lazy"
+                className="w-full h-full object-contain border border-gray-300 rounded-lg"
               />
-            </div>
+            </SwiperSlide>
           ))}
-          
-          {/* Duplicate set for seamless loop */}
-          {logos.map((logo, index) => (
-            <div key={`second-${index}`} className="review-card">
-              <img
-                src={logo}
-                alt={`Review ${index + 1}`}
-                loading="lazy"
-              />
-            </div>
-          ))}
-        </div>
+        </Swiper>
       </div>
     </div>
   );

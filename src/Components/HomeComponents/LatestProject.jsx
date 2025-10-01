@@ -108,7 +108,7 @@ export default function LatestProject() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="lg:text-4xl text-2xl text-center font-bold mb-6 md:mb-0"
+            className="lg:text-4xl headingFont2 text-2xl text-center font-bold mb-6 md:mb-0"
           >
             Check our latest & Completed  Projects
           </motion.h2>

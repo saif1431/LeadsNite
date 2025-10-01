@@ -168,6 +168,62 @@ background-repeat: no-repeat;
 .btn::after { display: none !important; }
 
 
+
+/* btn3 */
+
+.btn3 {
+  --color: #fff;
+  --color2: #01ACE4;
+  padding: 0.6rem 2rem;
+  background: transparent;
+  border-radius: 999px;
+  border: 1.5px solid #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+  transition: color 0.3s cubic-bezier(0.4,0,0.2,1), border 0.3s;
+}
+
+/* Gradient slide-in effect */
+.btn3::before {
+  content: '';
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: -1;
+  transition: left 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.btn3:hover::before {
+  left: 0;
+}
+
+.btn3:hover {
+  color: var(--color2);
+  border-color: white;
+  box-shadow: 0 8px 24px 0 rgba(39,103,255,0.15);
+  /* transform: translateY(-2px) scale(1.04) rotate(-1deg); */
+}
+
+.btn3:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.15s ease;
+}
+
+/* Remove old ::after glow effect if present */
+.btn3::after { display: none !important; }
+
+
 /* Custom pagination styles */
 .swiper-pagination {
   position: relative !important;
