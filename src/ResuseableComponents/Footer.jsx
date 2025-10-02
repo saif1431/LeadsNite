@@ -98,7 +98,7 @@ function Footer() {
     <div className="relative mt-24">
       {/* Footer Content */}
       <footer className="relative md:px-6 py-12 bg-[#00A9E0] text-white px-4 xl:px-24 z-10">
-        <div className="flex flex-col lg:flex-row justify-between mb-4">
+        <div className="flex flex-col lg:mt-4 xl:mt-0 gap-4 xl:flex-row justify-between mb-4">
           <div className=" lg:w-1/2  w-full mb-8 md:mb-0">
             <div className="">
               <a href="/" className="text-2xl font-bold text-blue-600">
@@ -112,10 +112,10 @@ function Footer() {
             <h2 className="text-xl mt-2 font-semibold">
               Turn Your Startup into Success Story!
             </h2>
-            <p className="text-sm mt-2">We build smart digital solutions that help businesses grow, <br /> from modern apps to powerful AI-driven platforms.</p>
+            <p className="text-sm xl:w-[80%] mt-2">We build smart digital solutions that help businesses grow,  from modern apps to powerful AI-driven platforms.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:mt-8 lg:mt-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:mt-8 xl:mt-0">
             <div>
               <h3 className="text-2xl font-bold mb-6">Quick Links</h3>
               <ul className="lg:space-y-2">

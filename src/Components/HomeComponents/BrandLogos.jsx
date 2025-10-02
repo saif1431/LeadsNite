@@ -42,13 +42,13 @@ const BrandLogos = () => {
           x: ['0%', '-100%'],
         }}
         transition={{
-          duration: 20,
+          duration: 0,
           ease: 'linear',
           repeat: Infinity,
         }}
       >
         {duplicatedLogos.map((logo, index) => (
-          <div key={index} className="flex-shrink-0 px-12">
+          <div key={index} className="flex-shrink-0 lg:px-12 px-4">
             <img
               src={logo}
               alt={`Client logo ${index % logos.length + 1}`}

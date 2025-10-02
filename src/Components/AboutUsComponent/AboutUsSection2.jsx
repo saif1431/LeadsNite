@@ -35,7 +35,7 @@ function AboutUsSection2() {
       <div className='lg:w-[65%] w-full text-end relative flex flex-col mt-12 justify-between lg:mt-0' >
         <h2 className='text-2xl  font-bold'>"Empowering Dreams, Igniting Success"</h2>
         <p className='text-3xl font-medium mt-3 '>SINCE 2018</p>
-      <div className='xl:absolute top-20 right-0 w-[100%]'>
+      <div className=''>
           <img className='w-[100%]' src={img} alt="" />
       </div>
       </div>

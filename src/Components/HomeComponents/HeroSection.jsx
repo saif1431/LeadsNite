@@ -96,9 +96,9 @@ function HeroSection() {
   };
 
   return (
-    <div className='md:h-[120vh] h-[90vh] lg:h-[110vh] xl:h-[130vh] bg-none '>
+    <div className='md:h-[120vh] h-[90vh] lg:h-[90vh] xl:h-[130vh] bg-none '>
       <section 
-        className="relative h-[80vh] md:h-[100vh] lg:h-[100vh] xl:h-[125vh] bg-no-repeat"
+        className="relative h-[80vh] md:h-[100vh] lg:h-[90vh] xl:h-[125vh] bg-no-repeat"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: 'cover',
@@ -113,8 +113,8 @@ function HeroSection() {
           animate="visible"
           variants={containerVariants}
         >
-          <motion.h1 
-            className="lg:text-6xl  font-extrabold text-3xl leading-tight md:text-6xl  mb-4"
+          <motion.h1 style={{color:'white'}}
+            className="title"
             variants={headingVariants}
           >
             Turn Your Startup into <br />
@@ -167,7 +167,7 @@ function HeroSection() {
       
       <div className='relative'>
         <motion.div 
-          className='absolute lg:bottom-96 bottom-16  z-10 left-1 lg:left-96   bg-white lg:w-[7%] w-[30%] p-1 border rounded-xl lg:rounded-xl overflow-hidden border-gray-100'
+          className='absolute hidden xl:block lg:bottom-96 bottom-16  z-10 left-1 lg:left-96   bg-white  xl:w-[7%] w-[30%] p-1 border rounded-xl lg:rounded-xl overflow-hidden border-gray-100'
           initial="hidden"
           animate="visible"
           variants={img2Animation}
@@ -176,7 +176,7 @@ function HeroSection() {
         </motion.div>
         
         <motion.img 
-          className='absolute  shadow-lg rounded-lg bottom-1  left-1/2 lg:transform -translate-x-1/2 lg:w-[50%] w-[90%]'
+          className='absolute  shadow-lg rounded-lg bottom-1  left-1/2 lg:transform -translate-x-1/2 xl:w-[50%] w-[90%]'
           src={img1} 
           alt=""
           initial="hidden"
@@ -185,7 +185,7 @@ function HeroSection() {
         />
         
         <motion.div 
-          className='absolute z-10 left-1/2 transform -translate-x-1/2 bg-white lg:w-[15%] w-[40%]  lg:-bottom-28 p-1 border rounded-3xl overflow-hidden border-gray-100 shadow-md'
+          className='absolute hidden xl:block z-10 left-1/2 transform -translate-x-1/2 bg-white lg:w-[15%] w-[40%]  lg:-bottom-28 p-1 border rounded-3xl overflow-hidden border-gray-100 shadow-md'
           initial="hidden"
           animate="visible"
           variants={img3Animation}

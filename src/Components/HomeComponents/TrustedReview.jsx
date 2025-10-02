@@ -59,6 +59,10 @@ const TrustedReview = () => {
             },
             // On desktop, let it be auto or a fixed number
             1024: { // On desktop, show 3 slides
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1380: { // On desktop, show 3 slides
               slidesPerView: 3,
               spaceBetween: 30,
             },

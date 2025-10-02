@@ -86,7 +86,7 @@ const ServiceCard = ({
             alt={`${title} service`}
             className="w-10 h-10 object-contain"
           />
-           <h3 className="lg:text-3xl text-xl font-bold text-start mb-3">{title}</h3>
+           <h3 className="lg:text-2xl text-xl font-bold text-start mb-3">{title}</h3>
         </div>
         
         {/* Title */}
@@ -126,9 +126,9 @@ const ServicesCard = ({ showDescriptions = false }) => {
   const isHomePage = location.pathname === '/';
 
   return (
-    <div className={`mt-6 py-26 ${isHomePage ? 'h-fit bg-secondary' : 'rounded-3xl lg:px-12 bg-image px-4'}`}>
+    <div className={`mt-6 ${isHomePage ? 'h-fit py-26 bg-secondary' : 'rounded-3xl lg:px-4 py-12 bg-image px-4'}`}>
       <h2 style={{fontWeight:'800'}} className={`title2 headingFont2 ${isHomePage ? 'lg:text-3xl' : 'text-4xl'}`}>
-        {isHomePage ? "Find the Perfect Service" : "Here's What Sets Us Apart"}
+        {isHomePage ? "Find the Perfect Service" : ""}
       </h2>
       
       <div className="grid grid-cols-1 max-w-7xl mx-auto md:px-6 px-4 md:grid-cols-2 lg:grid-cols-3 gap-8">
