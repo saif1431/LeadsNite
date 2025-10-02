@@ -125,7 +125,7 @@ const Navbar = () => {
             target="_blank" 
             rel="noopener noreferrer"
             className={`  transition ${
-              isHome ? 'text-white lg:hidden block hover:text-black' : 'text-black hover:text-[#00A9E0]'
+              isHome ? 'text-white  lg:hidden block hover:text-black' : 'text-black  lg:hidden block hover:text-[#00A9E0]'
             }`}
           >
             <FaLinkedin className="text-3xl" />
