@@ -5,6 +5,7 @@ import img1 from '/HomeImage/1-1.jpg';
 import img2 from '/HomeImage/d1.jpg';
 import img3 from '/HomeImage/d2.jpg';
 import { Link } from 'react-router-dom';
+import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 
 function HeroSection() {
   // Original text animations (unchanged)
@@ -155,8 +156,9 @@ function HeroSection() {
               We're here for you!
             </motion.p>
     <div className='relative flex items-center justify-center'>
-       <Link  to='/contactUs' className='btn3 '>
+       <Link  to='/contactUs' className='btn3 flex items-center justify-center'>
      Lest's Talk
+     <BiRightArrowAlt className='ml-2 text-xl'/>
      </Link>
     </div>
           </motion.div>

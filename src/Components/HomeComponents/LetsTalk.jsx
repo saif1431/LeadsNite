@@ -11,8 +11,8 @@ function LetsTalk() {
             {/* Background Decoration */}
             <div className="absolute inset-0  rounded-3xl"></div>
             
-            <div className="relative py-16 px-8">
-              <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
+            <div className="relative py-16 ">
+              <h3 className="lg:text-4xl headingFont2 text-2xl text-center font-bold mb-6 ">
                 Ready to Start Your Project?
               </h3>
               <p className="text-md text-gray-600 mb-6 max-w-2xl mx-auto leading-relaxed">
@@ -28,7 +28,7 @@ function LetsTalk() {
                 Get in touch today for a free consultation and project estimate.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <div className="flex  gap-3 justify-center items-center">
                 <Link 
                 onClick={() => window.scrollTo(0, 0)}
                 to="/about-us" className="btn2">

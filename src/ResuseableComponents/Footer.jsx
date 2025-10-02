@@ -97,9 +97,9 @@ function Footer() {
   return (
     <div className="relative mt-24">
       {/* Footer Content */}
-      <footer className="relative py-12 bg-[#00A9E0] text-white px-4 md:px-24 z-10">
-        <div className="flex flex-col md:flex-row justify-between mb-4">
-          <div className="lg:w-1/2 w-full mb-8 md:mb-0">
+      <footer className="relative md:px-6 py-12 bg-[#00A9E0] text-white px-4 xl:px-24 z-10">
+        <div className="flex flex-col lg:flex-row justify-between mb-4">
+          <div className=" lg:w-1/2  w-full mb-8 md:mb-0">
             <div className="">
               <a href="/" className="text-2xl font-bold text-blue-600">
                 <img 
@@ -115,10 +115,10 @@ function Footer() {
             <p className="text-sm mt-2">We build smart digital solutions that help businesses grow, <br /> from modern apps to powerful AI-driven platforms.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:mt-8 lg:mt-0">
             <div>
               <h3 className="text-2xl font-bold mb-6">Quick Links</h3>
-              <ul className="space-y-2">
+              <ul className="lg:space-y-2">
                 <li><a href="/services" className="hover:underline">Service</a></li>
                 <li><a href="/about-us" className="hover:underline">About Us</a></li>
                 <li><a href="/ContactUs" className="hover:underline">Contact Us</a></li>
@@ -150,6 +150,11 @@ function Footer() {
                     Phone: +92 325 5176508
                   </a>
                 </li>
+                <li>
+                     <a target='_blank' href="https://www.linkedin.com/company/leadsnite/" className="text-white hover:text-gray-900 transition-colors">
+            <FaLinkedin className="text-2xl" />
+          </a>
+                </li>
               </ul>
             </div>
 
@@ -158,13 +163,13 @@ function Footer() {
               <p className="mb-4">Join Us to remain update</p>
               
             
-              <div className="space-y-3">
-                <div>
+              <div className="space-y-3 flex items-start">
+                <div className=''>
                   <input
                     type="email"
                     name="email"
                     placeholder="Enter your email"
-                    className="w-full px-3 py-2 text-gray-900 bg-white border border-gray-300 rounded-l-md focus:outline-none focus:border-blue-500"
+                    className="text-md  px-3 py-2 text-gray-900 bg-white border border-gray-300 rounded-l-md focus:outline-none focus:border-blue-500"
                     value={formData.email}
                     onChange={handleChange}
                     disabled={isSubmitting}
@@ -175,9 +180,9 @@ function Footer() {
                 <button
                   onClick={handleSubmit}
                   disabled={isSubmitting}
-                  className="w-full bg-blue-700 px-4 py-2 rounded-md hover:bg-blue-800 disabled:bg-blue-900 transition-colors flex items-center justify-center gap-2"
+                  className=" bg-blue-700 px-4 py-3 rounded-r-md hover:bg-blue-800 disabled:bg-blue-900 transition-colors flex items-center justify-center gap-2"
                 >
-                  <span>{isSubmitting ? "Sending..." : "Subscribe"}</span>
+                  <span>{isSubmitting ? "..." : ""}</span>
                   <ArrowRight className={`h-4 w-4 text-white ${isSubmitting ? 'animate-pulse' : ''}`} />
                 </button>
               </div>
@@ -187,10 +192,8 @@ function Footer() {
       </footer>
       
       <div className="bg-black py-4 px-4 md:px-8">
-        <div className="max-w-7xl space-x-4 mx-auto flex justify-center">
-          <a target='_blank' href="https://www.linkedin.com/company/leadsnite/" className="text-white hover:text-gray-300 transition-colors">
-            <FaLinkedin className="text-2xl" />
-          </a>
+        <div className="max-w-7xl text-white space-x-4 mx-auto flex justify-center">
+       <p>All rights reserved &copy; {new Date().getFullYear()} LeadsNite</p>
         </div>
       </div>
       

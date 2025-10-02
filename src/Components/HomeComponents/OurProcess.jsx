@@ -40,7 +40,7 @@ const processSteps = [
 const HowWeWork = () => {
   return (
 <div>
-      <section className="py-20 px-4 bg-secondary overflow-hidden">
+      <section className="py-20 md:px-6 px-4 bg-secondary overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20">
@@ -77,7 +77,7 @@ const HowWeWork = () => {
                 <div className="absolute left-1/2 top-8 w-6 h-6 bg-gradient-to-br from-blue-600 to-blue-400 rounded-full transform -translate-x-1/2 hidden lg:block shadow-lg border-4 border-white z-10"></div>
                 
                 {/* Content Container */}
-                <div className={`relative z-20 ${isEven ? 'lg:text-right lg:pr-4  xl:pr-16 mb-[-100px]' : 'lg:text-left lg:pl-4  xl:pl-16 mb-[-100px]'}`}>
+                <div className={`relative z-20 ${isEven ? 'lg:text-right lg:pr-4  xl:pr-16 lg:mb-[-100px]' : 'lg:text-left lg:pl-4  xl:pl-16 lg:mb-[-100px]'}`}>
                   <div className={`inline-block max-w-lg ${isEven ? 'lg:ml-auto' : 'lg:mr-auto'}`}>
                     
                     {/* Icon and Title */}

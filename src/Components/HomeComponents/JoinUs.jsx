@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom'
 
 function JoinUs() {
   return (
-    <div className='px-4  h-fit max-w-7xl mx-auto  md:py-32 py-12   '>
+    <div className='px-4 md:px-6  h-fit max-w-7xl mx-auto  md:py-32 py-12   '>
         <div className='text-center'>
            <h1 className='title'>Why LeadsNite</h1>
            <p>All the advantages of partnering with us.</p>
         </div>
-        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-8'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-8 justify-items-center items-stretch'>
           <div className='group cursor-pointer  overflow-hidden shadow-md transition-transform space-y-4 duration-500 hover:shadow-xl px-14 py-12 bg-white rounded-3xl border border-gray-200 '>
 <li><span className='font-bold'>NDA by Default</span> — your work stays private; repos are private; creds are encrypted</li>
 <li><span className='font-bold'>Compliance Ready </span> — we align with SOC2/ISO controls if you provide them.</li>

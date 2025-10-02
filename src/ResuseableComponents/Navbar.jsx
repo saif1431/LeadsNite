@@ -113,14 +113,23 @@ const Navbar = () => {
             target="_blank" 
             rel="noopener noreferrer"
             className={`  transition ${
-              isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
+              isHome ? 'text-white hidden lg:block hover:text-black' : 'text-black hover:text-[#00A9E0]'
             }`}
           >
             <FaLinkedin className="text-3xl" />
           </a>
         {/* LinkedIn & Mobile Menu Button */}
-        <div className="flex items-center justify-between ">
-         
+        <div className="flex items-center gap-4 justify-between ">
+          <a 
+            href="https://www.linkedin.com/company/leadsnite/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={`  transition ${
+              isHome ? 'text-white lg:hidden block hover:text-black' : 'text-black hover:text-[#00A9E0]'
+            }`}
+          >
+            <FaLinkedin className="text-3xl" />
+          </a>
           <button 
             className={`md:hidden focus:outline-none ${
               isHome ? 'text-white' : 'text-black'
@@ -133,6 +142,7 @@ const Navbar = () => {
               <FaBars className="lg:text-3xl text-2xl transition-transform duration-300" />
             )}
           </button>
+          
         </div>
       </nav>
 

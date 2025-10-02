@@ -71,12 +71,12 @@ export default function LatestProject() {
       className={`break-inside-avoid  w-full group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300
         ${
           project.area === "stock" 
-            ? "h-[200px] sm:h-[300px] lg:h-[360px]" // Stock remains same
+            ? "h-[250px] sm:h-[400px] md:h-[350px] lg:h-[360px]" // Stock remains same
             : project.area === "house"
-            ? "h-[180px] sm:h-[420px] lg:h-[420px] lg:mt-[-60px]" // Sheba.xyz - taller and shifted up
+            ? "h-[250px] sm:h-[400px] md:h-[350px] lg:h-[420px] lg:mt-[-60px]" // Sheba.xyz - taller and shifted up
             : project.area === "print"
-            ? "h-[240px] sm:h-[260px] lg:h-[300px] " // DLX Print - shorter
-            : "h-[200px] sm:h-[220px] lg:h-[360px]"
+            ? "h-[250px] sm:h-[400px] md:h-[350px] lg:h-[300px] " // DLX Print - shorter
+            : "h-[250px] sm:h-[400px] md:h-[350px] lg:h-[360px]"
         }`}
     >
       <motion.img
@@ -108,7 +108,7 @@ export default function LatestProject() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="lg:text-4xl headingFont2 text-2xl text-center font-bold mb-6 md:mb-0"
+            className="md:text-4xl  headingFont2 text-2xl text-center font-bold mb-6 md:mb-0"
           >
             Check our latest & Completed  Projects
           </motion.h2>

@@ -84,9 +84,9 @@ const ServiceCard = ({
           <img 
             src={imageUrl} 
             alt={`${title} service`}
-            className="w-12 h-12 object-contain"
+            className="w-10 h-10 object-contain"
           />
-           <h3 className="text-2xl font-bold text-start mb-3">{title}</h3>
+           <h3 className="lg:text-3xl text-xl font-bold text-start mb-3">{title}</h3>
         </div>
         
         {/* Title */}
@@ -112,7 +112,7 @@ const ServiceCard = ({
         {/* Read More button */}
         <button 
           onClick={handleClick}
-          className=" text-[#01ACE4]   mt-3 rounded-lg hover:bg-primary/90 transition-colors duration-300"
+          className=" text-[#01ACE4] cursor-pointer  mt-3 rounded-lg hover:bg-primary/90 transition-colors duration-300"
         >
           Read More
         </button>
@@ -131,7 +131,7 @@ const ServicesCard = ({ showDescriptions = false }) => {
         {isHomePage ? "Find the Perfect Service" : "Here's What Sets Us Apart"}
       </h2>
       
-      <div className="grid grid-cols-1 max-w-7xl mx-auto px-4 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 max-w-7xl mx-auto md:px-6 px-4 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {servicesData.map(card => (
           <ServiceCard 
             key={card.id}

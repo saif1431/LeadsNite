@@ -47,7 +47,7 @@ const ClientCount = () => {
     const steps = (duration * 1000) / interval;
     
     const animations = stats.map(stat => {
-      const stepValue = stat.value / steps;
+      
       let currentStep = 0;
       let currentValue = 0;
 
@@ -106,7 +106,7 @@ const ClientCount = () => {
               }}
               className="text-center p-6"
             >
-              <div className="text-6xl font-bold text-white mb-2">
+              <div className="lg:text-6xl text-4xl font-bold text-white mb-2">
                 <motion.span
                   initial={{ scale: 1 }}
                   animate={{ 
