@@ -105,13 +105,13 @@ export default function LatestProject() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-center items-start md:items-center mb-12 ">
-          <motion.h2
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="md:text-4xl  headingFont2 text-2xl text-center font-extrabold mb-6 md:mb-0"
           >
             Check our latest & Completed  Projects
-          </motion.h2>
+          </motion.h1>
 
           {/* Filters */}
           {/* <div className="flex flex-wrap gap-2">

@@ -63,7 +63,7 @@ function Technologies() {
   ];
 
   return (
-    <div className='  '>
+    <div className='hidden lg:block'>
       <h1 className='title'>Technologies We Use
 </h1>
  

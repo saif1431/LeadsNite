@@ -12,9 +12,9 @@ function LetsTalk() {
             <div className="absolute inset-0  rounded-3xl"></div>
             
             <div className="relative py-16 ">
-              <h3 className="lg:text-4xl headingFont2 text-2xl text-center font-bold mb-6 ">
+              <h1 className="lg:text-4xl headingFont2 text-2xl text-center font-bold mb-6 ">
                 Ready to Start Your Project?
-              </h3>
+              </h1>
               <p className="text-md text-gray-600 mb-6 max-w-2xl mx-auto leading-relaxed">
                 Let's discuss how our proven process can bring your vision to life. 
                 Get in touch today for a free consultation and project estimate.
