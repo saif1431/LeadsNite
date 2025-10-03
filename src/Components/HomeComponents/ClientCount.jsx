@@ -42,7 +42,7 @@ const ClientCount = () => {
   }, [hasAnimated]);
 
   const startCounting = () => {
-    const duration = 2.5; // seconds
+    const duration = 1; // seconds
     const interval = 16; // ms (approx 60fps)
     const steps = (duration * 1000) / interval;
     
@@ -114,7 +114,7 @@ const ClientCount = () => {
                   }}
                   transition={{ 
                     duration: 0.3, 
-                    delay: 2.8 // Counting complete hone ke baad
+                    delay: 2 // Counting complete hone ke baad
                   }}
                 >
                   {stat.currentValue}

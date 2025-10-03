@@ -51,18 +51,18 @@ export default function PricingSection() {
     <div className="bg-white  flex items-center justify-between px-4 lg:px-24 md:px-16 md:py-36 py-12">
       <div className=" w-full max-w-7xl mx-auto flex flex-col xl:flex-row items-center justify-between gap-8 lg:gap-16">
         {/* Left side content */}
-        <div className="max-w-md px-6 w-full"> 
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Committed to giving the best price</h1>
+        <div className="lg:max-w-md lg:px-6 w-full"> 
+          <h1 className="text-3xl md:text-4xl text-center lg:text-start font-bold text-gray-900 mb-8">Committed to giving the best price</h1>
 
           {/* Tab control */} 
-          <div className="bg-blue-100 rounded-full p-1 flex w-fit">
+          <div className="bg-blue-100 rounded-full p-1 flex items-center justify-center w-fit mx-auto lg:mx-0">
             <button
               className={`px-6 py-3 cursor-pointer rounded-full text-md font-medium transition-colors ${
                 activeTab === "marketing" ? "bg-blue-500 text-white" : "text-gray-700 "
               }`}
               onClick={() => setActiveTab("marketing")}
             >
-              Web Development
+              Web Dev
             </button>
             <button
               className={`px-6 py-3 cursor-pointer rounded-full text-md  font-medium transition-colors ${
@@ -70,7 +70,7 @@ export default function PricingSection() {
               }`}
               onClick={() => setActiveTab("optimize")}
             >
-              App Development
+              App Dev
             </button>
           </div>
         </div>

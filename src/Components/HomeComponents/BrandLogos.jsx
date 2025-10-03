@@ -25,6 +25,8 @@ const logos = [
 
 const BrandLogos = () => {
   const duplicatedLogos = [...logos, ...logos];
+  const speed = window.innerWidth < 768 ? 30 : 20; 
+
 
   return (
     <div
@@ -42,7 +44,7 @@ const BrandLogos = () => {
           x: ['0%', '-100%'],
         }}
         transition={{
-          duration: 0,
+          duration: speed,
           ease: 'linear',
           repeat: Infinity,
         }}

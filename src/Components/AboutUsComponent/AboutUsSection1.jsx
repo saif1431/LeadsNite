@@ -25,7 +25,7 @@ export default function AboutUsSection1() {
             />  
 
             {/* Experience overlay card */}
-            <div className="lg:absolute mt-6 lg:mt-0 top-12 right-4 bg-[#0E1E2A] backdrop-blur-sm  px-12 py-8    text-white">
+            <div className="lg:absolute mt-6 lg:mt-0 top-12 right-4 bg-[#0E1E2A] opacity-90 backdrop-blur-sm  px-12 py-8    text-white">
               <div className="counting text-8xl font-thin text-gray-200">05</div>
               <div className="text-lg font-bold">Years Experience</div>
             </div>

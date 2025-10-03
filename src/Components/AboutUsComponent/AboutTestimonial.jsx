@@ -91,14 +91,14 @@ function AboutTestimonial() {
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
               <div className='py-8 h-full'>
-                <p className='text-2xl text-primary mb-6'>
+                <p className='lg:text-2xl text-lg text-primary mb-6'>
                   {testimonial.text}
                 </p>
                 <hr className='mb-6 h-[5px]' />
                 <div className='flex items-start gap-2'>
                   <img src={testimonial.image} alt={testimonial.name} className='w-12 h-12 rounded-full mr-4' />
                   <div>
-                    <h3 className='font-bold text-xl'>{testimonial.name}</h3>
+                    <h3 className='font-bold lg:text-xl text-lg'>{testimonial.name}</h3>
                     <p className='text-gray-600'>{testimonial.role}</p>
                   </div>
                 </div>

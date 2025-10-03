@@ -53,7 +53,7 @@ const Navbar = () => {
 
   return (
     <div className='bg-primary'>
-      <nav className={`py-5 px-4 max-w-9xl mx-auto lg:px-38 md:px-20 flex items-center justify-between ${isHome ? 'bg-primary text-white shadow-md' : 'bg-white text-black'}`}>
+      <nav className={`py-5 px-4 max-w-9xl mx-auto lg:px-38 md:px-6 flex items-center justify-between ${isHome ? 'bg-primary text-white shadow-md' : 'bg-white text-black'}`}>
         {/* Logo */}
         <div className="">
           <Link to="/" className="text-2xl font-bold text-blue-600">
@@ -113,23 +113,14 @@ const Navbar = () => {
             target="_blank" 
             rel="noopener noreferrer"
             className={`  transition ${
-              isHome ? 'text-white hidden lg:block hover:text-black' : 'text-black hidden lg:block hover:text-[#00A9E0]'
+              isHome ? 'text-white hidden md:block hover:text-black' : 'text-black hidden md:block hover:text-[#00A9E0]'
             }`}
           >
             <FaLinkedin className="text-3xl" />
           </a>
         {/* LinkedIn & Mobile Menu Button */}
         <div className="flex items-center gap-4 justify-between ">
-          <a 
-            href="https://www.linkedin.com/company/leadsnite/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={`  transition ${
-              isHome ? 'text-white  md:hidden block hover:text-black' : 'text-black  md:hidden block hover:text-[#00A9E0]'
-            }`}
-          >
-            <FaLinkedin className="text-3xl" />
-          </a>
+     
           <button 
             className={`md:hidden focus:outline-none ${
               isHome ? 'text-white' : 'text-black'
@@ -224,6 +215,16 @@ const Navbar = () => {
                   Contact Us
                 </Link>
               </motion.div>
+                   <a 
+            href="https://www.linkedin.com/company/leadsnite/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={`  transition ${
+              isHome ? 'text-white  md:hidden block hover:text-black' : 'text-black  md:hidden block hover:text-[#00A9E0]'
+            }`}
+          >
+            <FaLinkedin className="text-3xl" />
+          </a>
             </motion.div>
           </motion.div>
         )}

@@ -8,7 +8,7 @@ function AboutUsPage() {
   return (
     <div className=''>
       <AboutUsSection1/>
-      <TeamMembers/>
+      {/* <TeamMembers/> */}
       <AboutUsSection2/>
       <AboutTestimonial/>
     </div>
