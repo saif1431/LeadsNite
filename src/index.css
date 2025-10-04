@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'clashDisplay';
-  src: url(/public/ClashDisplay-Medium.otf);
+  src: url(/public/ClashDisplay-Bold.otf);
   font-weight: 900;
 
 }
@@ -11,6 +11,7 @@
 @font-face {
   font-family: 'clashDisplay2';
   src: url(/public/Satoshi-Bold.otf);
+    /* src: url(/public/ClashDisplay-Medium.otf); */
 }
 
 .headingFont {

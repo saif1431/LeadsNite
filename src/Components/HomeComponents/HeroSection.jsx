@@ -96,7 +96,7 @@ function HeroSection() {
   };
 
   return (
-    <div className='md:h-[93vh] h-[85vh] lg:h-[90vh] xl:h-[130vh] bg-none '>
+    <div className='md:h-[93vh] h-[85vh] lg:h-[90vh] xl:h-[145vh] bg-none '>
       <section 
         className="relative h-[80vh] md:h-[90vh] lg:h-[90vh] xl:h-[125vh] bg-no-repeat"
         style={{
