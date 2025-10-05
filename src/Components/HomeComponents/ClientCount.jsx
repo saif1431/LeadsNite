@@ -18,15 +18,14 @@ const ClientCount = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Jab element 50% visible ho jaye tab animation start kare
         if (entry.isIntersecting && entry.intersectionRatio >= 0.3 && !hasAnimated) {
           setHasAnimated(true);
           startCounting();
         }
       },
       {
-        threshold: 0.3, // 30% element visible hone par trigger
-        rootMargin: '0px 0px -10% 0px' // Bottom se 10% margin
+        threshold: 0.3,
+        rootMargin: '0px 0px -10% 0px'
       }
     );
 
@@ -42,43 +41,39 @@ const ClientCount = () => {
   }, [hasAnimated]);
 
   const startCounting = () => {
-    const duration = 1; // seconds
+    const duration = 2; // seconds
     const interval = 16; // ms (approx 60fps)
     const steps = (duration * 1000) / interval;
     
-    const animations = stats.map(stat => {
-      
-      let currentStep = 0;
-      let currentValue = 0;
+    let currentStep = 0;
 
-      const intervalId = setInterval(() => {
-        currentStep++;
-        
-        // Easing function for smooth animation (ease-out effect)
-        const progress = currentStep / steps;
-        const easedProgress = 1 - Math.pow(1 - progress, 3);
-        currentValue = Math.min(
+    const intervalId = setInterval(() => {
+      currentStep++;
+      
+      // Easing function for smooth animation (ease-out effect)
+      const progress = currentStep / steps;
+      const easedProgress = 1 - Math.pow(1 - progress, 3);
+
+      // Sab counters ko ek sath update karo
+      setCounters(prev => prev.map(stat => ({
+        ...stat,
+        currentValue: Math.min(
           Math.floor(easedProgress * stat.value),
           stat.value
-        );
+        )
+      })));
 
-        setCounters(prev => prev.map(item => 
-          item.id === stat.id ? { ...item, currentValue } : item
-        ));
+      if (currentStep >= steps) {
+        clearInterval(intervalId);
+        // Final values set karo
+        setCounters(prev => prev.map(stat => ({
+          ...stat,
+          currentValue: stat.value
+        })));
+      }
+    }, interval);
 
-        if (currentStep >= steps) {
-          clearInterval(intervalId);
-          // Final value set karne ke liye
-          setCounters(prev => prev.map(item => 
-            item.id === stat.id ? { ...item, currentValue: stat.value } : item
-          ));
-        }
-      }, interval);
-
-      return intervalId;
-    });
-
-    return () => animations.forEach(clearInterval);
+    return () => clearInterval(intervalId);
   };
 
   return (
@@ -101,7 +96,7 @@ const ClientCount = () => {
               }}
               transition={{ 
                 duration: 0.6, 
-                delay: hasAnimated ? stat.id * 0.15 : 0,
+                delay: 0,
                 ease: "easeOut"
               }}
               className="text-center p-6"
@@ -114,7 +109,7 @@ const ClientCount = () => {
                   }}
                   transition={{ 
                     duration: 0.3, 
-                    delay: 2 // Counting complete hone ke baad
+                    delay: 2
                   }}
                 >
                   {stat.currentValue}

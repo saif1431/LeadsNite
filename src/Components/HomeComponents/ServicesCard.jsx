@@ -127,7 +127,7 @@ const ServicesCard = ({ showDescriptions = false }) => {
 
   return (
     <div className={`mt-6 ${isHomePage ? 'h-fit py-26 bg-secondary' : 'rounded-3xl lg:px-4 py-12 bg-image px-4'}`}>
-      <h2 style={{fontWeight:'800'}} className={`title2 headingFont2 ${isHomePage ? 'lg:text-3xl' : 'text-4xl'}`}>
+      <h2 style={{fontWeight:'800'}} className={`title2   ${isHomePage ? 'lg:text-3xl' : 'text-4xl'}`}>
         {isHomePage ? "Find the Perfect Service" : ""}
       </h2>
       

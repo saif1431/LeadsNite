@@ -17,11 +17,11 @@ export default function AboutUsSection1() {
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* Left side - Image with overlay */}
         <div className="relative h-[100%]  flex flex-col gap-4">
-          <div className="relative h-full overflow-hidden">
+          <div className="relative lg:h-full overflow-hidden">
             <img
               src="/aboutImg3.png "
               alt="Team working with futuristic technology and data visualizations"
-              className="lg:w-[85%] h-full object-top"
+              className="lg:w-[85%] lg:h-full object-cover"
             />  
 
             {/* Experience overlay card */}

@@ -157,7 +157,7 @@ function HeroSection() {
             </motion.p>
     <div className='relative flex items-center justify-center'>
        <Link  to='/contactUs' className='btn3 flex items-center justify-center'>
-     Lest's Talk
+     Lest Talk
      <BiRightArrowAlt className='ml-2 text-xl'/>
      </Link>
     </div>

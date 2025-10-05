@@ -24,7 +24,7 @@ const logos = [
 function MvpService() {
 const duplicated = [...logos, ...logos];
   const duration = 40; // bigger = slower (adjust to taste)
-  const gap = 64; // gap between logos in px
+   // gap between logos in px
   const slotMinWidth = 140; // ensures consistent width to avoid seams
 
   return (
@@ -47,7 +47,7 @@ const duplicated = [...logos, ...logos];
 
         .mobile-scroll-track {
           display: flex;
-          gap: ${gap}px;
+          
           align-items: center;
           width: max-content;
           will-change: transform;

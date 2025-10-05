@@ -31,7 +31,7 @@ const BrandLogos = () => {
 
   return (
     <div
-      className="relative max-w-6xl mx-auto w-full py-4 overflow-hidden"
+      className="relative  w-full py-4 overflow-hidden"
       style={{
         WebkitMaskImage:
           "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 10%, black 25%, black 75%, rgba(0,0,0,0.6) 90%, transparent 100%)",

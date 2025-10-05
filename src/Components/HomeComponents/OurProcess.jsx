@@ -44,7 +44,7 @@ const HowWeWork = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="title2">
+          <h2 className="title2 ">
             How We Work
           </h2>
           <p className="text-md text-gray-600 max-w-3xl mx-auto leading-relaxed">

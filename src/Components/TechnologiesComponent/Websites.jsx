@@ -27,7 +27,7 @@ const logos = [
 const Websites = () => {
   const duplicated = [...logos, ...logos];
   const duration = 60; // bigger = slower
-  const gap = 64; // px between logos
+  // const gap = ; // px between logos
   const slotMinWidth = 140; // consistent slot width to avoid seam
 
   return (
@@ -50,7 +50,7 @@ const Websites = () => {
 
         .ml-scroll-track {
           display: flex;
-          gap: ${gap}px;
+    
           align-items: center;
           width: max-content;
           will-change: transform;

@@ -108,7 +108,7 @@ function ContactUs({padding = "px-4"}) {
 
   return (
     <>
-      <div className={`${padding} max-w-7xl lg:h-[70vh] mx-auto lg:py-32 py-12 gap-6 px-4 flex flex-col lg:flex-row lg:items-center justify-between relative`} 
+      <div className={`${padding} max-w-7xl lg:h-[70vh] mx-auto lg:py-32 py-12 gap-6 px-4 gap-12 flex flex-col lg:flex-row lg:items-center justify-between relative`} 
            style={{backgroundImage: "url(/map.png)"}}>
        
        <div className="bg-white lg:w-[45%] w-full shadow-xl py-10 px-16 space-y-6">
@@ -178,7 +178,9 @@ function ContactUs({padding = "px-4"}) {
      <div className='space-y-6'>
            <div className='space-y-4'>
               <h4 className='font-bold text-xl'>Phone</h4>
-              <span className='text-lg'>+92 325 5176508</span>
+                <a href="tel:+923255176508" className="hover:underline">
+                    Phone: +92 325 5176508
+                  </a>
         </div>
         <div className='space-y-4'>
               <h4 className='font-bold text-xl'>Official Email</h4>

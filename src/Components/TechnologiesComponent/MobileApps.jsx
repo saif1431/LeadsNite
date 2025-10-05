@@ -21,8 +21,7 @@ const logos = [
 const MobileApps = () => {
   const duplicated = [...logos, ...logos];
   const duration = 40; // bigger = slower (adjust to taste)
-  const gap = 64; // gap between logos in px
-  const slotMinWidth = 140; // ensures consistent width to avoid seams
+    const slotMinWidth = 140; // ensures consistent width to avoid seams
 
   return (
     <div
@@ -44,7 +43,7 @@ const MobileApps = () => {
 
         .mobile-scroll-track {
           display: flex;
-          gap: ${gap}px;
+        
           align-items: center;
           width: max-content;
           will-change: transform;

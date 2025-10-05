@@ -4,7 +4,7 @@ import img from '/AboutImage/img6.png'
 
 function AboutUsSection2() {
   return (
-    <div className='bg-[#EAF1FA] relative mt-18  px-4  py-24'>
+    <div className='bg-[#EAF1FA]  mt-18  px-4  py-24'>
     <div className='flex flex-col lg:flex-row max-w-7xl mx-auto items-start justify-between lg:px-8 px-4'>
         <div className='lg:w-[70%] w-full'>
             <h2 className='text-3xl font-bold'>What Sets us Apart</h2>
@@ -32,11 +32,11 @@ function AboutUsSection2() {
                  </div>
             </div>
       </div>
-      <div className='lg:w-[65%] w-full lg:text-end  flex flex-col mt-12 justify-between lg:mt-0' >
+      <div className='lg:w-[65%] relative w-full lg:text-end  flex flex-col mt-12 justify-between lg:mt-0' >
         <h2 className='text-2xl  font-bold'>"Empowering Dreams, Igniting Success"</h2>
         <p className='lg:text-3xl text-2xl font-medium mt-3 '>SINCE 2018</p>
       <div className=''>
-          <img className='lg:w-[45%] lg:absolute right-[10%] lg:top-[65%] xl:top-[45%]' src={img} alt="" />
+          <img className='lg:w-[45%] xl:w-[100%] lg:absolute  lg:top-[65%] xl:top-[15rem]' src={img} alt="" />
       </div>
       </div>
     </div>

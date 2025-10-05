@@ -163,13 +163,13 @@ function Footer() {
               <p className="mb-4">Join Us to remain update</p>
               
             
-              <div className="space-y-3 flex items-start">
-                <div className=''>
+              <div className=" flex">
+                <div className='bg-white w-[100%] rounded-l-md'>
                   <input
                     type="email"
                     name="email"
                     placeholder="Enter your email"
-                    className="text-md  px-3 py-2 text-gray-900 bg-white border border-gray-300 rounded-l-md focus:outline-none focus:border-blue-500"
+                    className="px-2 h-full rounded-l-md text-black outline-none "
                     value={formData.email}
                     onChange={handleChange}
                     disabled={isSubmitting}
@@ -178,9 +178,10 @@ function Footer() {
                 </div>
                 
                 <button
+                type='submit'
                   onClick={handleSubmit}
                   disabled={isSubmitting}
-                  className=" bg-blue-700 px-4 py-3 rounded-r-md hover:bg-blue-800 disabled:bg-blue-900 transition-colors flex items-center justify-center gap-2"
+                  className=" bg-blue-700 px-3 py-3 rounded-r-md hover:bg-blue-800 disabled:bg-blue-900 transition-colors flex items-center justify-center gap-2"
                 >
                   <span>{isSubmitting ? "..." : ""}</span>
                   <ArrowRight className={`h-4 w-4 text-white ${isSubmitting ? 'animate-pulse' : ''}`} />
