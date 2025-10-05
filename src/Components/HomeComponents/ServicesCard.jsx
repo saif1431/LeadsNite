@@ -127,9 +127,15 @@ const ServicesCard = ({ showDescriptions = false }) => {
 
   return (
     <div className={`mt-6 ${isHomePage ? 'h-fit py-26 bg-secondary' : 'rounded-3xl lg:px-4 py-12 bg-image px-4'}`}>
-      <h2 style={{fontWeight:'800'}} className={`title2   ${isHomePage ? 'lg:text-3xl' : 'text-4xl'}`}>
-        Find the <span className='span'>Perfect Service</span>
-      </h2>
+     <h2 style={{ fontWeight: '800' }} className="title2">
+  {isHomePage ? (
+    <span className='text-zinc-800 title2'>
+      Find the <span className="span">Perfect Service</span>
+    </span>
+  ) : (
+    ''
+  )}
+</h2>
       
       <div className="grid grid-cols-1 max-w-7xl mx-auto md:px-6 px-4 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {servicesData.map(card => (

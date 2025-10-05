@@ -26,7 +26,6 @@ const logos = [
 const BrandLogos = () => {
   const duplicated = [...logos, ...logos];
   const duration = 60; // bigger = slower
-  const gap = 150; // px between logos
   const slotMinWidth = 140; // consistent slot width to avoid seam
 
   return (
@@ -47,9 +46,9 @@ const BrandLogos = () => {
           to   { transform: translate3d(-50%, 0, 0); } /* move exactly one set width */
         }
 
-        .ml-scroll-track {
+        .ml-scroll-tracks {
           display: flex;
-          gap: ${gap}px;
+          gap: 5rem;
           align-items: center;
           width: max-content;
           will-change: transform;
@@ -80,7 +79,7 @@ const BrandLogos = () => {
         }
       `}</style>
 
-      <div className="ml-scroll-track" aria-hidden>
+      <div className="ml-scroll-tracks" aria-hidden>
         {duplicated.map((logo, idx) => (
           <div className="ml-logo-item" key={idx}>
             <img src={logo} alt={`ml logo ${idx % logos.length + 1}`} />
