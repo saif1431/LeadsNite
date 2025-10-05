@@ -69,7 +69,7 @@ function AboutTestimonial() {
       </div>
       
       <div className='lg:w-[50%] w-full relative'> {/* Added relative positioning */}
-        <h1 className='lg:text-4xl text-2xl text-start font-bold mb-8'>TESTIMONIAL</h1>
+        <h1 className='lg:text-4xl text-2xl font-satochi text-start font-bold mb-8'>TESTIMONIAL</h1>
         
         <Swiper
           spaceBetween={30}

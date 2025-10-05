@@ -7,7 +7,7 @@ function AboutUsSection2() {
     <div className='bg-[#EAF1FA]  mt-18  px-4  py-24'>
     <div className='flex flex-col lg:flex-row max-w-7xl mx-auto items-start justify-between lg:px-8 px-4'>
         <div className='lg:w-[70%] w-full'>
-            <h2 className='text-3xl font-bold'>What Sets us Apart</h2>
+            <h2 className='text-3xl font-bold font-satochi'>What Sets us Apart</h2>
             <div className=' mt-12'>
                  <div className='flex items-start gap-8'>
                    <div className='rounded-full p-3 check-list '>

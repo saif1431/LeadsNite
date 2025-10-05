@@ -41,7 +41,7 @@ export default function AboutUsSection1() {
         {/* Right side - Content */}
         <div className="space-y-8">
           <div>
-            <h2 className="text-4xl lg:text-5xl font-bold  mb-6">We Help Startups Shine</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold font-satochi  mb-6">We Help Startups Shine</h2>
 
             <p className="text-primary font-semibold text-md leading-relaxed">
            We are a team of experts passionate about helping businesses grow. By combining our skills in technology, design, and strategy, we guide startups and established companies alike, turning ideas into successful products. When you work with us, you get a partner dedicated to your growth and long-term success.

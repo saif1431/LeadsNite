@@ -64,7 +64,7 @@ const ContactFaqs = () => {
 
   return (
     <div className='max-w-7xl mx-auto px-4 mt-12'>
-      <h2 className="lg:text-4xl text-center text-3xl font-bold mb-12"><span className='text-[#01ACE4]'>Questions?</span> We've Got Answers</h2>
+      <h2 className="lg:text-4xl font-satochi text-center text-3xl font-bold mb-12"><span className='text-[#01ACE4] font-satochi'>Questions?</span> We've Got Answers</h2>
 
       <div className="grid grid-cols-1  md:grid-cols-2 gap-6">
         {faqs.map((faq, index) => (

@@ -112,7 +112,7 @@ function ContactUs({padding = "px-4"}) {
            style={{backgroundImage: "url(/map.png)"}}>
        
        <div className="bg-white lg:w-[45%] w-full shadow-xl py-10 px-16 space-y-6">
-        <h2 className="lg:text-4xl text-3xl font-bold">Let's Talk Business</h2>
+        <h2 className="lg:text-4xl text-3xl font-satochi font-bold">Let's Talk Business</h2>
 
       
 
@@ -168,7 +168,7 @@ function ContactUs({padding = "px-4"}) {
       </div>
 
         <div className='space-y-8'>
-              <h1 className='lg:text-4xl text-3xl font-bold'>Contact Information</h1>
+              <h1 className='lg:text-4xl text-3xl font-satochi font-bold'>Contact Information</h1>
               <p className='flex flex-col gap-1'>
                     <span>Unlock the door to connect with ease!</span>
                     <span>Reach out via any of the channels below</span>

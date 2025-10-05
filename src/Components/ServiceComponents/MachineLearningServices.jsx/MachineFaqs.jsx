@@ -33,7 +33,7 @@ const MachineFaqs = () => {
 
   return (
     <div className="">
-      <h1 className="text-3xl font-bold mb-6">Questions about service</h1>
+      <h1 className="text-3xl font-satochi font-bold mb-6">Questions about service</h1>
       
       <div className="space-y-4">
         {faqs.map((faq, index) => (
