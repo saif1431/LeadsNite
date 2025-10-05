@@ -42,7 +42,7 @@ const logos = [
 
 const UiDesign = () => {
   const duplicated = [...logos, ...logos];
-  const duration = 100; // bigger = slower (adjust to taste)
+  const duration = 90; // bigger = slower (adjust to taste)
   // const gap = 64; // gap between logos in px
   const slotMinWidth = 140; // ensures consistent width to avoid seams
 
@@ -66,7 +66,7 @@ const UiDesign = () => {
 
         .mobile-scroll-track {
           display: flex;
-         
+         gap:1rem;
           align-items: center;
           width: max-content;
           will-change: transform;

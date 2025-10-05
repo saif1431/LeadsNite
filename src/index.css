@@ -39,9 +39,10 @@ body{
 }
 .span{
   color: #01ACE4;
+  font-family: 'Satoshi', sans-serif;
 }
 *{
-      font-family: 'Satoshi', sans-serif;
+      font-family: "Manrope", sans-serif;
 }
 .bg-secondary {
   background-color: #E9F1FA;

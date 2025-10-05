@@ -20,7 +20,7 @@ const logos = [
 
 const MobileApps = () => {
   const duplicated = [...logos, ...logos];
-  const duration = 40; // bigger = slower (adjust to taste)
+  const duration = 30; // bigger = slower (adjust to taste)
     const slotMinWidth = 140; // ensures consistent width to avoid seams
 
   return (
@@ -43,7 +43,7 @@ const MobileApps = () => {
 
         .mobile-scroll-track {
           display: flex;
-        
+        gap:1rem;
           align-items: center;
           width: max-content;
           will-change: transform;

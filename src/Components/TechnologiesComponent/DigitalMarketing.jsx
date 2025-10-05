@@ -12,7 +12,7 @@ const logos = [
 
 const DigitalMarketing = () => {
   const duplicated = [...logos, ...logos];
-  const duration = 20; // faster (smaller = faster)
+  const duration =15; // faster (smaller = faster)
   
   const slotMinWidth = 140; // consistent slot width to avoid seam
 
@@ -36,7 +36,7 @@ const DigitalMarketing = () => {
 
         .ml-scroll-track {
           display: flex;
-        
+        gap:1rem;
           align-items: center;
           width: max-content;
           will-change: transform;

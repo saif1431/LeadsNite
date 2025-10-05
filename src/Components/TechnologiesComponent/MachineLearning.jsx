@@ -17,7 +17,7 @@ const logos = [
 
 const MachineLearning = () => {
   const duplicated = [...logos, ...logos];
-  const duration = 40; // bigger = slower
+  const duration = 30; // bigger = slower
   
   const slotMinWidth = 140; // consistent slot width to avoid seam
 
@@ -41,7 +41,7 @@ const MachineLearning = () => {
 
         .ml-scroll-track {
           display: flex;
-         
+         gap:1rem;
           align-items: center;
           width: max-content;
           will-change: transform;
