@@ -108,9 +108,9 @@ export default function LatestProject() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:text-5xl  font-[Satoshi] text-2xl text-center font-extrabold mb-6 md:mb-0"
+            className="title2 mb-6"
           >
-            Check our latest & Completed  Projects
+            Check our Completed  Projects
           </motion.h1>
 
           {/* Filters */}

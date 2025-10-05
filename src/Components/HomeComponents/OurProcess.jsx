@@ -45,7 +45,7 @@ const HowWeWork = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="title2 ">
-            How We Work
+            How <span className='span'>We Work?</span>
           </h2>
           <p className="text-md text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Our proven process ensures exceptional results through strategic planning, 

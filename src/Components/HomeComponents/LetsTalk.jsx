@@ -12,8 +12,8 @@ function LetsTalk() {
             <div className="absolute inset-0  rounded-3xl"></div>
             
             <div className="relative py-16 ">
-              <h1 style={{fontWeight:'900 !important'}} className="lg:text-4xl font-satochi  text-2xl text-center font-extrabold mb-6 ">
-                Ready to Start Your Project?
+              <h1 style={{fontWeight:'900 !important'}} className="title2 mb-6">
+                Ready to Start <span className='span'>Your Project?</span>
               </h1>
               <p className="text-md text-gray-600 mb-6 max-w-2xl mx-auto leading-relaxed">
                 Let's discuss how our proven process can bring your vision to life. 

@@ -37,6 +37,9 @@ body{
 .bg-primary {
   background-color: #01ACE4; 
 }
+.span{
+  color: #01ACE4;
+}
 *{
       font-family: "Manrope", sans-serif;
 }

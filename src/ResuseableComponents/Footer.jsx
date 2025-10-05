@@ -164,7 +164,7 @@ function Footer() {
               
             
               <div className=" flex">
-                <div className='bg-white w-[100%] rounded-l-md'>
+                <div className='bg-white w-[95%] rounded-l-md'>
                   <input
                     type="email"
                     name="email"
@@ -181,7 +181,7 @@ function Footer() {
                 type='submit'
                   onClick={handleSubmit}
                   disabled={isSubmitting}
-                  className=" bg-blue-700 px-3 py-3 rounded-r-md hover:bg-blue-800 disabled:bg-blue-900 transition-colors flex items-center justify-center gap-2"
+                  className=" bg-blue-700 px-2 py-3 rounded-r-md hover:bg-blue-800 disabled:bg-blue-900 transition-colors flex items-center justify-center gap-2"
                 >
                   <span>{isSubmitting ? "..." : ""}</span>
                   <ArrowRight className={`h-4 w-4 text-white ${isSubmitting ? 'animate-pulse' : ''}`} />

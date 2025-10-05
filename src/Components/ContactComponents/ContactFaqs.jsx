@@ -78,7 +78,7 @@ const ContactFaqs = () => {
               className="flex w-full  items-center justify-between cursor-pointer transition duration-300 ease-in-out"
               aria-expanded={activeIndex === index}
             >
-              <h3 className="text-lg  font-semibold">{faq.question}</h3>
+              <h3 className="text-lg text-left font-semibold">{faq.question}</h3>
               <span className="ml-4 mt-1">
                 {activeIndex === index ? (
                   < Minus className="text-gray-600" />
