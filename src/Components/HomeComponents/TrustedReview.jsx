@@ -30,8 +30,8 @@ const TrustedReview = () => {
 
   return (
     <div className="bg-white py-12 overflow-hidden">
-      <div className="title">
-        <h1>Trusted Reviews</h1>
+      <div className="title font-satochi">
+        <h1 className='title '>Trusted Reviews</h1>
       </div>
 
       <div className="relative mt-6 w-full py-8">

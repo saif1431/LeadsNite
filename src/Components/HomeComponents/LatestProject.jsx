@@ -110,7 +110,7 @@ export default function LatestProject() {
             animate={{ opacity: 1, y: 0 }}
             className="title2 mb-6"
           >
-            Check our Completed  Projects
+            Check our <span className="span">Completed  Projects</span>
           </motion.h1>
 
           {/* Filters */}
