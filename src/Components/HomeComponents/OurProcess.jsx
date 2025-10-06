@@ -69,7 +69,7 @@ const HowWeWork = () => {
                 className={`relative mb-16 lg:mb-24 ${isEven ? 'lg:pr-1/2' : 'lg:pl-1/2'}`}
               >
                 {/* Large Step Number Background */}
-                <div className={`absolute top-0 ${isEven ? 'right-0 lg:right-1/2 lg:mr-8' : 'left-0 lg:left-1/2 lg:ml-8'} text-[6rem] lg:text-[10rem] font-black text-blue-600/5 leading-none pointer-events-none select-none`}>
+                <div className={`absolute top-0 ${isEven ? 'right-0 lg:right-1/2 lg:mr-8' : 'left-0 lg:left-1/2 lg:ml-8'} text-[6rem] hidden lg:block lg:text-[10rem] font-black text-blue-600/5 leading-none pointer-events-none select-none`}>
                   {step.id}
                 </div>
                 

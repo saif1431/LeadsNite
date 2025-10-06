@@ -42,7 +42,7 @@ export default function ServiceSection1() {
         {/* Right side - Content */}
         <div className="space-y-4">
           <div>
-            <h2 className="font-satochi text-3xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+            <h2 style={{fontFamily: 'Satoshi'}} className="font-satochi text-3xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
               Start right, succeed swiftly. Your path begins!
             </h2>
 
