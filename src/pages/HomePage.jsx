@@ -15,6 +15,7 @@ import SplashCursor from '../Components/HomeComponents/SplashCursor'
 import OurProcess from '../Components/HomeComponents/OurProcess'
 import LetsTalk from '../Components/HomeComponents/LetsTalk'
 import ServicesCard from '../Components/HomeComponents/ServicesCard'
+import ClientReviews from '../Components/HomeComponents/ClientReviews'
 
 function HomePage() {
   return (
@@ -34,7 +35,7 @@ function HomePage() {
 <ClientCount/>
 </div>
 <LatestProject/>
-<TrustedReview/>    
+<ClientReviews/>    
           </div>
   )
 }

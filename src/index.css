@@ -3,14 +3,14 @@
 
 @font-face {
   font-family: 'clashDisplay';
-  src: url(/public/ClashDisplay-Bold.otf);
+  src: url(/ClashDisplay-Bold.otf);
   font-weight: 900;
 
 }
 
 @font-face {
   font-family: 'Satoshi';
-  src: url(/public/Satoshi-Bold.otf);
+  src: url(/Satoshi-Bold.otf);
   font-weight: 900;
 
 }

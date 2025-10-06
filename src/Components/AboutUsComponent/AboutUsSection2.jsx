@@ -16,7 +16,7 @@ function AboutUsSection2() {
                   <div className='space-y-4'>
                     <h5 className='text-xl font-bold'>Free Consultation
 </h5>
-                  <p className='lg:w-[50%] font-medium leading w-full'>Unlike others, we offer startups a complimentary consultation to discuss your ideas and strategies, helping you plan the best path forward—no payment required.</p>
+                  <p className='lg:w-[80%] font-medium leading w-full'>Unlike others, we offer startups a complimentary consultation to discuss your ideas and strategies, helping you plan the best path forward—no payment required.</p>
                   </div>
                  </div>
                  <hr className='mt-4 border-gray-300 w-[60%]' />
@@ -27,7 +27,7 @@ function AboutUsSection2() {
                   <div className='space-y-4'>
                     <h5 className='text-xl font-bold'>Special Deals
 </h5>
-                  <p className='lg:w-[50%] font-medium leading w-full'>We offer special discounts and customized packages for new clients, ensuring they receive exceptional value</p>
+                  <p className='lg:w-[80%] font-medium leading w-full'>We offer special discounts and customized packages for new clients, ensuring they receive exceptional value</p>
                   </div>
                  </div>
             </div>
@@ -36,7 +36,7 @@ function AboutUsSection2() {
         <h2 className='text-2xl  font-bold'>"Empowering Dreams, Igniting Success"</h2>
         <p className='lg:text-3xl text-2xl font-medium mt-3 '>SINCE 2018</p>
       <div className=''>
-          <img className='lg:w-[45%] xl:w-[100%] lg:absolute  lg:top-[65%] xl:top-[15rem]' src={img} alt="" />
+          <img className='lg:w-[45%] xl:w-[100%] lg:absolute  lg:top-[65%] xl:top-[8rem]' src={img} alt="" />
       </div>
       </div>
     </div>
