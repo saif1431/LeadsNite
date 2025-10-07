@@ -8,7 +8,7 @@ function RightSection() {
 
   return (
     <div className='flex flex-col items-center gap-6 '>
-      <div className='bg-[#EAF1FA] px-8 flex flex-col py-16 rounded-lg space-y-4'>
+      <div className='bg-[#EAF1FA] w-full px-8 flex flex-col py-16 rounded-lg space-y-4'>
         <h2 className='text-3xl font-satochi font-bold'>Need Help?</h2> 
         <p className='text-md font-medium'>Forget Forms. Call us Instead. Contact us directly for prompt support, no waiting.</p>
         <div className=''>
@@ -22,7 +22,7 @@ function RightSection() {
         <h3 className='text-3xl font-bold'>OR</h3>
       </div>
       
-      <div className='bg-[#EAF1FA] px-8 flex flex-col py-16 rounded-lg space-y-4'>
+      <div className='bg-[#EAF1FA] w-full px-8 flex flex-col py-16 rounded-lg space-y-4'>
         <h2 className='text-3xl font-satochi font-bold'>Plan Meet?</h2> 
         <p className='text-md font-medium'>Running Short on Time? Schedule a Meeting for Your Convenience.</p>
         <button 

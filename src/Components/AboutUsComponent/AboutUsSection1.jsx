@@ -34,7 +34,7 @@ export default function AboutUsSection1() {
           {/* Decorative chart bars */}
           <div className="absolute hidden  -bottom-0 left-[90%] lg:flex items-end gap-2">
             <div className="w-5 h-64 bg-primary "></div>
-            <div className="w-5 h-48 bg-[#C8C6FC] "></div>
+            <div className="w-5 h-48 bg-[#01abe470] "></div>
           </div>
         </div>
 

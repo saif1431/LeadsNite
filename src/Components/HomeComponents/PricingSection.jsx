@@ -103,7 +103,7 @@ export default function PricingSection() {
               className="flex flex-col gap-3 lg:flex-row "
             >
               {/* Free plan card */}
-              <div className="border border-black rounded-lg   px-12  py-14 w-full max-w-sm  md:mb-0 md:mr-12 relative z-10">
+              <div className="border border-black rounded-lg   px-12  py-14 w-full max-w-sm  md:mb-0 lg:mr-12 relative z-10">
                 <div className="">
                   <h3 className="text-2xl font-semibold mb-4">{pricingData.free.name}</h3>
                   <div className="flex items-baseline">

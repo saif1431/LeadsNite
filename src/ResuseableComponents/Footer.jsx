@@ -112,7 +112,7 @@ function Footer() {
             <h2 className="text-xl mt-2 font-semibold">
               Turn Your Startup into Success Story!
             </h2>
-            <p className="text-sm xl:w-[80%] mt-2">We build smart digital solutions that help businesses grow,  from modern apps to powerful AI-driven platforms.</p>
+            <p className="text-sm xl:w-[400px] mt-2">We build smart digital solutions that help businesses grow,  from modern apps to powerful AI-driven platforms.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:mt-8 xl:mt-0">
@@ -164,7 +164,7 @@ function Footer() {
               
             
               <div className=" flex">
-                <div className='bg-white w-[95%] rounded-l-md'>
+                <div className='bg-white lg:w-[95%] w-[70%] rounded-l-md'>
                   <input
                     type="email"
                     name="email"

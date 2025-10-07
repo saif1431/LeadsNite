@@ -36,7 +36,7 @@ function AboutUsSection2() {
         <h2 className='text-2xl  font-bold'>"Empowering Dreams, Igniting Success"</h2>
         <p className='lg:text-3xl text-2xl font-medium mt-3 '>SINCE 2018</p>
       <div className=''>
-          <img className='lg:w-[45%] xl:w-[100%] lg:absolute  lg:top-[65%] xl:top-[8rem]' src={img} alt="" />
+          <img className='lg:w-[80%] xl:w-[100%] lg:absolute  lg:top-[23rem] xl:top-[8rem]' src={img} alt="" />
       </div>
       </div>
     </div>
