@@ -199,7 +199,7 @@ function ContactUs({padding = "px-4"}) {
               <h4 className='font-bold text-xl'>Follow Us</h4>
               <div className='flex items-center gap-4'>
                     <a target='_blank' href="https://www.linkedin.com/company/leadsnite/" rel="noopener noreferrer">
-                      <FaLinkedinIn className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#01ACE4] hover:border-[#01ACE4] transition-colors'/>
+                      <FaLinkedinIn className='text-5xl rounded-md border-2 border-black p-2 hover:text-[#03ABE4] hover:border-[#03ABE4] transition-colors'/>
                     </a>
               </div>
         </div>

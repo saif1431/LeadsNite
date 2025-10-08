@@ -20,7 +20,7 @@ function ShowProject() {
             onClick={() => setActiveTab('website')}
             className={`px-4 py-2 whitespace-nowrap transition-colors  ${
               activeTab === 'website'
-                ? 'bg-[#01ACE4] text-white rounded-lg px-6 py-3 '
+                ? 'bg-[#03ABE4] text-white rounded-lg px-6 py-3 '
                 : 'btn'
             }`}
           >
@@ -30,7 +30,7 @@ function ShowProject() {
             onClick={() => setActiveTab('mobileApp')}
             className={`px-4 py-2  whitespace-nowrap transition-colors ${
               activeTab === 'mobileApp'
-                ? 'bg-[#01ACE4] text-white rounded-lg px-6 py-3'
+                ? 'bg-[#03ABE4] text-white rounded-lg px-6 py-3'
                 : 'btn'
             }`}
           >
@@ -40,7 +40,7 @@ function ShowProject() {
             onClick={() => setActiveTab('machineLearning')}
             className={`px-4 py-2  whitespace-nowrap transition-colors ${
               activeTab === 'machineLearning'
-                ? 'bg-[#01ACE4] text-white rounded-lg px-6 py-3'
+                ? 'bg-[#03ABE4] text-white rounded-lg px-6 py-3'
                 : 'btn  '
             }`}
           >

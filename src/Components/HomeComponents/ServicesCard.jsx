@@ -112,7 +112,7 @@ const ServiceCard = ({
         {/* Read More button */}
         <button 
           onClick={handleClick}
-          className=" text-[#01ACE4] cursor-pointer  mt-3 rounded-lg hover:bg-primary/90 transition-colors duration-300"
+          className=" text-[#03ABE4] cursor-pointer  mt-3 rounded-lg hover:bg-primary/90 transition-colors duration-300"
         >
           Read More
         </button>

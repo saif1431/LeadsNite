@@ -76,8 +76,8 @@ function Technologies() {
             onClick={() => setActiveTab('website')}
             className={`px-4 py-2 flex   cursor-pointer whitespace-nowrap transition-colors  ${ 
               activeTab === 'website'
-                ? 'text-[#01ACE4] border-b-2 w-12 flex items-center justify-center border-[#01ACE4]'
-                : 'text-gray-600 hover:text-[#01ACE4]  w-12 flex items-center justify-center hover:border-b-2 hover:border-[#01ACE4]'
+                ? 'text-[#03ABE4] border-b-2 w-12 flex items-center justify-center border-[#03ABE4]'
+                : 'text-gray-600 hover:text-[#03ABE4]  w-12 flex items-center justify-center hover:border-b-2 hover:border-[#03ABE4]'
             }`}
           >
             Website
@@ -86,8 +86,8 @@ function Technologies() {
             onClick={() => setActiveTab('mobileApp')}
             className={`px-4 py-2 cursor-pointer whitespace-nowrap transition-colors ${
               activeTab === 'mobileApp'
-                ? 'text-[#01ACE4] w-12 flex items-center justify-center  border-b-2 border-[#01ACE4]'
-                : 'text-gray-600 hover:text-[#01ACE4] w-12 flex items-center justify-center hover:border-b-2 hover:border-[#01ACE4]'
+                ? 'text-[#03ABE4] w-12 flex items-center justify-center  border-b-2 border-[#03ABE4]'
+                : 'text-gray-600 hover:text-[#03ABE4] w-12 flex items-center justify-center hover:border-b-2 hover:border-[#03ABE4]'
             }`}
           >
             Mobile App
@@ -96,8 +96,8 @@ function Technologies() {
             onClick={() => setActiveTab('machineLearning')}
             className={`px-4 py-2 cursor-pointer whitespace-nowrap transition-colors ${
               activeTab === 'machineLearning'
-                ? 'text-[#01ACE4] border-b-2 w-12 flex items-center justify-center border-[#01ACE4]'
-                : 'text-gray-600 hover:text-[#01ACE4] w-12 flex items-center justify-center hover:border-b-2 hover:border-[#01ACE4]'
+                ? 'text-[#03ABE4] border-b-2 w-12 flex items-center justify-center border-[#03ABE4]'
+                : 'text-gray-600 hover:text-[#03ABE4] w-12 flex items-center justify-center hover:border-b-2 hover:border-[#03ABE4]'
             }`}
           >
             AI Agents
@@ -106,8 +106,8 @@ function Technologies() {
             onClick={() => setActiveTab('digitalMarketing')}
             className={`px-4 py-2 cursor-pointer whitespace-nowrap transition-colors ${
               activeTab === 'digitalMarketing'
-                ? 'text-[#01ACE4] border-b-2 w-12 flex items-center justify-center border-[#01ACE4]'
-                : 'text-gray-600 hover:text-[#01ACE4] w-12 flex items-center justify-center hover:border-b-2 hover:border-[#01ACE4]'
+                ? 'text-[#03ABE4] border-b-2 w-12 flex items-center justify-center border-[#03ABE4]'
+                : 'text-gray-600 hover:text-[#03ABE4] w-12 flex items-center justify-center hover:border-b-2 hover:border-[#03ABE4]'
             }`}
           >
             UI/UX Design
@@ -116,8 +116,8 @@ function Technologies() {
             onClick={() => setActiveTab('uiDesign')}
             className={`px-4 py-2 cursor-pointer whitespace-nowrap transition-colors ${
               activeTab === 'uiDesign'
-                ? 'text-[#01ACE4] border-b-2 w-12 flex items-center justify-center border-[#01ACE4]'
-                : 'text-gray-600 hover:text-[#01ACE4] w-12 flex items-center justify-center hover:border-b-2 hover:border-[#01ACE4]'
+                ? 'text-[#03ABE4] border-b-2 w-12 flex items-center justify-center border-[#03ABE4]'
+                : 'text-gray-600 hover:text-[#03ABE4] w-12 flex items-center justify-center hover:border-b-2 hover:border-[#03ABE4]'
             }`}
           >
            SaaS
@@ -126,8 +126,8 @@ function Technologies() {
             onClick={() => setActiveTab('mvp')}
             className={`px-4 py-2 cursor-pointer whitespace-nowrap transition-colors ${
               activeTab === 'mvp'
-                ? 'text-[#01ACE4] border-b-2 w-12 flex items-center justify-center border-[#01ACE4]'
-                : 'text-gray-600 hover:text-[#01ACE4] w-12 flex items-center justify-center hover:border-b-2 hover:border-[#01ACE4]'
+                ? 'text-[#03ABE4] border-b-2 w-12 flex items-center justify-center border-[#03ABE4]'
+                : 'text-gray-600 hover:text-[#03ABE4] w-12 flex items-center justify-center hover:border-b-2 hover:border-[#03ABE4]'
             }`}
           >
            MVP

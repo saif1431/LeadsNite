@@ -35,10 +35,10 @@ body{
 }
 
 .bg-primary {
-  background-color: #01ACE4; 
+  background-color: #03ABE4; 
 }
 .span{
-  color: #01ACE4;
+  color: #03ABE4;
   font-family: 'Satoshi', sans-serif;
 }
 *{
@@ -95,7 +95,7 @@ background-repeat: no-repeat;
 }
 
 .btn-primary {
-  background-color: #01ACE4;
+  background-color: #03ABE4;
   color: #ffffff;
 }
 .check-list {
@@ -113,7 +113,7 @@ background-repeat: no-repeat;
 
 
 .title{
-  @apply text-3xl text-[#01ACE4] md:text-6xl font-bold text-center mb-6 ;
+  @apply text-3xl text-[#03ABE4] md:text-6xl font-bold text-center mb-6 ;
   font-family: 'Satoshi', sans-serif;
 }
 .title2{
@@ -181,7 +181,7 @@ background-repeat: no-repeat;
 
 .btn3 {
   --color: #fff;
-  --color2: #01ACE4;
+  --color2: #03ABE4;
   padding: 0.6rem 2rem;
   background: transparent;
   border-radius: 999px;

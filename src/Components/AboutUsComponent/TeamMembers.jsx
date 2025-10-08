@@ -77,7 +77,7 @@ function TeamMembers({ member }) {
           {/* Content */}
           <div className="p-4 text-center">
             <p className="text-gray-500 text-sm ">{m.role}</p>
-            <h3 className="text-2xl font-bold text-gray-900 hover:text-[#01ACE4] ">{m.name}</h3>
+            <h3 className="text-2xl font-bold text-gray-900 hover:text-[#03ABE4] ">{m.name}</h3>
           </div>
         </div>
       ))}
