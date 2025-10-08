@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 function LetsTalk() {
   return (
-<div className="text-center bg-secondary pt-16 px-4">
+<div className="text-center bg-white pt-16 px-4">
           <div className="relative">
             {/* Background Decoration */}
             <div className="absolute inset-0  rounded-3xl"></div>

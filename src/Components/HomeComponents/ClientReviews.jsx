@@ -79,7 +79,7 @@ const ClientReviews = () => {
   };
 
   return (
-    <div className="bg-white py-12 overflow-hidden">
+    <div className="bg-white h-screen py-12 overflow-hidden">
       <div className="title font-satochi">
         <h1 className='title'>Trusted Reviews</h1>
       </div>
@@ -162,9 +162,9 @@ const ClientReviews = () => {
                     src={logo}
                     alt={`Review ${startIndex + index + 1}`}
                     onLoad={() => handleImageLoad(startIndex + index)}
-                    className={`w-full h-auto object-contain p-4 transition-all duration-300 ${
+                    className={`w-full h-auto object-contain p-1 transition-all duration-300 ${
                       imageLoaded[startIndex + index] ? 'opacity-100' : 'opacity-0'
-                    } hover:scale-105`}
+                    } hover:scale-95`}
                   />
                 </div>
               </div>
