@@ -107,6 +107,14 @@ const Navbar = () => {
           >
             Contact Us
           </Link>
+          <Link 
+            to="/reviews" 
+            className={`font-bold transition ease-in duration-200 ${
+              isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
+            }`}
+          >
+            Reviews
+          </Link>
         </div>
  <a 
             href="https://www.linkedin.com/company/leadsnite/" 
@@ -206,6 +214,17 @@ const Navbar = () => {
               </motion.div>
               <motion.div variants={linkVariants}>
                 <Link 
+                  to="/about-us" 
+                  className={`block font-medium py-2 ${
+                    isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Reviews
+                </Link>
+              </motion.div>
+              <motion.div variants={linkVariants}>
+                <Link 
                   to="/ContactUs" 
                   className={`block font-medium py-2 ${
                     isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
@@ -213,6 +232,17 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                 >
                   Contact Us
+                </Link>
+              </motion.div>
+              <motion.div variants={linkVariants}>
+                <Link 
+                  to="/reviews" 
+                  className={`block font-medium py-2 ${
+                    isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Reviews
                 </Link>
               </motion.div>
                    <a 

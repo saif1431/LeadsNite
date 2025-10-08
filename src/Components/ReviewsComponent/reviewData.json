@@ -1,0 +1,83 @@
+{
+  "fiverr": {
+    "title": "Fiverr Reviews",
+    "subtitle": "Verified reviews from satisfied Fiverr clients",
+    "images": [
+      "/reviewImg/img1.png",
+      "/reviewImg/img2.png",
+      "/reviewImg/img3.png",
+      "/reviewImg/img4.png",
+      "/reviewImg/img5.png",
+      "/reviewImg/img6.png",
+      "/reviewImg/img7.png",
+      "/reviewImg/img8.png",
+      "/reviewImg/img9.png",
+      "/reviewImg/img10.png",
+      "/reviewImg/img11.png",
+      "/reviewImg/img12.png",
+      "/reviewImg/img13.png",
+      "/reviewImg/img14.png",
+      "/reviewImg/img15.png",
+      "/reviewImg/img16.png",
+      "/reviewImg/img17.png",
+      "/reviewImg/img18.png",
+      "/reviewImg/img19.png"
+
+    ]
+  },
+  "upwork": {
+    "title": "Upwork Reviews",
+    "subtitle": "Top-rated feedback from Upwork projects",
+    "images": [
+        "/reviewImg/img1.png",
+      "/reviewImg/img2.png",
+      "/reviewImg/img3.png",
+      "/reviewImg/img4.png",
+      "/reviewImg/img5.png",
+      "/reviewImg/img6.png",
+      "/reviewImg/img7.png",
+      "/reviewImg/img8.png",
+      "/reviewImg/img9.png",
+      "/reviewImg/img10.png",
+      "/reviewImg/img11.png",
+      "/reviewImg/img12.png",
+      "/reviewImg/img13.png",
+      "/reviewImg/img14.png",
+      "/reviewImg/img15.png",
+      "/reviewImg/img16.png",
+      "/reviewImg/img17.png",
+      "/reviewImg/img18.png",
+      "/reviewImg/img19.png"
+    ]
+  },
+  "direct": {
+    "title": "Direct Client Reviews",
+    "subtitle": "Testimonials from direct collaborations",
+    "reviews": [
+      {
+        "name": "John Smith",
+        "company": "Tech Innovations Inc.",
+        "review": "Outstanding work! The attention to detail and professionalism exceeded our expectations. Highly recommended for any project.",
+        "rating": 5
+      },
+      {
+        "name": "Sarah Johnson",
+        "company": "Digital Solutions Ltd.",
+        "review": "Delivered exactly what we needed on time and within budget. Great communication throughout the project.",
+        "rating": 5
+      },
+      {
+        "name": "Michael Chen",
+        "company": "Global Enterprises",
+        "review": "Exceptional quality and service. Will definitely work together again on future projects.",
+        "rating": 5
+      },
+      {
+        "name": "Emily Rodriguez",
+        "company": "Creative Studios",
+        "review": "Professional, responsive, and talented. Made our vision come to life perfectly.",
+        "rating": 5
+      }
+    ]
+  }
+}

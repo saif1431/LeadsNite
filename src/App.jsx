@@ -20,6 +20,7 @@ import WebCardDetail from './Components/WebComponent/WebCardDetail'
 import ShowProject from './pages/ShowProject'
 import MlProjectDetail from './Components/MlComponent/MlProjectDetail'
 import ContactUs from './pages/ContactUs'
+import ReviewPage from './pages/ReviewPage'
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<ServicePage />} />
           <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/reviews" element={<ReviewPage />} />
           <Route path="/services/web-development" element={<WebServices />} />
           <Route path="/services/ai-agents" element={<MachineServices />} />
           <Route path="/services/app-development" element={<AppServices />} />
