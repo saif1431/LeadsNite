@@ -66,7 +66,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex text-xl space-x-12 mx-auto">
+        <div className="hidden lg:flex text-xl space-x-12 mx-auto">
           <Link 
             to="/" 
             className={`font-bold transition ease-in duration-100 ${
@@ -107,21 +107,14 @@ const Navbar = () => {
           >
             Contact Us
           </Link>
-          <Link 
-            to="/reviews" 
-            className={`font-bold transition ease-in duration-200 ${
-              isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
-            }`}
-          >
-            Reviews
-          </Link>
+        
         </div>
  <a 
             href="https://www.linkedin.com/company/leadsnite/" 
             target="_blank" 
             rel="noopener noreferrer"
             className={`  transition ${
-              isHome ? 'text-white hidden md:block hover:text-black' : 'text-black hidden md:block hover:text-[#00A9E0]'
+              isHome ? 'text-white hidden lg:block hover:text-black' : 'text-black hidden lg:block hover:text-[#00A9E0]'
             }`}
           >
             <FaLinkedin className="text-3xl" />
@@ -130,7 +123,7 @@ const Navbar = () => {
         <div className="flex items-center gap-4 justify-between ">
      
           <button 
-            className={`md:hidden focus:outline-none ${
+            className={`lg:hidden focus:outline-none ${
               isHome ? 'text-white' : 'text-black'
             }`}
             onClick={toggleMenu}
@@ -153,7 +146,7 @@ const Navbar = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className={`md:hidden bg-[#00ACE4] shadow-md overflow-hidden ${
+            className={`lg:hidden bg-[#00ACE4] shadow-md overflow-hidden ${
               isHome ? 'bg-primary' : 'bg-white'
             }`}
           >
@@ -212,17 +205,7 @@ const Navbar = () => {
                   About Us
                 </Link>
               </motion.div>
-              <motion.div variants={linkVariants}>
-                <Link 
-                  to="/about-us" 
-                  className={`block font-medium py-2 ${
-                    isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  Reviews
-                </Link>
-              </motion.div>
+           
               <motion.div variants={linkVariants}>
                 <Link 
                   to="/ContactUs" 
@@ -234,23 +217,13 @@ const Navbar = () => {
                   Contact Us
                 </Link>
               </motion.div>
-              <motion.div variants={linkVariants}>
-                <Link 
-                  to="/reviews" 
-                  className={`block font-medium py-2 ${
-                    isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  Reviews
-                </Link>
-              </motion.div>
+              
                    <a 
             href="https://www.linkedin.com/company/leadsnite/" 
             target="_blank" 
             rel="noopener noreferrer"
             className={`  transition ${
-              isHome ? 'text-white  md:hidden block hover:text-black' : 'text-black  md:hidden block hover:text-[#00A9E0]'
+              isHome ? 'text-white  lg:hidden block hover:text-black' : 'text-black  lg:hidden block hover:text-[#00A9E0]'
             }`}
           >
             <FaLinkedin className="text-3xl" />

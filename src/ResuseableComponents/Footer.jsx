@@ -122,6 +122,7 @@ function Footer() {
                 <li><a href="/services" className="hover:underline">Service</a></li>
                 <li><a href="/about-us" className="hover:underline">About Us</a></li>
                 <li><a href="/ContactUs" className="hover:underline">Contact Us</a></li>
+                <li><a href="/reviews" className="hover:underline">Reviews</a></li>
               </ul>
             </div>
             
