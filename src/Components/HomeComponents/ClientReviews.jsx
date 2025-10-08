@@ -1,27 +1,85 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ClientReviews = () => {
   const logos = [
-    '/reviewImg/img14.png',
-    '/reviewImg/img11.png',
-    '/reviewImg/img2.png',
-    '/reviewImg/img5.png',
-    '/reviewImg/img4.png',
-    '/reviewImg/img3.png',
-    '/reviewImg/img8.png',
-    '/reviewImg/img7.png',
-    '/reviewImg/img9.png',
-    '/reviewImg/img6.png',
-    '/reviewImg/img10.png',
-    '/reviewImg/img12.png',
-    '/reviewImg/img1.png',
-    '/reviewImg/img13.png',
-    '/reviewImg/img15.png',
-    '/reviewImg/img17.png',
-    '/reviewImg/img16.png',
-    '/reviewImg/img18.png',
-    '/reviewImg/img20.png',
-    '/reviewImg/img19.png',
+     "/reviewImg/fiver/Web Dev/1.PNG",
+      "/reviewImg/fiver/Web Dev/2.PNG",
+      "/reviewImg/fiver/Web Dev/3.PNG",
+      "/reviewImg/fiver/Web Dev/4.PNG",
+      "/reviewImg/fiver/Web Dev/5.PNG",
+      "/reviewImg/fiver/Web Dev/6.PNG",
+      "/reviewImg/fiver/Web Dev/7.PNG",
+      "/reviewImg/fiver/Web Dev/8.PNG",
+      "/reviewImg/fiver/Web Dev/9.PNG",
+      "/reviewImg/fiver/Web Dev/10.PNG",
+      "/reviewImg/fiver/Web Dev/11.PNG",
+      "/reviewImg/fiver/Web Dev/12.PNG",
+      "/reviewImg/fiver/Web Dev/13.PNG",
+      "/reviewImg/fiver/Web Dev/14.PNG",
+      "/reviewImg/fiver/Web Dev/15.PNG",
+      "/reviewImg/fiver/Web Dev/16.PNG",
+      "/reviewImg/fiver/Web Dev/17.PNG",
+      "/reviewImg/fiver/Web Dev/18.PNG",
+      "/reviewImg/fiver/Web Dev/19.PNG",
+      "/reviewImg/fiver/Web Dev/20.PNG",
+      "/reviewImg/fiver/Web Dev/21.PNG",
+      "/reviewImg/fiver/Web Dev/22.PNG",
+      "/reviewImg/fiver/Web Dev/23.PNG",
+      "/reviewImg/fiver/Web Dev/24.PNG",
+      "/reviewImg/fiver/Web Dev/25.PNG",
+      "/reviewImg/fiver/Web Dev/26.PNG",
+      "/reviewImg/fiver/Web Dev/27.PNG",
+      "/reviewImg/fiver/Web Dev/28.PNG",
+      "/reviewImg/fiver/Web Dev/29.PNG",
+      "/reviewImg/fiver/App Dev/1.PNG",
+      "/reviewImg/fiver/App Dev/2.PNG",
+      "/reviewImg/fiver/App Dev/3.PNG",
+      "/reviewImg/fiver/App Dev/4.PNG",
+      "/reviewImg/fiver/App Dev/5.PNG",
+      "/reviewImg/fiver/App Dev/6.PNG",
+      "/reviewImg/fiver/App Dev/7.PNG",
+      "/reviewImg/fiver/App Dev/8.PNG",
+      "/reviewImg/fiver/App Dev/9.PNG",
+      "/reviewImg/fiver/App Dev/10.PNG",
+      "/reviewImg/fiver/App Dev/11.PNG",
+      "/reviewImg/fiver/App Dev/12.PNG",
+      "/reviewImg/fiver/App Dev/13.PNG",
+      "/reviewImg/fiver/App Dev/14.PNG",
+      "/reviewImg/fiver/App Dev/15.PNG",
+      "/reviewImg/fiver/App Dev/16.PNG",
+      "/reviewImg/fiver/App Dev/17.PNG",
+      "/reviewImg/fiver/App Dev/18.PNG",
+      "/reviewImg/fiver/App Dev/20.PNG",
+      "/reviewImg/fiver/App Dev/21.PNG",
+      "/reviewImg/fiver/App Dev/22.PNG",
+      "/reviewImg/fiver/App Dev/23.PNG",
+      "/reviewImg/fiver/App Dev/24.PNG",
+      "/reviewImg/fiver/App Dev/25.PNG",
+      "/reviewImg/fiver/App Dev/26.PNG",
+      "/reviewImg/fiver/App Dev/27.PNG",
+      "/reviewImg/fiver/App Dev/28.PNG",
+      "/reviewImg/fiver/App Dev/29.PNG",
+      "/reviewImg/fiver/AI Agents/1.PNG",
+      "/reviewImg/fiver/AI Agents/2.PNG",
+      "/reviewImg/fiver/AI Agents/3.PNG",
+      "/reviewImg/fiver/AI Agents/4.PNG",
+      "/reviewImg/fiver/AI Agents/5.PNG",
+      "/reviewImg/fiver/AI Agents/6.PNG",
+      "/reviewImg/fiver/AI Agents/7.PNG",
+      "/reviewImg/fiver/AI Agents/8.PNG",
+      "/reviewImg/fiver/AI Agents/9.PNG",
+      "/reviewImg/fiver/AI Agents/10.PNG",
+      "/reviewImg/fiver/AI Agents/11.PNG",
+      "/reviewImg/fiver/AI Agents/12.PNG",
+      "/reviewImg/fiver/AI Agents/13.PNG",
+      "/reviewImg/fiver/AI Agents/14.PNG",
+      "/reviewImg/fiver/AI Agents/15.PNG",
+      "/reviewImg/fiver/AI Agents/16.PNG",
+      "/reviewImg/fiver/AI Agents/17.PNG",
+      "/reviewImg/fiver/AI Agents/18.PNG",
+      "/reviewImg/fiver/AI Agents/19.PNG",
+      "/reviewImg/fiver/AI Agents/20.PNG"
   ];
 
   // Divide images into 3 columns
@@ -58,11 +116,11 @@ const ClientReviews = () => {
         }
 
         .scroll-up {
-          animation: scroll-up 30s linear infinite;
+          animation: scroll-up 90s linear infinite;
         }
 
         .scroll-down {
-          animation: scroll-down 30s linear infinite;
+          animation: scroll-down 100s linear infinite;
         }
 
         .scroll-up:hover,
@@ -81,7 +139,7 @@ const ClientReviews = () => {
                   key={`col1-${index}`}
                   className="mb-6"
                 >
-                  <div className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow h-40">
+                  <div className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow  ">
                     <img
                       src={logo}
                       alt={`Review ${index + 1}`}
@@ -101,11 +159,11 @@ const ClientReviews = () => {
                   key={`col2-${index}`}
                   className="mb-6"
                 >
-                  <div className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow h-40">
+                  <div className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow ">
                     <img
                       src={logo}
                       alt={`Review ${index + 1}`}
-                      className="w-full h-full object-contain p-1"
+                      className="w-full h-full object-cover p-2"
                     />
                   </div>
                 </div>
@@ -121,11 +179,11 @@ const ClientReviews = () => {
                   key={`col3-${index}`}
                   className="mb-6"
                 >
-                  <div className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow h-40">
+                  <div className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow ">
                     <img
                       src={logo}
                       alt={`Review ${index + 1}`}
-                      className="w-full h-full object-contain p-1"
+                      className="w-full h-full object-cover p-2"
                     />
                   </div>
                 </div>
@@ -133,6 +191,11 @@ const ClientReviews = () => {
             </div>
           </div>
         </div>
+   
+      </div>
+         <div className='flex items-center justify-center mt-12'>
+          <Link className='btn' to='/reviews' >
+        Explore More</Link>
       </div>
     </div>
   );
