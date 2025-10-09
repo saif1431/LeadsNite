@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const ClientReviews = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const logos = [
      "/reviewImg/fiver/Web Dev/1.PNG",
       "/reviewImg/fiver/Web Dev/2.PNG",
@@ -120,7 +122,7 @@ const ClientReviews = () => {
         }
 
         .scroll-down {
-          animation: scroll-down 130s linear infinite;
+          animation: scroll-down 150s linear infinite;
         }
 
         .scroll-up:hover,
@@ -139,7 +141,10 @@ const ClientReviews = () => {
                   key={`col1-${index}`}
                   className="mb-6"
                 >
-                  <div className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow  ">
+                  <div 
+                    className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
+                    onClick={() => setSelectedImage(logo)}
+                  >
                     <img
                       src={logo}
                       alt={`Review ${index + 1}`}
@@ -152,14 +157,17 @@ const ClientReviews = () => {
           </div>
 
           {/* Column 2: Scroll Down (with top offset) */}
-          <div className="overflow-y-hidden h-[650px] md:mt-18">
+          <div className="overflow-y-hidden h-[600px] md:mt-20">
             <div className="scroll-down">
               {extendedColumn2.map((logo, index) => (
                 <div
                   key={`col2-${index}`}
                   className="mb-6"
                 >
-                  <div className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow ">
+                  <div 
+                    className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
+                    onClick={() => setSelectedImage(logo)}
+                  >
                     <img
                       src={logo}
                       alt={`Review ${index + 1}`}
@@ -179,7 +187,10 @@ const ClientReviews = () => {
                   key={`col3-${index}`}
                   className="mb-6"
                 >
-                  <div className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow ">
+                  <div 
+                    className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
+                    onClick={() => setSelectedImage(logo)}
+                  >
                     <img
                       src={logo}
                       alt={`Review ${index + 1}`}
@@ -193,10 +204,35 @@ const ClientReviews = () => {
         </div>
    
       </div>
-         <div className='flex items-center justify-center mt-12'>
-          <Link className='btn' to='/reviews' >
-        Explore More</Link>
+
+      <div className='flex items-center justify-center mt-12'>
+        <Link className='btn' to='/reviews'>
+          Explore More
+        </Link>
       </div>
+
+      {/* Image Popup Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 backdrop-blur-xl bg-opacity-75 border border-gray-400 flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-5xl max-h-[90vh] w-full h-full flex items-center justify-center">
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 text-white hover:text-gray-300 text-4xl font-bold z-10 bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center transition-colors"
+            >
+              ×
+            </button>
+            <img
+              src={selectedImage}
+              alt="Enlarged review"
+              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

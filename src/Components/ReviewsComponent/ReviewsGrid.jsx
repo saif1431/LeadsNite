@@ -8,7 +8,7 @@ export default function ReviewsGrid({
   altPrefix = 'Review',
   backgroundClass = '',
 }) {
-  const IMAGES_PER_ROW_PAIR = 14; // 7 images per row, 2 rows = 14
+  const IMAGES_PER_ROW_PAIR = 20; // 7 images per row, 2 rows = 14
   const [visiblePairs, setVisiblePairs] = useState(1);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -30,23 +30,23 @@ export default function ReviewsGrid({
   return (
     <section id={id} className={`py-20 scroll-mt-20 ${backgroundClass}`}>
       <style>
-        {`
+{`
           @keyframes scroll-left {
             0% { transform: translateX(0); }
-            100% { transform: translateX(-33.333%); }
+            100% { transform: translateX(-50%); }
           }
           @keyframes scroll-right {
-            0% { transform: translateX(-33.333%); }
+            0% { transform: translateX(-50%); }
             100% { transform: translateX(0); }
           }
           .scrolling-track-left {
-            animation: scroll-left 10s linear infinite;
+            animation: scroll-left 30s linear infinite;
           }
           .scrolling-track-left:hover {
             animation-play-state: paused;
           }
           .scrolling-track-right {
-            animation: scroll-right 10s linear infinite;
+            animation: scroll-right 30s linear infinite;
           }
           .scrolling-track-right:hover {
             animation-play-state: paused;
@@ -59,11 +59,14 @@ export default function ReviewsGrid({
 
         <div className="overflow-hidden">
           {visibleImageSets.map((imageSet, pairIndex) => {
-            // Triple the images for seamless infinite loop
-            const extendedSet = [...imageSet, ...imageSet, ...imageSet];
-            const halfLength = Math.ceil(extendedSet.length / 2);
-            const row1Images = extendedSet.slice(0, halfLength);
-            const row2Images = extendedSet.slice(halfLength);
+            // Double the images for seamless infinite loop
+            // const extendedSet = [...imageSet, ...imageSet];
+            const halfLength = Math.ceil(imageSet.length / 2);
+            
+            // Row 1: First half doubled
+            const row1Images = [...imageSet.slice(0, halfLength), ...imageSet.slice(0, halfLength)];
+            // Row 2: Second half doubled
+            const row2Images = [...imageSet.slice(halfLength), ...imageSet.slice(halfLength)];
 
             return (
               <div key={`pair-${pairIndex}`} className="space-y-6 mb-8">
@@ -123,7 +126,7 @@ export default function ReviewsGrid({
         {/* Image Popup Modal */}
         {selectedImage && (
           <div 
-            className="fixed inset-0 backdrop-blur-xl border border-gray-500 bg-opacity-75 flex items-center justify-center z-50 p-4"
+            className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
             onClick={() => setSelectedImage(null)}
           >
             <div className="relative max-w-5xl max-h-[90vh] w-full h-full flex items-center justify-center">

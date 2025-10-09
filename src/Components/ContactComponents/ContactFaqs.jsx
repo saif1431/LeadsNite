@@ -70,7 +70,7 @@ const ContactFaqs = () => {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className=" w-full bg-gray-100 px-6 py-4 rounded-4xl"
+            className=" w-full bg-[#e9f1fa] px-6 py-4 rounded-4xl"
           >
             <button
               type="button"
