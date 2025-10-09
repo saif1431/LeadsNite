@@ -4,7 +4,7 @@ import { Star, Users, Award, TrendingUp } from "lucide-react"
 
 export default function ReviewHero({ onNavigate }) {
   return (
-    <section className="h-screen flex flex-col items-center justify-center  text-center relative overflow-hidden bg-background">
+    <section className="h-screen flex flex-col items-center justify-start  text-center relative overflow-hidden bg-background">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-primary/10" />
 
@@ -23,8 +23,8 @@ export default function ReviewHero({ onNavigate }) {
       <div className="absolute bottom-10 left-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-[pulse_8s_ease-in-out_infinite]" />
 
       {/* Content */}
-      <div className="relative z-10">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in text-balance">Client Reviews</h1>
+      <div className="relative z-10 mt-36">
+        <h1 className="title2">Client Reviews</h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-12 mx-auto animate-fade-in [animation-delay:200ms] text-pretty">
           See what clients say about our work across Fiverr, Upwork, and direct collaborations. Quality service, proven
           results.
@@ -32,22 +32,17 @@ export default function ReviewHero({ onNavigate }) {
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in [animation-delay:400ms]">
           <button
             onClick={() => onNavigate("fiverr")}
-            className="btn"
+            className="btn2"
           >
-            Fiverr Reviews
+           About Us
           </button>
           <button
             onClick={() => onNavigate("upwork")}
             className="btn"
           >
-            Upwork Reviews
+          Lets Talk
           </button>
-          <button
-            onClick={() => onNavigate("direct")}
-            className="btn"
-          >
-            Direct Client Reviews
-          </button>
+         
         </div>
       </div>
     </section>

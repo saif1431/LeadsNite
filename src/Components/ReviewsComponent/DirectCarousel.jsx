@@ -21,7 +21,7 @@ export default function DirectCarousel() {
   return (
     <section id="direct" className="py-20 px-6 scroll-mt-20 ">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-4xl font-bold text-center mb-4">{direct.title}</h2>
+        <h2 className="title">{direct.title}</h2>
         <p className="text-center text-muted-foreground mb-12">{direct.subtitle}</p>
 
         <div className="relative">
@@ -32,7 +32,7 @@ export default function DirectCarousel() {
             >
               {direct.reviews.map((review, i) => (
                 <div key={i} className="min-w-full px-2">
-                  <div className="relative overflow-hidden p-8 md:p-12 rounded-lg shadow-2xl border-0 bg-gradient-to-br from-primary to-primary/90 text-primary-foreground min-h-[350px] flex flex-col justify-center">
+                  <div className="relative overflow-hidden p-8 md:p-12 rounded-2xl  border border-gray-300  text-primary-foreground min-h-[350px] flex flex-col justify-center">
                     {/* Decorative blobs */}
                     <div className="absolute top-0 right-0 w-40 h-40 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
                     <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
@@ -83,7 +83,7 @@ export default function DirectCarousel() {
               onClick={() => setCurrent(i)}
               aria-label={`Go to review ${i + 1}`}
               className={`h-2.5 rounded-full transition-all duration-500 ${
-                i === current ? "w-12 bg-primary shadow-lg" : "w-2.5 bg-border hover:bg-primary/50"
+                i === current ? "w-12 bg-primary shadow-lg" : "w-2.5 bg-border bg-gray-200 hover:bg-primary/50"
               }`}
             />
           ))}
