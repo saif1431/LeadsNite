@@ -101,7 +101,7 @@ const ClientReviews = () => {
   return (
     <div className="bg-white min-h-screen py-12 overflow-hidden">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold">Trusted Reviews</h1>
+        <h1 className="title">Trusted Reviews</h1>
       </div>
 
       <style>{`
@@ -116,11 +116,11 @@ const ClientReviews = () => {
         }
 
         .scroll-up {
-          animation: scroll-up 90s linear infinite;
+          animation: scroll-up 95s linear infinite;
         }
 
         .scroll-down {
-          animation: scroll-down 100s linear infinite;
+          animation: scroll-down 130s linear infinite;
         }
 
         .scroll-up:hover,
@@ -152,7 +152,7 @@ const ClientReviews = () => {
           </div>
 
           {/* Column 2: Scroll Down (with top offset) */}
-          <div className="overflow-y-hidden h-[650px] md:mt-16">
+          <div className="overflow-y-hidden h-[650px] md:mt-18">
             <div className="scroll-down">
               {extendedColumn2.map((logo, index) => (
                 <div

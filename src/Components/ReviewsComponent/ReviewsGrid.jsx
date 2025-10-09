@@ -10,6 +10,7 @@ export default function ReviewsGrid({
 }) {
   const IMAGES_PER_ROW_PAIR = 14; // 7 images per row, 2 rows = 14
   const [visiblePairs, setVisiblePairs] = useState(1);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const onImgError = (e) => {
     e.currentTarget.src = '/placeholder.svg';
@@ -70,7 +71,10 @@ export default function ReviewsGrid({
                 <div className="flex scrolling-track-left gap-4">
                   {row1Images.map((src, index) => (
                     <div key={`${id}-p${pairIndex}-r1-${index}`} className="flex-shrink-0 w-96 h-64">
-                      <div className="w-full h-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow">
+                      <div 
+                        className="w-full h-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                        onClick={() => setSelectedImage(src)}
+                      >
                         <img 
                           src={src || '/placeholder.svg'} 
                           alt={`${altPrefix} ${index + 1}`} 
@@ -86,7 +90,10 @@ export default function ReviewsGrid({
                 <div className="flex scrolling-track-right gap-4">
                   {row2Images.map((src, index) => (
                     <div key={`${id}-p${pairIndex}-r2-${index}`} className="flex-shrink-0 w-96 h-64">
-                      <div className="w-full h-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow">
+                      <div 
+                        className="w-full h-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                        onClick={() => setSelectedImage(src)}
+                      >
                         <img 
                           src={src || '/placeholder.svg'} 
                           alt={`${altPrefix} ${halfLength + index + 1}`} 
@@ -110,6 +117,29 @@ export default function ReviewsGrid({
             >
               Load More Reviews
             </button>
+          </div>
+        )}
+
+        {/* Image Popup Modal */}
+        {selectedImage && (
+          <div 
+            className="fixed inset-0 backdrop-blur-xl border border-gray-500 bg-opacity-75 flex items-center justify-center z-50 p-4"
+            onClick={() => setSelectedImage(null)}
+          >
+            <div className="relative max-w-5xl max-h-[90vh] w-full h-full flex items-center justify-center">
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute top-4 right-4 text-white hover:text-gray-300 text-4xl font-bold z-10 bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center"
+              >
+                ×
+              </button>
+              <img
+                src={selectedImage}
+                alt="Enlarged review"
+                className="max-w-full max-h-full object-contain rounded-lg"
+                onClick={(e) => e.stopPropagation()}
+              />
+            </div>
           </div>
         )}
       </div>
