@@ -13,8 +13,8 @@ export default function StickyNav({ activeTab, onNavigate }) {
             onClick={() => onNavigate("fiverr")}
             className={
               activeTab === "fiverr"
-                ? `${base} btn cursor-pointer`
-                : `${base} text-foreground hover:text-primary cursor-pointer`
+                ? `${base} btn2 cursor-pointer`
+                : `${base} btn`
             }
           >
             Fiverr Review
@@ -24,8 +24,8 @@ export default function StickyNav({ activeTab, onNavigate }) {
             onClick={() => onNavigate("upwork")}
             className={
               activeTab === "upwork"
-                ? `${base} btn cursor-pointer`
-                : `${base} text-foreground hover:text-primary cursor-pointer`
+                ? `${base} btn2 cursor-pointer`
+                : `${base} btn`
             }
           >
             Upwork Review
@@ -35,8 +35,8 @@ export default function StickyNav({ activeTab, onNavigate }) {
             onClick={() => onNavigate("direct")}
             className={
               activeTab === "direct"
-                ? `${base} btn cursor-pointer`
-                : `${base} text-foreground hover:text-primary cursor-pointer`
+                ? `${base} btn2 cursor-pointer`
+                : `${base} btn`
             }
           >
             Direct Clients Review

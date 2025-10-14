@@ -102,7 +102,7 @@ const ClientReviews = () => {
 
   return (
     <div className="bg-white min-h-screen py-12 overflow-hidden">
-      <div className="text-center mb-12">
+      <div className="text-center mb-18">
         <h1 className="title">Trusted Reviews</h1>
       </div>
 
@@ -118,11 +118,11 @@ const ClientReviews = () => {
         }
 
         .scroll-up {
-          animation: scroll-up 95s linear infinite;
+          animation: scroll-up 140s linear infinite;
         }
 
         .scroll-down {
-          animation: scroll-down 150s linear infinite;
+          animation: scroll-down 200s linear infinite;
         }
 
         .scroll-up:hover,
@@ -206,7 +206,9 @@ const ClientReviews = () => {
       </div>
 
       <div className='flex items-center justify-center mt-12'>
-        <Link className='btn' to='/reviews'>
+        <Link 
+        onClick={() => window.scrollTo(0, 0)}
+        className='btn' to='/reviews'>
           Explore More
         </Link>
       </div>

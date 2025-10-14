@@ -63,14 +63,14 @@ export default function DirectCarousel() {
           <button
             aria-label="Previous review"
             onClick={prev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-6 bg-zinc-900 text-white hover:bg-primary hover:text-primary-foreground border-2 border-primary shadow-lg transition-all hover:scale-110 w-12 h-12 rounded-full flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="absolute cursor-pointer left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-6 bg-zinc-900 text-white hover:bg-primary hover:text-primary-foreground border-2 border-primary shadow-lg transition-all hover:scale-110 w-12 h-12 rounded-full flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             <ChevronLeft className="h-6 w-6" />
           </button>
           <button
             aria-label="Next review"
             onClick={next}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-6 bg-zinc-900 text-white foreground hover:bg-primary hover:text-primary-foreground border-2 border-primary shadow-lg transition-all hover:scale-110 w-12 h-12 rounded-full flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="absolute cursor-pointer right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-6 bg-zinc-900 text-white foreground hover:bg-primary hover:text-primary-foreground border-2 border-primary shadow-lg transition-all hover:scale-110 w-12 h-12 rounded-full flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             <ChevronRight className="h-6 w-6" />
           </button>
@@ -82,7 +82,7 @@ export default function DirectCarousel() {
               key={i}
               onClick={() => setCurrent(i)}
               aria-label={`Go to review ${i + 1}`}
-              className={`h-2.5 rounded-full transition-all duration-500 ${
+              className={`h-2.5 cursor-pointer rounded-full transition-all duration-500 ${
                 i === current ? "w-12 bg-primary shadow-lg" : "w-2.5 bg-border bg-gray-200 hover:bg-primary/50"
               }`}
             />

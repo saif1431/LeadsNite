@@ -94,13 +94,13 @@ export default function ReviewsGrid({
                   {row2Images.map((src, index) => (
                     <div key={`${id}-p${pairIndex}-r2-${index}`} className="flex-shrink-0 w-96 h-64">
                       <div 
-                        className="w-full h-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                        className="w-full  h-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-pointer"
                         onClick={() => setSelectedImage(src)}
                       >
                         <img 
                           src={src || '/placeholder.svg'} 
                           alt={`${altPrefix} ${halfLength + index + 1}`} 
-                          className="w-full h-full object-contain p-1" 
+                          className="w-full cursor-pointer h-full object-contain p-1" 
                           onError={onImgError} 
                         />
                       </div>
@@ -126,13 +126,13 @@ export default function ReviewsGrid({
         {/* Image Popup Modal */}
         {selectedImage && (
           <div 
-            className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+            className="fixed inset-0 cursor-pointer bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
             onClick={() => setSelectedImage(null)}
           >
-            <div className="relative max-w-5xl max-h-[90vh] w-full h-full flex items-center justify-center">
+            <div className="relative  max-w-5xl max-h-[90vh] w-full h-full flex items-center justify-center">
               <button
                 onClick={() => setSelectedImage(null)}
-                className="absolute top-4 right-4 text-white hover:text-gray-300 text-4xl font-bold z-10 bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center"
+                className="absolute cursor-pointer top-4 right-4 text-white hover:text-gray-300 text-4xl font-bold z-10 bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center"
               >
                 ×
               </button>

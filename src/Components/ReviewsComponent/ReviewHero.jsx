@@ -4,7 +4,7 @@ import { Star, Users, Award, TrendingUp } from "lucide-react"
 import { BiRightArrowAlt } from "react-icons/bi"
 import { Link } from "react-router-dom"
 
-export default function ReviewHero({ onNavigate }) {
+export default function ReviewHero({ activeTab, onNavigate }) {
   return (
     <section className="h-screen flex flex-col items-center justify-center  text-center relative overflow-hidden bg-background">
       {/* Animated Background Elements */}
@@ -32,21 +32,28 @@ export default function ReviewHero({ onNavigate }) {
           results.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in [animation-delay:400ms]">
-          <Link
-            to="/about-us"
-            
-            className="btn2"
+       <button
+            aria-pressed={activeTab === "fiverr"}
+            onClick={() => onNavigate("fiverr")}
+            className={
+              activeTab === "fiverr"
+                ? `btn cursor-pointer`
+                : `btn2`
+            }
           >
-           About Us
-          </Link>
-          <Link 
-            to="/ContactUs"
-           
-            className="btn flex items-center gap-2"
+            Fiverr Review
+          </button>
+          <button
+            aria-pressed={activeTab === "upwork"}
+            onClick={() => onNavigate("upwork")}
+            className={
+              activeTab === "upwork"
+                ? ` btn`
+                : `btn`
+            }
           >
-          Lets Talk
-          <BiRightArrowAlt className="text-xl"/>
-          </Link>
+            Upwork Review
+          </button>
          
         </div>
       </div>
