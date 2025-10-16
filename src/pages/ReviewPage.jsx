@@ -4,6 +4,7 @@ import StickyNav from "../Components/ReviewsComponent/StickyNav"
 import ReviewsGrid from "../Components/ReviewsComponent/ReviewsGrid"
 import DirectCarousel from "../Components/ReviewsComponent/DirectCarousel"
 import reviewsData from "../Components/ReviewsComponent/reviewData.json"
+import LetsTalk from "../Components/HomeComponents/LetsTalk"
 
 function ReviewPage() {
   const [activeTab, setActiveTab] = useState("fiverr")
@@ -40,7 +41,6 @@ function ReviewPage() {
     <div className="min-h-screen max-w-7xl mx-auto px-4 md:px-6 bg-background text-foreground">
       <ReviewHero onNavigate={scrollToSection} />
       <StickyNav activeTab={activeTab} onNavigate={scrollToSection} />
-
       <ReviewsGrid
         id="fiverr"
         title={reviewsData.fiverr.title}
@@ -48,7 +48,6 @@ function ReviewPage() {
         images={reviewsData.fiverr.images}
         altPrefix="Fiverr review"
       />
-
       <ReviewsGrid
         id="upwork"
         title={reviewsData.upwork.title}
@@ -57,8 +56,8 @@ function ReviewPage() {
         altPrefix="Upwork review"
         backgroundClass="bg-secondary/10"
       />
-
       <DirectCarousel />
+      <LetsTalk/>
     </div>
   )
 }

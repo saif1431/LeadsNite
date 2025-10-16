@@ -127,7 +127,7 @@ export default function PricingSection() {
               </div>
 
               {/* Basic plan card */}
-              <div className=" rounded-lg border border-black  p-14 w-full max-w-sm lg:right-[12%] md:relative md:top-12  z-20">
+              <div className=" rounded-lg border border-black  px-12  py-14 w-full max-w-sm lg:right-[12%] md:relative md:top-12  z-20">
                 <div className="mb-6">
                   <h3 className="text-2xl font-semibold mb-4">{pricingData.basic.name}</h3>
                   <div className="flex items-baseline space-y-3">

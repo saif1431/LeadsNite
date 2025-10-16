@@ -51,9 +51,17 @@ export default function ReviewsGrid({
           .scrolling-track-right:hover {
             animation-play-state: paused;
           }
+              @media (max-width: 640px) {
+          .scrolling-track-left {
+            animation-duration:5s; /* Slower on mobile */
+          }
+            .scrolling-track-right  {
+            animation-duration: 5s; /* Slower on mobile */
+        }
         `}
+      
       </style>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto ">
         <h2 className="title">{title}</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">{subtitle}</p>
 

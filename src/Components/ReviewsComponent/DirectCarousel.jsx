@@ -49,7 +49,7 @@ export default function DirectCarousel() {
                           <Users className="w-6 h-6 text-primary-foreground" />
                         </div>
                         <div>
-                          <p className="font-bold text-xl">{review.name}</p>
+                          <p className="font-bold lg:text-xl">{review.name}</p>
                           <p className="text-primary-foreground/90 text-sm">{review.company}</p>
                         </div>
                       </div>

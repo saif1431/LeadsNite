@@ -84,7 +84,10 @@ const ClientReviews = () => {
       "/reviewImg/fiver/AI Agents/20.PNG"
   ];
 
-  // Divide images into 3 columns
+  // For mobile: single column with all images
+  const allImagesExtended = [...logos, ...logos, ...logos];
+  
+  // Divide images into 3 columns for desktop
   const column1 = [];
   const column2 = [];
   const column3 = [];
@@ -118,11 +121,11 @@ const ClientReviews = () => {
         }
 
         .scroll-up {
-          animation: scroll-up 140s linear infinite;
+          animation: scroll-up 160s linear infinite;
         }
 
         .scroll-down {
-          animation: scroll-down 200s linear infinite;
+          animation: scroll-down 230s linear infinite;
         }
 
         .scroll-up:hover,
@@ -132,7 +135,31 @@ const ClientReviews = () => {
       `}</style>
 
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-[700px]">
+        {/* Mobile: Single Column */}
+        <div className="md:hidden h-[700px] overflow-hidden">
+          <div className="scroll-up">
+            {allImagesExtended.map((logo, index) => (
+              <div
+                key={`mobile-${index}`}
+                className="mb-6"
+              >
+                <div 
+                  className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
+                  onClick={() => setSelectedImage(logo)}
+                >
+                  <img
+                    src={logo}
+                    alt={`Review ${index + 1}`}
+                    className="w-full h-full object-contain p-1"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Desktop: Three Columns */}
+        <div className="hidden md:grid grid-cols-3 gap-6 h-[700px]">
           {/* Column 1: Scroll Up */}
           <div className="overflow-hidden h-full">
             <div className="scroll-up">

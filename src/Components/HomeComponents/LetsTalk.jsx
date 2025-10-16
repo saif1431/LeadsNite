@@ -28,15 +28,15 @@ function LetsTalk() {
                 Get in touch today for a free consultation and project estimate.
               </p>
               
-              <div className="flex  gap-3 justify-center items-center">
+              <div className="flex flex-wrap gap-3 justify-center items-center">
                 <Link 
                 onClick={() => window.scrollTo(0, 0)}
-                to="/about-us" className="btn2">
+                to="/about-us" className="btn2 w-full lg:w-fit">
                   About Us
                 </Link>
                 <Link
                 onClick={() => window.scrollTo(0, 0)}
-                to="/contactUs" className="btn flex items-center">
+                to="/contactUs" className="btn w-full lg:w-fit  flex items-center text-center justify-center">
                   Lets Talk
                   <BiRightArrowAlt className="ml-2 text-lg" />
                 </Link>

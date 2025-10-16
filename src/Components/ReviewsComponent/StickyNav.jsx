@@ -6,15 +6,15 @@ export default function StickyNav({ activeTab, onNavigate }) {
     "px-4 py-2 rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-300 ">
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex justify-center gap-2">
+      <div className="container mx-auto  py-4">
+        <div className="flex lg:justify-center flex-wrap items-start gap-2">
           <button
             aria-pressed={activeTab === "fiverr"}
             onClick={() => onNavigate("fiverr")}
             className={
               activeTab === "fiverr"
-                ? `${base} btn2 cursor-pointer`
-                : `${base} btn`
+                ? `${base} btn2 w-full lg:w-fit cursor-pointer`
+                : `${base} btn w-full lg:w-fit`
             }
           >
             Fiverr Review
@@ -24,8 +24,8 @@ export default function StickyNav({ activeTab, onNavigate }) {
             onClick={() => onNavigate("upwork")}
             className={
               activeTab === "upwork"
-                ? `${base} btn2 cursor-pointer`
-                : `${base} btn`
+                ? `${base} btn2 w-full lg:w-fit cursor-pointer`
+                : `${base} btn w-full lg:w-fit`
             }
           >
             Upwork Review
@@ -35,8 +35,8 @@ export default function StickyNav({ activeTab, onNavigate }) {
             onClick={() => onNavigate("direct")}
             className={
               activeTab === "direct"
-                ? `${base} btn2 cursor-pointer`
-                : `${base} btn`
+                ? `${base} btn2 w-full lg:w-fit cursor-pointer`
+                : `${base} btn w-full lg:w-fit`
             }
           >
             Direct Clients Review
