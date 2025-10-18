@@ -16,8 +16,7 @@ function LetsTalk() {
                 Ready to Start <span className='span'>Your Project?</span>
               </h1>
               <p className="text-md text-gray-600 mb-6 max-w-2xl mx-auto leading-relaxed">
-                Let's discuss how our proven process can bring your vision to life. 
-                Get in touch today for a free consultation and project estimate.
+           Every great product begins with a single conversation. Share your goals with us today, and let’s start building your success story
               </p>
               <p className="text-md text-gray-600 mb-6 max-w-2xl mx-auto leading-relaxed">
                 Let's discuss how our proven process can bring your vision to life. 
@@ -37,7 +36,7 @@ function LetsTalk() {
                 <Link
                 onClick={() => window.scrollTo(0, 0)}
                 to="/contactUs" className="btn w-full lg:w-fit  flex items-center text-center justify-center">
-                  Lets Talk
+                  Let's Talk
                   <BiRightArrowAlt className="ml-2 text-lg" />
                 </Link>
               </div>

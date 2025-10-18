@@ -12,7 +12,7 @@ export default function PricingSection() {
   const marketingPricing = {
     free: {
       name: "Development",
-      price: "20",
+      price: "19",
       description: " Custom website development tailored to your needs - responsive design, backend setup, and modern frameworks",
       time : " Hour",
       features: [],
@@ -30,14 +30,14 @@ export default function PricingSection() {
   const optimizePricing = {
     free: {
       name: "Development",
-      price: "25",
+      price: "24",
       description: " End-to-end mobile app development — from UI/UX to backend APIs — built for startups and businesses.",
       time : "Hour",
       features:  [],
     },
     basic: {
       name: "Premium Launch",
-      price: "1200",
+      price: "1199",
       description: " A complete, production-ready mobile app with advanced features, integrations, and scalability to support growth.",
        time : "Project",
       features: [],
@@ -62,7 +62,7 @@ export default function PricingSection() {
               }`}
               onClick={() => setActiveTab("marketing")}
             >
-              Web Developer
+              Web Development 
             </button>
             <button
               className={`px-6 py-3 hidden lg:block cursor-pointer rounded-full text-md  font-medium transition-colors ${
@@ -70,7 +70,7 @@ export default function PricingSection() {
               }`}
               onClick={() => setActiveTab("optimize")}
             >
-              App Developer
+              App Development 
             </button>
              <button
               className={`px-6 py-3 lg:hidden block cursor-pointer rounded-full text-md font-medium transition-colors ${
@@ -116,7 +116,7 @@ export default function PricingSection() {
                 <p className="text-gray-600 text-md mt-12 mb-8">{pricingData.free.description}</p>
 
            <Link to='/ContactUs'>
-              <Button children="Lets Talk"/>
+              <Button children="Let's Talk"/>
            </Link>
 
                 {pricingData.free.features.map((feature, index) => (
@@ -144,7 +144,7 @@ export default function PricingSection() {
                 <p className="text-gray-600 text-md mb-10">{pricingData.basic.description}</p>
 
                    <Link to='/ContactUs'>
-              <Button children="Lets Talk"/>
+              <Button children="Let's Talk"/>
            </Link>
 
                 {pricingData.basic.features.map((feature, index) => (

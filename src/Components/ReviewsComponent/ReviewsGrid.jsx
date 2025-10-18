@@ -8,7 +8,7 @@ export default function ReviewsGrid({
   altPrefix = 'Review',
   backgroundClass = '',
 }) {
-  const IMAGES_PER_ROW_PAIR = 20; // 7 images per row, 2 rows = 14
+  const IMAGES_PER_ROW_PAIR = 30; // 15 images per row, 2 rows = 30
   const [visiblePairs, setVisiblePairs] = useState(1);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -33,10 +33,10 @@ export default function ReviewsGrid({
 {`
           @keyframes scroll-left {
             0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            100% { transform: translateX(-33.333%); }
           }
           @keyframes scroll-right {
-            0% { transform: translateX(-50%); }
+            0% { transform: translateX(-33.333%); }
             100% { transform: translateX(0); }
           }
           .scrolling-track-left {
@@ -51,30 +51,30 @@ export default function ReviewsGrid({
           .scrolling-track-right:hover {
             animation-play-state: paused;
           }
-              @media (max-width: 640px) {
-          .scrolling-track-left {
-            animation-duration:5s; /* Slower on mobile */
+          @media (max-width: 640px) {
+            .scrolling-track-left {
+              animation-duration: 40s;
+            }
+            .scrolling-track-right {
+              animation-duration: 50s;
+            }
           }
-            .scrolling-track-right  {
-            animation-duration: 5s; /* Slower on mobile */
-        }
         `}
-      
       </style>
-      <div className="container mx-auto ">
+      <div className="container mx-auto">
         <h2 className="title">{title}</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">{subtitle}</p>
 
         <div className="overflow-hidden">
           {visibleImageSets.map((imageSet, pairIndex) => {
-            // Double the images for seamless infinite loop
-            // const extendedSet = [...imageSet, ...imageSet];
             const halfLength = Math.ceil(imageSet.length / 2);
             
-            // Row 1: First half doubled
-            const row1Images = [...imageSet.slice(0, halfLength), ...imageSet.slice(0, halfLength)];
-            // Row 2: Second half doubled
-            const row2Images = [...imageSet.slice(halfLength), ...imageSet.slice(halfLength)];
+            // Triple the images for seamless infinite loop (0% to -33.333%)
+            const row1Base = imageSet.slice(0, halfLength);
+            const row1Images = [...row1Base, ...row1Base, ...row1Base];
+            
+            const row2Base = imageSet.slice(halfLength);
+            const row2Images = [...row2Base, ...row2Base, ...row2Base];
 
             return (
               <div key={`pair-${pairIndex}`} className="space-y-6 mb-8">
@@ -102,7 +102,7 @@ export default function ReviewsGrid({
                   {row2Images.map((src, index) => (
                     <div key={`${id}-p${pairIndex}-r2-${index}`} className="flex-shrink-0 w-96 h-64">
                       <div 
-                        className="w-full  h-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                        className="w-full h-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-pointer"
                         onClick={() => setSelectedImage(src)}
                       >
                         <img 
@@ -137,7 +137,7 @@ export default function ReviewsGrid({
             className="fixed inset-0 cursor-pointer bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
             onClick={() => setSelectedImage(null)}
           >
-            <div className="relative  max-w-5xl max-h-[90vh] w-full h-full flex items-center justify-center">
+            <div className="relative max-w-5xl max-h-[90vh] w-full h-full flex items-center justify-center">
               <button
                 onClick={() => setSelectedImage(null)}
                 className="absolute cursor-pointer top-4 right-4 text-white hover:text-gray-300 text-4xl font-bold z-10 bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center"

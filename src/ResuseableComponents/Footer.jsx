@@ -112,7 +112,7 @@ function Footer() {
             <h2 className="text-xl mt-2 font-semibold">
               Turn Your Startup into Success Story!
             </h2>
-            <p className="text-sm xl:w-[400px] mt-2">We build smart digital solutions that help businesses grow,  from modern apps to powerful AI-driven platforms.</p>
+            <p className="text-sm xl:w-[400px] mt-2">We develop smart digital solutions that help businesses grow, from modern web and mobile apps to powerful AI-driven platforms.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:mt-8 xl:mt-0">

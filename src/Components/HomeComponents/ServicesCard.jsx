@@ -30,7 +30,7 @@ const servicesData = [
   },
   {
     id: 4,
-    title: "UI UX Design",
+    title: "UI / UX Design",
     imageUrl: "/servicesImg/3.png",
     description: "Our UI/UX design service focuses on creating intuitive, engaging, and user-friendly digital experiences with creativity.",
     technologies: ["/New/New/UI UX/ui ux (1).png", "/New/New/UI UX/ui ux (2).png", "/New/New/UI UX/ui ux (3).png", "/New/New/UI UX/ui ux (4).png", "/New/New/UI UX/ui ux (5).png", "/New/New/UI UX/ui ux (6).png", "/New/New/UI UX/ui ux (7).png", ],

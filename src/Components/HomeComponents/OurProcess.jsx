@@ -14,25 +14,25 @@ const processSteps = [
   {
     id: 1,
     title: "Discovery & Strategy",
-    description: "We carefully analyze your goals, audience, and requirements through detailed research and interviews, then create a strategic roadmap designed to achieve measurable, long-term success.",
+    description: " We analyze your goals and audience through in-depth research and interviews, creating a clear roadmap that ensures measurable, lasting business growth",
     icon: Search,
   },
   {
     id: 2,
     title: "Design",
-    description: "Our creative team transforms ideas into user-friendly, visually striking designs that prioritize seamless experiences, ensuring your digital presence resonates strongly with users and enhances engagement effectively.",
+    description: " Our designers craft visually striking, user-focused interfaces that enhance engagement and reflect your brand’s identity with clarity, beauty, and purpose.",
     icon: Palette,
   },
   {
     id: 3,
     title: "Development & Testing",
-    description: "We develop high-performance solutions with modern technologies, then conduct rigorous testing to guarantee flawless functionality, reliability, and compatibility across multiple platforms, devices, and web browsers.",
+    description: " We build robust, scalable solutions using modern technologies, followed by meticulous testing to ensure flawless performance across every device.",
     icon: Code,
   },
   {
     id: 4,
     title: "Launch & Support",
-    description: "We manage deployment smoothly, monitor performance closely, and provide continuous support to maintain stability, security, and growth while ensuring your project consistently delivers successful outcomes.",
+    description: " We execute a seamless launch, monitor performance continuously, and deliver ongoing support to maintain reliability, security, and consistent growth.",
     icon: BiSupport,
   },
 ];
@@ -48,9 +48,7 @@ const HowWeWork = () => {
             How <span className='span'>We Work?</span>
           </h2>
           <p className="text-md text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Our proven process ensures exceptional results through strategic planning, 
-            creative excellence, and technical expertise. Every project follows our 
-            time-tested methodology for guaranteed success.
+          Our proven process ensures exceptional results through strategic planning, creative brilliance, and technical precision - delivering success every time.
           </p>
         </div>
 

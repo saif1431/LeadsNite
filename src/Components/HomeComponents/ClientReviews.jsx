@@ -121,11 +121,11 @@ const ClientReviews = () => {
         }
 
         .scroll-up {
-          animation: scroll-up 160s linear infinite;
+          animation: scroll-up 190s linear infinite;
         }
 
         .scroll-down {
-          animation: scroll-down 230s linear infinite;
+          animation: scroll-down 270s linear infinite;
         }
 
         .scroll-up:hover,
