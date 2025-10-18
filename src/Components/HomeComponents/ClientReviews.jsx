@@ -159,7 +159,7 @@ const ClientReviews = () => {
         </div>
 
         {/* Desktop: Three Columns */}
-        <div className="hidden md:grid grid-cols-3 gap-6 h-[700px]">
+        <div className="hidden md:grid overflow-hidden grid-cols-3 gap-6 h-[700px]">
           {/* Column 1: Scroll Up */}
           <div className="overflow-hidden h-full">
             <div className="scroll-up">
