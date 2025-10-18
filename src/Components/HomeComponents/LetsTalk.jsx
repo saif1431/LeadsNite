@@ -18,14 +18,7 @@ function LetsTalk() {
               <p className="text-md text-gray-600 mb-6 max-w-2xl mx-auto leading-relaxed">
            Every great product begins with a single conversation. Share your goals with us today, and let’s start building your success story
               </p>
-              <p className="text-md text-gray-600 mb-6 max-w-2xl mx-auto leading-relaxed">
-                Let's discuss how our proven process can bring your vision to life. 
-                Get in touch today for a free consultation and project estimate.
-              </p>
-              <p className="text-md text-gray-600 mb-6 max-w-2xl mx-auto leading-relaxed">
-                Let's discuss how our proven process can bring your vision to life. 
-                Get in touch today for a free consultation and project estimate.
-              </p>
+              
               
               <div className="flex flex-wrap gap-3 justify-center items-center">
                 <Link 

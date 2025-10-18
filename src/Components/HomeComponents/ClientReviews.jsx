@@ -184,7 +184,7 @@ const ClientReviews = () => {
           </div>
 
           {/* Column 2: Scroll Down (with top offset) */}
-          <div className="overflow-y-hidden h-[600px] md:mt-20">
+          <div className="overflow-y-hidden h-[700px] md:mt-20">
             <div className="scroll-down">
               {extendedColumn2.map((logo, index) => (
                 <div
@@ -232,13 +232,7 @@ const ClientReviews = () => {
    
       </div>
 
-      <div className='flex items-center justify-center mt-12'>
-        <Link 
-        onClick={() => window.scrollTo(0, 0)}
-        className='btn' to='/reviews'>
-          Explore More
-        </Link>
-      </div>
+  
 
       {/* Image Popup Modal */}
       {selectedImage && (
@@ -262,6 +256,15 @@ const ClientReviews = () => {
           </div>
         </div>
       )}
+
+
+          <div className='flex items-center justify-center mt-32'>
+        <Link 
+        onClick={() => window.scrollTo(0, 0)}
+        className='btn' to='/reviews'>
+          Explore More
+        </Link>
+      </div>
     </div>
   );
 };
