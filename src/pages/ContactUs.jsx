@@ -108,7 +108,7 @@ function ContactUs({padding = "px-4"}) {
 
   return (
     <>
-      <div className={`${padding} max-w-7xl lg:h-[70vh] mx-auto lg:py-32 py-12 gap-6 px-4 gap-12 flex flex-col lg:flex-row lg:items-center justify-between relative`} 
+      <div className={`${padding} max-w-7xl lg:h-[70vh] mx-auto lg:py-32 py-12 gap-6 px-4  flex flex-col lg:flex-row lg:items-center justify-between relative`} 
            style={{backgroundImage: "url(/map.png)"}}>
        
        <div className="bg-white lg:w-[45%] w-full shadow-xl py-10 px-16 space-y-6">
