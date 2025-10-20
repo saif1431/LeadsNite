@@ -161,7 +161,7 @@ const ClientReviews = () => {
         {/* Desktop: Three Columns */}
         <div className="hidden md:grid overflow-hidden grid-cols-3 gap-6  ">
           {/* Column 1: Scroll Up */}
-          <div className="overflow-hidden mt-12 h-[620px]">
+          <div className="overflow-hidden mt-14 h-[700px]">
             <div className="scroll-up">
               {extendedColumn1.map((logo, index) => (
                 <div
@@ -207,7 +207,7 @@ const ClientReviews = () => {
           </div>
 
           {/* Column 3: Scroll Up */}
-          <div className="overflow-hidden mt-12 h-[620px]">
+          <div className="overflow-hidden mt-14 h-[700px]">
             <div className="scroll-up">
               {extendedColumn3.map((logo, index) => (
                 <div

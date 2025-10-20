@@ -5,6 +5,8 @@ import { useState } from "react"
 export default function AboutUsSection1() {
   const navigate = useNavigate()
   const [imageLoaded, setImageLoaded] = useState(false)
+
+  
   
   const services = [
     { name: "Web Development", path: "/services/web-development" },
@@ -23,13 +25,13 @@ export default function AboutUsSection1() {
           <div className="relative lg:h-full overflow-hidden">
             {/* Blur placeholder */}
             {!imageLoaded && (
-              <div className="lg:w-[85%] lg:h-full h-96 bg-gradient-to-br from-gray-200 to-gray-300 animate-pulse rounded" />
+              <div className="lg:w-[85%]  bg-gradient-to-br from-gray-200 to-gray-300 animate-pulse rounded" />
             )}
             
             <img
               src="/AboutImage/aboutImg3.png"
-              alt="Team working with futuristic technology and data visualizations"
-              className={`lg:w-[85%] lg:h-full object-cover transition-all duration-500 ${
+              alt="Team working with  futuristic technology and data visualizations"
+              className={`lg:w-[85%] lg:h-full h-96  object-cover transition-all duration-500 ${
                 imageLoaded ? 'opacity-100 blur-0' : 'opacity-0 blur-md absolute top-0 left-0'
               }`}
               onLoad={() => setImageLoaded(true)}
