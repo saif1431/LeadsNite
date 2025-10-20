@@ -159,9 +159,9 @@ const ClientReviews = () => {
         </div>
 
         {/* Desktop: Three Columns */}
-        <div className="hidden md:grid overflow-hidden grid-cols-3 gap-6 h-[700px]">
+        <div className="hidden md:grid overflow-hidden grid-cols-3 gap-6  ">
           {/* Column 1: Scroll Up */}
-          <div className="overflow-hidden h-full">
+          <div className="overflow-hidden mt-12 h-[620px]">
             <div className="scroll-up">
               {extendedColumn1.map((logo, index) => (
                 <div
@@ -184,7 +184,7 @@ const ClientReviews = () => {
           </div>
 
           {/* Column 2: Scroll Down (with top offset) */}
-          <div className="overflow-y-hidden h-[700px] md:mt-20">
+          <div className="overflow-y-hidden  h-[700px] ">
             <div className="scroll-down">
               {extendedColumn2.map((logo, index) => (
                 <div
@@ -207,7 +207,7 @@ const ClientReviews = () => {
           </div>
 
           {/* Column 3: Scroll Up */}
-          <div className="overflow-hidden h-full">
+          <div className="overflow-hidden mt-12 h-[620px]">
             <div className="scroll-up">
               {extendedColumn3.map((logo, index) => (
                 <div
@@ -258,7 +258,7 @@ const ClientReviews = () => {
       )}
 
 
-          <div className='flex items-center justify-center mt-32'>
+          <div className='flex items-center justify-center mt-12'>
         <Link 
         onClick={() => window.scrollTo(0, 0)}
         className='btn' to='/reviews'>
