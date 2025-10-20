@@ -19,7 +19,7 @@ export default function AboutUsSection1() {
         <div className="relative h-[100%]  flex flex-col gap-4">
           <div className="relative lg:h-full overflow-hidden">
             <img
-              src="/aboutImg3.png "
+              src="/AboutImage/aboutImg3.png "
               alt="Team working with futuristic technology and data visualizations"
               className="lg:w-[85%] lg:h-full object-cover"
             />  

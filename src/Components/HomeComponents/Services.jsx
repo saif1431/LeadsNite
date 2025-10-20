@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { FiArrowRightCircle } from 'react-icons/fi';
 import { ImArrowUpRight } from "react-icons/im";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import arrow from '/arrow.png';
+
 import ServicesCard from './ServicesCard';
 
 
@@ -41,7 +41,7 @@ const ServiceCard = ({
             alt={`${title} service`}
             className="w-25 h-25 object-cover"
           />
-          <img className='w-10 h-10' src={arrow} alt="arrow" />
+         
         </div>
         {showDescription && (
           <p className="text-gray-600 ">{description}</p>
