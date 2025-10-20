@@ -159,7 +159,7 @@ function ContactUs({padding = "px-4"}) {
           <button
             onClick={handleSubmit}
             disabled={isSubmitting}
-            className="btn flex items-center gap-2"
+            className="btn flex items-center gap-2 mx-auto"
           >
             <BsFillSendFill className={isSubmitting ? "animate-pulse" : ""} />
             {isSubmitting ? "Sending..." : "Get in Touch"}
