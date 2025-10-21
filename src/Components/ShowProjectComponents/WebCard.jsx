@@ -44,10 +44,10 @@ function WebCard() {
 
       {/* Load More Button */}
       {visible < allCards.length && (
-        <div className="text-center mt-6">
+        <div className="text-center mt-8">
           <button
             onClick={handleLoadMore}
-            className="bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-900"
+            className="btn"
           >
             Load More
           </button>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { allProjects ,appData } from "./../../pages/serviceData";
 import RelatedProject from "../AppComponents/RelatedProject";
@@ -8,6 +8,7 @@ import ContactUs from "../../pages/ContactUs";
 function ProjectDetail() {
   const { id } = useParams();
   const project = allProjects.find((p) => p.id === parseInt(id));
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   if (!project) {
     return <h2 className="text-center mt-20">Project not found</h2>;
@@ -16,17 +17,40 @@ function ProjectDetail() {
   return (
     <div className="max-w-7xl mx-auto md:px-8 lg:py-12 px-4 w-full  ">
       {/* Hero */}
-     <section className="mt-12 flex flex-col lg:flex-row items-start lg:justify-between   lg:gap-16 gap-4">
+     <section className="mt-12 flex flex-col lg:flex-row items-start lg:justify-between   lg:gap-16 gap-4 md:gap-12">
       <div className="lg:w-[25%] lg:h-[550px] overflow-hidden  w-full space-y-4"> 
               <h1 className="lg:text-3xl text-2xl leading-tight font-bold">{project.hero.title}</h1>
         <p className="text-lg text-primary text-justify">{project.hero.subtitle}</p>
       </div>
      <div className="lg:w-[75%] w-full bg-gray-200 p-2 rounded-md">
-         <img className="rounded-md h-[530px] object-cover w-full" src={project.hero.image} alt={project.hero.title} />
+         <img className="rounded-md h-[530px] object-cover w-full" src={project.hero.image} alt={project.hero.title}
+           onClick={() => setIsModalOpen(true)}
+         />
 
      </div>
       </section>
 
+
+    {/* Image Modal */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-opacity-90 p-4"
+          onClick={() => setIsModalOpen(false)}
+        >
+          <button
+            className="absolute top-4 right-4 text-black text-4xl font-bold hover:text-gray-300 transition-colors z-10"
+            onClick={() => setIsModalOpen(false)}
+          >
+            ×
+          </button>
+          <img
+            className="max-w-full max-h-[90vh] object-contain rounded-lg"
+            src={project.hero.image}
+            alt={project.hero.title}
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
 
 
       {/* Overview */}

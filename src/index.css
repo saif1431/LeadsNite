@@ -300,6 +300,13 @@ p{
   display: none !important;
 }
 
+.swiper-button-prev{
+  left: 0px !important; 
+}
+.swiper-button-next{
+  right: 0px !important; 
+}
+
 }
 
 /* ...existing code... */

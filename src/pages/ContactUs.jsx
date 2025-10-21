@@ -3,6 +3,10 @@ import { BsFillSendFill } from "react-icons/bs";
 import { FaLinkedinIn } from 'react-icons/fa';
 import ResponseTimeSection from '../Components/ContactComponents/ResponseTimeSection';
 import ContactFaqs from '../Components/ContactComponents/ContactFaqs';
+import { useLocation } from 'react-router-dom';
+
+
+
 
 function ContactUs({padding = "px-4"}) {
    const [formData, setFormData] = useState({
@@ -10,6 +14,7 @@ function ContactUs({padding = "px-4"}) {
     email: "",
     message: "",
   });
+  const location = useLocation();
 
   const [errors, setErrors] = useState({});
   const [popup, setPopup] = useState(false);
@@ -108,10 +113,10 @@ function ContactUs({padding = "px-4"}) {
 
   return (
     <>
-      <div className={`${padding} max-w-7xl lg:h-[70vh] mx-auto lg:py-32 py-12 gap-6 px-4  flex flex-col lg:flex-row lg:items-center justify-between relative`} 
+      <div className={`${padding} max-w-7xl lg:h-[70vh] mx-auto lg:py-32 py-12 gap-10 px-4  flex flex-col md:flex-row lg:items-center justify-between relative`} 
            style={{backgroundImage: "url(/map.png)"}}>
        
-       <div className="bg-white lg:w-[45%] w-full shadow-xl py-10 px-16 space-y-6">
+       <div className="bg-white lg:w-[45%] md:w-[50%] w-full shadow-xl py-10 lg:px-16 space-y-6 px-6">
         <h2 className="lg:text-4xl text-3xl font-satochi font-bold">Let's Talk Business</h2>
 
       
@@ -159,7 +164,7 @@ function ContactUs({padding = "px-4"}) {
           <button
             onClick={handleSubmit}
             disabled={isSubmitting}
-            className="btn flex items-center gap-2 mx-auto"
+            className="btn w-full lg:w-fit flex items-center justify-center gap-2 mx-auto"
           >
             <BsFillSendFill className={isSubmitting ? "animate-pulse" : ""} />
             {isSubmitting ? "Sending..." : "Get in Touch"}
@@ -230,8 +235,13 @@ function ContactUs({padding = "px-4"}) {
         </div>
       
       )}
-      <ResponseTimeSection/>
-      <ContactFaqs/>
+
+{location.pathname === "/ContactUs" && (
+        <>
+          <ResponseTimeSection />
+          <ContactFaqs />
+        </>
+      )}
     </>
   );
 }

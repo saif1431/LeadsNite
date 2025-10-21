@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function ReviewsGrid({
   id,
@@ -11,6 +11,8 @@ export default function ReviewsGrid({
   const IMAGES_PER_ROW_PAIR = 30;
   const [visiblePairs, setVisiblePairs] = useState(1);
   const [selectedImage, setSelectedImage] = useState(null);
+  
+  const rowRefs = useRef([]);
 
   const onImgError = (e) => {
     e.currentTarget.src = '/placeholder.svg';
@@ -27,61 +29,93 @@ export default function ReviewsGrid({
     images.slice(i * IMAGES_PER_ROW_PAIR, (i + 1) * IMAGES_PER_ROW_PAIR)
   );
 
+  useEffect(() => {
+    const cleanupFunctions = [];
+
+    const scrollRow = (element, direction) => {
+      if (!element) return;
+      
+      let scrollPosition = direction === 'right' ? element.scrollWidth / 2 : 0;
+      let animationId;
+      let isPaused = false;
+      const speed = 0.3; // Adjust speed: higher = faster (0.3 = slow, 0.5 = medium, 1 = fast)
+
+      const animate = () => {
+        if (!isPaused) {
+          if (direction === 'left') {
+            // LEFT: 0 → scrollWidth/2
+            scrollPosition += speed;
+            if (scrollPosition >= element.scrollWidth / 2) {
+              scrollPosition = 0;
+            }
+          } else {
+            // RIGHT: scrollWidth/2 → 0
+            scrollPosition -= speed;
+            if (scrollPosition <= 0) {
+              scrollPosition = element.scrollWidth / 2;
+            }
+          }
+          element.scrollLeft = scrollPosition;
+        }
+        animationId = requestAnimationFrame(animate);
+      };
+
+      const handleMouseEnter = () => { isPaused = true; };
+      const handleMouseLeave = () => { isPaused = false; };
+
+      element.addEventListener('mouseenter', handleMouseEnter);
+      element.addEventListener('mouseleave', handleMouseLeave);
+
+      animationId = requestAnimationFrame(animate);
+
+      return () => {
+        cancelAnimationFrame(animationId);
+        element.removeEventListener('mouseenter', handleMouseEnter);
+        element.removeEventListener('mouseleave', handleMouseLeave);
+      };
+    };
+
+    // Setup scrolling for all visible rows
+    rowRefs.current.forEach((ref, index) => {
+      if (ref) {
+        // Alternating: even index = left, odd index = right
+        const direction = index % 2 === 0 ? 'left' : 'right';
+        const cleanup = scrollRow(ref, direction);
+        cleanupFunctions.push(cleanup);
+      }
+    });
+
+    return () => {
+      cleanupFunctions.forEach(cleanup => cleanup?.());
+    };
+  }, [visiblePairs]);
+
   return (
     <>
-      <style>
-        {`
-          @keyframes scroll-left {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-          @keyframes scroll-right {
-            0% { transform: translateX(-50%); }
-            100% { transform: translateX(0); }
-          }
-          .scrolling-track-left {
-            animation: scroll-left 40s linear infinite;
-          }
-          .scrolling-track-left:hover {
-            animation-play-state: paused;
-          }
-          .scrolling-track-right {
-            animation: scroll-right 40s linear infinite;
-          }
-          .scrolling-track-right:hover {
-            animation-play-state: paused;
-          }
-          @media (max-width: 640px) {
-            .scrolling-track-left {
-              animation-duration: 50s;
-            }
-            .scrolling-track-right {
-              animation-duration: 50s;
-            }
-          }
-        `}
-      </style>
-
       <section id={id} className={`py-20 scroll-mt-20 ${backgroundClass}`}>
         <div className="container mx-auto">
           <h2 className="title">{title}</h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">{subtitle}</p>
 
-          <div className="overflow-hidden">
+          <div className="overflow-hidden space-y-6">
             {visibleImageSets.map((imageSet, pairIndex) => {
               const halfLength = Math.ceil(imageSet.length / 2);
               
-              // Double the images for seamless infinite loop (0% to -50%)
+              // Triple the images for ultra-smooth infinite loop
               const row1Base = imageSet.slice(0, halfLength);
-              const row1Images = [...row1Base, ...row1Base];
+              const row1Images = [...row1Base, ...row1Base, ...row1Base];
               
               const row2Base = imageSet.slice(halfLength);
-              const row2Images = [...row2Base, ...row2Base];
+              const row2Images = [...row2Base, ...row2Base, ...row2Base];
 
               return (
-                <div key={`pair-${pairIndex}`} className="space-y-6 mb-8">
-                  {/* Row 1: Scrolling Left */}
-                  <div className="flex scrolling-track-left gap-4">
+                <React.Fragment key={`pair-${pairIndex}`}>
+                  {/* Row 1: Scrolling LEFT → */}
+                  <div 
+                    ref={(el) => (rowRefs.current[pairIndex * 2] = el)}
+                    className="flex gap-4 overflow-x-hidden"
+                    style={{ scrollBehavior: 'auto' }}
+                  >
                     {row1Images.map((src, index) => (
                       <div key={`${id}-p${pairIndex}-r1-${index}`} className="flex-shrink-0 w-96 h-64">
                         <div 
@@ -99,8 +133,12 @@ export default function ReviewsGrid({
                     ))}
                   </div>
 
-                  {/* Row 2: Scrolling Right */}
-                  <div className="flex scrolling-track-right gap-4">
+                  {/* Row 2: Scrolling ← RIGHT */}
+                  <div 
+                    ref={(el) => (rowRefs.current[pairIndex * 2 + 1] = el)}
+                    className="flex gap-4 overflow-x-hidden"
+                    style={{ scrollBehavior: 'auto' }}
+                  >
                     {row2Images.map((src, index) => (
                       <div key={`${id}-p${pairIndex}-r2-${index}`} className="flex-shrink-0 w-96 h-64">
                         <div 
@@ -117,7 +155,7 @@ export default function ReviewsGrid({
                       </div>
                     ))}
                   </div>
-                </div>
+                </React.Fragment>
               );
             })}
           </div>

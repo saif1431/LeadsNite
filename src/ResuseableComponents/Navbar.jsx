@@ -53,7 +53,7 @@ const Navbar = () => {
 
   return (
     <div className='bg-primary'>
-      <nav className={`py-5 px-4 max-w-9xl mx-auto lg:px-38 md:px-6 flex items-center justify-between ${isHome ? 'bg-primary text-white shadow-md' : 'bg-white text-black'}`}>
+      <nav className={`py-5 px-4 max-w-9xl mx-auto xl:px-38 md:px-6 flex items-center justify-between ${isHome ? 'bg-primary text-white shadow-md' : 'bg-white text-black'}`}>
         {/* Logo */}
         <div className="">
           <Link to="/" className="text-2xl font-bold text-blue-600">
@@ -83,14 +83,14 @@ const Navbar = () => {
           >
             Services
           </Link>
-          {/* <Link 
+          <Link 
             to="/Projects" 
             className={`font-bold transition ease-in duration-100 ${
               isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
             }`}
           >
             Projects
-          </Link> */}
+          </Link>
           <Link 
             to="/about-us" 
             className={`font-bold transition ease-in duration-100 ${
@@ -183,7 +183,7 @@ const Navbar = () => {
                   Services
                 </Link>
               </motion.div>
-              {/* <motion.div variants={linkVariants}>
+              <motion.div variants={linkVariants}>
                 <Link 
                   to="/Projects  " 
                   className={`block font-medium py-2 ${
@@ -193,7 +193,7 @@ const Navbar = () => {
                 >
                   Projects
                 </Link>
-              </motion.div> */}
+              </motion.div>
               <motion.div variants={linkVariants}>
                 <Link 
                   to="/about-us" 

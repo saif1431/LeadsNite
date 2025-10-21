@@ -33,7 +33,7 @@ const MobileApps = () => {
           "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 10%, black 25%, black 75%, rgba(0,0,0,0.6) 90%, transparent 100%)",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-l from-white/50 via-transparent to-white/50 z-10 pointer-events-none" />
+      <div className="absolute inset-0  z-10 pointer-events-none" />
 
       <style>{`
         @keyframes scrollLogos {
