@@ -152,5 +152,13 @@
         "rating": 5
       }
     ]
+  },
+
+ 
+
+  "aboutImage":{
+    "src": "/AboutImage/aboutImg3.png",
+    "alt": "About Us Image"
   }
+
 }
