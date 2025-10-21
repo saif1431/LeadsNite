@@ -1,12 +1,10 @@
 import { ChevronRight } from "lucide-react"
 import { useNavigate } from "react-router-dom"
-import { useState } from "react"
 import reviewData from '../ReviewsComponent/reviewData.json'
 
 
 export default function AboutUsSection1() {
   const navigate = useNavigate()
-  const [imageLoaded, setImageLoaded] = useState(false)
 
   
   
@@ -31,10 +29,8 @@ export default function AboutUsSection1() {
             <img
               src={reviewData.aboutImage.src}
               alt={reviewData.aboutImage.alt}
-              className={`lg:w-[85%] lg:h-full h-96  object-cover transition-all duration-500 ${
-                imageLoaded ? 'opacity-100 blur-0' : 'opacity-0 blur-md absolute top-0 left-0'
+              className={`lg:w-[85%] lg:h-full h-96  object-cover transition-all duration-500
               }`}
-              onLoad={() => setImageLoaded(true)}
             />
 
             {/* Experience overlay card */}
