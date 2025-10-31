@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Helmet } from 'react-helmet-async'
+import { Helmet } from 'react-helmet'
 import HomePage from './pages/HomePage'
 import ServicePage from './pages/ServicePage'
 import AboutUsPage from './pages/AboutUsPage'

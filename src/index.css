@@ -53,7 +53,7 @@ body{
   font-optical-sizing: auto;
 }
 .bg-image{
-background-image: url('/public/AboutImage//serviceBg.png');
+background-image: url('/AboutImage//serviceBg.png');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
