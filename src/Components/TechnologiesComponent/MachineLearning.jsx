@@ -1,18 +1,18 @@
 import React from "react";
 
 const logos = [
-  "/New/New/AI agents/ai agents (1).png",
-  "/New/New/AI agents/ai agents (2).png",
-  "/New/New/AI agents/ai agents (3).png",
-  "/New/New/AI agents/ai agents (4).png",
-  "/New/New/AI agents/ai agents (5).png",
-  "/New/New/AI agents/ai agents (6).png",
-  "/New/New/AI agents/ai agents (7).png",
-  "/New/New/AI agents/ai agents (8).png",
-  "/New/New/AI agents/ai agents (9).png",
-  "/New/New/AI agents/ai agents (10).png",
-  "/New/New/AI agents/ai agents (11).png",
-  "/New/New/AI agents/ai agents (12).png",
+  "/New/New/AI agents/ai agents (1).webp",
+  "/New/New/AI agents/ai agents (2).webp",
+  "/New/New/AI agents/ai agents (3).webp",
+  "/New/New/AI agents/ai agents (4).webp",
+  "/New/New/AI agents/ai agents (5).webp",
+  "/New/New/AI agents/ai agents (6).webp",
+  "/New/New/AI agents/ai agents (7).webp",
+  "/New/New/AI agents/ai agents (8).webp",
+  "/New/New/AI agents/ai agents (9).webp",
+  "/New/New/AI agents/ai agents (10).webp",
+  "/New/New/AI agents/ai agents (11).webp",
+  "/New/New/AI agents/ai agents (12).webp",
 ];
 
 const MachineLearning = () => {

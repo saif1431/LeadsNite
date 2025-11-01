@@ -8,7 +8,7 @@ const servicesData = [
     title: "Web Development",
     imageUrl: "/servicesImg/img1.png",
     description: "Website development involves creating and designing web pages. It combines coding skills with creativity to build user-friendly websites",
-    technologies: ["/New/New/Website/1.png", "/New/New/Website/2.png", "/New/New/Website/3.png", "/New/New/Website/4.png", "/New/New/Website/5.png", "/New/New/Website/8.png",  "/New/New/Website/7.png", "/New/New/Website/6.png", "/New/New/Website/9.png", "/New/New/Website/10.png", "/New/New/Website/11.png",],
+    technologies: ["/New/New/Website/1.webp", "/New/New/Website/2.webp", "/New/New/Website/3.webp", "/New/New/Website/4.webp", "/New/New/Website/5.webp", "/New/New/Website/8.webp",  "/New/New/Website/7.webp", "/New/New/Website/6.webp", "/New/New/Website/9.webp", "/New/New/Website/10.webp", "/New/New/Website/11.webp",],
     route: "/services/web-development"
   },
   {
@@ -16,7 +16,7 @@ const servicesData = [
     title: "AI Agents",
     imageUrl: "/servicesImg/img2.png",
     description: "In the world of AI agents, there are many hurdles to overcome. We often face problems with integration compatibility and reliability.",
-    technologies: ["/New/New/AI agents/ai agents (1).png", "/New/New/AI agents/ai agents (2).png", "/New/New/AI agents/ai agents (3).png", "/New/New/AI agents/ai agents (4).png", "/New/New/AI agents/ai agents (5).png", "/New/New/AI agents/ai agents (6).png", "/New/New/AI agents/ai agents (7).png", "/New/New/AI agents/ai agents (8).png", "/New/New/AI agents/ai agents (9).png", "/New/New/AI agents/ai agents (10).png", "/New/New/AI agents/ai agents (11).png",],
+    technologies: ["/New/New/AI agents/ai agents (1).webp", "/New/New/AI agents/ai agents (2).webp", "/New/New/AI agents/ai agents (3).webp", "/New/New/AI agents/ai agents (4).webp", "/New/New/AI agents/ai agents (5).webp", "/New/New/AI agents/ai agents (6).webp", "/New/New/AI agents/ai agents (7).webp", "/New/New/AI agents/ai agents (8).webp", "/New/New/AI agents/ai agents (9).webp", "/New/New/AI agents/ai agents (10).webp", "/New/New/AI agents/ai agents (11).webp",],
 
     route: "/services/ai-agents"
   },
@@ -25,7 +25,7 @@ const servicesData = [
     title: "App Development",
     imageUrl: "/servicesImg/img3.png",
     description: "App development involves creating software applications for mobile devices or computers, enabling users to perform various tasks.",
-    technologies: ["/New/New/Mobile Application/1.png", "/New/New/Mobile Application/2.png", "/New/New/Mobile Application/3.png", "/New/New/Mobile Application/4.png", "/New/New/Mobile Application/5.png", "/New/New/Mobile Application/6.png", "/New/New/Mobile Application/7.png", "/New/New/Mobile Application/8.png", "/New/New/Mobile Application/9.png", "/New/New/Mobile Application/10.png", "/New/New/Mobile Application/11.png",],
+    technologies: ["/New/New/Mobile Application/1.webp", "/New/New/Mobile Application/2.webp", "/New/New/Mobile Application/3.webp", "/New/New/Mobile Application/4.webp", "/New/New/Mobile Application/5.webp", "/New/New/Mobile Application/6.webp", "/New/New/Mobile Application/7.webp", "/New/New/Mobile Application/8.webp", "/New/New/Mobile Application/9.webp", "/New/New/Mobile Application/10.webp", "/New/New/Mobile Application/11.webp",],
     route: "/services/app-development"
   },
   {
@@ -33,7 +33,7 @@ const servicesData = [
     title: "UI / UX Design",
     imageUrl: "/servicesImg/3.png",
     description: "Our UI/UX design service focuses on creating intuitive, engaging, and user-friendly digital experiences with creativity.",
-    technologies: ["/New/New/UI UX/ui ux (1).png", "/New/New/UI UX/ui ux (2).png", "/New/New/UI UX/ui ux (3).png", "/New/New/UI UX/ui ux (4).png", "/New/New/UI UX/ui ux (5).png", "/New/New/UI UX/ui ux (6).png", "/New/New/UI UX/ui ux (7).png", ],
+    technologies: ["/New/New/UI UX/ui ux (1).webp", "/New/New/UI UX/ui ux (2).webp", "/New/New/UI UX/ui ux (3).webp", "/New/New/UI UX/ui ux (4).webp", "/New/New/UI UX/ui ux (5).webp", "/New/New/UI UX/ui ux (6).webp", "/New/New/UI UX/ui ux (7).webp", ],
     route: "/services/ui&ux-design"
   },
   {
@@ -41,7 +41,7 @@ const servicesData = [
     title: "SaaS Development",
     imageUrl: "/servicesImg/1.png",
     description: "Our SaaS solutions help businesses move faster, reduce costs, and scale easily by providing cloud-based applications.",
-    technologies: ["/New/New/Mobile Application/1.png", "/New/New/Mobile Application/2.png", "/New/New/Mobile Application/3.png", "/New/New/Mobile Application/4.png", "/New/New/Mobile Application/5.png", "/New/New/Mobile Application/6.png", "/New/New/Mobile Application/7.png", "/New/New/Mobile Application/8.png", "/New/New/Mobile Application/9.png", "/New/New/Mobile Application/10.png", "/New/New/Mobile Application/11.png",],
+    technologies: ["/New/New/Mobile Application/1.webp", "/New/New/Mobile Application/2.webp", "/New/New/Mobile Application/3.webp", "/New/New/Mobile Application/4.webp", "/New/New/Mobile Application/5.webp", "/New/New/Mobile Application/6.webp", "/New/New/Mobile Application/7.webp", "/New/New/Mobile Application/8.webp", "/New/New/Mobile Application/9.webp", "/New/New/Mobile Application/10.webp", "/New/New/Mobile Application/11.webp",],
     route: "/services/SaaS-development"
   },
   {
@@ -49,7 +49,7 @@ const servicesData = [
     title: "MVP Development",
     imageUrl: "/servicesImg/2.png",
     description: "Our MVP development service helps startups and businesses quickly transform ideas into functional products with essential features.",
-    technologies: ["/New/New/MVP/mvp (1).svg", "/New/New/MVP/mvp (3).svg", "/New/New/MVP/mvp (4).svg", "/New/New/MVP/mvp (5).svg", "/New/New/MVP/mvp (6).svg", "/New/New/MVP/mvp (7).svg", "/New/New/MVP/mvp (8).svg", "/New/New/MVP/mvp (9).svg", "/New/New/MVP/mvp (10).svg", "/New/New/MVP/mvp (11).svg", "/New/New/MVP/mvp (12).svg",],
+    technologies: ["/New/New/MVP/mvp (1).webp", "/New/New/MVP/mvp (3).webp", "/New/New/MVP/mvp (4).webp", "/New/New/MVP/mvp (5).webp", "/New/New/MVP/mvp (6).webp", "/New/New/MVP/mvp (7).webp", "/New/New/MVP/mvp (8).webp", "/New/New/MVP/mvp (9).webp", "/New/New/MVP/mvp (10).webp", "/New/New/MVP/mvp (11).webp", "/New/New/MVP/mvp (12).webp",],
     route: "/services/mvp-development"
   },
 ];

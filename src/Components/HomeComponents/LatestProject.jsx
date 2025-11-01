@@ -10,7 +10,7 @@ export default function LatestProject() {
       id: 1,
       title: "Email Communication",
       description: "Machine Learning",
-      image: "/HomeImage/projectImg1.png",
+      image: "/HomeImage/projectImg1.webp",
       categories: ["Marketing", "Website"],
       area: "email"
     },
@@ -18,7 +18,7 @@ export default function LatestProject() {
       id: 2,
       title: "Moosa . rent a car",
       description: "Website Development",
-      image: "/HomeImage/projectImg2.png",
+      image: "/HomeImage/projectImg2.webp",
       categories: ["Website", "Marketing"],
       area: "car"
     },
@@ -26,7 +26,7 @@ export default function LatestProject() {
       id: 3,
       title: "DLX Print",
       description: "Marketing",
-      image: "/HomeImage/projectImg3.png",
+      image: "/HomeImage/projectImg3.webp",
       categories: ["Marketing"],
       area: "print"
     },
@@ -34,7 +34,7 @@ export default function LatestProject() {
       id: 4,
       title: "Astock",
       description: "Machine Learning",
-      image: "/HomeImage/projectImg6.png",
+      image: "/HomeImage/projectImg6.webp",
       categories: ["MachineLearning", "Website"],
       area: "stock"
     },
@@ -42,7 +42,7 @@ export default function LatestProject() {
       id: 5,
       title: "MIKYAJY",
       description: "Marketing",
-      image: "/HomeImage/projectImg5.png",
+      image: "/HomeImage/projectImg5.webp",
       categories: ["Marketing", "Website"],
       area: "seo"
     },
@@ -50,7 +50,7 @@ export default function LatestProject() {
       id: 6,
       title: "Sheba.xyz",
       description: "Website Development",
-      image: "/HomeImage/projectImg4.png",
+      image: "/HomeImage/projectImg4.webp",
       categories: ["MachineLearning"],
       area: "house"
     }

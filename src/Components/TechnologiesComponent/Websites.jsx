@@ -1,27 +1,27 @@
 import React from "react";
 
 const logos = [
-  "/New/New/Website/1.png",
-  "/New/New/Website/2.png",
-  "/New/New/Website/3.png",
-  "/New/New/Website/4.png",
-  "/New/New/Website/5.png",
-  "/New/New/Website/6.png",
-  "/New/New/Website/7.png",
-  "/New/New/Website/8.png",
-  "/New/New/Website/9.png",
-  "/New/New/Website/10.png",
-  "/New/New/Website/11.png",
-  "/New/New/Website/12.png",
-  "/New/New/Website/13.png",
-  "/New/New/Website/14.png",
-  "/New/New/Website/15.png",
-  "/New/New/Website/16.png",
-  "/New/New/Website/17.png",
-  "/New/New/Website/18.png",
-  "/New/New/Website/19.png",
-  "/New/New/Website/20.png",
-  "/New/New/Website/21.png",
+  "/New/New/Website/1.webp",
+  "/New/New/Website/2.webp",
+  "/New/New/Website/3.webp",
+  "/New/New/Website/4.webp",
+  "/New/New/Website/5.webp",
+  "/New/New/Website/6.webp",
+  "/New/New/Website/7.webp",
+  "/New/New/Website/8.webp",
+  "/New/New/Website/9.webp",
+  "/New/New/Website/10.webp",
+  "/New/New/Website/11.webp",
+  "/New/New/Website/12.webp",
+  "/New/New/Website/13.webp",
+  "/New/New/Website/14.webp",
+  "/New/New/Website/15.webp",
+  "/New/New/Website/16.webp",
+  "/New/New/Website/17.webp",
+  "/New/New/Website/18.webp",
+  "/New/New/Website/19.webp",
+  "/New/New/Website/20.webp",
+  "/New/New/Website/21.webp",
 ];
 
 const Websites = () => {
@@ -92,8 +92,3 @@ const Websites = () => {
   );
 };
 export default Websites;
-
-
-
-
-

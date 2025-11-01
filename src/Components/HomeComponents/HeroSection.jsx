@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import backgroundImage from '/backgroundImg1.png';
-import img1 from '/HomeImage/1-1.jpg';
-import img2 from '/HomeImage/d1.jpg';
-import img3 from '/HomeImage/d2.jpg';
+import img1 from '/HomeImage/1-1.webp';
+import img2 from '/HomeImage/d1.webp';
+import img3 from '/HomeImage/d2.webp';
 import { Link } from 'react-router-dom';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 

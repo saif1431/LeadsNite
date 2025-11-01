@@ -1,6 +1,6 @@
 import { Check } from "lucide-react"
-import img1 from '/AboutImage/img3.png'
-import img2 from '/AboutImage/img4.png'
+import img1 from '/AboutImage/img3.webp'
+import img2 from '/AboutImage/img4.webp'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"  
 import { faSquareCheck } from "@fortawesome/free-regular-svg-icons"
 

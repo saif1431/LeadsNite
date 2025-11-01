@@ -1,20 +1,20 @@
 import React from "react";
 
 const logos = [
-  "/New/New/Mobile Application/1.png",
-  "/New/New/Mobile Application/2.png",
-  "/New/New/Mobile Application/3.png",
-  "/New/New/Mobile Application/4.png",
-  "/New/New/Mobile Application/5.png",
-  "/New/New/Mobile Application/6.png",
-  "/New/New/Mobile Application/7.png",
-  "/New/New/Mobile Application/8.png",
-  "/New/New/Mobile Application/9.png",
-  "/New/New/Mobile Application/10.png",
-  "/New/New/Mobile Application/11.png",
-  "/New/New/Mobile Application/12.png",
-  "/New/New/Mobile Application/13.png",
-  "/New/New/Mobile Application/14.png",
+  "/New/New/Mobile Application/1.webp",
+  "/New/New/Mobile Application/2.webp",
+  "/New/New/Mobile Application/3.webp",
+  "/New/New/Mobile Application/4.webp",
+  "/New/New/Mobile Application/5.webp",
+  "/New/New/Mobile Application/6.webp",
+  "/New/New/Mobile Application/7.webp",
+  "/New/New/Mobile Application/8.webp",
+  "/New/New/Mobile Application/9.webp",
+  "/New/New/Mobile Application/10.webp",
+  "/New/New/Mobile Application/11.webp",
+  "/New/New/Mobile Application/12.webp",
+  "/New/New/Mobile Application/13.webp",
+  "/New/New/Mobile Application/14.webp",
   // Add more logos as needed
 ];
 

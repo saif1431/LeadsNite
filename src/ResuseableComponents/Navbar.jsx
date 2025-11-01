@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { FaLinkedin, FaTimes, FaBars } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion'; // Added for animations
 import logo from '/logo.png';
-import altLogo from '/AboutImage/logo2.png';
+import altLogo from '/AboutImage/logo2.webp';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

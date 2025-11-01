@@ -1,13 +1,13 @@
 import React from "react";
 
 const logos = [
-  "/New/New/UI UX/ui ux (1).png",
-  "/New/New/UI UX/ui ux (2).png",
-  "/New/New/UI UX/ui ux (3).png",
-  "/New/New/UI UX/ui ux (4).png",
-  "/New/New/UI UX/ui ux (5).png",
-  "/New/New/UI UX/ui ux (6).png",
-  "/New/New/UI UX/ui ux (7).png",
+  "/New/New/UI UX/ui ux (1).webp",
+  "/New/New/UI UX/ui ux (2).webp",
+  "/New/New/UI UX/ui ux (3).webp",
+  "/New/New/UI UX/ui ux (4).webp",
+  "/New/New/UI UX/ui ux (5).webp",
+  "/New/New/UI UX/ui ux (6).webp",
+  "/New/New/UI UX/ui ux (7).webp",
 ];
 
 const DigitalMarketing = () => {

@@ -142,7 +142,7 @@ function Technologies() {
           {activeTab === 'machineLearning' && <MachineLearning data={qualificationCriteria} />}
           {activeTab === 'digitalMarketing' && <DigitalMarketing data={emailTemplates} />}
           {activeTab === 'uiDesign' && <UiDesign data={emailTemplates} />} {/* Assuming similar data structure */}
-          {activeTab === 'mvp' && <MvpService data={emailTemplates} />} {/* Assuming similar data structure */}
+          {activeTab === 'mvp' && <MvpService data={emailTemplates} />}
         </div>
       </div>
     </div>

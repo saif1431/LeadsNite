@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '/AboutImage/img7.png';
+import img from '/AboutImage/img7.webp';
 import { FaQuoteLeft } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules'; // Only using Autoplay and Pagination
