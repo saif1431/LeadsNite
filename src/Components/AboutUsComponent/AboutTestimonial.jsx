@@ -12,52 +12,52 @@ const testimonials = [
       
   {
     id: 1,
-    name: "Heath",
-    role: "Kitchen786 Owner",
-    text: "As a startup we didn't have much resources to hire for marketing but Leadsnite came in handy when they offered free marketing service and lead my business growth. Thanks",
-     image: "/AboutImage/man1.jpg",
+    name: "Charles",
+    role: " CafeNight Owner",
+    text: "Leadsnite really helped us out as a new business. Their SaaS development skills brought in more customers",
+     image: "/AboutImage/man1.webp",
   },
   {
     id: 2,
     name: "Eamon",
     role: "Real Estate Agent",
     text: "I didn't know much about making apps, but Leadsnite made it simple for me. They created a cool app for my business that everyone loves!",
-    image: "/AboutImage/man2.jpg",
+    image: "/AboutImage/man2.webp",
   },
   {
     id: 3,
-    name: "Charles",
-    role: "CafeNight Owner",
-    text: "Leadsnite really helped us out as a new business. Their marketing skills brought in more customers",
-     image: "/AboutImage/man3.png",
+    name: "Elara",
+    role: " Travel Agency",
+    text: "Leadsnite really helped us out as a new business. Their AI agent setup made our daily tasks faster and easier.",
+     image: "/AboutImage/woman3.webp",
   },
   {
     id: 4,
-    name: "Lachlan ",
-    role: "Marketing Manager",
-    text: "I don't know much about tech stuff, but Leadsnite made it easy for me to understand how they could help. They made my website better and got more people interested in what I do. I definitely recommend them!",
-     image: "/AboutImage/man4.jpg",
+    name: "Heath ",
+    role: "Kitchen786 Owner",
+    text: "As a startup we didn't have much resources to hire developers but Leadsnite came in handy when they offered SaaS development and led my business growth. Thanks",
+     image: "/AboutImage/man4.webp",
   },
   {
     id: 5,
-    name: "Marigold ",
-    role: "E-commerce",
-    text: "I wasn't sure about trying the free marketing service because I thought it might not be good. But I was wrong. At first, I just wanted help building my online store. Now, we've been working together for over a year!",
-     image: "/AboutImage/man6.jpg",
+    name: " Finance Manager ",
+    role: "Juniper",
+    text: "Leadsnite is awesome with coding! They did machine learning stuff for my business and everything works smarter now.",
+     image: "/AboutImage/woman5.webp",
   },
   {
     id: 6,
-    name: "Juniper ",
-    role: "Finance Manager",
-    text: "Leadsnite is awesome with coding! They did machine learning stuff for my business and everything works smarter now.",
-     image: "/AboutImage/man3.png",
+   name: "Marketing Manager ",
+    role: "Lachlan",
+    text: "I don't know much about tech stuff, but Leadsnite made it easy for me to understand how they could help. They made my website better and got more people interested in what I do. I definitely recommend them!",
+     image: "/AboutImage/woman6.webp",
   },
   {
     id: 7,
-    name: "Elara ",
-    role: "Travel Agency",
-    text: "Leadsnite really helped us out as a new business. Their marketing skills brought in more customers",
-     image: "/AboutImage/man7.jpg",
+    name: "Marigold",
+    role: "E-commerce",
+    text: "I wasn't sure about trying the free website service because I thought it might not be good. But I was wrong. At first, I just wanted help building my online store. Now, we've been working together for over a year!",
+     image: "/AboutImage/woman7.webp",
   },
 ];
 
@@ -96,7 +96,7 @@ function AboutTestimonial() {
                 </p>
                 <hr className='mb-6 h-[5px]' />
                 <div className='flex items-start gap-2'>
-                  <img src={testimonial.image} alt={testimonial.name} className='w-12 h-12 rounded-full mr-4' />
+                  <img src={testimonial.image} alt={testimonial.name} className='w-12 h-12 object-cover rounded-full mr-4' />
                   <div>
                     <h3 className='font-bold lg:text-xl text-lg'>{testimonial.name}</h3>
                     <p className='text-gray-600'>{testimonial.role}</p>

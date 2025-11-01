@@ -174,9 +174,9 @@ function HeroSection() {
         >
           <img src={img2} alt="" />
         </motion.div>
-        
+
         <motion.img 
-          className='absolute  shadow-lg rounded-lg lg:bottom-1 -bottom-25  left-1/2 lg:transform -translate-x-1/2 xl:w-[50%] w-[90%]'
+          className='absolute  shadow-lg rounded-lg xl:bottom-1 -bottom-25  left-1/2 lg:transform -translate-x-1/2 xl:w-[50%] w-[90%]'
           src={img1} 
           alt=""
           initial="hidden"
@@ -196,7 +196,6 @@ function HeroSection() {
     </div>
   );
 }
-
 export default HeroSection;
 
 
