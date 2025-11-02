@@ -1,3 +1,5 @@
+
+
 // data/serviceData.js
 export const webData = {
   hero: {
@@ -79,10 +81,10 @@ export const mlData = {
   ],
 };
 
-
-
 // data/serviceData.js
 export const allProjects = [
+
+// App Data Put here  
   {
     id: 3,
     category: "App",
@@ -123,7 +125,6 @@ export const allProjects = [
       },
     ],
   },
-
   {
     id: 4,
     category: "App",
@@ -276,6 +277,7 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
       },
     ],
   },
+// Web Data Put here  
   {
     id: 8,
     category: "Web",
@@ -473,6 +475,7 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     ],
   },
   // Add after id: 14
+  // ML Data Put here  
 {
   id: 15,
   category: "ML",
@@ -501,7 +504,6 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     { id: 17, title: "Retail Recommendation Engine", image: "https://leadsnite.com/wp-content/uploads/2025/07/retail-ml.png" },
   ],
 },
-
 {
   id: 16,
   category: "ML",
@@ -530,7 +532,6 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     { id: 18, title: "Autonomous Driving System", image: "https://leadsnite.com/wp-content/uploads/2025/07/autonomous-ml.png" },
   ],
 },
-
 {
   id: 17,
   category: "ML",
@@ -559,7 +560,6 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     { id: 19, title: "Smart Agriculture Monitoring", image: "https://leadsnite.com/wp-content/uploads/2025/07/agriculture-ml.png" },
   ],
 },
-
 {
   id: 18,
   category: "ML",
@@ -588,7 +588,6 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     { id: 20, title: "AI Chatbot Assistant", image: "https://leadsnite.com/wp-content/uploads/2025/07/chatbot-ml.png" },
   ],
 },
-
 {
   id: 19,
   category: "ML",
@@ -617,7 +616,6 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     { id: 21, title: "AI Energy Optimization", image: "https://leadsnite.com/wp-content/uploads/2025/07/energy-ml.png" },
   ],
 },
-
 {
   id: 20,
   category: "ML",
@@ -646,7 +644,6 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     { id: 21, title: "AI Energy Optimization", image: "https://leadsnite.com/wp-content/uploads/2025/07/energy-ml.png" },
   ],
 },
-
 {
   id: 21,
   category: "ML",
@@ -675,6 +672,5 @@ projectTitle: ["Analytics", "Concept", "UX Design", "UI Design", "Branding"],
     { id: 20, title: "AI Chatbot Assistant", image: "https://leadsnite.com/wp-content/uploads/2025/07/chatbot-ml.png" },
   ],
 },
-
 ];
 
