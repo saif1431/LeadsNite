@@ -58,7 +58,7 @@ export default function PricingSection() {
           <div className="bg-blue-100 rounded-full p-1 flex items-center justify-center w-fit mx-auto lg:mx-0">
             <button
               className={`px-6 py-3 hidden lg:block cursor-pointer rounded-full text-md font-medium transition-colors ${
-                activeTab === "marketing" ? "btn" : "text-gray-700 "
+                activeTab === "marketing" ? "btn2" : "text-gray-700 "
               }`}
               onClick={() => setActiveTab("marketing")}
             >
@@ -66,7 +66,7 @@ export default function PricingSection() {
             </button>
             <button
               className={`px-6 py-3 hidden lg:block cursor-pointer rounded-full text-md  font-medium transition-colors ${
-                activeTab === "optimize" ? "btn" : "text-gray-700 "
+                activeTab === "optimize" ? "btn2" : "text-gray-700 "
               }`}
               onClick={() => setActiveTab("optimize")}
             >

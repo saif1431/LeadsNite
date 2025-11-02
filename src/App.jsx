@@ -13,15 +13,16 @@ import DigitalServices from './Components/ServiceComponents/DigitalServices/Digi
 import ScrollHover from './ResuseableComponents/ScrollHover'
 import Navbar from './ResuseableComponents/Navbar'
 import Footer from './ResuseableComponents/Footer'
-import AppDevelopmentPage from './pages/AppDevelopmentPage'
-import WebDevelopmentPage from './pages/WebDevelopmentPage'
-import MlPage from './pages/MlPage'
+// import AppDevelopmentPage from './pages/AppDevelopmentPage'
+// import WebDevelopmentPage from './pages/WebDevelopmentPage'
+// import MlPage from './pages/MlPage'
 import ProjectDetail from './Components/AppComponents/ProjectDetail'
 import WebCardDetail from './Components/WebComponent/WebCardDetail'
 import ShowProject from './pages/ShowProject'
 import MlProjectDetail from './Components/MlComponent/MlProjectDetail'
 import ReviewPage from './pages/ReviewPage'
 import ContactUs from './pages/ContactUs'
+import NotFound from './pages/404Page'
 
 function App() {
   return (
@@ -131,15 +132,16 @@ function App() {
 
         {/* Other routes without specific meta tags (they'll use default) */}
         <Route path="/services/web-development" element={<><Navbar/><WebServices /><Footer/></>} />
+        <Route path="*" element={<NotFound />} />
         <Route path="/services/ai-agents" element={<><Navbar/><MachineServices /><Footer/></>} />
         <Route path="/services/app-development" element={<><Navbar/><AppServices /><Footer/></>} />
         <Route path="/services/ui&ux-design" element={<><Navbar/><VideoServices /><Footer/></>} />
         <Route path="/services/SaaS-development" element={<><Navbar/><GraphicsServices /><Footer/></>} />
         <Route path="/services/mvp-development" element={<><Navbar/><DigitalServices /><Footer/></>} />
         <Route path="/ScrollHover" element={<ScrollHover />} />
-        <Route path="/app-development" element={<><Navbar/><AppDevelopmentPage /><Footer/></>} />
-        <Route path="/web-development" element={<><Navbar/><WebDevelopmentPage /><Footer/></>} />
-        <Route path="/machine-learning" element={<><Navbar/><MlPage /><Footer/></>} />
+        {/* <Route path="/app-development" element={<><Navbar/><AppDevelopmentPage /><Footer/></>} /> */}
+        {/* <Route path="/web-development" element={<><Navbar/><WebDevelopmentPage /><Footer/></>} />
+        <Route path="/machine-learning" element={<><Navbar/><MlPage /><Footer/></>} /> */}
         <Route path="/app-projects/:id" element={<><Navbar/><ProjectDetail /><Footer/></>} />
         <Route path="/web-projects/:id" element={<><Navbar/><WebCardDetail /><Footer/></>} />
         <Route path="/ml-projects/:id" element={<><Navbar/><MlProjectDetail /><Footer/></>} />

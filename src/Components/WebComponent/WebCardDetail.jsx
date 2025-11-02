@@ -30,7 +30,7 @@ function WebCardDetail() {
         </div>
         <div className="lg:w-[75%] w-full bg-gray-200 p-2 rounded-md">
           <img
-            className="rounded-md lg:h-[530px] md:h-[300px] h-[200px] object-cover w-full cursor-pointer hover:opacity-90 transition-opacity"
+            className="rounded-md lg:h-[530px] md:h-[380px] h-[230px] object-cover w-full cursor-pointer hover:opacity-90 transition-opacity"
             src={project.hero.image}
             alt={project.hero.title}
             onClick={() => setIsModalOpen(true)}

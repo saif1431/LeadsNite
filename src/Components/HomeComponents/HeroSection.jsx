@@ -96,9 +96,9 @@ function HeroSection() {
   };
 
   return (
-    <div className='md:h-[100vh] h-[95vh] lg:h-[95vh] xl:h-[145vh] bg-none '>
+    <div className='md:h-[100vh] h-[95vh] lg:h-[150vh] xl:h-[145vh] bg-none '>
       <section 
-        className="relative h-[75vh] md:h-[85vh] lg:h-[90vh] xl:h-[125vh] bg-no-repeat"
+        className="relative h-[75vh] md:h-[85vh] lg:h-[130vh] xl:h-[125vh] bg-no-repeat"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: 'cover',
@@ -176,7 +176,7 @@ function HeroSection() {
         </motion.div>
 
         <motion.img 
-          className='absolute  shadow-lg rounded-lg xl:bottom-1 -bottom-25  left-1/2 lg:transform -translate-x-1/2 xl:w-[50%] w-[90%]'
+          className='absolute  shadow-lg rounded-lg xl:bottom-1 -bottom-25  left-1/2 lg:transform -translate-x-1/2 xl:w-[50%] lg:w-[60%] w-[90%]'
           src={img1} 
           alt=""
           initial="hidden"

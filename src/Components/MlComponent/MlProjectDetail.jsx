@@ -28,7 +28,7 @@ function MlProjectDetail() {
      <div className="lg:w-[75%] w-full bg-gray-200 p-2 rounded-md">
          <img
           onClick={() => setIsModalOpen(true)}
-         className="rounded-md lg:h-[530px] md:h-[300px] h-[200px] object-cover w-full" src={project.hero.image} alt={project.hero.title} />
+         className="rounded-md lg:h-[530px] md:h-[380px] h-[230px] object-cover w-full" src={project.hero.image} alt={project.hero.title} />
 
      </div>
       </section>
