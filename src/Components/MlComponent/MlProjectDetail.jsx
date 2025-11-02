@@ -3,9 +3,10 @@ import { useParams } from "react-router-dom";
 import { allProjects ,appData } from "./../../pages/serviceData";
 import RelatedProject from "../AppComponents/RelatedProject";
 import MobileApps from "../TechnologiesComponent/MobileApps";
-import ContactUs from "../../pages/ContactUs";
+
 import AppDesignFlowchart from "../AppComponents/AppDesignFlowchart";
 import ChallengesSolutions from "./ChallengesSolutions";
+import ContactUs from "../../pages/ContactUs";
 function MlProjectDetail() {
   const { id } = useParams();
   const project = allProjects.find((p) => p.id === parseInt(id));
@@ -27,7 +28,7 @@ function MlProjectDetail() {
      <div className="lg:w-[75%] w-full bg-gray-200 p-2 rounded-md">
          <img
           onClick={() => setIsModalOpen(true)}
-         className="rounded-md h-[530px] object-cover w-full" src={project.hero.image} alt={project.hero.title} />
+         className="rounded-md lg:h-[530px] md:h-[300px] h-[200px] object-cover w-full" src={project.hero.image} alt={project.hero.title} />
 
      </div>
       </section>
@@ -105,7 +106,7 @@ function MlProjectDetail() {
         </div>
       )}
 
-<div className="bg-secondary py-5 rounded-lg space-y-8 mt-24">
+<div className="border-t border-gray-300 border-b py-5 rounded-lg space-y-8 mt-24">
         <h2 className="lg:text-4xl text-2xl font-bold text-center">Technology Used</h2>
         <div>
           <MobileApps/>
@@ -113,7 +114,7 @@ function MlProjectDetail() {
       </div>
     <ChallengesSolutions/>
 
-      <ContactUs padding="lg:px-0 px-0" />
+      <ContactUs padding="lg:px-0 px-0 mt-16" />
       <RelatedProject data={appData}/>
       
     </div>

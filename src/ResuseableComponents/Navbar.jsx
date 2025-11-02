@@ -100,7 +100,7 @@ const Navbar = () => {
             About Us
           </Link>
           <Link 
-            to="/ContactUs" 
+            to="/contact-us" 
             className={`font-bold transition ease-in duration-200 ${
               isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
             }`}
@@ -208,7 +208,7 @@ const Navbar = () => {
            
               <motion.div variants={linkVariants}>
                 <Link 
-                  to="/ContactUs" 
+                  to="/contact-us" 
                   className={`block font-medium py-2 ${
                     isHome ? 'text-white hover:text-black' : 'text-black hover:text-[#00A9E0]'
                   }`}

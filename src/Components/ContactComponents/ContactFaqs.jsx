@@ -9,7 +9,7 @@ const ContactFaqs = () => {
     {
       question: "What is LeadsNite?",
       answer:
-        "LeadsNite is a digital solutions company specializing in web development, app development, digital marketing, machine learning, and UI/UX design. We help businesses grow by combining technology with creative strategies.",
+        "LeadsNite is a digital solutions company specializing in web development, app development, SAAS, machine learning, and UI/UX design. We help businesses grow by combining technology with creative strategies.",
     },
     {
       question: "What industries do you work with?",
@@ -39,7 +39,7 @@ const ContactFaqs = () => {
     {
       question: "Can you help market my product or startup?",
       answer:
-        "Yes. We specialize in digital marketing and growth strategies. In fact, we offer discounted or even free marketing support for startups, charging only for ad spend to help them grow faster.",
+        "Yes. We specialize in SAAS and growth strategies. In fact, we offer discounted or even free marketing support for startups, charging only for ad spend to help them grow faster.",
     },
     {
       question: "Do you work with international clients?",

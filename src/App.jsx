@@ -20,8 +20,8 @@ import ProjectDetail from './Components/AppComponents/ProjectDetail'
 import WebCardDetail from './Components/WebComponent/WebCardDetail'
 import ShowProject from './pages/ShowProject'
 import MlProjectDetail from './Components/MlComponent/MlProjectDetail'
-import ContactUs from './pages/ContactUs'
 import ReviewPage from './pages/ReviewPage'
+import ContactUs from './pages/contactUs'
 
 function App() {
   return (
@@ -96,7 +96,7 @@ function App() {
         } />
         
         {/* Contact Us Page */}
-        <Route path="/ContactUs" element={
+        <Route path="/contact-us" element={
           <>
             <Helmet>
               <title>Contact Us - LeadsNite | Get in Touch Today</title>

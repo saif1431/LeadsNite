@@ -5,6 +5,7 @@ import RelatedProject from "../AppComponents/RelatedProject";
 import MobileApps from "../TechnologiesComponent/MobileApps";
 import AppFeatures from "../AppComponents/AppFeatures";
 import ContactUs from "../../pages/ContactUs";
+
 function ProjectDetail() {
   const { id } = useParams();
   const project = allProjects.find((p) => p.id === parseInt(id));
@@ -23,7 +24,7 @@ function ProjectDetail() {
         <p className="text-lg text-primary text-justify">{project.hero.subtitle}</p>
       </div>
      <div className="lg:w-[75%] w-full bg-gray-200 p-2 rounded-md">
-         <img className="rounded-md h-[530px] object-cover w-full" src={project.hero.image} alt={project.hero.title}
+         <img className="rounded-md lg:h-[530px] md:h-[300px] h-[200px] object-cover w-full" src={project.hero.image} alt={project.hero.title}
            onClick={() => setIsModalOpen(true)}
          />
 
@@ -78,7 +79,7 @@ function ProjectDetail() {
       </section>
 
 
-<div className="bg-secondary py-5 rounded-lg space-y-8 mt-24">
+<div className="border-t border-gray-300 border-b py-5 rounded-lg space-y-8 mt-24">
         <h2 className="lg:text-4xl text-2xl font-bold text-center">Technology Used</h2>
         <div>
           <MobileApps/>
@@ -86,7 +87,9 @@ function ProjectDetail() {
       </div>
     
       <AppFeatures/>
-      <ContactUs padding="lg:px-0 px-0" />
+      <div className="mt-16">
+        <ContactUs padding="lg:px-0 px-0 " />
+      </div>
       <RelatedProject data={appData}/>
       
     </div>

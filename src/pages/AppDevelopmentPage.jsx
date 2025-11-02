@@ -7,7 +7,7 @@ import RelatedProject from "../Components/AppComponents/RelatedProject";
 import MobileApps from "../Components/TechnologiesComponent/MobileApps";
 import AppDesignFlowchart from "../Components/AppComponents/AppDesignFlowchart";
 import AppFeatures from "../Components/AppComponents/AppFeatures";
-import ContactUs from "./ContactUs";
+import contactUs from "./contactUs";
 
 function AppDevelopmentPage() {
   return <div className="lg:px-38 px-4 md:px-20 lg:py-18 py-4">
@@ -20,7 +20,7 @@ function AppDevelopmentPage() {
       </div>
       <AppDesignFlowchart/>
       <AppFeatures/>
-      <ContactUs padding="lg:px-0 px-0" />
+      <contactUs padding="lg:px-0 px-0" />
       <RelatedProject data={appData}/>
   </div>;
 }

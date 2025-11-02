@@ -4,8 +4,8 @@ import { allProjects, webData } from "./../../pages/serviceData";
 import RelatedProject from "../AppComponents/RelatedProject";
 import MobileApps from "../TechnologiesComponent/MobileApps";
 import AppDesignFlowchart from "../AppComponents/AppDesignFlowchart";
-import ContactUs from "../../pages/ContactUs";
 import ScrollImageBoxGrid from "../../ResuseableComponents/ScrollHover";
+import ContactUs from "../../pages/ContactUs";
 
 function WebCardDetail() {
   const { id } = useParams();
@@ -30,7 +30,7 @@ function WebCardDetail() {
         </div>
         <div className="lg:w-[75%] w-full bg-gray-200 p-2 rounded-md">
           <img
-            className="rounded-md h-[530px] object-cover w-full cursor-pointer hover:opacity-90 transition-opacity"
+            className="rounded-md lg:h-[530px] md:h-[300px] h-[200px] object-cover w-full cursor-pointer hover:opacity-90 transition-opacity"
             src={project.hero.image}
             alt={project.hero.title}
             onClick={() => setIsModalOpen(true)}
@@ -108,7 +108,7 @@ function WebCardDetail() {
         </div>
       </section>
 
-      <div className="bg-secondary py-5 rounded-lg space-y-8 mt-24">
+      <div className="border-t border-gray-300 border-b py-5 rounded-lg space-y-8 mt-24">
         <h2 className="lg:text-4xl text-2xl font-bold text-center">
           Technology Used
         </h2>
@@ -119,7 +119,9 @@ function WebCardDetail() {
       <ScrollImageBoxGrid />
       <AppDesignFlowchart />
 
-      <ContactUs padding="lg:px-0 px-0" />
+     <div className="mt-16">
+        <ContactUs padding="lg:px-0 px-0 " />
+      </div>
       <RelatedProject data={webData} />
     </div>
   );
