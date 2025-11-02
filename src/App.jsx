@@ -21,7 +21,7 @@ import WebCardDetail from './Components/WebComponent/WebCardDetail'
 import ShowProject from './pages/ShowProject'
 import MlProjectDetail from './Components/MlComponent/MlProjectDetail'
 import ReviewPage from './pages/ReviewPage'
-import ContactUs from './pages/contactUs'
+import ContactUs from './pages/ContactUs'
 
 function App() {
   return (
