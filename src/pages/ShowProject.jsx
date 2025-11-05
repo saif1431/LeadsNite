@@ -44,7 +44,7 @@ function ShowProject() {
                 : 'btn  '
             }`}
           >
-            Machine Learning
+            Ai Agents
           </button>
        
         </div>
