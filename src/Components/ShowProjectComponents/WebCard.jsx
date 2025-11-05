@@ -6,14 +6,20 @@ function WebCard() {
   const navigate = useNavigate();
 
   const allCards = [
-    { id: 8, title: "Corporate Website", description: "Build modern responsive websites with React and Node.js.", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-1.png" },
-    { id: 9, title: "Food Delivery Website", description: "Create cross-platform mobile apps with React Native.", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
-    { id: 10, title: "LMS Website", description: "AI-powered solutions to automate tasks and predictions.", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px.jpg" },
-    { id: 11, title: "Education Website", description: "Professional video editing for brands and creators.", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px.png" },
-    { id: 12, title: "Blogging Website", description: "Boost your business with SEO & social media campaigns.", image: "https://leadsnite.com/wp-content/uploads/2024/02/4.-Web-Casestudy-768x640.png" },
-    { id: 13, title: "Blogging Website", description: "Boost your business with SEO & social media campaigns.", image: "https://leadsnite.com/wp-content/uploads/2024/02/4.-Web-Casestudy-768x640.png" },
-    { id: 14, title: "Blogging Website", description: "Boost your business with SEO & social media campaigns.", image: "https://leadsnite.com/wp-content/uploads/2024/02/4.-Web-Casestudy-768x640.png" },
+    { id: 8, title: "Ecommerece Website", description: "ElectroMart is a full-featured e-commerce site crafted to make buying electronics simple and satisfying. ", image: "/Projects/Website/Ecommerece/E Commerce Website.webp" },
+    { id: 9, title: "Rent a Car Website", description: "CarMaxel is a vibrant online platform crafted for car buyers, simplifying vehicle shopping with ease. ", image: "/Projects/Website/Ecommerece/E Commerce Website.webp" },
+    { id: 10, title: "Tour Booking Website ", description: "Travolo is a dynamic travel platform crafted to make trip planning effortless and exciting", image: "/Projects/Website/Tour Booking/Tour Booking.webp" },
   ];
+
+  // Function to convert title to URL-friendly slug
+  const createSlug = (title) => {
+    return title
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w\s-]/g, '') // Remove special characters
+      .replace(/\s+/g, '-')      // Replace spaces with hyphens
+      .replace(/-+/g, '-');      // Replace multiple hyphens with single hyphen
+  };
 
   const handleLoadMore = () => {
     setVisible((prev) => prev + 4);
@@ -27,12 +33,13 @@ function WebCard() {
           <div
             key={card.id}
             onClick={() => {
-              window.scrollTo(0, 0); // top pe scroll
-              navigate(`/web-projects/${card.id}`);
+              window.scrollTo(0, 0);
+              const slug = createSlug(card.title);
+              navigate(`/web-projects/${slug}`);
             }}
             className="cursor-pointer bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition"
           >
-            <img src={card.image} alt={card.title} className="w-full object-cover" />
+            <img src={card.image} alt={card.title} className="w-full object-cover h-96" />
             <div className="p-4 space-y-4">
               <h3 className="text-xl font-bold">{card.title}</h3>
               <p className="text-gray-600 text-sm">{card.description}</p>

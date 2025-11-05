@@ -16,8 +16,8 @@ function AppFeatures() {
         <GrOptimize className=' text-xl' />
       </div>
       <div className='space-y-1'>
-            <h4 className='font-semibold'>High Optimized</h4>
-            <p className='text-primary leading-tight lg:w-[60%]'>Our app features high optimization for performance and speed.</p>
+            <h4 className='font-semibold'>Smart Personalized Feed</h4>
+            <p className='text-primary leading-tight lg:w-[60%]'>Our feed learns tastes and suggests daily recipes you'll actually make.</p>
       </div>
 </div>
 <div className='flex items-center space-x-4 mt-6'>
@@ -25,8 +25,8 @@ function AppFeatures() {
         <FaRegLightbulb className=' text-xl' />
       </div>
       <div className='space-y-1'>
-            <h4 className='font-semibold'>Modern Specifications</h4>
-            <p className='text-primary leading-tight lg:w-[60%]'>Our app is built with modern specifications to ensure compatibility and performance.</p>
+            <h4 className='font-semibold'>Weekly Meal Planner</h4>
+            <p className='text-primary leading-tight lg:w-[60%]'>Plan meals on a visual calendar, add recipes to days and save special menus.</p>
       </div>
 </div>
 <div className='flex items-center space-x-4 mt-6'>
@@ -34,8 +34,8 @@ function AppFeatures() {
         <CiSettings className=' text-2xl' />
       </div>
       <div className='space-y-1'>
-            <h4 className='font-semibold'>Unlimited Functionality</h4>
-            <p className='text-primary leading-tight lg:w-[60%]'>Our app features unlimited functionality to meet all user needs.</p>
+            <h4 className='font-semibold'>Easy Profile & Privacy</h4>
+            <p className='text-primary leading-tight lg:w-[60%]'>Manage account, adjust dietary settings, control privacy and reach support.</p>
       </div>
 </div>
       </div>

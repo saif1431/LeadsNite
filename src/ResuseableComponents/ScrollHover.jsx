@@ -1,4 +1,16 @@
 import React, { useRef } from "react";
+import { useParams } from "react-router-dom";
+import { allProjects } from "../pages/serviceData";
+
+// Function to convert title to URL-friendly slug
+const createSlug = (title) => {
+  return title
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+};
 
 // Single Scrollable Image Card
 const ScrollImageCard = ({ image, title }) => {
@@ -41,24 +53,26 @@ const ScrollImageCard = ({ image, title }) => {
         onMouseEnter={startScrolling}
         onMouseLeave={stopScrolling}
       >
-
-{/* Overlay */}
-{!isHovered && (
- <div >
-   <div style={{background: "linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7))"}} className="absolute mx-auto top-96 inset-0 h-fit w-fit py-2 px-6 flex flex-col items-center justify-end rounded-lg z-10 ease-in transition-opacity duration-900">
-    <span className="text-white text-lg font-semibold mb-2">Hover or Scroll</span>
-    <svg
-      className="w-8 h-8 text-white animate-bounce"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      viewBox="0 0 24 24"
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-    </svg>
-  </div>
- </div>
-)}
+        {/* Overlay */}
+        {!isHovered && (
+          <div>
+            <div 
+              style={{background: "linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7))"}} 
+              className="absolute mx-auto top-96 inset-0 h-fit w-fit py-2 px-6 flex flex-col items-center justify-end rounded-lg z-10 ease-in transition-opacity duration-900"
+            >
+              <span className="text-white text-lg font-semibold mb-2">Hover or Scroll</span>
+              <svg
+                className="w-8 h-8 text-white animate-bounce"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </div>
+        )}
 
         <div
           ref={imageContainerRef}
@@ -74,23 +88,34 @@ const ScrollImageCard = ({ image, title }) => {
 
 // Grid of Multiple Cards
 const ScrollImageBoxGrid = () => {
-  const dummyCards = [
-    { id: 1, image: "/landingpage.png", title: "The Huddle" },
-    { id: 2, image: "/landingpage.png", title: "The Huddle" },
-    { id: 3, image: "/landingpage.png", title: "The Huddle" },
+  const { slug } = useParams();
+  
+  // Find project by matching slug
+  const project = allProjects.find(
+    (p) => createSlug(p.hero.title) === slug
+  );
 
-  ];
+  // If no project found or no gallery, return null or a message
+  if (!project || !project.gallery || project.gallery.length === 0) {
+    return null;
+  }
 
   return (
-   <div className="mt-28">
-    <h2 className="lg:text-4xl text-2xl font-bold text-center">Page Previews
-</h2>
-     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 ">
-      {dummyCards.map((card) => (
-        <ScrollImageCard key={card.id} image={card.image} title={card.title} />
-      ))}
+    <div className="mt-28">
+      <h2 className="lg:text-4xl text-2xl font-bold text-center">
+        Page Previews
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+        {project.gallery.map((image, index) => (
+          <ScrollImageCard 
+            key={index} 
+            image={image} 
+            title={`Page ${index + 1}`}
+            index={index}
+          />
+        ))}
+      </div>
     </div>
-   </div>
   );
 };
 

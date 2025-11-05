@@ -142,8 +142,8 @@ function App() {
         {/* <Route path="/app-development" element={<><Navbar/><AppDevelopmentPage /><Footer/></>} /> */}
         {/* <Route path="/web-development" element={<><Navbar/><WebDevelopmentPage /><Footer/></>} />
         <Route path="/machine-learning" element={<><Navbar/><MlPage /><Footer/></>} /> */}
-        <Route path="/app-projects/:id" element={<><Navbar/><ProjectDetail /><Footer/></>} />
-        <Route path="/web-projects/:id" element={<><Navbar/><WebCardDetail /><Footer/></>} />
+        <Route path="/app-projects/:slug" element={<><Navbar/><ProjectDetail /><Footer/></>} />
+          <Route path="/web-projects/:slug" element={<><Navbar/><WebCardDetail /><Footer/></>} />
         <Route path="/ml-projects/:id" element={<><Navbar/><MlProjectDetail /><Footer/></>} />
       </Routes>
     </BrowserRouter>

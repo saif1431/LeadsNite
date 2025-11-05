@@ -6,12 +6,18 @@ function AppCard() {
   const navigate = useNavigate();
 
   const allCards = [
-    { id: 3, title: "E-commerce App", description: "Build modern responsive websites with React and Node.js.", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-1.png" },
-    { id: 4, title: "Food Delivery App", description: "Create cross-platform mobile apps with React Native.", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
-    { id: 5, title: "LMS App", description: "AI-powered solutions to automate tasks and predictions.", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px.jpg" },
-    { id: 6, title: "Education App", description: "Professional video editing for brands and creators.", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px.png" },
-    { id: 7, title: "Blogging App", description: "Boost your business with SEO & social media campaigns.", image: "https://leadsnite.com/wp-content/uploads/2024/02/4.-Web-Casestudy-768x640.png" }
+    { id: 3, title: "YumBite App", description: "We built YumBites, a mobile app that blends culinary curiosity with useful tech to make cooking joyful. ", image: "/Projects/Mobile Application/YumBites/App Portfolio Thumbnail.webp" },
   ];
+
+   // Function to convert title to URL-friendly slug
+  const createSlug = (title) => {
+    return title
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w\s-]/g, '') // Remove special characters
+      .replace(/\s+/g, '-')      // Replace spaces with hyphens
+      .replace(/-+/g, '-');      // Replace multiple hyphens with single hyphen
+  };
 
   const handleLoadMore = () => {
     setVisible((prev) => prev + 4);
@@ -25,8 +31,10 @@ function AppCard() {
           <div
             key={card.id}
             onClick={() => {
-              window.scrollTo(0, 0); // top pe scroll
-              navigate(`/app-projects/${card.id}`); // id ke sath navigate
+              window.scrollTo(0, 0); 
+              // top pe scroll
+              const slug = createSlug(card.title);
+              navigate(`/app-projects/${slug}`); // id ke sath navigate
             }}
             className="cursor-pointer bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition"
           >

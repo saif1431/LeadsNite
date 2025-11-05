@@ -7,9 +7,23 @@ import AppDesignFlowchart from "../AppComponents/AppDesignFlowchart";
 import ScrollImageBoxGrid from "../../ResuseableComponents/ScrollHover";
 import ContactUs from "../../pages/ContactUs";
 
+
+const createSlug = (title) => {
+  return title
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+};
+
 function WebCardDetail() {
-  const { id } = useParams();
-  const project = allProjects.find((p) => p.id === parseInt(id));
+
+  
+  const { slug  } = useParams();
+  const project = allProjects.find(
+  (p) => p.category === "Web" && createSlug(p.hero.title) === slug
+);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   if (!project) {

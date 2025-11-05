@@ -6,9 +6,22 @@ import MobileApps from "../TechnologiesComponent/MobileApps";
 import AppFeatures from "../AppComponents/AppFeatures";
 import ContactUs from "../../pages/ContactUs";
 
+
+const createSlug = (title) => {
+  return title
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+};
+
 function ProjectDetail() {
-  const { id } = useParams();
-  const project = allProjects.find((p) => p.id === parseInt(id));
+
+  const { slug  } = useParams();
+  const project = allProjects.find(
+    (p) => p.category === "App" && createSlug(p.hero.title) === slug
+  );
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   if (!project) {
