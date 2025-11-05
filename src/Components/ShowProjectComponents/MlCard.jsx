@@ -6,14 +6,20 @@ function MlCard() {
   const navigate = useNavigate();
 
   const allCards = [
-    { id: 15, title: "Advancing Liver Segmentation with Deep Learning", description: "Build modern responsive websites with React and Node.js.", image: "/mlImage/1.png" },
-    { id: 16, title: "Enhancing Electricity Demand Forecasting", description: "Create cross-platform mobile apps with React Native.", image: "/mlImage/2.png" },
-    { id: 17, title: "Air Quality Prediction Using Machine Learning", description: "AI-powered solutions to automate tasks and predictions.", image: "/mlImage/3.png" },
-    { id: 18, title: "Customer Segmentation", description: "Professional video editing for brands and creators.", image: "/mlImage/4.png" },
-    { id: 19, title: "Enhancing Recommender Systems", description: "Boost your business with SEO & social media campaigns.", image: "/mlImage/5.png" },
-    { id: 20, title: "Email Communication", description: "Boost your business with SEO & social media campaigns.", image: "/mlImage/6.png" },
-    { id: 21, title: "Customer Segmentation", description: "Boost your business with SEO & social media campaigns.", image: "/mlImage/7.png" },
+    { id: 15, title: "AI Career Compass", description: "This workflow automates job hunting by scraping LinkedIn daily with AI-generated alternate titles and multi-keyword searches, ", image: "/Projects/AI agents/AI Career Compass/projectImg6.png" },
+    { id: 16, title: "AI-Powered WhatsApp HR Assistant", description: "This workflow transforms WhatsApp into an intelligent HR assistant powered by LLM and automation. It captures incoming messages, ", image: "/Projects/AI agents/AI-Powered WhatsApp HR Assistant/projectImg1.png" },
   ];
+
+
+// Function to convert title to URL-friendly slug
+  const createSlug = (title) => {
+    return title
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w\s-]/g, '') // Remove special characters
+      .replace(/\s+/g, '-')      // Replace spaces with hyphens
+      .replace(/-+/g, '-');      // Replace multiple hyphens with single hyphen
+  };
 
   const handleLoadMore = () => {
     setVisible((prev) => prev + 4);
@@ -28,11 +34,12 @@ function MlCard() {
             key={card.id}
             onClick={() => {
               window.scrollTo(0, 0); // top pe scroll
-              navigate(`/ml-projects/${card.id}`); // id ke sath navigate
+              const slug = createSlug(card.title);
+              navigate(`/ai-agents/${slug}`); // id ke sath navigate
             }}
             className="cursor-pointer bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition"
           >
-            <img src={card.image} alt={card.title} className="w-full object-cover" />
+            <img src={card.image} alt={card.title} className="w-full object-cover h-96" />
             <div className="p-4 space-y-4">
               <h3 className="text-xl font-bold">{card.title}</h3>
               <p className="text-gray-600 text-sm">{card.description}</p>

@@ -1,15 +1,28 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import { allProjects ,appData } from "./../../pages/serviceData";
+import { allProjects ,mlData } from "./../../pages/serviceData";
 import RelatedProject from "../AppComponents/RelatedProject";
 import MobileApps from "../TechnologiesComponent/MobileApps";
-
 import AppDesignFlowchart from "../AppComponents/AppDesignFlowchart";
 import ChallengesSolutions from "./ChallengesSolutions";
 import ContactUs from "../../pages/ContactUs";
+
+
+const createSlug = (title) => {
+  return title
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+};
+
+
 function MlProjectDetail() {
-  const { id } = useParams();
-  const project = allProjects.find((p) => p.id === parseInt(id));
+   const { slug  } = useParams();
+   const project = allProjects.find(
+   (p) => p.category === "ML" && createSlug(p.hero.title) === slug
+ );
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalOpen2, setIsModalOpen2] = useState(false);
 
@@ -83,7 +96,7 @@ function MlProjectDetail() {
   <h2 className="lg:text-4xl text-2xl font-bold text-center">WorkFlow</h2>
      <img
      onClick={() => setIsModalOpen2(true)}
-     className="object-cover w-full h-full rounded-lg" src="https://plus.unsplash.com/premium_photo-1682124651258-410b25fa9dc0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TWFjaGluZSUyMExlYXJuaW5nfGVufDB8fDB8fHww" alt="" />
+     className="object-cover w-full h-full rounded-lg" src="/Projects/AI agents/AI Career Compass/Screenshot 2025-11-01 004742.webp" alt="" />
 </div>
 
    {/* Image Modal */}
@@ -112,10 +125,12 @@ function MlProjectDetail() {
           <MobileApps/>
         </div>
       </div>
-    <ChallengesSolutions/>
+    {project.challengesData && project.challengesData.length > 0 && (
+        <ChallengesSolutions challenges={project.challengesData} />
+      )}
 
       <ContactUs padding="lg:px-0 px-0 mt-16" />
-      <RelatedProject data={appData}/>
+      <RelatedProject data={mlData}/>
       
     </div>
   );

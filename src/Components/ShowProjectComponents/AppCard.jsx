@@ -6,7 +6,7 @@ function AppCard() {
   const navigate = useNavigate();
 
   const allCards = [
-    { id: 3, title: "YumBite App", description: "We built YumBites, a mobile app that blends culinary curiosity with useful tech to make cooking joyful. ", image: "/Projects/Mobile Application/YumBites/App Portfolio Thumbnail.webp" },
+    { id: 3, title: "YumBite App", description: "We built YumBites, a mobile app that blends culinary curiosity with useful tech to make cooking joyful. ", image: "/Projects/Mobile Application/YumBites/projectImg4.webp" },
   ];
 
    // Function to convert title to URL-friendly slug
@@ -38,7 +38,7 @@ function AppCard() {
             }}
             className="cursor-pointer bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition"
           >
-            <img src={card.image} alt={card.title} className="w-full object-cover" />
+            <img src={card.image} alt={card.title} className="w-full object-cover h-96" />
             <div className="p-4 space-y-4">
               <h3 className="text-xl font-bold">{card.title}</h3>
               <p className="text-gray-600 text-sm">{card.description}</p>

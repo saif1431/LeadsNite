@@ -37,7 +37,7 @@ function ProjectDetail() {
         <p className="text-lg text-primary text-justify">{project.hero.subtitle}</p>
       </div>
      <div className="lg:w-[75%] w-full bg-gray-200 p-2 rounded-md">
-         <img className="rounded-md lg:h-[530px] md:h-[380px] h-[230px] object-cover w-full" src={project.hero.image} alt={project.hero.title}
+         <img className="rounded-md lg:h-[530px] md:h-[380px] h-[230px] object-center w-full" src={project.hero.image} alt={project.hero.title}
            onClick={() => setIsModalOpen(true)}
          />
 

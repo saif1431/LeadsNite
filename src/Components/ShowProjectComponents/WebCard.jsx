@@ -6,9 +6,9 @@ function WebCard() {
   const navigate = useNavigate();
 
   const allCards = [
-    { id: 8, title: "Ecommerece Website", description: "ElectroMart is a full-featured e-commerce site crafted to make buying electronics simple and satisfying. ", image: "/Projects/Website/Ecommerece/E Commerce Website.webp" },
-    { id: 9, title: "Rent a Car Website", description: "CarMaxel is a vibrant online platform crafted for car buyers, simplifying vehicle shopping with ease. ", image: "/Projects/Website/Ecommerece/E Commerce Website.webp" },
-    { id: 10, title: "Tour Booking Website ", description: "Travolo is a dynamic travel platform crafted to make trip planning effortless and exciting", image: "/Projects/Website/Tour Booking/Tour Booking.webp" },
+    { id: 8, title: "Ecommerece Website", description: "ElectroMart is a full-featured e-commerce site crafted to make buying electronics simple and satisfying. ", image: "/Projects/Website/Ecommerece/projectImg3.webp" },
+    { id: 9, title: "Rent a Car Website", description: "CarMaxel is a vibrant online platform crafted for car buyers, simplifying vehicle shopping with ease. ", image: "/HomeImage/projectImg2.webp" },
+    { id: 10, title: "Tour Booking Website ", description: "Travolo is a dynamic travel platform crafted to make trip planning effortless and exciting", image: "/Projects/Website/Tour Booking/projectImg5.webp" },
   ];
 
   // Function to convert title to URL-friendly slug

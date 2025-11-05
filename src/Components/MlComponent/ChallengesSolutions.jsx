@@ -1,64 +1,76 @@
 import React from 'react';
 
-const ChallengesSolutions = () => {
-  const challenges = [
+/**
+ * ChallengesSolutions Component
+ * 
+ * Usage:
+ * 1. With project data: <ChallengesSolutions challenges={projectData.challengesData} />
+ * 2. Without props (uses default challenges): <ChallengesSolutions />
+ */
+
+const ChallengesSolutions = ({ challenges: propChallenges }) => {
+  // Default challenges (used if no prop is passed)
+  const defaultChallenges = [
     {
       challenge: {
-        title: "Launching Fast on a Startup Budget",
-        description: "Building a polished site or app quickly—without overruns or technical debt."
+        title: "Ensuring Accurate Job Relevance",
+        description: "Jobs often contain vague or inconsistent descriptions."
       },
       solution: [
-        "Rapid prototyping, component libraries, and clean architectures.",
-        "Mobile-first UI with performance budgets baked in.",
-        "Scope-tight MVPs that ship in weeks, not months."
+        "Used AI-driven semantic matching for precision.",
+        "Applied custom job title filters using Mistral logic.",
+        "Verified top matches manually through score review."
       ]
     },
     {
       challenge: {
-        title: "Standing Out in a Crowded Feed",
-        description: "Paid ads, SEO, and content often miss the mark or fail to show ROI."
+        title: "Avoiding Duplicate Job Listings",
+        description: "Multiple job sources can repeat the same postings."
       },
       solution: [
-        "Full-funnel strategy (SEO, PPC, social, email) aligned to KPIs.",
-        "Creative that matches brand voice and audience intent.",
-        "Analytics dashboards to track CAC, ROAS, and LTV."
+        "Implemented dataset comparison using n8n nodes.",
+        "Filtered results against existing Google Sheets data.",
+        "Logged each job with unique URL-based identifier."
       ]
     },
     {
       challenge: {
-        title: "Turning Raw Data into Decisions",
-        description: "Messy datasets and unclear models block insights and automation."
+        title: "Maintaining Resume Personalization",
+        description: "Generic resumes reduce impact on job applications."
       },
       solution: [
-        "Data cleaning pipelines and feature engineering.",
-        "Right-fit ML models with A/B evaluated accuracy.",
-        "Production-grade deployment and MLOps hygiene."
+        "Automated AI cover letter and resume customization.",
+        "Inserted [ADD] and [QUANTIFY] hints for each section.",
+        "Personalized tone to match job and company context."
       ]
     },
     {
       challenge: {
-        title: "Cross-Platform App Experience",
-        description: "Keeping UX, performance, and security consistent on iOS, Android, and web."
+        title: "Streamlining Daily Job Tracking",
+        description: "Manual tracking often becomes slow and disorganized."
       },
       solution: [
-        "Flutter/React Native with shared design systems.",
-        "Offline-first, API-driven architecture and secure auth.",
-        "Automated testing and CI/CD for smooth releases."
+        "Centralized all job data into structured Google Sheets.",
+        "Designed automated timestamp-based job entries.",
+        "Enabled quick sort and filter for match score review."
       ]
     },
     {
       challenge: {
-        title: "Consistent Visual Storytelling",
-        description: "Raw footage and assets that don't feel unified across channels."
+        title: "Delivering Digestible Daily Insights",
+        description: "Users can get overwhelmed by multiple notifications."
       },
       solution: [
-        "Brand kits for motion, color, and typography.",
-        "Editing workflows for speed + quality control.",
-        "Export presets optimized for each platform."
+        "Compiled a single HTML digest summarizing top roles.",
+        "Highlighted match scores with direct job links.",
+        "Limited daily output to top five personalized matches."
       ],
       isWide: true
     }
   ];
+
+  // Use prop challenges if provided, otherwise use defaults
+  const challenges = propChallenges && propChallenges.length > 0 ? propChallenges : defaultChallenges;
 
   const BoltIcon = () => (
     <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-current" aria-hidden="true">
@@ -75,20 +87,13 @@ const ChallengesSolutions = () => {
   return (
     <section 
       id="challenges" 
-      className=" text-slate-200 mt-28"
-      
+      className="text-slate-200 mt-28"
     >
       <div className="">
         {/* Header */}
         <header className="mb-8 md:mb-12">
           <h2 
             className="text-2xl text-center text-black lg:text-4xl font-bold leading-tight mb-2"
-            // style={{
-            //   background: 'linear-gradient(90deg, #7c5cff 0%, #00d4ff 100%)',
-            //   WebkitBackgroundClip: 'text',
-            //   backgroundClip: 'text',
-            //   color: 'transparent'
-            // }}
           >
             Challenges & Solutions
           </h2>
