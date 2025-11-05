@@ -82,7 +82,7 @@ const ClientCount = () => {
         ref={sectionRef}
         className="md:py-24 py-12 rounded-2xl"
         style={{
-          background: 'linear-gradient(90deg, #2667FF 20%, #6C19EF 100%)'
+          background: 'linear-gradient(90deg, #03ABE4 20%, #222222 100%'
         }}
       >
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">

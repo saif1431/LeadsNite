@@ -184,7 +184,7 @@ function ContactUs({padding = "px-4"}) {
            <div className='space-y-4'>
               <h4 className='font-bold text-xl'>Phone</h4>
                 <a href="tel:+923255176508" className="hover:underline">
-                    Phone: +92 325 5176508
+                    +92 325 5176508
                   </a>
         </div>
         <div className='space-y-4'>

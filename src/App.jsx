@@ -32,7 +32,7 @@ function App() {
         <Route path="/" element={
           <>
             <Helmet>
-              <title>LeadsNite - Professional Web Design & Development Services</title>
+              <title>LeadsNite</title>
               <meta 
                 name="description" 
                 content="Our designers craft visually striking, user-focused interfaces that enhance engagement and reflect your brand's identity with clarity, beauty, and purpose." 
@@ -49,7 +49,7 @@ function App() {
         <Route path="/services" element={
           <>
             <Helmet>
-              <title>Our Services - LeadsNite | Web, App & AI Development</title>
+              <title>Our Services</title>
               <meta 
                 name="description" 
                 content="Complete digital solutions including web development, app development, AI agents, UI/UX design, SaaS and MVP development services." 
@@ -66,7 +66,7 @@ function App() {
         <Route path="/about-us" element={
           <>
             <Helmet>
-              <title>About Us - LeadsNite Team | Expert Developers & Designers</title>
+              <title>About Us</title>
               <meta 
                 name="description" 
                 content="We are a team of experts who love helping businesses grow. With years of experience in web development, app creation, and digital solutions." 
@@ -83,7 +83,7 @@ function App() {
         <Route path="/reviews" element={
           <>
             <Helmet>
-              <title>Client Reviews - LeadsNite | Customer Testimonials</title>
+              <title>Client Reviews</title>
               <meta 
                 name="description" 
                 content="See what our clients say about our work across various projects in web development, app development and digital solutions. Read authentic client reviews." 
@@ -100,7 +100,7 @@ function App() {
         <Route path="/contact-us" element={
           <>
             <Helmet>
-              <title>Contact Us - LeadsNite | Get in Touch Today</title>
+              <title>Contact Us</title>
               <meta 
                 name="description" 
                 content="Reach out via any of our channels. Phone +92 325 5175508. Get in touch for professional web development, app development and digital solutions." 
@@ -117,7 +117,7 @@ function App() {
         <Route path="/Projects" element={
           <>
             <Helmet>
-              <title>Our Projects - LeadsNite Portfolio | Completed Work</title>
+              <title>Our Projects</title>
               <meta 
                 name="description" 
                 content="Browse through our completed projects in web development, app development, and machine learning solutions. See our portfolio of successful projects." 

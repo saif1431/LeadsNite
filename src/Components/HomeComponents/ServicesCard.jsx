@@ -33,7 +33,7 @@ const servicesData = [
     title: "UI / UX Design",
     imageUrl: "/servicesImg/3.png",
     description: "Our UI/UX design service focuses on creating intuitive, engaging, and user-friendly digital experiences with creativity.",
-    technologies: ["/New/New/UI UX/ui ux (1).webp", "/New/New/UI UX/ui ux (2).webp", "/New/New/UI UX/ui ux (3).webp", "/New/New/UI UX/ui ux (4).webp", "/New/New/UI UX/ui ux (5).webp", "/New/New/UI UX/ui ux (6).webp", "/New/New/UI UX/ui ux (7).webp", ],
+    technologies: ["/New/New/UI UX/ui ux (1).webp", "/New/New/UI UX/ui ux (2).webp", "/New/New/UI UX/ui ux (3).webp", "/New/New/UI UX/ui ux (4).webp", "/New/New/UI UX/ui ux (5).webp", "/New/New/UI UX/ui ux (6).webp", "/New/New/UI UX/ui ux (7).webp", "/New/New/UI UX/ui ux (8).webp", "/New/New/UI UX/ui ux (9).webp", "/New/New/UI UX/ui ux (10).webp", "/New/New/UI UX/ui ux (11).webp"],
     route: "/services/ui&ux-design"
   },
   {
