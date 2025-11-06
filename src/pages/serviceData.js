@@ -3,30 +3,35 @@
 // data/serviceData.js
 export const webData = {
    relatedProjects: [
-    { id: 8, title: "Rent a Car Website", image: "/Projects/Website/Ecommerece/E Commerce Website.webp" },
-      { id: 9, title: "Tour Booking Website", image: "/Projects/Website/Tour Booking/Tour Booking.webp" },
-    { id: 10, title: "Ecommerece Website", image: "/Projects/Website/Ecommerece/E Commerce Website.webp" },
-    { id: 11, title: "Education Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
-    { id: 12, title: "Blogging Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
-    { id: 13, title: "Blogging Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
-    { id: 14, title: "Blogging Website", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
+  { id: 8, title: "Ecommerece Website", image: "/Projects/Website/Ecommerece/projectImg3.webp", link: "/web-projects/ecommerece-website" },
+    { id: 9, title: "Rent a Car Website", image: "/HomeImage/projectImg2.webp",link: "/web-projects/rent-a-car-website" },
+    { id: 10, title: "Tour Booking Website ", image: "/Projects/Website/Tour Booking/projectImg5.webp",link: "/web-projects/tour-booking-website" },
+    { id: 3, title: "YumBite App", image: "/Projects/Mobile Application/YumBites/projectImg4.webp", link: "/app-projects/yumbite-app" },
+     { id: 15, title: "AI Career Compass", image: "/Projects/AI agents/AI Career Compass/projectImg6.png", link: "/ai-agents/ai-career-compass" },
+    { id: 16, title: "AI-Powered WhatsApp HR Assistant", image: "/Projects/AI agents/AI-Powered WhatsApp HR Assistant/projectImg1.png", link: "/ai-agents/ai-powered-whatsapp-hr-assistant" },
+
   ],
 };
 
 export const appData = {
   relatedProjects: [
-    { id: 3, title: "E-commerce App", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-1.png" },
-    { id: 4, title: "Food Delivery App", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
-    { id: 5, title: "LMS App", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
-    { id: 6, title: "Education App", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
-    { id: 7, title: "Blogging App", image: "https://leadsnite.com/wp-content/uploads/2025/07/Ashley-768-x-640-px-4.jpg" },
+{ id: 8, title: "Ecommerece Website", image: "/Projects/Website/Ecommerece/projectImg3.webp" },
+    { id: 9, title: "Rent a Car Website", image: "/HomeImage/projectImg2.webp" },
+    { id: 10, title: "Tour Booking Website ", image: "/Projects/Website/Tour Booking/projectImg5.webp" },
+    { id: 3, title: "YumBite App", image: "/Projects/Mobile Application/YumBites/projectImg4.webp" },
+     { id: 15, title: "AI Career Compass", image: "/Projects/AI agents/AI Career Compass/projectImg6.png" },
+    { id: 16, title: "AI-Powered WhatsApp HR Assistant", image: "/Projects/AI agents/AI-Powered WhatsApp HR Assistant/projectImg1.png" },
   ],
 };
 
 export const mlData = {
   relatedProjects: [
-    { id: 5, title: "Chatbot", image: "/images/ml1.png" },
-    { id: 6, title: "Image Recognition", image: "/images/ml2.png" },
+   { id: 8, title: "Ecommerece Website", image: "/Projects/Website/Ecommerece/projectImg3.webp", link: "/web-projects/ecommerece-website" },
+    { id: 9, title: "Rent a Car Website", image: "/HomeImage/projectImg2.webp",link: "/web-projects/rent-a-car-website" },
+    { id: 10, title: "Tour Booking Website ", image: "/Projects/Website/Tour Booking/projectImg5.webp",link: "/web-projects/tour-booking-website" },
+    { id: 3, title: "YumBite App", image: "/Projects/Mobile Application/YumBites/projectImg4.webp", link: "/app-projects/yumbite-app" },
+     { id: 15, title: "AI Career Compass", image: "/Projects/AI agents/AI Career Compass/projectImg6.png", link: "/ai-agents/ai-career-compass" },
+    { id: 16, title: "AI-Powered WhatsApp HR Assistant", image: "/Projects/AI agents/AI-Powered WhatsApp HR Assistant/projectImg1.png", link: "/ai-agents/ai-powered-whatsapp-hr-assistant" },
   ],
 };
 

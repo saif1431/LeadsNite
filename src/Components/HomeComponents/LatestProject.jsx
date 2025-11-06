@@ -8,51 +8,57 @@ export default function LatestProject() {
   const projects = [
     {
       id: 1,
-      title: "Email Communication",
-      description: "Machine Learning",
+      title: "Whatsapp Assistant",
+      description: "Ai Agent",
       image: "/HomeImage/projectImg1.webp",
       categories: ["Marketing", "Website"],
-      area: "email"
+      area: "email",
+      link: "/ai-agents/ai-powered-whatsapp-hr-assistant"
     },
     {
       id: 2,
-      title: "Moosa . rent a car",
+      title: "Rent a Car",
       description: "Website Development",
       image: "/HomeImage/projectImg2.webp",
       categories: ["Website", "Marketing"],
-      area: "car"
+      area: "car",
+      link: "/web-projects/rent-a-car-website"
     },
     {
       id: 3,
-      title: "DLX Print",
-      description: "Marketing",
+      title: "Ecommerece Website",
+      description: "Website Development",
       image: "/HomeImage/projectImg3.webp",
       categories: ["Marketing"],
-      area: "print"
+      area: "print",
+      link: "/web-projects/ecommerece-website"
     },
     {
       id: 4,
-      title: "Astock",
-      description: "Machine Learning",
+      title: "Ai Career Compass",
+      description: "Ai Agent",
       image: "/HomeImage/projectImg6.webp",
       categories: ["MachineLearning", "Website"],
-      area: "stock"
+      area: "stock",
+      link: "/ai-agents/ai-career-compass"
     },
     {
       id: 5,
-      title: "MIKYAJY",
-      description: "Marketing",
+      title: "Tour Booking",
+      description: "Website Development",
       image: "/HomeImage/projectImg5.webp",
       categories: ["Marketing", "Website"],
-      area: "seo"
+      area: "seo",
+      link: "/web-projects/tour-booking-website"
     },
     {
       id: 6,
-      title: "Sheba.xyz",
-      description: "Website Development",
+      title: "YumBite",
+      description: "App Development",
       image: "/HomeImage/projectImg4.webp",
       categories: ["MachineLearning"],
-      area: "house"
+      area: "house",
+      link: "/app-projects/yumbite-app"
     }
   ];
 
@@ -62,13 +68,14 @@ export default function LatestProject() {
       : projects.filter((p) => p.categories.includes(activeFilter));
 
   const ProjectCard = ({ project }) => (
-    <motion.div
+    <motion.a
+      href={project.link}
       layout
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
       transition={{ duration: 0.3 }}
-      className={`break-inside-avoid  w-full group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300
+      className={`break-inside-avoid w-full group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer block
         ${
           project.area === "stock" 
             ? "h-[250px] sm:h-[400px] md:h-[350px] lg:h-[360px]" // Stock remains same
@@ -90,14 +97,14 @@ export default function LatestProject() {
       />
       <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       <motion.div
-        className="absolute -bottom-5 left-12 bg-white p-4 rounded-sm shadow-lg transform translate-y-full group-hover:-translate-y-12 transition-transform duration-300 z-10"
+        className="absolute -bottom-5 left-12 backdrop-blur-md bg-white/20  p-4 rounded-sm shadow-lg transform translate-y-full group-hover:-translate-y-12 transition-transform duration-300 z-10"
         whileHover={{ scale: 1.03 }}
       >
-        <div className="absolute left-0 -top-[19px] h-[20px] w-[20px] bg-white z-[-1] [clip-path:polygon(0_0,0%_100%,80%_100%)]" />
-        <h3 className="font-medium text-xl text-gray-900">{project.title}</h3>
-        <p className="text-sm text-gray-600 mt-1">{project.description}</p>
+        <div className="absolute left-0 -top-[19px] h-[20px] w-[20px] backdrop-blur-md bg-white/20 border-l border-t border-white/30 z-[-1] [clip-path:polygon(0_0,0%_100%,80%_100%)]" />
+        <h3 className="font-semibold text-xl text-white">{project.title}</h3>
+        <p className="text-sm text-white/90 mt-1">{project.description}</p>
       </motion.div>
-    </motion.div>
+    </motion.a>
   );
 
   return (
@@ -183,4 +190,4 @@ export default function LatestProject() {
       </div>
     </div>
   );
-} 
+}

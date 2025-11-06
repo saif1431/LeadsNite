@@ -2,6 +2,7 @@
 
 import { useNavigate } from "react-router-dom"
 import { useEffect, useRef } from "react"
+import { webData } from "../../pages/serviceData"
 
 function RelatedProject({ data }) {
   const navigate = useNavigate()
@@ -55,33 +56,36 @@ function RelatedProject({ data }) {
       </h2>
 
       <div
+      
         ref={scrollerRef}
-        className="flex gap-6 h-[550px] overflow-x-hidden"
+        className="flex gap-6 h-[600px] overflow-x-hidden"
         style={{ scrollBehavior: "auto" }}
       >
         {duplicatedProjects.map((relatedProject, index) => (
           <div
             key={`${relatedProject.id}-${index}`}
-            className="flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] "
+            className="flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)]"
           >
-            <div className="flex flex-col rounded-xl items-start shadow-lg py-6 gap-4 h-[500px] mt-4">
+            <div className="flex flex-col rounded-xl items-start shadow-lg py-6 gap-4 h-[550px] mt-4">
               <img
                 className="rounded-md w-full object-cover"
                 src={relatedProject.image || "/placeholder.svg"}
                 alt={relatedProject.title}
                 style={{ height: "350px", objectFit: "cover" }}
               />
-              <div className="px-6 space-y-4 w-full">
+              <div className="px-6  space-y-4 w-full">
                 <h3 className="text-2xl font-semibold">{relatedProject.title}</h3>
-                <button
-                  className="btn font-semibold"
+             <div className="btn w-fit">
+                 <a
+                  href={relatedProject.link}
+                  className="  font-semibold"
                   onClick={() => {
                     window.scrollTo(0, 0)
-                    navigate(`/app-projects/${relatedProject.id}`)
                   }}
                 >
                   Read more
-                </button>
+                </a>
+             </div>
               </div>
             </div>
           </div>

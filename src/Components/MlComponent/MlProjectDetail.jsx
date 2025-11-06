@@ -6,6 +6,7 @@ import MobileApps from "../TechnologiesComponent/MobileApps";
 import AppDesignFlowchart from "../AppComponents/AppDesignFlowchart";
 import ChallengesSolutions from "./ChallengesSolutions";
 import ContactUs from "../../pages/ContactUs";
+import MachineLearning from "../TechnologiesComponent/MachineLearning";
 
 
 const createSlug = (title) => {
@@ -122,7 +123,7 @@ function MlProjectDetail() {
 <div className="border-t border-gray-300 border-b py-5 rounded-lg space-y-8 mt-24">
         <h2 className="lg:text-4xl text-2xl font-bold text-center">Technology Used</h2>
         <div>
-          <MobileApps/>
+          <MachineLearning/>
         </div>
       </div>
     {project.challengesData && project.challengesData.length > 0 && (
