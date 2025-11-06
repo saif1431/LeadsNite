@@ -100,7 +100,7 @@ export default function LatestProject() {
         className="absolute -bottom-5 left-12 backdrop-blur-md bg-white/20  p-4 rounded-sm shadow-lg transform translate-y-full group-hover:-translate-y-12 transition-transform duration-300 z-10"
         whileHover={{ scale: 1.03 }}
       >
-        <div className="absolute left-0 -top-[19px] h-[20px] w-[20px] backdrop-blur-md bg-white/20 border-l border-t border-white/30 z-[-1] [clip-path:polygon(0_0,0%_100%,80%_100%)]" />
+        <div className="" />
         <h3 className="font-semibold text-xl text-white">{project.title}</h3>
         <p className="text-sm text-white/90 mt-1">{project.description}</p>
       </motion.div>

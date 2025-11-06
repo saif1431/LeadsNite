@@ -74,7 +74,7 @@ function MlProjectDetail() {
       <section className="flex flex-col lg:flex-row items-start  lg:gap-12 justify-between gap-4 mt-28">
        <div className="lg:w-[50%] w-full space-y-4 ">
             <h2 className="text-2xl font-bold">OverView</h2>
-            <p className="lg:w-[70%] w-full text-lg text-primary">{project.overview.heading1}</p>
+          
                <p className="lg:w-[70%] w-full text-primary text-lg">{project.overview.heading2}</p>
        </div>
        <div className="lg:w-[50%] w-full space-y-4">

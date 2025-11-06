@@ -77,14 +77,11 @@ function WebCardDetail() {
       <section className="flex flex-col lg:flex-row items-start lg:gap-12 justify-between gap-4 lg:mt-28 mt-16">
         <div className="lg:w-[50%] w-full space-y-4">
           <h2 className="text-2xl font-bold">OverView</h2>
-          <p className="lg:w-[70%] w-full text-lg text-primary">
-            {project.overview.heading1}
-          </p>
           <p className="lg:w-[70%] w-full text-primary text-lg">
             {project.overview.heading2}
           </p>
         </div>
-        <div className="lg:w-[50%] w-full mt-6 space-y-4">
+        <div className="lg:w-[50%] w-full space-y-4">
           <h2 className="text-2xl font-bold">Project</h2>
           <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {project.overview.projectTitle.map((title, i) => (

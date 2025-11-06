@@ -139,9 +139,6 @@ function App() {
         <Route path="/services/SaaS-development" element={<><Navbar/><GraphicsServices /><Footer/></>} />
         <Route path="/services/mvp-development" element={<><Navbar/><DigitalServices /><Footer/></>} />
         <Route path="/ScrollHover" element={<ScrollHover />} />
-        {/* <Route path="/app-development" element={<><Navbar/><AppDevelopmentPage /><Footer/></>} /> */}
-        {/* <Route path="/web-development" element={<><Navbar/><WebDevelopmentPage /><Footer/></>} />
-        <Route path="/machine-learning" element={<><Navbar/><MlPage /><Footer/></>} /> */}
         <Route path="/app-projects/:slug" element={<><Navbar/><ProjectDetail /><Footer/></>} />
           <Route path="/web-projects/:slug" element={<><Navbar/><WebCardDetail /><Footer/></>} />
         <Route path="/ai-agents/:slug" element={<><Navbar/><MlProjectDetail /><Footer/></>} />
