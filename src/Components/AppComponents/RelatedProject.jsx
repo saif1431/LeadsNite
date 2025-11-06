@@ -1,11 +1,8 @@
 "use client"
 
-import { useNavigate } from "react-router-dom"
 import { useEffect, useRef } from "react"
-import { webData } from "../../pages/serviceData"
 
 function RelatedProject({ data }) {
-  const navigate = useNavigate()
   const scrollerRef = useRef(null)
 
   useEffect(() => {
