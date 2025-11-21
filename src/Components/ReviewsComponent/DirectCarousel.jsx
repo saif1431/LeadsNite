@@ -43,7 +43,7 @@ export default function DirectCarousel() {
                           <Star key={k} className="w-7 h-7 fill-current text-primary-foreground drop-shadow-lg" />
                         ))}
                       </div>
-                      <p className="text-xl md:text-2xl leading-relaxed mb-8 italic">"{review.review}"</p>
+                      <p className="text-md md:text-2xl leading-relaxed mb-8 italic">"{review.review}"</p>
                       <div className="flex items-center gap-4">
                         <div className="w-12 h-12 rounded-full bg-primary-foreground/20 flex items-center justify-center">
                           <Users className="w-6 h-6 text-primary-foreground" />

@@ -12,12 +12,12 @@ export default function ReviewHero({ activeTab, onNavigate }) {
 
       {/* Floating Icons */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <Star className="absolute top-20 left-[10%] w-8 h-8 text-primary/20 animate-[spin_20s_linear_infinite]" />
+        <Star className="absolute md:top-20 top-16 left-[10%] w-8 h-8 text-primary/20 animate-[spin_20s_linear_infinite]" />
         <Award className="absolute top-32 right-[15%] w-10 h-10 text-primary/30 animate-[bounce_3s_ease-in-out_infinite]" />
-        <Users className="absolute bottom-32 left-[20%] w-12 h-12 text-primary/20 animate-[pulse_4s_ease-in-out_infinite]" />
-        <TrendingUp className="absolute bottom-40 right-[25%] w-10 h-10 text-primary/25 animate-[bounce_5s_ease-in-out_infinite]" />
-        <Star className="absolute top-1/3 right-[10%] w-6 h-6 text-primary/15 animate-[spin_15s_linear_infinite_reverse]" />
-        <Award className="absolute bottom-1/4 left-[15%] w-8 h-8 text-primary/20 animate-[pulse_6s_ease-in-out_infinite]" />
+        <Users className="absolute md:bottom-32 bottom-24 left-[20%] w-12 h-12 text-primary/20 animate-[pulse_4s_ease-in-out_infinite]" />
+        <TrendingUp className="absolute lg:bottom-40 bottom-72 right-[25%] w-10 h-10 text-primary/25 animate-[bounce_5s_ease-in-out_infinite]" />
+        <Star className="absolute md:top-1/3 right-[10%] w-6 h-6 text-primary/15 animate-[spin_15s_linear_infinite_reverse]" />
+        <Award className="absolute md:bottom-1/4 bottom-30 lg:left-[15%] w-8 h-8 text-primary/20 animate-[pulse_6s_ease-in-out_infinite]" />
       </div>
 
       {/* Decorative Circles */}

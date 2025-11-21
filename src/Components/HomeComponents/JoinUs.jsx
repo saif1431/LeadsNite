@@ -13,7 +13,7 @@ function JoinUs() {
         </div>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-8 justify-items-center items-stretch'>
           <div className='group cursor-pointer  overflow-hidden shadow-md transition-transform space-y-4 duration-500 hover:shadow-xl px-14 py-12 bg-white rounded-3xl border border-gray-200 '>
-<li><span className='font-bold'>NDA by Default</span> — All work stays confidential; private repos and encrypted access keep your data secure.</li>
+<li><span className='font-bold'>NDA by Default</span> — All work stays confidential; private repos and encrypted keep your data secure.</li>
 <li><span className='font-bold'>Compliance Ready </span> — We easily align with SOC2 or ISO standards when you share your compliance controls.
 </li>
 <li><span className='font-bold'>Safe Access</span> — We apply least-privilege access and Infrastructure-as-Code to ensure full system safety.

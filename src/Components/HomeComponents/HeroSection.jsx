@@ -108,7 +108,7 @@ function HeroSection() {
         <div className="absolute inset-0 bg-opacity-50"></div>
         
         <motion.div
-          className="relative z-10 flex flex-col items-center justify-center h-[55%] text-center px-4 text-white"
+          className="relative z-10  flex flex-col items-center justify-center lg:h-[55%] h-[80%] text-center px-4  text-white"
           initial="hidden"
           animate="visible"
           variants={containerVariants}
