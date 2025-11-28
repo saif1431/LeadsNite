@@ -16,7 +16,18 @@ const servicesData = [
     title: "AI Agents",
     imageUrl: "/servicesImg/img2.png",
     description: "In the world of AI agents, there are many hurdles to overcome. We often face problems with integration compatibility and reliability.",
-    technologies: ["/New/New/AI agents/ai agents (1).webp", "/New/New/AI agents/ai agents (2).webp", "/New/New/AI agents/ai agents (3).webp", "/New/New/AI agents/ai agents (4).webp", "/New/New/AI agents/ai agents (5).webp", "/New/New/AI agents/ai agents (6).webp", "/New/New/AI agents/ai agents (7).webp", "/New/New/AI agents/ai agents (8).webp", "/New/New/AI agents/ai agents (9).webp", "/New/New/AI agents/ai agents (10).webp", "/New/New/AI agents/ai agents (11).webp",],
+    technologies: [ "/New/New/AI agents/aiagents1.webp",
+  "/New/New/AI agents/aiagents2.webp",
+  "/New/New/AI agents/aiagents3.webp",
+  "/New/New/AI agents/aiagents4.webp",
+  "/New/New/AI agents/aiagents5.webp",
+  "/New/New/AI agents/aiagents6.webp",
+  "/New/New/AI agents/aiagents7.webp",
+  "/New/New/AI agents/aiagents8.webp",
+  "/New/New/AI agents/aiagents9.webp",
+  "/New/New/AI agents/aiagents10.webp",
+  "/New/New/AI agents/aiagents11.webp",
+  "/New/New/AI agents/aiagents12.webp",],
 
     route: "/services/ai-agents"
   },
@@ -33,7 +44,20 @@ const servicesData = [
     title: "UI / UX Design",
     imageUrl: "/servicesImg/3.png",
     description: "Our UI/UX design service focuses on creating intuitive, engaging, and user-friendly digital experiences with creativity.",
-    technologies: ["/New/New/UI UX/ui ux (1).webp", "/New/New/UI UX/ui ux (2).webp", "/New/New/UI UX/ui ux (3).webp", "/New/New/UI UX/ui ux (4).webp", "/New/New/UI UX/ui ux (5).webp", "/New/New/UI UX/ui ux (6).webp", "/New/New/UI UX/ui ux (7).webp", "/New/New/UI UX/ui ux (8).webp", "/New/New/UI UX/ui ux (9).webp", "/New/New/UI UX/ui ux (10).webp", "/New/New/UI UX/ui ux (11).webp"],
+    technologies: [  "/New/New/UI UX/uiux1.webp",
+  "/New/New/UI UX/uiux2.webp",
+  "/New/New/UI UX/uiux3.webp",
+  "/New/New/UI UX/uiux4.webp",
+  "/New/New/UI UX/uiux5.webp",
+  "/New/New/UI UX/uiux6.webp",
+  "/New/New/UI UX/uiux7.webp",
+  "/New/New/UI UX/uiux8.webp",
+  "/New/New/UI UX/uiux9.webp",
+  "/New/New/UI UX/uiux10.webp",
+  "/New/New/UI UX/uiux11.webp",
+  
+
+],
     route: "/services/ui&ux-design"
   },
   {
