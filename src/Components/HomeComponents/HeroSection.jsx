@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import backgroundImage from '/backgroundImg1.png';
+import backgroundImage from '/HomeImage/background.png';
 import img1 from '/HomeImage/1-1.webp';
 import img2 from '/HomeImage/d1.webp';
 import img3 from '/HomeImage/d2.webp';

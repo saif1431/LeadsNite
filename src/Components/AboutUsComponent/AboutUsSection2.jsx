@@ -1,6 +1,6 @@
 import React from 'react'
 import { TiTick } from "react-icons/ti";
-import img from '/AboutImage/img6.webp'
+import img from '/AboutImage/img6.png'
 
 function AboutUsSection2() {
   return (
