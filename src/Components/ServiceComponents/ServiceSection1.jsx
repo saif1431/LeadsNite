@@ -1,6 +1,6 @@
 import { Check } from "lucide-react"
-import img1 from '/AboutImage/img3.webp'
-import img2 from '/AboutImage/img4.webp'
+import img1 from '/AboutImage/img3.png'
+import img2 from '/AboutImage/img4.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"  
 import { faSquareCheck } from "@fortawesome/free-regular-svg-icons"
 
@@ -14,7 +14,7 @@ export default function ServiceSection1() {
             {/* Services Stat */}
             <div className="flex items-start ">
               <div className="">
-                <img className="lg:w-30 w-24 lg:h-30 h-24" src={img1} alt="" />
+                <img className="lg:w-30 w-24 lg:h-30 h-24" src={img1} alt="Service Provider Image" />
               </div>
               <div className="mb-4">
                 <div className="text-6xl font-bold">6</div>
@@ -29,7 +29,7 @@ export default function ServiceSection1() {
             {/* Team Members Stat */}
             <div className="flex items-start ">
               <div className="">
-                <img className="lg:w-30 w-24 lg:h-30 h-24" src={img2} alt="" />
+                <img className="lg:w-30 w-24 lg:h-30 h-24" src={img2} alt="Team Member Image" />
               </div>
               <div>
                 <div className="text-6xl font-bold">25</div>
