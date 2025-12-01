@@ -28,7 +28,7 @@ function LetsTalk() {
                 </Link>
                 <Link
                 onClick={() => window.scrollTo(0, 0)}
-                to="/contactUs" className="btn w-full lg:w-fit  flex items-center text-center justify-center">
+                to="/contact-us" className="btn w-full lg:w-fit  flex items-center text-center justify-center">
                   Let's Talk
                   <BiRightArrowAlt className="ml-2 text-lg" />
                 </Link>

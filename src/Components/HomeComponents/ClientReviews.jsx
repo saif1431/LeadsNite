@@ -104,7 +104,7 @@ const ClientReviews = () => {
   const extendedColumn3 = [...column3, ...column3, ...column3];
 
   return (
-    <div className="bg-white min-h-screen py-12 overflow-hidden">
+    <div className="bg-white min-h-fit py-12 overflow-hidden">
       <div className="text-center mb-18">
         <h1 className="title">Trusted Reviews</h1>
       </div>
@@ -258,7 +258,7 @@ const ClientReviews = () => {
       )}
 
 
-          <div className='flex items-center justify-center mt-0'>
+          <div className='flex items-center justify-center lg:mt-0 mt-6'>
         <Link 
         onClick={() => window.scrollTo(0, 0)}
         className='btn' to='/reviews'>

@@ -156,7 +156,7 @@ function HeroSection() {
               We're here for you!
             </motion.p>
     <div className='relative flex items-center justify-center'>
-       <Link  to='/contactUs' className='btn3 flex items-center justify-center'>
+       <Link  to='/contact-us' className='btn3 flex items-center justify-center'>
      Let's Talk
      <BiRightArrowAlt className='ml-2 text-xl'/>
      </Link>
@@ -185,7 +185,7 @@ function HeroSection() {
         />
         
         <motion.div 
-          className='absolute hidden xl:block z-10 left-1/2 transform -translate-x-1/2 bg-white lg:w-[15%] w-[40%]  lg:-bottom-28 p-1 border rounded-3xl overflow-hidden border-gray-100 shadow-md'
+          className='absolute hidden lg:block xl:hidden z-10 left-1/2 transform -translate-x-1/2 bg-white lg:w-[15%] w-[40%]  lg:-bottom-28 p-1 border rounded-3xl overflow-hidden border-gray-100 shadow-md'
           initial="hidden"
           animate="visible"
           variants={img3Animation}

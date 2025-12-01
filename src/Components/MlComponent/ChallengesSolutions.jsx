@@ -108,50 +108,49 @@ const ChallengesSolutions = ({ challenges: propChallenges }) => {
             <article
               key={index}
               className={`
-                group overflow-hidden transition-all duration-300 ease-out
+                group bg-white border border-gray-200 shadow-lg text-black overflow-hidden transition-all duration-300 ease-out
                 transform hover:-translate-y-1 focus-within:-translate-y-1
                 hover:shadow-2xl focus-within:shadow-2xl
                 focus-within:outline-none focus-within:ring-4 focus-within:ring-purple-500/45
                 ${item.isWide ? 'md:col-span-2' : ''}
               `}
               style={{
-                background: `linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)), #131735`,
-                border: '1px solid rgba(255,255,255,0.08)',
+                background: ``,
                 borderRadius: '18px',
-                boxShadow: '0 10px 30px rgba(0,0,0,0.35)'
+                
               }}
             >
               {/* Challenge Block */}
               <div className="p-4 md:p-5">
-                <span className="inline-flex items-center gap-2 text-xs px-2.5 py-1.5 rounded-full border border-white/12 bg-white/3 text-amber-400 mb-2">
+                <span className="inline-flex items-center gap-2 text-xs px-2.5 py-1.5 rounded-full border  text-amber-400 mb-2">
                   <BoltIcon />
                   Challenge
                 </span>
-                <h3 className="text-lg font-semibold mb-1.5 text-slate-100">
+                <h3 className="text-lg font-semibold mb-1.5 text-slate-900">
                   {item.challenge.title}
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <p className="text-slate-700 text-sm leading-relaxed">
                   {item.challenge.description}
                 </p>
               </div>
 
               {/* Divider */}
               <div 
-                className="h-px mx-4"
+                className="h-px border border-gray-100  mx-4"
                 style={{
-                  background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent)'
+                  background: ''
                 }}
               />
 
               {/* Solution Block */}
               <div className="p-4 md:p-5">
-                <span className="inline-flex items-center gap-2 text-xs px-2.5 py-1.5 rounded-full border border-white/12 bg-white/3 text-emerald-400 mb-2">
+                <span className="inline-flex items-center gap-2 text-xs px-2.5 py-1.5 rounded-full  span border  mb-2">
                   <CheckIcon />
                   Solution
                 </span>
                 <ul className="mt-2 ml-5 space-y-1.5">
                   {item.solution.map((solutionItem, sIndex) => (
-                    <li key={sIndex} className="text-slate-200 text-sm leading-relaxed list-disc">
+                    <li key={sIndex} className="text-slate-900 text-sm leading-relaxed list-disc">
                       {solutionItem}
                     </li>
                   ))}

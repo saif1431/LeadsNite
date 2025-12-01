@@ -115,7 +115,7 @@ export default function PricingSection() {
 
                 <p className="text-gray-600 text-md mt-12 mb-8">{pricingData.free.description}</p>
 
-           <Link to='/contactUs'>
+           <Link to='/contact-us'>
               <Button children="Let's Talk"/>
            </Link>
 
@@ -143,7 +143,7 @@ export default function PricingSection() {
 
                 <p className="text-gray-600 text-md mb-10">{pricingData.basic.description}</p>
 
-                   <Link to='/contactUs'>
+                   <Link to='/contact-us'>
               <Button children="Let's Talk"/>
            </Link>
 

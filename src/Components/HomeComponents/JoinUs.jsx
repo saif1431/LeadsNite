@@ -41,7 +41,7 @@ function JoinUs() {
         </div>
 
         <div className='flex items-center justify-center mt-12'>
-          <Link to='contactUs'  className='btn rounded-full flex items-center gap-3'>Let's Talk 
+          <Link to='contact-us'  className='btn rounded-full flex items-center gap-3'>Let's Talk 
             <span><BiRightArrowAlt className="text-xl" /></span>
           </Link>
         </div>

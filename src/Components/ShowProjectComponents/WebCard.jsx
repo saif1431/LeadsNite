@@ -28,7 +28,7 @@ function WebCard() {
   return (
     <div className="">
       {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {allCards.slice(0, visible).map((card) => (
           <div
             key={card.id}
@@ -37,7 +37,7 @@ function WebCard() {
               const slug = createSlug(card.title);
               navigate(`/web-projects/${slug}`);
             }}
-            className="cursor-pointer bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition"
+            className="cursor-pointer bg-white border border-gray-200 shadow-md rounded-xl overflow-hidden hover:shadow-xl transition"
           >
             <img src={card.image} alt={card.title} className="w-full object-cover h-96" />
             <div className="p-4 space-y-4">

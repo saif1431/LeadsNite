@@ -238,6 +238,7 @@ function ContactUs({padding = "px-4"}) {
 
 {location.pathname === "/contact-us" && (
         <>
+        <h2 className='text-center text-black lg:text-4xl text-3xl font-bold mt-6 font-satochi'>Our Response Time</h2>
           <ResponseTimeSection />
           <ContactFaqs />
         </>

@@ -151,7 +151,7 @@ const Navbar = () => {
             }`}
           >
             <motion.div 
-              className="px-4 pt-2 pb-4 space-y-4"
+              className="px-4 pt-2 pb-4 space-y-4 border-b border-gray-200"
               variants={{
                 open: {
                   transition: { staggerChildren: 0.07, delayChildren: 0.2 }

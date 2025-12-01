@@ -110,7 +110,7 @@ const ScrollImageBoxGrid = () => {
           <ScrollImageCard 
             key={index} 
             image={image} 
-            title={`Page ${index + 1}`}
+            
             index={index}
           />
         ))}

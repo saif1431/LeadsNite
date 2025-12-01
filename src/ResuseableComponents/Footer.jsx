@@ -195,7 +195,7 @@ function Footer() {
       
       <div className="bg-black py-4 px-4 md:px-8">
         <div className="max-w-7xl text-white space-x-4 mx-auto flex justify-center">
-       <p>All rights reserved &copy; {new Date().getFullYear()} LeadsNite</p>
+       <p className='lg:text-lg text-sm'>All rights reserved &copy; {new Date().getFullYear()} LeadsNite</p>
         </div>
       </div>
       

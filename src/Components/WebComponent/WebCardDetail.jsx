@@ -77,7 +77,7 @@ function WebCardDetail() {
       <section className="flex flex-col lg:flex-row items-start lg:gap-12 justify-between gap-4 lg:mt-28 mt-16">
         <div className="lg:w-[50%] w-full space-y-4">
           <h2 className="text-2xl font-bold">OverView</h2>
-          <p className="lg:w-[70%] w-full text-primary text-lg">
+          <p className="lg:w-[70%] w-full text-justify  text-primary text-lg">
             {project.overview.heading2}
           </p>
         </div>
@@ -95,10 +95,7 @@ function WebCardDetail() {
             ))}
           </ul>
           <div className="space-y-2 mt-8">
-            <p className="text-lg text-primary">
-              <span className="text-black font-semibold">Location / </span>
-              {project.overview.location}
-            </p>
+          <p className="text-lg text-primary "><span className="text-black font-semibold">Platform /  </span> {project.overview.Platform}</p>
             <p className="text-lg text-primary">
               <span className="text-black font-semibold">Project / </span>
               {project.overview.project}

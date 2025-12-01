@@ -75,7 +75,7 @@ function MlProjectDetail() {
        <div className="lg:w-[50%] w-full space-y-4 ">
             <h2 className="text-2xl font-bold">OverView</h2>
           
-               <p className="lg:w-[70%] w-full text-primary text-lg">{project.overview.heading2}</p>
+               <p className="lg:w-[70%] w-full text-justify text-primary text-lg">{project.overview.heading2}</p>
        </div>
        <div className="lg:w-[50%] w-full space-y-4">
             <h2 className="text-2xl font-bold">Project</h2>
@@ -85,7 +85,7 @@ function MlProjectDetail() {
            ))}
          </ul>
          <div className="space-y-2 mt-8">
-            <p className="text-lg text-primary "><span className="text-black font-semibold">Location /  </span> {project.overview.location}</p>
+           <p className="text-lg text-primary "><span className="text-black font-semibold">Platform /  </span> {project.overview.Platform}</p>
             <p className="text-lg text-primary"><span className="text-black font-semibold">Project / </span> {project.overview.project}</p>
             <p className="text-lg text-primary"><span className="text-black font-semibold">Category / </span> {project.overview.category}</p>
             <p className="text-lg text-primary"><span className="text-black font-semibold">Design By / </span> {project.overview.designBy}</p>
@@ -114,7 +114,7 @@ function MlProjectDetail() {
           </button>
           <img
             className="max-w-full max-h-[90vh] object-contain rounded-lg"
-            src="https://plus.unsplash.com/premium_photo-1682124651258-410b25fa9dc0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TWFjaGluZSUyMExlYXJuaW5nfGVufDB8fDB8fHww" alt=""
+            src="/Projects/AI agents/AI Career Compass/Screenshot 2025-11-01 004742.webp" alt=""
             onClick={(e) => e.stopPropagation()}
           />
         </div>
