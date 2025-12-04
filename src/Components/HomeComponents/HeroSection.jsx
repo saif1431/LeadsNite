@@ -167,7 +167,7 @@ function HeroSection() {
       
       <div className='relative'>
         <motion.div 
-          className='absolute hidden xl:block lg:bottom-96 bottom-16  z-10 left-1 lg:left-96   bg-white  xl:w-[7%] w-[30%] p-1 border rounded-xl lg:rounded-xl overflow-hidden border-gray-100'
+          className='absolute hidden lg:hidden xl:block lg:bottom-96 bottom-16  z-10 left-1 lg:left-96   bg-white  xl:w-[7%] w-[30%] p-1 border rounded-xl lg:rounded-xl overflow-hidden border-gray-100'
           initial="hidden"
           animate="visible"
           variants={img2Animation}
@@ -178,14 +178,14 @@ function HeroSection() {
         <motion.img 
           className='absolute  shadow-lg rounded-lg xl:bottom-1 -bottom-25  left-1/2 lg:transform -translate-x-1/2 xl:w-[50%] lg:w-[60%] w-[90%]'
           src={img1} 
-          alt=""
-          initial="hidden"
+          alt="image 1"
+          initial=""
           animate="visible"
           variants={img1Animation}
         />
         
         <motion.div 
-          className='absolute hidden lg:block xl:hidden z-10 left-1/2 transform -translate-x-1/2 bg-white lg:w-[15%] w-[40%]  lg:-bottom-28 p-1 border rounded-3xl overflow-hidden border-gray-100 shadow-md'
+          className='absolute hidden lg:block z-10 left-1/2 transform -translate-x-1/2 bg-white lg:w-[15%] w-[40%]  lg:-bottom-28 p-1 border rounded-3xl overflow-hidden border-gray-100 shadow-md'
           initial="hidden"
           animate="visible"
           variants={img3Animation}
