@@ -1,107 +1,113 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 
-const ClientReviews = () => {
+const ClientReviews = React.memo(() => {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const logos = [
-     "/reviewImg/fiver/Web Dev/1.webp",
-      "/reviewImg/fiver/Web Dev/2.webp",
-      "/reviewImg/fiver/Web Dev/3.webp",
-      "/reviewImg/fiver/Web Dev/4.webp",
-      "/reviewImg/fiver/Web Dev/5.webp",
-      "/reviewImg/fiver/Web Dev/6.webp",
-      "/reviewImg/fiver/Web Dev/7.webp",
-      "/reviewImg/fiver/Web Dev/8.webp",
-      "/reviewImg/fiver/Web Dev/9.webp",
-      "/reviewImg/fiver/Web Dev/10.webp",
-      "/reviewImg/fiver/Web Dev/11.webp",
-      "/reviewImg/fiver/Web Dev/12.webp",
-      "/reviewImg/fiver/Web Dev/13.webp",
-      "/reviewImg/fiver/Web Dev/14.webp",
-      "/reviewImg/fiver/Web Dev/15.webp",
-      "/reviewImg/fiver/Web Dev/16.webp",
-      "/reviewImg/fiver/Web Dev/17.webp",
-      "/reviewImg/fiver/Web Dev/18.webp",
-      "/reviewImg/fiver/Web Dev/19.webp",
-      "/reviewImg/fiver/Web Dev/20.webp",
-      "/reviewImg/fiver/Web Dev/21.webp",
-      "/reviewImg/fiver/Web Dev/22.webp",
-      "/reviewImg/fiver/Web Dev/23.webp",
-      "/reviewImg/fiver/Web Dev/24.webp",
-      "/reviewImg/fiver/Web Dev/25.webp",
-      "/reviewImg/fiver/Web Dev/26.webp",
-      "/reviewImg/fiver/Web Dev/27.webp",
-      "/reviewImg/fiver/Web Dev/28.webp",
-      "/reviewImg/fiver/Web Dev/29.webp",
-      "/reviewImg/fiver/App Dev/1.webp",
-      "/reviewImg/fiver/App Dev/2.webp",
-      "/reviewImg/fiver/App Dev/3.webp",
-      "/reviewImg/fiver/App Dev/4.webp",
-      "/reviewImg/fiver/App Dev/5.webp",
-      "/reviewImg/fiver/App Dev/6.webp",
-      "/reviewImg/fiver/App Dev/7.webp",
-      "/reviewImg/fiver/App Dev/8.webp",
-      "/reviewImg/fiver/App Dev/9.webp",
-      "/reviewImg/fiver/App Dev/10.webp",
-      "/reviewImg/fiver/App Dev/11.webp",
-      "/reviewImg/fiver/App Dev/12.webp",
-      "/reviewImg/fiver/App Dev/13.webp",
-      "/reviewImg/fiver/App Dev/14.webp",
-      "/reviewImg/fiver/App Dev/15.webp",
-      "/reviewImg/fiver/App Dev/16.webp",
-      "/reviewImg/fiver/App Dev/17.webp",
-      "/reviewImg/fiver/App Dev/18.webp",
-      "/reviewImg/fiver/App Dev/20.webp",
-      "/reviewImg/fiver/App Dev/21.webp",
-      "/reviewImg/fiver/App Dev/22.webp",
-      "/reviewImg/fiver/App Dev/23.webp",
-      "/reviewImg/fiver/App Dev/24.webp",
-      "/reviewImg/fiver/App Dev/25.webp",
-      "/reviewImg/fiver/App Dev/26.webp",
-      "/reviewImg/fiver/App Dev/27.webp",
-      "/reviewImg/fiver/App Dev/28.webp",
-      "/reviewImg/fiver/App Dev/29.webp",
-      "/reviewImg/fiver/AI Agents/1.webp",
-      "/reviewImg/fiver/AI Agents/2.webp",
-      "/reviewImg/fiver/AI Agents/3.webp",
-      "/reviewImg/fiver/AI Agents/4.webp",
-      "/reviewImg/fiver/AI Agents/5.webp",
-      "/reviewImg/fiver/AI Agents/6.webp",
-      "/reviewImg/fiver/AI Agents/7.webp",
-      "/reviewImg/fiver/AI Agents/8.webp",
-      "/reviewImg/fiver/AI Agents/9.webp",
-      "/reviewImg/fiver/AI Agents/10.webp",
-      "/reviewImg/fiver/AI Agents/11.webp",
-      "/reviewImg/fiver/AI Agents/12.webp",
-      "/reviewImg/fiver/AI Agents/13.webp",
-      "/reviewImg/fiver/AI Agents/14.webp",
-      "/reviewImg/fiver/AI Agents/15.webp",
-      "/reviewImg/fiver/AI Agents/16.webp",
-      "/reviewImg/fiver/AI Agents/17.webp",
-      "/reviewImg/fiver/AI Agents/18.webp",
-      "/reviewImg/fiver/AI Agents/19.webp",
-      "/reviewImg/fiver/AI Agents/20.webp"
-  ];
+  // Memoize logos array to prevent recreation on every render
+  const logos = useMemo(() => [
+    "/reviewImg/fiver/Web Dev/1.webp",
+    "/reviewImg/fiver/Web Dev/2.webp",
+    "/reviewImg/fiver/Web Dev/3.webp",
+    "/reviewImg/fiver/Web Dev/4.webp",
+    "/reviewImg/fiver/Web Dev/5.webp",
+    "/reviewImg/fiver/Web Dev/6.webp",
+    "/reviewImg/fiver/Web Dev/7.webp",
+    "/reviewImg/fiver/Web Dev/8.webp",
+    "/reviewImg/fiver/Web Dev/9.webp",
+    "/reviewImg/fiver/Web Dev/10.webp",
+    "/reviewImg/fiver/Web Dev/11.webp",
+    "/reviewImg/fiver/Web Dev/12.webp",
+    "/reviewImg/fiver/Web Dev/13.webp",
+    "/reviewImg/fiver/Web Dev/14.webp",
+    "/reviewImg/fiver/Web Dev/15.webp",
+    "/reviewImg/fiver/Web Dev/16.webp",
+    "/reviewImg/fiver/Web Dev/17.webp",
+    "/reviewImg/fiver/Web Dev/18.webp",
+    "/reviewImg/fiver/Web Dev/19.webp",
+    "/reviewImg/fiver/Web Dev/20.webp",
+    "/reviewImg/fiver/Web Dev/21.webp",
+    "/reviewImg/fiver/Web Dev/22.webp",
+    "/reviewImg/fiver/Web Dev/23.webp",
+    "/reviewImg/fiver/Web Dev/24.webp",
+    "/reviewImg/fiver/Web Dev/25.webp",
+    "/reviewImg/fiver/Web Dev/26.webp",
+    "/reviewImg/fiver/Web Dev/27.webp",
+    "/reviewImg/fiver/Web Dev/28.webp",
+    "/reviewImg/fiver/Web Dev/29.webp",
+    "/reviewImg/fiver/App Dev/1.webp",
+    "/reviewImg/fiver/App Dev/2.webp",
+    "/reviewImg/fiver/App Dev/3.webp",
+    "/reviewImg/fiver/App Dev/4.webp",
+    "/reviewImg/fiver/App Dev/5.webp",
+    "/reviewImg/fiver/App Dev/6.webp",
+    "/reviewImg/fiver/App Dev/7.webp",
+    "/reviewImg/fiver/App Dev/8.webp",
+    "/reviewImg/fiver/App Dev/9.webp",
+    "/reviewImg/fiver/App Dev/10.webp",
+    "/reviewImg/fiver/App Dev/11.webp",
+    "/reviewImg/fiver/App Dev/12.webp",
+    "/reviewImg/fiver/App Dev/13.webp",
+    "/reviewImg/fiver/App Dev/14.webp",
+    "/reviewImg/fiver/App Dev/15.webp",
+    "/reviewImg/fiver/App Dev/16.webp",
+    "/reviewImg/fiver/App Dev/17.webp",
+    "/reviewImg/fiver/App Dev/18.webp",
+    "/reviewImg/fiver/App Dev/20.webp",
+    "/reviewImg/fiver/App Dev/21.webp",
+    "/reviewImg/fiver/App Dev/22.webp",
+    "/reviewImg/fiver/App Dev/23.webp",
+    "/reviewImg/fiver/App Dev/24.webp",
+    "/reviewImg/fiver/App Dev/25.webp",
+    "/reviewImg/fiver/App Dev/26.webp",
+    "/reviewImg/fiver/App Dev/27.webp",
+    "/reviewImg/fiver/App Dev/28.webp",
+    "/reviewImg/fiver/App Dev/29.webp",
+    "/reviewImg/fiver/AI Agents/1.webp",
+    "/reviewImg/fiver/AI Agents/2.webp",
+    "/reviewImg/fiver/AI Agents/3.webp",
+    "/reviewImg/fiver/AI Agents/4.webp",
+    "/reviewImg/fiver/AI Agents/5.webp",
+    "/reviewImg/fiver/AI Agents/6.webp",
+    "/reviewImg/fiver/AI Agents/7.webp",
+    "/reviewImg/fiver/AI Agents/8.webp",
+    "/reviewImg/fiver/AI Agents/9.webp",
+    "/reviewImg/fiver/AI Agents/10.webp",
+    "/reviewImg/fiver/AI Agents/11.webp",
+    "/reviewImg/fiver/AI Agents/12.webp",
+    "/reviewImg/fiver/AI Agents/13.webp",
+    "/reviewImg/fiver/AI Agents/14.webp",
+    "/reviewImg/fiver/AI Agents/15.webp",
+    "/reviewImg/fiver/AI Agents/16.webp",
+    "/reviewImg/fiver/AI Agents/17.webp",
+    "/reviewImg/fiver/AI Agents/18.webp",
+    "/reviewImg/fiver/AI Agents/19.webp",
+    "/reviewImg/fiver/AI Agents/20.webp"
+  ], []);
 
-  // For mobile: single column with all images
-  const allImagesExtended = [...logos, ...logos, ...logos];
-  
-  // Divide images into 3 columns for desktop
-  const column1 = [];
-  const column2 = [];
-  const column3 = [];
-  
-  logos.forEach((logo, index) => {
-    if (index % 3 === 0) column1.push(logo);
-    else if (index % 3 === 1) column2.push(logo);
-    else column3.push(logo);
-  });
+  // Memoize column calculations
+  const { allImagesExtended, extendedColumn1, extendedColumn2, extendedColumn3 } = useMemo(() => {
+    // For mobile: single column with all images
+    const allImagesExtended = [...logos, ...logos, ...logos];
 
-  // Triple each column for seamless loop
-  const extendedColumn1 = [...column1, ...column1, ...column1];
-  const extendedColumn2 = [...column2, ...column2, ...column2];
-  const extendedColumn3 = [...column3, ...column3, ...column3];
+    // Divide images into 3 columns for desktop
+    const column1 = [];
+    const column2 = [];
+    const column3 = [];
+
+    logos.forEach((logo, index) => {
+      if (index % 3 === 0) column1.push(logo);
+      else if (index % 3 === 1) column2.push(logo);
+      else column3.push(logo);
+    });
+
+    // Triple each column for seamless loop
+    const extendedColumn1 = [...column1, ...column1, ...column1];
+    const extendedColumn2 = [...column2, ...column2, ...column2];
+    const extendedColumn3 = [...column3, ...column3, ...column3];
+
+    return { allImagesExtended, extendedColumn1, extendedColumn2, extendedColumn3 };
+  }, [logos]);
 
   return (
     <div className="bg-white min-h-fit py-12 overflow-hidden">
@@ -143,7 +149,7 @@ const ClientReviews = () => {
                 key={`mobile-${index}`}
                 className="mb-6"
               >
-                <div 
+                <div
                   className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
                   onClick={() => setSelectedImage(logo)}
                 >
@@ -151,6 +157,8 @@ const ClientReviews = () => {
                     src={logo}
                     alt={`Review ${index + 1}`}
                     className="w-full h-full object-contain p-1"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               </div>
@@ -168,7 +176,7 @@ const ClientReviews = () => {
                   key={`col1-${index}`}
                   className="mb-6"
                 >
-                  <div 
+                  <div
                     className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
                     onClick={() => setSelectedImage(logo)}
                   >
@@ -176,6 +184,8 @@ const ClientReviews = () => {
                       src={logo}
                       alt={`Review ${index + 1}`}
                       className="w-full h-full object-contain p-1"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 </div>
@@ -191,7 +201,7 @@ const ClientReviews = () => {
                   key={`col2-${index}`}
                   className="mb-6"
                 >
-                  <div 
+                  <div
                     className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
                     onClick={() => setSelectedImage(logo)}
                   >
@@ -199,6 +209,8 @@ const ClientReviews = () => {
                       src={logo}
                       alt={`Review ${index + 1}`}
                       className="w-full h-full object-cover p-2"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 </div>
@@ -214,7 +226,7 @@ const ClientReviews = () => {
                   key={`col3-${index}`}
                   className="mb-6"
                 >
-                  <div 
+                  <div
                     className="border border-gray-300 rounded-lg bg-white overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
                     onClick={() => setSelectedImage(logo)}
                   >
@@ -222,6 +234,8 @@ const ClientReviews = () => {
                       src={logo}
                       alt={`Review ${index + 1}`}
                       className="w-full h-full object-cover p-2"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 </div>
@@ -229,14 +243,14 @@ const ClientReviews = () => {
             </div>
           </div>
         </div>
-   
+
       </div>
 
-  
+
 
       {/* Image Popup Modal */}
       {selectedImage && (
-        <div 
+        <div
           className="fixed inset-0 backdrop-blur-xl bg-opacity-75 border border-gray-400 flex items-center justify-center z-50 p-4"
           onClick={() => setSelectedImage(null)}
         >
@@ -258,15 +272,17 @@ const ClientReviews = () => {
       )}
 
 
-          <div className='flex items-center justify-center lg:mt-0 mt-6'>
-        <Link 
-        onClick={() => window.scrollTo(0, 0)}
-        className='btn' to='/reviews'>
+      <div className='flex items-center justify-center lg:mt-0 mt-6'>
+        <Link
+          onClick={() => window.scrollTo(0, 0)}
+          className='btn' to='/reviews'>
           Explore More
         </Link>
       </div>
     </div>
   );
-};
+});
+
+ClientReviews.displayName = 'ClientReviews';
 
 export default ClientReviews;

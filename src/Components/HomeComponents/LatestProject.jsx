@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function LatestProject() {
@@ -62,12 +62,16 @@ export default function LatestProject() {
     }
   ];
 
-  const filteredProjects =
-    activeFilter === "All"
+  // Memoize filtered projects
+  const filteredProjects = useMemo(
+    () => activeFilter === "All"
       ? projects
-      : projects.filter((p) => p.categories.includes(activeFilter));
+      : projects.filter((p) => p.categories.includes(activeFilter)),
+    [activeFilter]
+  );
 
-  const ProjectCard = ({ project }) => (
+  // Memoize ProjectCard component
+  const ProjectCard = useMemo(() => React.memo(({ project }) => (
     <motion.a
       href={project.link}
       layout
@@ -76,14 +80,13 @@ export default function LatestProject() {
       exit={{ opacity: 0, scale: 0.9 }}
       transition={{ duration: 0.3 }}
       className={`break-inside-avoid w-full group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer block
-        ${
-          project.area === "stock" 
-            ? "h-[250px] sm:h-[400px] md:h-[350px] lg:h-[360px]" // Stock remains same
-            : project.area === "house"
+        ${project.area === "stock"
+          ? "h-[250px] sm:h-[400px] md:h-[350px] lg:h-[360px]" // Stock remains same
+          : project.area === "house"
             ? "h-[250px] sm:h-[400px] md:h-[350px] lg:h-[420px] lg:mt-[-60px]" // Sheba.xyz - taller and shifted up
             : project.area === "print"
-            ? "h-[250px] sm:h-[400px] md:h-[350px] lg:h-[300px] " // DLX Print - shorter
-            : "h-[250px] sm:h-[400px] md:h-[350px] lg:h-[360px]"
+              ? "h-[250px] sm:h-[400px] md:h-[350px] lg:h-[300px] " // DLX Print - shorter
+              : "h-[250px] sm:h-[400px] md:h-[350px] lg:h-[360px]"
         }`}
     >
       <motion.img
@@ -94,6 +97,8 @@ export default function LatestProject() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         key={project.image}
+        loading="lazy"
+        decoding="async"
       />
       <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       <motion.div
@@ -105,7 +110,7 @@ export default function LatestProject() {
         <p className="text-sm text-white/90 mt-1">{project.description}</p>
       </motion.div>
     </motion.a>
-  );
+  )), []);
 
   return (
     <div className="bg-secondary w-full md:py-32 py-12">
@@ -175,9 +180,9 @@ export default function LatestProject() {
             }}
           >
             {filteredProjects.map((project) => (
-              <div 
-                key={project.id} 
-                style={{ 
+              <div
+                key={project.id}
+                style={{
                   gridArea: project.area,
                   alignSelf: project.area === "house" ? "start" : "stretch"
                 }}
