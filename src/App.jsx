@@ -23,17 +23,10 @@ const ReviewPage = lazy(() => import('./pages/ReviewPage'))
 const ContactUs = lazy(() => import('./pages/ContactUs'))
 const NotFound = lazy(() => import('./pages/404Page'))
 
-// Loading fallback component
-const PageLoader = () => (
-  <div className="flex items-center justify-center min-h-screen">
-    <div className="animate-pulse text-gray-600 text-lg">Loading...</div>
-  </div>
-)
-
 function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<PageLoader />}>
+      <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={
             <>

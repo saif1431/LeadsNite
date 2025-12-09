@@ -14,13 +14,6 @@ const ClientCount = lazy(() => import('../Components/HomeComponents/ClientCount'
 const LatestProject = lazy(() => import('../Components/HomeComponents/LatestProject'))
 const LetsTalk = lazy(() => import('../Components/HomeComponents/LetsTalk'))
 
-// Loading fallback component
-const LoadingFallback = () => (
-  <div className="flex items-center justify-center py-20">
-    <div className="animate-pulse text-gray-400">Loading...</div>
-  </div>
-)
-
 function HomePage() {
   return (
     <div>
@@ -29,19 +22,19 @@ function HomePage() {
       <BrandLogos />
 
       {/* Services and CTA - first below fold group */}
-      <Suspense fallback={<LoadingFallback />}>
+      <Suspense fallback={null}>
         <ServicesCard />
         <JoinUs />
       </Suspense>
 
       {/* Process and Reviews - second group */}
-      <Suspense fallback={<LoadingFallback />}>
+      <Suspense fallback={null}>
         <OurProcess />
         <ClientReviews />
       </Suspense>
 
       {/* Pricing and Tech stack - third group */}
-      <Suspense fallback={<LoadingFallback />}>
+      <Suspense fallback={null}>
         <PricingSection />
         <div className='px-4 mt-4 lg:px-0 py-20'>
           <Technologies />
@@ -50,7 +43,7 @@ function HomePage() {
       </Suspense>
 
       {/* Projects and footer CTA - final group */}
-      <Suspense fallback={<LoadingFallback />}>
+      <Suspense fallback={null}>
         <LatestProject />
         <LetsTalk />
       </Suspense>
