@@ -93,6 +93,8 @@ export default function LatestProject() {
         src={project.image}
         alt={project.title}
         className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+        width="600"
+        height="400"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}

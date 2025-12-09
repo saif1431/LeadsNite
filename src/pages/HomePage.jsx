@@ -28,39 +28,30 @@ function HomePage() {
       <HeroSection />
       <BrandLogos />
 
-      {/* Below the fold - lazy loaded */}
+      {/* Services and CTA - first below fold group */}
       <Suspense fallback={<LoadingFallback />}>
         <ServicesCard />
-      </Suspense>
-
-      <Suspense fallback={<LoadingFallback />}>
         <JoinUs />
       </Suspense>
 
+      {/* Process and Reviews - second group */}
       <Suspense fallback={<LoadingFallback />}>
         <OurProcess />
-      </Suspense>
-
-      <Suspense fallback={<LoadingFallback />}>
         <ClientReviews />
       </Suspense>
 
+      {/* Pricing and Tech stack - third group */}
       <Suspense fallback={<LoadingFallback />}>
         <PricingSection />
-      </Suspense>
-
-      <Suspense fallback={<LoadingFallback />}>
         <div className='px-4 mt-4 lg:px-0 py-20'>
           <Technologies />
           <ClientCount />
         </div>
       </Suspense>
 
+      {/* Projects and footer CTA - final group */}
       <Suspense fallback={<LoadingFallback />}>
         <LatestProject />
-      </Suspense>
-
-      <Suspense fallback={<LoadingFallback />}>
         <LetsTalk />
       </Suspense>
     </div>

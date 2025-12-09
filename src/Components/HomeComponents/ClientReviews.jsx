@@ -85,17 +85,21 @@ const ClientReviews = React.memo(() => {
     "/reviewImg/fiver/AI Agents/20.webp"
   ], []);
 
-  // Memoize column calculations
+  // Show only first 10 images initially (will be tripled to 30 for animation)
+  // This dramatically reduces initial DOM size from 255 to 30 elements
+  const visibleLogos = useMemo(() => logos.slice(0, 10), [logos]);
+
+  // Memoize column calculations with reduced images
   const { allImagesExtended, extendedColumn1, extendedColumn2, extendedColumn3 } = useMemo(() => {
-    // For mobile: single column with all images
-    const allImagesExtended = [...logos, ...logos, ...logos];
+    // For mobile: single column with visible images only
+    const allImagesExtended = [...visibleLogos, ...visibleLogos, ...visibleLogos];
 
     // Divide images into 3 columns for desktop
     const column1 = [];
     const column2 = [];
     const column3 = [];
 
-    logos.forEach((logo, index) => {
+    visibleLogos.forEach((logo, index) => {
       if (index % 3 === 0) column1.push(logo);
       else if (index % 3 === 1) column2.push(logo);
       else column3.push(logo);
@@ -107,7 +111,7 @@ const ClientReviews = React.memo(() => {
     const extendedColumn3 = [...column3, ...column3, ...column3];
 
     return { allImagesExtended, extendedColumn1, extendedColumn2, extendedColumn3 };
-  }, [logos]);
+  }, [visibleLogos]);
 
   return (
     <div className="bg-white min-h-fit py-12 overflow-hidden">
@@ -128,10 +132,12 @@ const ClientReviews = React.memo(() => {
 
         .scroll-up {
           animation: scroll-up 300s linear infinite;
+          will-change: transform;
         }
 
         .scroll-down {
           animation: scroll-down 330s linear infinite;
+          will-change: transform;
         }
 
         .scroll-up:hover,
@@ -157,6 +163,8 @@ const ClientReviews = React.memo(() => {
                     src={logo}
                     alt={`Review ${index + 1}`}
                     className="w-full h-full object-contain p-1"
+                    width="400"
+                    height="300"
                     loading="lazy"
                     decoding="async"
                   />
@@ -184,6 +192,8 @@ const ClientReviews = React.memo(() => {
                       src={logo}
                       alt={`Review ${index + 1}`}
                       className="w-full h-full object-contain p-1"
+                      width="400"
+                      height="300"
                       loading="lazy"
                       decoding="async"
                     />
@@ -209,6 +219,8 @@ const ClientReviews = React.memo(() => {
                       src={logo}
                       alt={`Review ${index + 1}`}
                       className="w-full h-full object-cover p-2"
+                      width="400"
+                      height="300"
                       loading="lazy"
                       decoding="async"
                     />
@@ -234,6 +246,8 @@ const ClientReviews = React.memo(() => {
                       src={logo}
                       alt={`Review ${index + 1}`}
                       className="w-full h-full object-cover p-2"
+                      width="400"
+                      height="300"
                       loading="lazy"
                       decoding="async"
                     />
@@ -256,6 +270,7 @@ const ClientReviews = React.memo(() => {
         >
           <div className="relative max-w-5xl max-h-[90vh] w-full h-full flex items-center justify-center">
             <button
+              type='button'
               onClick={() => setSelectedImage(null)}
               className="absolute top-4 right-4 text-white hover:text-gray-300 text-4xl font-bold z-10 bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center transition-colors"
             >

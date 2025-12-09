@@ -85,7 +85,7 @@ const BrandLogos = () => {
       <div className="ml-scroll-tracks" aria-hidden>
         {duplicated.map((logo, idx) => (
           <div className="ml-logo-item" key={idx}>
-            <img src={logo} alt={`ml logo ${idx % logos.length + 1}`} />
+            <img src={logo} alt={`ml logo ${idx % logos.length + 1}`} width="140" height="42" loading="lazy" decoding="async" />
           </div>
         ))}
       </div>

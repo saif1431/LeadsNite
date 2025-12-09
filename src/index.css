@@ -1,22 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Space+Grotesk:wght@300..700&display=swap');
-
-
 @font-face {
   font-family: 'clashDisplay';
   src: url(/ClashDisplay-Bold.otf);
   font-weight: 900;
-
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Satoshi';
   src: url(/Satoshi-Bold.otf);
   font-weight: 900;
-
+  font-display: swap;
 }
 
 
-.font-satochi{
+.font-satochi {
   font-family: 'Satoshi', sans-serif;
 
 }
@@ -30,33 +27,38 @@
 
 @import "tailwindcss";
 
-body{
+body {
   overflow-x: hidden;
 }
 
 .bg-primary {
-  background-color: #03ABE4; 
+  background-color: #03ABE4;
 }
-.span{
+
+.span {
   color: #03ABE4;
   font-family: 'Satoshi', sans-serif;
 }
-*{
-      font-family: "Manrope", sans-serif;
+
+* {
+  font-family: "Manrope", sans-serif;
 }
+
 .bg-secondary {
   background-color: #E9F1FA;
   /* background-color: #222; */
 }
+
 .font-manrope {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
 }
-.bg-image{
-background-image: url('/AboutImage//serviceBg.webp');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+
+.bg-image {
+  background-image: url('/AboutImage//serviceBg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .text-primary {
@@ -69,55 +71,59 @@ background-repeat: no-repeat;
 
 
 .font-primary {
-  font-family: 'Arial', sans-serif; 
+  font-family: 'Arial', sans-serif;
 }
 
-.counting{
-      display: inline-block;
-    margin-bottom: 15px;
-    font-weight: 900;
-    line-height: 1;
-    margin-top: 40px;
-    color: transparent;
-    -webkit-text-stroke: 1px #dbdbdb;
-    background: var(--white);
-    padding: 0 15px;
-    position: relative;
+.counting {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: 900;
+  line-height: 1;
+  margin-top: 40px;
+  color: transparent;
+  -webkit-text-stroke: 1px #dbdbdb;
+  background: var(--white);
+  padding: 0 15px;
+  position: relative;
 }
-.line{
-      position: absolute;
-    left: 5%;
-    right: 5%;
-    bottom: 185px;
-    border-bottom: 1px solid red;
-    content: "";
-    z-index: -1;
+
+.line {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 185px;
+  border-bottom: 1px solid red;
+  content: "";
+  z-index: -1;
 }
 
 .btn-primary {
   background-color: #03ABE4;
   color: #ffffff;
 }
+
 .check-list {
 
-    background:linear-gradient(90deg, #03ABE4 20%, #222222 100%);
-    transition: all ease-in 1s;
+  background: linear-gradient(90deg, #03ABE4 20%, #222222 100%);
+  transition: all ease-in 1s;
 }
-.check-list:hover{
-  background:linear-gradient(90deg, #03ABE4 20%, #222222 100%);
+
+.check-list:hover {
+  background: linear-gradient(90deg, #03ABE4 20%, #222222 100%);
 }
 
 .btn2 {
-  @apply bg-[#222222] py-3  px-8 uppercase rounded-full text-white font-medium transition;
+  @apply bg-[#222222] py-3 px-8 uppercase rounded-full text-white font-medium transition;
 }
 
 
-.title{
-  @apply text-3xl text-[#03ABE4]  md:text-6xl font-bold text-center mb-6 ;
+.title {
+  @apply text-3xl text-[#03ABE4] md:text-6xl font-bold text-center mb-6;
   font-family: 'Satoshi', sans-serif;
 }
-.title2{
-  @apply text-3xl text-zinc-800 md:text-6xl font-bold text-center mb-6 ;
+
+.title2 {
+  @apply text-3xl text-zinc-800 md:text-6xl font-bold text-center mb-6;
   font-family: 'Satoshi', sans-serif;
 }
 
@@ -139,7 +145,7 @@ background-repeat: no-repeat;
   font-family: 'Roboto', 'Segoe UI', sans-serif;
   text-transform: uppercase;
   color: var(--color);
-  transition: color 0.3s cubic-bezier(0.4,0,0.2,1), border 0.3s;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1), border 0.3s;
 }
 
 /* Gradient slide-in effect */
@@ -152,7 +158,7 @@ background-repeat: no-repeat;
   height: 100%;
   background: linear-gradient(90deg, #222222 0%, #222222 100%);
   z-index: -1;
-  transition: left 0.4s cubic-bezier(0.4,0,0.2,1);
+  transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover::before {
@@ -162,23 +168,27 @@ background-repeat: no-repeat;
 .btn:hover {
   color: var(--color2);
   border-color: black;
-  box-shadow: 0 8px 24px 0 rgba(39,103,255,0.15);
+  box-shadow: 0 8px 24px 0 rgba(39, 103, 255, 0.15);
   /* transform: translateY(-2px) scale(1.04) rotate(-1deg); */
 }
 
 .btn:active {
   transform: translateY(0) scale(0.98);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.15s ease;
 }
 
 /* Remove old ::after glow effect if present */
-.btn::after { display: none !important; }
+.btn::after {
+  display: none !important;
+}
 
 
 
 @media (max-width: 768px) {
-  .btn, .btn2 {
+
+  .btn,
+  .btn2 {
     padding: 0.5rem 1rem;
     font-size: 14px;
   }
@@ -203,7 +213,7 @@ background-repeat: no-repeat;
   font-family: 'Roboto', 'Segoe UI', sans-serif;
   text-transform: uppercase;
   color: var(--color);
-  transition: color 0.3s cubic-bezier(0.4,0,0.2,1), border 0.3s;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1), border 0.3s;
 }
 
 /* Gradient slide-in effect */
@@ -216,7 +226,7 @@ background-repeat: no-repeat;
   height: 100%;
   background: white;
   z-index: -1;
-  transition: left 0.4s cubic-bezier(0.4,0,0.2,1);
+  transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn3:hover::before {
@@ -226,18 +236,20 @@ background-repeat: no-repeat;
 .btn3:hover {
   color: var(--color2);
   border-color: white;
-  box-shadow: 0 8px 24px 0 rgba(39,103,255,0.15);
+  box-shadow: 0 8px 24px 0 rgba(39, 103, 255, 0.15);
   /* transform: translateY(-2px) scale(1.04) rotate(-1deg); */
 }
 
 .btn3:active {
   transform: translateY(0) scale(0.98);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.15s ease;
 }
 
 /* Remove old ::after glow effect if present */
-.btn3::after { display: none !important; }
+.btn3::after {
+  display: none !important;
+}
 
 
 /* Custom pagination styles */
@@ -256,36 +268,42 @@ background-repeat: no-repeat;
 }
 
 .swiper-pagination-bullet-active {
-  background: #3B82F6; /* Your primary color */
+  background: #3B82F6;
+  /* Your primary color */
 }
 
-p{
+p {
   line-height: 1.7;
 }
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
-  -ms-overflow-style: none; /* IE/Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE/Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 
-.images{
+.images {
   box-shadow: rgba(0, 0, 0, 0) 0px 44px 40px, rgba(0, 0, 0, 0) 0px -12px 20px, rgba(0, 0, 0, 0.1) 0px 4px 2px, rgba(0, 0, 0, 0.1) 0px 12px 13px, rgba(0, 0, 0, 0.1) 0px -3px 3px;
 
 }
 
 
-.swiper-button-prev{
-  left: -70px !important; 
-}
-.swiper-button-next{
-  right: -70px !important; 
+.swiper-button-prev {
+  left: -70px !important;
 }
 
-.swiper-button-prev:after, .swiper-button-next:after {
+.swiper-button-next {
+  right: -70px !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
   font-size: 2rem !important;
   background: none !important;
   color: #000;
@@ -302,18 +320,20 @@ p{
 
 
 @media screen and (max-width: 1024px) {
-  
 
-.swiper-button-prev:after, .swiper-button-next:after{
-  display: none !important;
-}
 
-.swiper-button-prev{
-  left: 0px !important; 
-}
-.swiper-button-next{
-  right: 0px !important; 
-}
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    display: none !important;
+  }
+
+  .swiper-button-prev {
+    left: 0px !important;
+  }
+
+  .swiper-button-next {
+    right: 0px !important;
+  }
 
 }
 
@@ -321,16 +341,28 @@ p{
 
 /* overlay show-then-fade animation */
 @keyframes overlayShowThenFade {
-  0%   { opacity: 0.60; }   /* start less strong */
-  70%  { opacity: 0.30; }   /* mid fade */
-  100% { opacity: 0; }      /* fully gone */
+  0% {
+    opacity: 0.60;
+  }
+
+  /* start less strong */
+  70% {
+    opacity: 0.30;
+  }
+
+  /* mid fade */
+  100% {
+    opacity: 0;
+  }
+
+  /* fully gone */
 }
 
 /* when group (card) is hovered, trigger the short animation */
 .group:hover .team-overlay {
   /* show with reduced intensity then fade out over 1s */
   opacity: 0.6;
- animation: overlayShowThenFade 500ms ease-out forwards;
+  animation: overlayShowThenFade 500ms ease-out forwards;
 }
 
 /* make sure overlay is reset when hover ends (so it can play again next hover) */

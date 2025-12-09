@@ -155,13 +155,15 @@ const HeroSection = React.memo(() => {
           animate="visible"
           variants={img2Animation}
         >
-          <img src={img2} alt="Decorative image" loading="lazy" />
+          <img src={img2} alt="Decorative image" loading="lazy" width="120" height="160" />
         </motion.div>
 
         <motion.img
           className='absolute  shadow-lg rounded-lg xl:bottom-1 -bottom-25  left-1/2 lg:transform -translate-x-1/2 xl:w-[50%] lg:w-[60%] w-[90%]'
           src={img1}
           alt="image 1"
+          width="800"
+          height="600"
           initial=""
           animate="visible"
           variants={img1Animation}
@@ -173,7 +175,7 @@ const HeroSection = React.memo(() => {
           animate="visible"
           variants={img3Animation}
         >
-          <img className='w-full' src={img3} alt="Decorative image" loading="lazy" />
+          <img className='w-full' src={img3} alt="Decorative image" loading="lazy" width="200" height="300" />
         </motion.div>
       </div>
     </div>
