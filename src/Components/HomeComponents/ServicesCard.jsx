@@ -26,8 +26,7 @@ const servicesData = [
   "/New/New/AI agents/aiagents8.webp",
   "/New/New/AI agents/aiagents9.webp",
   "/New/New/AI agents/aiagents10.webp",
-  "/New/New/AI agents/aiagents11.webp",
-  "/New/New/AI agents/aiagents12.webp",],
+  "/New/New/AI agents/aiagents11.webp",],
 
     route: "/services/ai-agents"
   },

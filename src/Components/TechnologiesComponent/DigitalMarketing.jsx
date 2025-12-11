@@ -16,7 +16,7 @@ const logos = [
 
 const DigitalMarketing = () => {
   const duplicated = [...logos, ...logos];
-  const duration =15; // faster (smaller = faster)
+  const duration =30; // faster (smaller = faster)
   
   const slotMinWidth = 140; // consistent slot width to avoid seam
 

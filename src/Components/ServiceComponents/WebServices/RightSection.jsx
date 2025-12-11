@@ -55,12 +55,12 @@ function RightSection() {
                     <div className="flex flex-wrap gap-3  items-center">
                       <Link 
                       onClick={() => window.scrollTo(0, 0)}
-                      to="/about-us" className="btn2 w-full lg:w-fit">
+                      to="/about-us" className="btn2   lg:w-full xl:w-fit text-center">
                         About Us
                       </Link>
                       <Link
                       onClick={() => window.scrollTo(0, 0)}
-                      to="/contact-us" className="btn w-full lg:w-fit  flex items-center text-center justify-center">
+                      to="/contact-us" className="btn  lg:w-full xl:w-fit  flex items-center text-center justify-center">
                         Let's Talk
                         <BiRightArrowAlt className="ml-2 text-lg" />
                       </Link>

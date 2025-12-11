@@ -8,7 +8,7 @@ function ResponseTimeSection() {
     background: 'linear-gradient(90deg, #03ABE4 20%, #222222 100%)'
   }}
         >
-          <h2 className='text-center hidden lg:block text-white lg:text-4xl text-3xl font-bold mb-12 font-satochi'>Our Response Time</h2>
+          <h2 className='text-center lg:hidden block text-white lg:text-4xl text-3xl font-bold mb-12 font-satochi'>Our Response Time</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
             {/* Email Response */}
             <div className='text-center space-y-4'>
