@@ -14,7 +14,7 @@ export default function ServiceSection1() {
             {/* Services Stat */}
             <div className="flex items-start ">
               <div className="">
-                <img className="lg:w-30 w-24 lg:h-30 h-24" src={img1} alt="Service Provider Image" />
+                <img loading="lazy" width={120} height={120} className="lg:w-30 w-24 lg:h-30 h-24" src={img1} alt="Service Provider Image" />
               </div>
               <div className="mb-4">
                 <div className="text-6xl font-bold">6</div>
@@ -29,7 +29,7 @@ export default function ServiceSection1() {
             {/* Team Members Stat */}
             <div className="flex items-start ">
               <div className="">
-                <img className="lg:w-30 w-24 lg:h-30 h-24" src={img2} alt="Team Member Image" />
+                <img loading="lazy" width={120} height={120} className="lg:w-30 w-24 lg:h-30 h-24" src={img2} alt="Team Member Image" />
               </div>
               <div>
                 <div className="text-6xl font-bold">25</div>

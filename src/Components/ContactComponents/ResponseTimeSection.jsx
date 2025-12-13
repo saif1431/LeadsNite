@@ -3,13 +3,13 @@ import React from 'react'
 function ResponseTimeSection() {
   return (
 <div className='max-w-7xl mx-auto px-4 lg:py-16 py-8'>
-        <div className='md:py-18 py-12  rounded-2xl'
+        <div className='md:py-28 py-12  rounded-2xl'
         style={{
     background: 'linear-gradient(90deg, #03ABE4 20%, #222222 100%)'
   }}
         >
-          <h2 className='text-center lg:hidden block text-white lg:text-4xl text-3xl font-bold mb-12 font-satochi'>Our Response Time</h2>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+          <h2 className='text-center hidden  text-white lg:text-4xl text-3xl font-bold mb-12 font-satochi'>Our Response Time</h2>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-8'>
             {/* Email Response */}
             <div className='text-center space-y-4'>
               <div className='text-4xl font-bold text-white '>

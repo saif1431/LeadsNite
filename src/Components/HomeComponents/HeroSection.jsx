@@ -150,7 +150,7 @@ const HeroSection = React.memo(() => {
 
       <div className='relative'>
         <motion.div
-          className='absolute hidden lg:hidden xl:block lg:bottom-96 bottom-16  z-10 left-1 lg:left-96   bg-white  xl:w-[7%] w-[30%] p-1 border rounded-xl lg:rounded-xl overflow-hidden border-gray-100'
+          className='absolute hidden  lg:bottom-96 bottom-16  z-10 left-1 lg:left-96   bg-white  xl:w-[7%] w-[30%] p-1 border rounded-xl lg:rounded-xl overflow-hidden border-gray-100'
           initial="hidden"
           animate="visible"
           variants={img2Animation}
@@ -164,6 +164,7 @@ const HeroSection = React.memo(() => {
           alt="image 1"
           width="800"
           height="600"
+          loading="eager"
           initial=""
           animate="visible"
           variants={img1Animation}

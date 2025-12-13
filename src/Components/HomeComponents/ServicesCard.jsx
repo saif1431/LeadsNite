@@ -72,7 +72,7 @@ const servicesData = [
     title: "MVP Development",
     imageUrl: "/servicesImg/2.png",
     description: "Our MVP development service helps startups and businesses quickly transform ideas into functional products with essential features.",
-    technologies: ["/New/New/MVP/mvp (1).webp", "/New/New/MVP/mvp (3).webp", "/New/New/MVP/mvp (4).webp", "/New/New/MVP/mvp (5).webp", "/New/New/MVP/mvp (6).webp", "/New/New/MVP/mvp (7).webp", "/New/New/MVP/mvp (8).webp", "/New/New/MVP/mvp (9).webp", "/New/New/MVP/mvp (10).webp", "/New/New/MVP/mvp (11).webp", "/New/New/MVP/mvp (12).webp",],
+    technologies: ["/New/New/MVP/mvp1.webp", "/New/New/MVP/mvp3.webp", "/New/New/MVP/mvp4.webp", "/New/New/MVP/mvp5.webp", "/New/New/MVP/mvp6.webp", "/New/New/MVP/mvp7.webp", "/New/New/MVP/mvp8.webp", "/New/New/MVP/mvp9.webp", "/New/New/MVP/mvp10.webp", "/New/New/MVP/mvp11.webp", "/New/New/MVP/mvp12.webp",],
     route: "/services/mvp-development"
   },
 ];
@@ -107,6 +107,9 @@ const ServiceCard = ({
           <img 
             src={imageUrl} 
             alt={`${title} service`}
+            loading="lazy"
+            width={40}
+            height={40}
             className="w-10 h-10 object-contain"
           />
            <h3 className="lg:text-2xl text-xl font-bold text-start mb-3">{title}</h3>
@@ -127,6 +130,9 @@ const ServiceCard = ({
               key={index}
               src={tech} 
               alt="technology"
+              loading="lazy"
+              width={32}
+              height={32}
               className="w-8 h-8 object-contain"
             />
           ))}

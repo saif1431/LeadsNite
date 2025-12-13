@@ -25,13 +25,16 @@ export default function AboutUsSection1() {
           <div className="relative lg:h-full overflow-hidden">
             {/* Blur placeholder */}
 
-              <div className="lg:w-[85%]  bg-gradient-to-br from-gray-200 to-gray-300 animate-pulse rounded" />            
-            <img
-              src={reviewData.aboutImage.src}
-              alt={reviewData.aboutImage.alt}
-              className={`lg:w-[85%] lg:h-full h-96  object-cover transition-all duration-500
-              }`}
-            />
+                <div className="lg:w-[85%]  bg-gradient-to-br from-gray-200 to-gray-300 animate-pulse rounded" />            
+              <img
+                src={reviewData.aboutImage.src}
+                alt={reviewData.aboutImage.alt}
+                loading="lazy"
+                width={800}
+                height={520}
+                className={`lg:w-[85%] lg:h-full h-96  object-cover transition-all duration-500
+                `}
+              />
 
             {/* Experience overlay card */}
             <div className="lg:absolute mt-6 lg:mt-0 top-12 right-4 bg-[#0E1E2A] opacity-90 backdrop-blur-sm px-12 py-8 text-white">
