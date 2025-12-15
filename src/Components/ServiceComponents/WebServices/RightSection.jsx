@@ -36,7 +36,7 @@ function RightSection() {
         </button>
       </div>
        <div>
-        <h3 className='text-3xl font-bold'>OR</h3>
+        {/* <h3 className='text-3xl font-bold'>OR</h3> */}
       </div>
       <div className="bg-[#EAF1FA] w-full px-8 flex flex-col py-16 rounded-lg space-y-4">
                 <div className="relative">

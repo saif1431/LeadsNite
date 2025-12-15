@@ -139,7 +139,9 @@ const HeroSection = React.memo(() => {
               We're here for you!
             </motion.p>
             <div className='relative flex items-center justify-center'>
-              <Link to='/contact-us' className='btn3 flex items-center justify-center'>
+              <Link
+              onClick={() => window.scrollTo(0, 0)}
+              to='/contact-us' className='btn3 flex items-center justify-center'>
                 Let's Talk
                 <BiRightArrowAlt className='ml-2 text-xl' />
               </Link>

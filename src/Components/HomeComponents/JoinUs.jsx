@@ -41,7 +41,9 @@ function JoinUs() {
         </div>
 
         <div className='flex items-center justify-center mt-12'>
-          <Link to='contact-us'  className='btn rounded-full flex items-center gap-3'>Let's Talk 
+          <Link 
+           onClick={() => window.scrollTo(0, 0)}
+          to='contact-us'  className='btn rounded-full flex items-center gap-3'>Let's Talk 
             <span><BiRightArrowAlt className="text-xl" /></span>
           </Link>
         </div>
