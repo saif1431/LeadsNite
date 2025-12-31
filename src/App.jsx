@@ -21,6 +21,8 @@ const ShowProject = lazy(() => import('./pages/ShowProject'))
 const MlProjectDetail = lazy(() => import('./Components/MlComponent/MlProjectDetail'))
 const ReviewPage = lazy(() => import('./pages/ReviewPage'))
 const ContactUs = lazy(() => import('./pages/ContactUs'))
+const TermsAndConditions = lazy(() => import('./pages/TermsAndConditions'))
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
 const NotFound = lazy(() => import('./pages/404Page'))
 
 function App() {
@@ -125,6 +127,40 @@ function App() {
               </Helmet>
               <Navbar />
               <ShowProject />
+              <Footer />
+            </>
+          } />
+
+          {/* Terms & Conditions Page */}
+          <Route path="/terms-and-conditions" element={
+            <>
+              <Helmet>
+                <title>Terms & Conditions - LeadsNite</title>
+                <meta
+                  name="description"
+                  content="Read LeadsNite's Terms & Conditions governing the use of our digital solutions, web development, and app development services."
+                />
+                <meta name="keywords" content="terms and conditions, terms of service, legal, user agreement" />
+              </Helmet>
+              <Navbar />
+              <TermsAndConditions />
+              <Footer />
+            </>
+          } />
+
+          {/* Privacy Policy Page */}
+          <Route path="/privacy-policy" element={
+            <>
+              <Helmet>
+                <title>Privacy Policy - LeadsNite</title>
+                <meta
+                  name="description"
+                  content="Learn how LeadsNite collects, uses, and protects your personal information. Read our comprehensive Privacy Policy."
+                />
+                <meta name="keywords" content="privacy policy, data protection, personal information, GDPR" />
+              </Helmet>
+              <Navbar />
+              <PrivacyPolicy />
               <Footer />
             </>
           } />

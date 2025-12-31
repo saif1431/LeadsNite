@@ -43,7 +43,7 @@ function Footer() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Form submit attempt"); // Debug
-    
+
     if (!validateForm()) {
       console.log("Validation failed");
       return;
@@ -53,10 +53,10 @@ function Footer() {
 
     try {
       console.log("Sending form data:", formData); // Debug
-      
+
       const response = await fetch("https://formspree.io/f/xzzjznrv", {
         method: "POST",
-        headers: { 
+        headers: {
           "Content-Type": "application/json",
           "Accept": "application/json"
         },
@@ -102,10 +102,10 @@ function Footer() {
           <div className=" lg:w-1/2  w-full mb-8 md:mb-0">
             <div className="">
               <a href="/" className="text-2xl font-bold text-blue-600">
-                <img 
-                  className='w-24' 
-                  src='/logo.png' 
-                  alt="Logo" 
+                <img
+                  className='w-24'
+                  src='/logo.png'
+                  alt="Logo"
                 />
               </a>
             </div>
@@ -123,9 +123,11 @@ function Footer() {
                 <li><a href="/about-us" className="hover:underline">About Us</a></li>
                 <li><a href="/contact-us" className="hover:underline">Contact Us</a></li>
                 <li><a href="/reviews" className="hover:underline">Reviews</a></li>
+                <li><a href="/terms-and-conditions" className="hover:underline">Terms & Conditions</a></li>
+                <li><a href="/privacy-policy" className="hover:underline">Privacy Policy</a></li>
               </ul>
             </div>
-            
+
             <div>
               <h3 className="text-2xl font-bold mb-6">Services</h3>
               <ul className="space-y-2">
@@ -143,7 +145,7 @@ function Footer() {
               <ul className="space-y-2">
                 <li>
                   <a href="mailto:contact@leadsnite.com" className="hover:underline">
-                   contact@leadsnite.com
+                    contact@leadsnite.com
                   </a>
                 </li>
                 <li>
@@ -152,9 +154,9 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                     <a target='_blank' href="https://www.linkedin.com/company/leadsnite/" className="text-white hover:text-gray-900 transition-colors">
-            <FaLinkedin className="text-2xl" />
-          </a>
+                  <a target='_blank' href="https://www.linkedin.com/company/leadsnite/" className="text-white hover:text-gray-900 transition-colors">
+                    <FaLinkedin className="text-2xl" />
+                  </a>
                 </li>
               </ul>
             </div>
@@ -162,8 +164,8 @@ function Footer() {
             <div>
               <h3 className="text-2xl font-bold mb-6">Contact Us</h3>
               <p className="mb-4">Join Us to remain update</p>
-              
-            
+
+
               <div className=" flex">
                 <div className='bg-white lg:w-[95%] w-[70%] rounded-l-md'>
                   <input
@@ -177,9 +179,9 @@ function Footer() {
                   />
                   {errors.email && <p className="text-red-300 text-sm mt-1">{errors.email}</p>}
                 </div>
-                
+
                 <button
-                type='submit'
+                  type='submit'
                   onClick={handleSubmit}
                   disabled={isSubmitting}
                   className=" bg-blue-700 px-2 py-3 rounded-r-md hover:bg-blue-800 disabled:bg-blue-900 transition-colors flex items-center justify-center gap-2"
@@ -192,13 +194,13 @@ function Footer() {
           </div>
         </div>
       </footer>
-      
+
       <div className="bg-black py-4 px-4 md:px-8">
         <div className="max-w-7xl text-white space-x-4 mx-auto flex justify-center">
-       <p className='lg:text-lg text-sm'>All rights reserved &copy; {new Date().getFullYear()} LeadsNite</p>
+          <p className='lg:text-lg text-sm'>All rights reserved &copy; {new Date().getFullYear()} LeadsNite</p>
         </div>
       </div>
-      
+
       {/* Success Popup */}
       {popup && (
         <div className="fixed inset-0 backdrop-blur-md  bg-opacity-50 flex items-center justify-center z-[9999] p-4">
