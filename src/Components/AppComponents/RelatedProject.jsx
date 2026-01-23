@@ -68,7 +68,7 @@ function RelatedProject({ data }) {
                 className="rounded-md w-full object-cover"
                 src={relatedProject.image || "/placeholder.svg"}
                 alt={relatedProject.title}
-                style={{ height: "350px", objectFit: "cover" }}
+                style={{ height: "350px", objectFit: "fill", objectPosition: "center" }}
               />
               <div className="px-6  space-y-4 w-full">
                 <h3 className="text-2xl font-semibold">{relatedProject.title}</h3>

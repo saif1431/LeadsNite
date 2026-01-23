@@ -1,0 +1,26 @@
+Culina  
+Culina is a thoughtfully crafted mobile experience designed for today’s food enthusiasts. 
+Blending elegant design with functional depth, the platform transforms recipe discovery into an immersive and intuitive journey. 
+From curated dishes to detailed nutrition insights, every interaction is structured with clarity, balance, and visual refinement 
+creating a seamless culinary ecosystem built for inspiration and everyday cooking.
+
+Overview
+Culina enables users to explore diverse recipes, follow professional chefs, save favorites, share reviews, and access detailed ingredient 
+and nutrition breakdowns — all within a clean, structured interface. The app emphasizes intuitive navigation, refined layouts, and engaging 
+visual presentation to elevate the digital cooking experience while maintaining simplicity and usability.
+
+Keywords
+Culinary • Recipes • FoodTech • Cooking • MobileApp • UIUX • Nutrition • Discovery • Community • Lifestyle
+
+Carefully Executed Features
+Refined Recipe Discovery System
+Smart search, curated categories, and structured browsing enhance exploration and reduce friction.
+
+Comprehensive Cooking Details
+Clear ingredient lists, preparation procedures, ratings, and chef insights create a guided and confident cooking flow.
+
+Personalized Culinary Profiles
+Users can follow chefs, manage saved collections, post reviews, and build a tailored recipe library.
+
+Integrated Nutrition Transparency
+Well-organized nutritional data provides clarity and health awareness without overwhelming the interface.

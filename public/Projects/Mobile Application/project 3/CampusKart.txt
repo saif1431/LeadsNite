@@ -1,0 +1,35 @@
+Project Name: CampusKart
+
+App Description (478 characters)
+CampusKart is a unified campus commerce platform designed to streamline everyday student needs. 
+The app connects store, canteen, and cafeteria services into one intuitive mobile experience. 
+Students can browse items, place orders, track purchases, and manage profiles seamlessly. 
+With real-time order updates, categorized listings, and a simplified checkout flow, CampusKart enhances on-campus convenience through a fast, 
+structured, and reliable digital system.
+
+Overview
+CampusKart is a multi-service campus marketplace that digitizes institutional retail and food ordering. 
+The platform integrates store inventory, cafeteria menus, order management, and student accounts within a single ecosystem. 
+With categorized navigation, order history tracking, manager dashboards, and streamlined purchase confirmations, 
+it delivers operational efficiency for administrators and a frictionless experience for students.
+
+Project Keywords
+Campus
+Marketplace
+Ordering
+Institutional
+Commerce
+Management
+
+Carefully Executed Features
+1. Multi-Service Integration
+Unified access to Store, Canteen, and Cafeteria within one structured application flow.
+
+2. Smart Order Management
+Real-time order tracking with status updates such as Processing and Picked Up for complete transparency.
+
+3. Categorized Product & Menu Listings
+Well-organized sections for uniforms, stationery, meals, snacks, and daily essentials.
+
+4. Administrative Control Panel
+Dedicated manager interface enabling service oversight and operational control.

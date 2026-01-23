@@ -1,0 +1,34 @@
+Project Name: Cart n Mart
+
+App Description (476 characters)
+Cart n Mart is a smart grocery delivery mobile application designed to simplify everyday shopping. 
+Users can browse categorized products, explore detailed listings with nutrition insights, add items to favorites, 
+and manage their cart seamlessly. With secure checkout, multiple payment options, delivery scheduling, and real-time 
+order summaries, the app delivers a smooth, reliable, and convenient shopping experience from selection to doorstep.
+
+Overview
+Cart n Mart is a full-featured grocery e-commerce platform built for speed, clarity, and usability. 
+The app enables users to search products, browse structured categories, view detailed product information, 
+manage favorites, and complete purchases through a streamlined cart and checkout flow. Integrated payment methods, 
+delivery time selection, and order tracking ensure a frictionless end-to-end digital shopping journey.
+
+Project Keywords
+Ecommerce
+Grocery
+Delivery
+Marketplace
+Mobile
+Retail
+
+Carefully Executed Features
+1. Structured Product Categorization
+Intuitive category hierarchy with search functionality to help users quickly discover produce, dairy, pantry items, and more.
+
+2. Detailed Product Insights
+Comprehensive product pages including pricing, discounts, descriptions, and nutrition information for informed purchasing decisions.
+
+3. Seamless Cart & Checkout Flow
+Dynamic cart management with quantity controls, saved carts, delivery scheduling, and transparent billing breakdown.
+
+4. Secure & Flexible Payments
+Multiple payment methods including cash, card, and digital wallet options to ensure convenience and transaction reliability.

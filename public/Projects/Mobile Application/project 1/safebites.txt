@@ -1,0 +1,34 @@
+Project Name: SafeBite
+App Description (474 characters)
+
+SafeBite is a smart gluten-free companion app designed to help users make confident food choices every day.
+From browsing curated safe recipes to verifying packaged products in real time, the app simplifies healthy living. 
+Users can explore trusted restaurants, bakeries, and markets across Jordan, discover verified brands, and unlock exclusive in-app rewards 
+all within a clean, intuitive, and performance-focused mobile experience.
+
+Overview
+SafeBite is a comprehensive gluten-free lifestyle platform built to eliminate uncertainty around food safety. 
+The app combines recipe discovery, real-time product verification powered by Open Food Facts, location-based restaurant exploration, 
+and curated safe brands. With secure authentication and an engaging rewards system, it delivers reliability, convenience, and trust in one 
+seamless digital solution.
+
+Project Keywords
+GlutenFree
+Verification
+Safety
+Discovery
+Lifestyle
+Rewards
+
+Carefully Executed Features
+1. Real-Time Product Safety Checks
+Integrated with Open Food Facts to instantly validate ingredients and determine whether products are safe or not.
+
+2. Verified Safe Locations
+Explore trusted restaurants, bakeries, and markets with map-based navigation for easy and secure dining choices.
+
+3. Curated Gluten-Free Cookbook
+A categorized recipe library featuring safe, easy-to-follow meal options tailored to gluten-sensitive users.
+
+4. In-App Rewards & Promotions
+Built-in coupon system offering exclusive discounts to enhance user engagement and long-term retention.

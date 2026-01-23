@@ -1,0 +1,27 @@
+FlowRider – Smart Delivery Companion
+
+FlowRider is a modern rider-focused delivery management application built to streamline last-mile logistics. 
+Designed with clarity and operational efficiency in mind, the platform enables real-time order tracking, route navigation, 
+delivery status management, and rider profile control. With structured workflows and map-based tracking, 
+it enhances coordination between stores, riders, and customers for faster and more reliable deliveries.
+
+Overview
+FlowRider empowers delivery personnel with an intuitive dashboard to manage assigned orders, monitor delivery progress, 
+navigate optimized routes, update vehicle details, and maintain profile information. The app integrates real-time mapping, 
+structured order timelines, and clear status transitions to ensure smooth logistics execution and improved operational transparency.
+
+Keywords
+Logistics • Delivery • RiderApp • Tracking • LastMile • Fleet • Navigation • Orders • ECommerce • Operations
+
+Carefully Executed Features
+🚚 Real-Time Route Tracking
+Integrated map system displaying live pickup and delivery routes with distance markers and status updates.
+
+📦 Structured Order Management
+Clear delivery timeline (Placed → Shipped → Out for Delivery → Delivered) with actionable controls.
+
+👤 Rider Profile & Vehicle Control
+Editable personal details, vehicle type selection, and secure account management.
+
+📍 Pickup & Drop Coordination
+Detailed pickup and customer address information with call shortcuts and navigation integration.
