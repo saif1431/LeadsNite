@@ -1,10 +1,23 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import { useNavigate } from "react-router-dom"
 
 function RelatedProject({ data }) {
   const scrollerRef = useRef(null)
+  const navigate = useNavigate();
 
+
+
+  // Function to convert title to URL-friendly slug
+  const createSlug = (title) => {
+    return title
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w\s-]/g, '') // Remove special characters
+      .replace(/\s+/g, '-')      // Replace spaces with hyphens
+      .replace(/-+/g, '-');      // Replace multiple hyphens with single hyphen
+  };
   useEffect(() => {
     const scroller = scrollerRef.current
     if (!scroller) return
@@ -15,12 +28,12 @@ function RelatedProject({ data }) {
 
     const animate = () => {
       scrollPosition += scrollSpeed
-      
+
       // Reset position when first set of items scrolls out
       if (scrollPosition >= scroller.scrollWidth / 2) {
         scrollPosition = 0
       }
-      
+
       scroller.scrollLeft = scrollPosition
       animationId = requestAnimationFrame(animate)
     }
@@ -53,7 +66,6 @@ function RelatedProject({ data }) {
       </h2>
 
       <div
-      
         ref={scrollerRef}
         className="flex gap-6 h-[600px] overflow-x-hidden"
         style={{ scrollBehavior: "auto" }}
@@ -61,7 +73,12 @@ function RelatedProject({ data }) {
         {duplicatedProjects.map((relatedProject, index) => (
           <div
             key={`${relatedProject.id}-${index}`}
-            className="flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)]"
+            className="flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] cursor-pointer"
+            onClick={() => {
+              window.scrollTo(0, 0);
+              const slug = createSlug(relatedProject.title);
+              navigate(`/app-projects/${slug}`);
+            }}
           >
             <div className="flex flex-col rounded-xl items-start shadow-lg py-6 gap-4 h-[550px] mt-4">
               <img
@@ -72,17 +89,9 @@ function RelatedProject({ data }) {
               />
               <div className="px-6  space-y-4 w-full">
                 <h3 className="text-2xl font-semibold">{relatedProject.title}</h3>
-             <div className="btn w-fit">
-                 <a
-                  href={relatedProject.link}
-                  className="  font-semibold"
-                  onClick={() => {
-                    window.scrollTo(0, 0)
-                  }}
-                >
-                  Read more
-                </a>
-             </div>
+                <div className="btn w-fit">
+                  <span className="font-semibold">Read more</span>
+                </div>
               </div>
             </div>
           </div>

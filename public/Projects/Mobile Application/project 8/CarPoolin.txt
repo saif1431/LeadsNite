@@ -1,0 +1,32 @@
+CarPoolin
+
+App Description (470–480 characters)
+CarPoolin is a modern ride-sharing platform designed to make everyday travel affordable, 
+convenient, and community-driven. Users can quickly search routes, select travel dates, choose 
+passenger counts, and connect with verified drivers in seconds. With a clean interface and seamless 
+booking flow, the app simplifies intercity commuting while helping users save money and reduce travel costs efficiently.
+
+Overview
+CarPoolin connects drivers and passengers through a streamlined carpooling experience. Built with a minimal, 
+user-friendly interface, it allows travelers to search routes, compare ride timings and prices, and book seats instantly. 
+The platform encourages cost-effective travel while optimizing unused car seats, making commuting smarter and more accessible.
+
+Keywords
+Carpooling
+Mobility
+Booking
+Commuting
+Ridesharing
+
+Carefully Executed Features
+1. Smart Route Search
+Quickly select departure and destination with intuitive city-based navigation.
+
+2. Flexible Date Selection
+Choose today, tomorrow, or custom dates for planned trips.
+
+3. Passenger Control
+Easily adjust passenger count with clear, interactive selection UI.
+
+4. Transparent Pricing & Drivers
+View ride timings, prices, and driver profiles before booking.

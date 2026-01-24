@@ -13,6 +13,8 @@ function AppCard() {
     { id: 7, title: "LifeLine Connect App", description: "LifeLine Connect is a real-time emergency response platform designed to bridge the gap between patients.", image: "/Projects/Mobile Application/project 4/thumnail.png" },
     { id: 17, title: "Culina App", description: "Culina is a thoughtfully crafted mobile experience designed for today’s food enthusiasts. ", image: "/Projects/Mobile Application/project 5/thumnail.png" },
     { id: 18, title: "FlowRider Smart Delivery Companion App", description: "FlowRider is a modern rider-focused delivery management application built to streamline last-mile logistics. ", image: "/Projects/Mobile Application/project 6/thumnail.png" },
+    { id: 19, title: "LearnU – Smart Learning Reimagined App", description: "LearnU is a modern e-learning mobile platform designed to help users discover new skills,", image: "/Projects/Mobile Application/project 7/thumnail.png" },
+    { id: 20, title: "CarPoolin App", description: "CarPoolin is a modern ride-sharing platform designed to make everyday travel affordable, ", image: "/Projects/Mobile Application/project 8/thumnail.png" },
   ];
 
   // Function to convert title to URL-friendly slug

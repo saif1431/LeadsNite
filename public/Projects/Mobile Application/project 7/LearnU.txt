@@ -1,0 +1,33 @@
+LearnU – Smart Learning Reimagined
+
+LearnU is a modern e-learning mobile platform designed to help users discover new skills, 
+explore curated courses, and track their progress in a seamless, distraction-free environment. 
+With intelligent search, personalized recommendations, and structured progress tracking, the app 
+transforms casual interest into measurable growth while maintaining a clean and intuitive user experience.
+
+Overview
+LearnU connects curious minds with structured learning paths across business, design, technology, and 
+creative skills. The platform combines smart filtering, personalized dashboards, progress tracking, and 
+saved content management to create a focused yet engaging educational experience. Designed with a minimalist 
+interface and clear navigation, LearnU ensures learning remains simple, motivating, and organized.
+
+Keyword
+EdTech
+Learning
+Courses
+Education
+Skills
+
+Carefully Executed Features
+
+Smart Course Discovery
+Advanced search with trending topics, category filters, and intelligent suggestions to help users find relevant courses quickly.
+
+Progress Tracking System
+Real-time completion percentages, visual progress bars, and learning statistics for motivation and accountability.
+
+Personalized Learning Dashboard
+Dynamic home screen with featured courses, categorized content, and tailored recommendations.
+
+Profile & Achievement Insights
+Track finished courses, hours learned, skills achieved, followers, and saved learning materials in one structured interface.

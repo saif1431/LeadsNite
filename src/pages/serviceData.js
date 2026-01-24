@@ -18,14 +18,15 @@ export const appData = {
     { id: 8, title: "Ecommerece Website", image: "/Projects/Website/Ecommerece/projectImg3.webp" },
     { id: 9, title: "Rent a Car Website", image: "/HomeImage/projectImg2.webp" },
     { id: 10, title: "Tour Booking Website ", image: "/Projects/Website/Tour Booking/projectImg5.webp" },
-    { id: 3, title: "YumBite App", image: "/Projects/Mobile Application/YumBites/projectImg4.webp" },
-        { id: 3, title: "YumBite App", description: "We built YumBites, a mobile app that blends culinary curiosity with useful tech to make cooking joyful. ", image: "/Projects/Mobile Application/YumBites/projectImg4.webp" },
+    { id: 3, title: "YumBite App", description: "We built YumBites, a mobile app that blends culinary curiosity with useful tech to make cooking joyful. ", image: "/Projects/Mobile Application/YumBites/projectImg4.webp" },
     { id: 4, title: "SafeBite App", description: "SafeBite is a smart gluten-free companion app designed to help users make confident food choices every day. ", image: "/Projects/Mobile Application/project 1/thumnail.png" },
     { id: 5, title: "Cart n Mart App", description: "Cart n Mart is a smart grocery delivery mobile application designed to simplify everyday shopping. ", image: "/Projects/Mobile Application/project 2/thumnail.png" },
     { id: 6, title: "CampusKart App", description: "CampusKart is a unified campus commerce platform designed to streamline everyday student needs.", image: "/Projects/Mobile Application/project 3/thumnai.png" },
     { id: 7, title: "LifeLine Connect App", description: "LifeLine Connect is a real-time emergency response platform designed to bridge the gap between patients.", image: "/Projects/Mobile Application/project 4/thumnail.png" },
     { id: 17, title: "Culina App", description: "Culina is a thoughtfully crafted mobile experience designed for today’s food enthusiasts. ", image: "/Projects/Mobile Application/project 5/thumnail.png" },
     { id: 18, title: "FlowRider Smart Delivery Companion App", description: "FlowRider is a modern rider-focused delivery management application built to streamline last-mile logistics. ", image: "/Projects/Mobile Application/project 6/thumnail.png" },
+    { id: 19, title: "LearnU – Smart Learning Reimagined App", description: "LearnU is a modern e-learning mobile platform designed to help users discover new skills,", image: "/Projects/Mobile Application/project 7/thumnail.png" },
+    { id: 20, title: "CarPoolin App", description: "CarPoolin is a modern ride-sharing platform designed to make everyday travel affordable, ", image: "/Projects/Mobile Application/project 8/thumnail.png" },
     { id: 15, title: "AI Career Compass", image: "/Projects/AI agents/AI Career Compass/projectImg6.png" },
     { id: 16, title: "AI-Powered WhatsApp HR Assistant", image: "/Projects/AI agents/AI-Powered WhatsApp HR Assistant/projectImg1.png" },
   ],
@@ -65,7 +66,7 @@ export const allProjects = [
       project: "YumBites",
       category: "Food App",
       designBy: "LeadsNite",
-      Date: "17th July 2025",
+      Date: "23rd Feb 2024",
       features: [
         {
           title: "Smart Personalized Feed",
@@ -106,7 +107,7 @@ export const allProjects = [
       project: "SafeBite",
       category: "Food App",
       designBy: "LeadsNite",
-      Date: "17th July 2025",
+      Date: "19th Aug 2024",
       features: [
         {
           title: "Real-Time Product Safety Checks",
@@ -153,7 +154,7 @@ export const allProjects = [
       project: "Cart n Mart",
       category: "Food App",
       designBy: "LeadsNite",
-      Date: "17th July 2025",
+      Date: "13th December 2024",
       features: [
         {
           title: "Structured Product Categorization",
@@ -200,7 +201,7 @@ export const allProjects = [
       project: "CampusKart",
       category: "Campus App",
       designBy: "LeadsNite",
-      Date: "17th July 2025",
+      Date: "19th February 2025",
       features: [
         {
           title: "Multi-Service Integration",
@@ -247,7 +248,7 @@ export const allProjects = [
       project: "LifeLine Connect",
       category: "Emergency App",
       designBy: "LeadsNite",
-      Date: "17th July 2025",
+      Date: "21th March 2025",
       features: [
         {
           title: "Instant Emergency Trigger",
@@ -289,12 +290,12 @@ export const allProjects = [
 
       heading2:
         "Culina enables users to explore diverse recipes, follow professional chefs, save favorites, share reviews, and access detailed ingredient and nutrition breakdowns — all within a clean, structured interface. The app emphasizes intuitive navigation, refined layouts, and engaging visual presentation to elevate the digital cooking experience while maintaining simplicity and usability.",
-      projectTitle: ["Culinary", "Recipes", "FoodTech", "Cooking", "MobileApp", "UIUX","Nutrition","Discovery","Community","Lifestyle"],
+      projectTitle: ["Culinary", "Recipes", "FoodTech", "Cooking", "MobileApp", "UIUX", "Nutrition", "Discovery", "Community", "Lifestyle"],
       Platform: "Mobile  Application",
       project: "Culina App",
       category: "FoodTech App",
       designBy: "LeadsNite",
-      Date: "17th July 2025",
+      Date: "28th June 2025",
       features: [
         {
           title: "Refined Recipe Discovery System",
@@ -336,12 +337,12 @@ export const allProjects = [
 
       heading2:
         "FlowRider empowers delivery personnel with an intuitive dashboard to manage assigned orders, monitor delivery progress, navigate optimized routes, update vehicle details, and maintain profile information. The app integrates real-time mapping, structured order timelines, and clear status transitions to ensure smooth logistics execution and improved operational transparency.",
-      projectTitle: ["Logistics", "Delivery", "RiderApp", "Tracking", "LastMile", "Fleet","Navigation","Orders","ECommerce","Operations"],
+      projectTitle: ["Logistics", "Delivery", "RiderApp", "Tracking", "LastMile", "Fleet", "Navigation", "Orders", "ECommerce", "Operations"],
       Platform: "Mobile  Application",
       project: "FlowRider App",
       category: "Logistics App",
       designBy: "LeadsNite",
-      Date: "17th July 2025",
+      Date: "2th July 2025",
       features: [
         {
           title: "Real-Time Route Tracking",
@@ -366,6 +367,98 @@ export const allProjects = [
         }
       ],
       featureImage: "/Projects/Mobile Application/project 6/project showcase.png",
+    },
+
+  },
+
+  {
+    id: 19,
+    category: "App",
+    hero: {
+      title: "LearnU – Smart Learning Reimagined App",
+      subtitle:
+        "LearnU is a modern e-learning mobile platform designed to help users discover new skills, explore curated courses, and track their progress in a seamless, distraction-free environment. With intelligent search, personalized recommendations, and structured progress tracking, the app transforms casual interest into measurable growth while maintaining a clean and intuitive user experience.",
+      image:
+        "/Projects/Mobile Application/project 7/thumnail.png",
+    },
+    overview: {
+      heading2:
+        "LearnU connects curious minds with structured learning paths across business, design, technology, and creative skills. The platform combines smart filtering, personalized dashboards, progress tracking, and saved content management to create a focused yet engaging educational experience. Designed with a minimalist interface and clear navigation, LearnU ensures learning remains simple, motivating, and organized.",
+      projectTitle: ["EdTech", "Learning", "Courses", "Courses", "Education", "Skills"],
+      Platform: "Mobile  Application",
+      project: "LearnU App",
+      category: "Education App",
+      designBy: "LeadsNite",
+      Date: "3rd Sep 2025",
+      features: [
+        {
+          title: "Smart Course Discovery",
+          description: "Advanced search with trending topics, category filters, and intelligent suggestions to help users find relevant courses quickly.",
+          icon: "GrOptimize"
+        },
+        {
+          title: "Progress Tracking System",
+          description: "Real-time completion percentages, visual progress bars, and learning statistics for motivation and accountability.",
+          icon: "FaRegLightbulb"
+        },
+        {
+          title: "Personalized Learning Dashboard",
+          description: "Dynamic home screen with featured courses, categorized content, and tailored recommendations.",
+          icon: "CiSettings"
+        },
+        {
+          title: "Profile & Achievement Insights",
+          description: "Track finished courses, hours learned, skills achieved, followers, and saved learning materials in one structured interface.",
+          icon: "GrOptimize"
+        }
+      ],
+      featureImage: "/Projects/Mobile Application/project 7/project showcase 1.png  ",
+    },
+
+  },
+
+  {
+    id: 20,
+    category: "App",
+    hero: {
+      title: "CarPoolin App",
+      subtitle:
+        "CarPoolin is a modern ride-sharing platform designed to make everyday travel affordable, convenient, and community-driven. Users can quickly search routes, select travel dates, choose passenger counts, and connect with verified drivers in seconds. With a clean interface and seamless booking flow, the app simplifies intercity commuting while helping users save money and reduce travel costs efficiently.",
+      image:
+        "/Projects/Mobile Application/project 8/thumnail.png",
+    },
+    overview: {
+      heading2:
+        "CarPoolin connects drivers and passengers through a streamlined carpooling experience. Built with a minimal, user-friendly interface, it allows travelers to search routes, compare ride timings and prices, and book seats instantly. The platform encourages cost-effective travel while optimizing unused car seats, making commuting smarter and more accessible.",
+      projectTitle: ["Carpooling", "Mobility", "Booking", "Commuting", "Ridesharing"],
+      Platform: "Mobile  Application",
+      project: "CarPoolin App",
+      category: "Travel App",
+      designBy: "LeadsNite",
+      Date: "25th November 2025",
+      features: [
+        {
+          title: "Smart Route Search",
+          description: "Quickly select departure and destination with intuitive city-based navigation.",
+          icon: "GrOptimize"
+        },
+        {
+          title: "Flexible Date Selection",
+          description: "Choose today, tomorrow, or custom dates for planned trips.",
+          icon: "FaRegLightbulb"
+        },
+        {
+          title: "Passenger Control",
+          description: "Easily adjust passenger count with clear, interactive selection UI.",
+          icon: "CiSettings"
+        },
+        {
+          title: "Transparent Pricing & Drivers",
+          description: "View ride timings, prices, and driver profiles before booking.",
+          icon: "GrOptimize"
+        }
+      ],
+      featureImage: "/Projects/Mobile Application/project 8/showcase.png  ",
     },
 
   },

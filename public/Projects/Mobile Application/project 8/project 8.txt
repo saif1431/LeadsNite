@@ -1,0 +1,17 @@
+Project Title: CarPoolin - Ride Sharing App
+
+Description:
+
+CarPoolin is a user-friendly mobile application designed to facilitate ride-sharing and cost savings for travelers. 
+Users can sign up with email, password, name, surname, and phone number, then search for rides by specifying origin, 
+destination, date, and passenger count. The app offers real-time ride options with pricing and driver details, featuring an 
+intuitive interface with vibrant visuals to enhance user experience. Aimed at promoting efficient travel, CarPoolin connects 
+drivers and passengers for over 100 daily trips. (396 characters)
+
+Key Skills/Technologies:
+
+Flutter
+Google Maps API
+Firebase Authentication
+UI/UX Design
+RESTful APIs
