@@ -105,7 +105,7 @@ const ScrollImageBoxGrid = () => {
       <h2 className="lg:text-4xl text-2xl font-bold text-center">
         Page Previews
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+      <div className="grid grid-cols-1 w-full sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
         {project.gallery.map((image, index) => (
           <ScrollImageCard 
             key={index} 

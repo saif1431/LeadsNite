@@ -54,7 +54,7 @@ function MlCard() {
         <div className="text-center mt-6">
           <button
             onClick={handleLoadMore}
-            className="bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-900"
+            className="btn"
           >
             Load More
           </button>

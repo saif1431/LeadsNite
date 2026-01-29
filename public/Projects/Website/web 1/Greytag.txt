@@ -1,0 +1,16 @@
+Greytag
+Web Application Description (470–480 characters)
+
+Greytag is a modern fashion eCommerce web application designed to deliver a seamless shopping experience through curated collections, seasonal campaigns, and trend-driven product discovery. With dynamic hero sections, categorized browsing, promotional highlights, and streamlined checkout flow, the platform blends visual storytelling with performance-driven retail architecture for an engaging digital storefront.
+
+Overview
+
+Greytag is a full-scale fashion eCommerce web platform built for product discovery, seasonal merchandising, and high-conversion retail journeys. From promotional hero banners and curated collections to categorized product grids and social integration, the platform is structured to optimize user engagement, browsing flow, and purchasing confidence across desktop experiences.
+
+Keywords
+
+eCommerce
+Retail
+Fashion
+Marketplace
+Conversion

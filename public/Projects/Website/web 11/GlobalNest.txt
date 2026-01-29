@@ -1,0 +1,16 @@
+GlobalNest
+Web Application Description (470–480 characters)
+
+GlobalNest is a modern travel booking web application crafted to inspire exploration and simplify tour discovery. With immersive hero visuals, destination highlights, categorized tour packages, dynamic pricing cards, and trust-driven testimonials, the platform blends aspirational travel branding with structured booking architecture to deliver a seamless end-to-end holiday planning experience.
+
+Overview
+
+GlobalNest is a travel and tour booking website designed to guide users from inspiration to reservation. From hero search filters and destination showcases to curated tour packages, limited-time deals, guide profiles, and blog content, the platform balances visual storytelling with conversion-focused structure tailored for global travelers.
+
+Keywords
+
+Travel
+Booking
+Tours
+Adventure
+Destinations

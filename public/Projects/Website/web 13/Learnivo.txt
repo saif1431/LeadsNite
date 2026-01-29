@@ -1,0 +1,16 @@
+Learnivo
+Web Application Description (470–480 characters)
+
+Learnivo is a modern online learning web platform designed to connect students with expert-led courses across diverse disciplines. Featuring categorized topics, structured course cards with ratings and pricing, instructor profiles, upcoming events, testimonials, and clear call-to-action flows, the platform combines educational credibility with conversion-focused design to deliver an engaging and scalable e-learning experience.
+
+Overview
+
+Learnivo is an e-learning web application built to offer structured online education. From topic-based course discovery and detailed program listings to instructor showcases, client testimonials, and event highlights, the platform is designed to guide users seamlessly from exploration to enrollment while maintaining a professional academic aesthetic.
+
+Keywords
+
+E-learning
+Courses
+Education
+Online
+Training

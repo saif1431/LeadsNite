@@ -1,0 +1,37 @@
+Wayo
+Web Application Description (470–480 characters)
+
+Wayo is a modern hostel and short-stay booking web application designed to make travel accommodation simple, affordable, and memorable. With intuitive date selection, room listings with live pricing, guest reviews, trust ratings, and lifestyle-driven visuals, the platform blends hospitality branding with structured booking functionality to create a seamless experience from discovery to reservation.
+
+Overview
+
+Wayo is a hospitality booking website focused on hostels and budget-friendly stays. It guides users from search to confirmation through structured room listings, seasonal offers, guest testimonials, trust badges, and travel journal content. The layout combines warmth and minimalism, ensuring clarity in booking while maintaining a lifestyle-driven travel aesthetic.
+
+Keywords
+
+Hospitality
+Booking
+Hostel
+Accommodation
+Travel
+
+Carefully Executed Features
+1. Smart Stay Search
+
+Clean hero section with date selectors and guest filters for quick reservations.
+
+2. Dynamic Room Listings
+
+Card-based room previews with pricing per night, availability, and amenities.
+
+3. Trust & Social Proof
+
+Integrated ratings from Booking.com, TripAdvisor, Google, and Hostelworld.
+
+4. Experience-Led Design
+
+Lifestyle imagery, guest testimonials, and travel journal content to drive emotional connection.
+
+5. Clear Conversion Flow
+
+Strategic CTAs like “Check availability” and “Book now” placed throughout the page.

@@ -15,16 +15,27 @@ export const webData = {
 
 export const appData = {
   relatedProjects: [
-    { id: 8, title: "Ecommerece Website", image: "/Projects/Website/Ecommerece/projectImg3.webp" },
-    { id: 9, title: "Rent a Car Website", image: "/HomeImage/projectImg2.webp" },
-    { id: 10, title: "Tour Booking Website ", image: "/Projects/Website/Tour Booking/projectImg5.webp" },
+// Web Dev
+
+    { id: 8, title: "Ecommerece Website", description: "ElectroMart is a full-featured e-commerce site crafted to make buying electronics simple and satisfying. ", image: "/Projects/Website/Ecommerece/projectImg3.webp" },
+    { id: 9, title: "Rent a Car Website", description: "CarMaxel is a vibrant online platform crafted for car buyers, simplifying vehicle shopping with ease. ", image: "/HomeImage/projectImg2.webp" },
+    { id: 10, title: "Tour Booking Website ", description: "Travolo is a dynamic travel platform crafted to make trip planning effortless and exciting", image: "/Projects/Website/Tour Booking/projectImg5.webp" },
+    { id: 11, title: "Greytag Website ", description: "Greytag is a modern fashion eCommerce web application designed to deliver a seamless shopping experience", image: "/Projects/Website/web 1/thumnial.webp" },
+    { id: 12, title: "Doorstep Repair Website ", description: "Doorstep Repair is a professional HVAC service web platform built to showcase air conditioning,", image: "/Projects/Website/web 2/thumnail.webp" },
+    { id: 13, title: "Rooflex Website ", description: "Rooflex is a modern real estate web platform designed to showcase premium properties through a user-friendly interface", image: "/Projects/Website/web 3/thumnail.webp" },
+    { id: 14, title: "Texora Website ", description: "Texora is a modern textile manufacturing web platform designed to present industrial capabilities,", image: "/Projects/Website/web 4/thumnail.webp" },
+    { id: 26, title: "Medicare Website ", description: "Medicare is a modern healthcare web platform designed to present medical services, departments", image: "/Projects/Website/web 5/thumnail.webp" },
+    { id: 27, title: "GlobalNest Website ", description: "GlobalNest is a modern travel booking web application crafted to inspire exploration and simplify tour discovery.", image: "/Projects/Website/web 11/thumnail.webp" },
+    { id: 28, title: "Wayo Website ", description: "TWayo is a modern hostel and short-stay booking web application designed to make travel accommodation simple,", image: "/Projects/Website/web 12/thumnail.webp" },
+    { id: 29, title: "Learnivo Website ", description: "Learnivo is a modern online learning web platform designed to connect students with expert-led courses and resources.", image: "/Projects/Website/web 13/thumnail.webp" },
+    // App Dev
     { id: 3, title: "YumBite App", description: "We built YumBites, a mobile app that blends culinary curiosity with useful tech to make cooking joyful. ", image: "/Projects/Mobile Application/YumBites/projectImg4.webp" },
-    { id: 4, title: "SafeBite App", description: "SafeBite is a smart gluten-free companion app designed to help users make confident food choices every day. ", image: "/Projects/Mobile Application/project 1/thumnail.png" },
-    { id: 5, title: "Cart n Mart App", description: "Cart n Mart is a smart grocery delivery mobile application designed to simplify everyday shopping. ", image: "/Projects/Mobile Application/project 2/thumnail.png" },
-    { id: 6, title: "CampusKart App", description: "CampusKart is a unified campus commerce platform designed to streamline everyday student needs.", image: "/Projects/Mobile Application/project 3/thumnai.png" },
-    { id: 7, title: "LifeLine Connect App", description: "LifeLine Connect is a real-time emergency response platform designed to bridge the gap between patients.", image: "/Projects/Mobile Application/project 4/thumnail.png" },
-    { id: 17, title: "Culina App", description: "Culina is a thoughtfully crafted mobile experience designed for today’s food enthusiasts. ", image: "/Projects/Mobile Application/project 5/thumnail.png" },
-    { id: 18, title: "FlowRider Smart Delivery Companion App", description: "FlowRider is a modern rider-focused delivery management application built to streamline last-mile logistics. ", image: "/Projects/Mobile Application/project 6/thumnail.png" },
+    { id: 4, title: "SafeBite App", description: "SafeBite is a smart gluten-free companion app designed to help users make confident food choices every day. ", image: "/Projects/Mobile Application/project 1/thumnail.webp " },
+    { id: 5, title: "Cart n Mart App", description: "Cart n Mart is a smart grocery delivery mobile application designed to simplify everyday shopping. ", image: "/Projects/Mobile Application/project 2/thumnail.webp" },
+    { id: 6, title: "CampusKart App", description: "CampusKart is a unified campus commerce platform designed to streamline everyday student needs.", image: "/Projects/Mobile Application/project 3/thumnai.webp" },
+    { id: 7, title: "LifeLine Connect App", description: "LifeLine Connect is a real-time emergency response platform designed to bridge the gap between patients.", image: "/Projects/Mobile Application/project 4/thumnail.webp" },
+    { id: 17, title: "Culina App", description: "Culina is a thoughtfully crafted mobile experience designed for today’s food enthusiasts. ", image: "/Projects/Mobile Application/project 5/thumnail.webp" },
+    { id: 18, title: "FlowRider Smart Delivery Companion App", description: "FlowRider is a modern rider-focused delivery management application built to streamline last-mile logistics. ", image: "/Projects/Mobile Application/project 6/thumnail.webp" },
     { id: 19, title: "LearnU – Smart Learning Reimagined App", description: "LearnU is a modern e-learning mobile platform designed to help users discover new skills,", image: "/Projects/Mobile Application/project 7/thumnail.png" },
     { id: 20, title: "CarPoolin App", description: "CarPoolin is a modern ride-sharing platform designed to make everyday travel affordable, ", image: "/Projects/Mobile Application/project 8/thumnail.png" },
     { id: 15, title: "AI Career Compass", image: "/Projects/AI agents/AI Career Compass/projectImg6.png" },
@@ -96,7 +107,7 @@ export const allProjects = [
       subtitle:
         "SafeBite is a smart gluten-free companion app designed to help users make confident food choices every day. From browsing curated safe recipes to verifying packaged products in real time, the app simplifies healthy living. Users can explore trusted restaurants, bakeries, and markets across Jordan, discover verified brands, and unlock exclusive in-app rewards all within a clean, intuitive, and performance-focused mobile experience.",
       image:
-        "/Projects/Mobile Application/project 1/thumnail.png",
+        "/Projects/Mobile Application/project 1/thumnail.webp",
     },
     overview: {
 
@@ -131,7 +142,7 @@ export const allProjects = [
           icon: "GrOptimize"
         }
       ],
-      featureImage: "/Projects/Mobile Application/project 1/project showase.png",
+      featureImage: "/Projects/Mobile Application/project 1/project showase.webp",
     },
 
   },
@@ -143,7 +154,7 @@ export const allProjects = [
       subtitle:
         "Cart n Mart is a smart grocery delivery mobile application designed to simplify everyday shopping. Users can browse categorized products, explore detailed listings with nutrition insights, add items to favorites, and manage their cart seamlessly. With secure checkout, multiple payment options, delivery scheduling, and real-time order summaries, the app delivers a smooth, reliable, and convenient shopping experience from selection to doorstep.",
       image:
-        "/Projects/Mobile Application/project 2/thumnail.png",
+        "/Projects/Mobile Application/project 2/thumnail.webp",
     },
     overview: {
 
@@ -178,7 +189,7 @@ export const allProjects = [
           icon: "GrOptimize"
         }
       ],
-      featureImage: "/Projects/Mobile Application/project 2/project showcase.png",
+      featureImage: "/Projects/Mobile Application/project 2/project showcase.webp",
     },
 
   },
@@ -190,7 +201,7 @@ export const allProjects = [
       subtitle:
         "CampusKart is a unified campus commerce platform designed to streamline everyday student needs. The app connects store, canteen, and cafeteria services into one intuitive mobile experience. Students can browse items, place orders, track purchases, and manage profiles seamlessly. With real-time order updates, categorized listings, and a simplified checkout flow, CampusKart enhances on-campus convenience through a fast, structured, and reliable digital system.",
       image:
-        "/Projects/Mobile Application/project 3/thumnai.png",
+        "/Projects/Mobile Application/project 3/thumnai.webp",
     },
     overview: {
 
@@ -225,7 +236,7 @@ export const allProjects = [
           icon: "GrOptimize"
         }
       ],
-      featureImage: "/Projects/Mobile Application/project 3/project showcase.png",
+      featureImage: "/Projects/Mobile Application/project 3/project showcase.webp",
     },
 
   },
@@ -237,7 +248,7 @@ export const allProjects = [
       subtitle:
         "LifeLine Connect is a real-time emergency response platform designed to bridge the gap between patients, nearby hospitals, and trained volunteers during critical situations. Users can instantly report emergencies, access first aid guidance, locate nearby healthcare facilities, and store vital medical details. The system enables rapid case notifications, volunteer coordination, and faster medical intervention when every second matters most.",
       image:
-        "/Projects/Mobile Application/project 4/thumnail.png",
+        "/Projects/Mobile Application/project 4/thumnail.webp",
     },
     overview: {
 
@@ -272,7 +283,7 @@ export const allProjects = [
           icon: "GrOptimize"
         }
       ],
-      featureImage: "/Projects/Mobile Application/project 4/project showcase.png",
+      featureImage: "/Projects/Mobile Application/project 4/project showcase.webp",
     },
 
   },
@@ -284,7 +295,7 @@ export const allProjects = [
       subtitle:
         "Culina is a thoughtfully crafted mobile experience designed for today’s food enthusiasts. Blending elegant design with functional depth, the platform transforms recipe discovery into an immersive and intuitive journey. From curated dishes to detailed nutrition insights, every interaction is structured with clarity, balance, and visual refinement creating a seamless culinary ecosystem built for inspiration and everyday cooking.",
       image:
-        "/Projects/Mobile Application/project 5/thumnail.png",
+        "/Projects/Mobile Application/project 5/thumnail.webp",
     },
     overview: {
 
@@ -319,7 +330,7 @@ export const allProjects = [
           icon: "GrOptimize"
         }
       ],
-      featureImage: "/Projects/Mobile Application/project 5/project showcase.png",
+      featureImage: "/Projects/Mobile Application/project 5/project showcase.webp",
     },
 
   },
@@ -331,7 +342,7 @@ export const allProjects = [
       subtitle:
         "FlowRider is a modern rider-focused delivery management application built to streamline last-mile logistics. Designed with clarity and operational efficiency in mind, the platform enables real-time order tracking, route navigation, delivery status management, and rider profile control. With structured workflows and map-based tracking, it enhances coordination between stores, riders, and customers for faster and more reliable deliveries.",
       image:
-        "/Projects/Mobile Application/project 6/thumnail.png",
+        "/Projects/Mobile Application/project 6/thumnail.webp",
     },
     overview: {
 
@@ -366,7 +377,7 @@ export const allProjects = [
           icon: "GrOptimize"
         }
       ],
-      featureImage: "/Projects/Mobile Application/project 6/project showcase.png",
+      featureImage: "/Projects/Mobile Application/project 6/project showcase.webp",
     },
 
   },
@@ -379,7 +390,7 @@ export const allProjects = [
       subtitle:
         "LearnU is a modern e-learning mobile platform designed to help users discover new skills, explore curated courses, and track their progress in a seamless, distraction-free environment. With intelligent search, personalized recommendations, and structured progress tracking, the app transforms casual interest into measurable growth while maintaining a clean and intuitive user experience.",
       image:
-        "/Projects/Mobile Application/project 7/thumnail.png",
+        "/Projects/Mobile Application/project 7/thumnail.webp",
     },
     overview: {
       heading2:
@@ -412,7 +423,7 @@ export const allProjects = [
           icon: "GrOptimize"
         }
       ],
-      featureImage: "/Projects/Mobile Application/project 7/project showcase 1.png  ",
+      featureImage: "/Projects/Mobile Application/project 7/project showcase 1.webp  ",
     },
 
   },
@@ -425,7 +436,7 @@ export const allProjects = [
       subtitle:
         "CarPoolin is a modern ride-sharing platform designed to make everyday travel affordable, convenient, and community-driven. Users can quickly search routes, select travel dates, choose passenger counts, and connect with verified drivers in seconds. With a clean interface and seamless booking flow, the app simplifies intercity commuting while helping users save money and reduce travel costs efficiently.",
       image:
-        "/Projects/Mobile Application/project 8/thumnail.png",
+        "/Projects/Mobile Application/project 8/thumnail.webp",
     },
     overview: {
       heading2:
@@ -458,7 +469,7 @@ export const allProjects = [
           icon: "GrOptimize"
         }
       ],
-      featureImage: "/Projects/Mobile Application/project 8/showcase.png  ",
+      featureImage: "/Projects/Mobile Application/project 8/showcase.webp ",
     },
 
   },
@@ -542,6 +553,217 @@ export const allProjects = [
       "/Projects/Website/Tour Booking/3.webp",
     ],
   },
+  {
+    id: 11,
+    category: "Web",
+    hero: {
+      title: "Greytag Website",
+      subtitle:
+        "Greytag is a modern fashion eCommerce web application designed to deliver a seamless shopping experience through curated collections, seasonal campaigns, and trend-driven product discovery. With dynamic hero sections, categorized browsing, promotional highlights, and streamlined checkout flow, the platform blends visual storytelling with performance-driven retail architecture for an engaging digital storefront.",
+      image:
+        "/Projects/Website/web 1/thumnial.webp",
+    },
+    overview: {
+
+      heading2: "Greytag is a full-scale fashion eCommerce web platform built for product discovery, seasonal merchandising, and high-conversion retail journeys. From promotional hero banners and curated collections to categorized product grids and social integration, the platform is structured to optimize user engagement, browsing flow, and purchasing confidence across desktop experiences.",
+      projectTitle: ["eCommerce", "Retail", "Fashion", "Marketplace", "Conversion"],
+      Platform: "Web-based Application",
+      project: "Greytag",
+      category: "E-commerce",
+      designBy: "LeadsNite",
+      Date: "22nd Oct 2025",
+    },
+    gallery: [
+      "/Projects/Website/web 1/images/Greytag.webp",
+      "/Projects/Website/web 1/images/GreytagMob.webp",
+      "/Projects/Website/web 1/images/greytagPad.webp",
+    ],
+  },
+  {
+    id: 12,
+    category: "Web",
+    hero: {
+      title: "Doorstep Repair Website",
+      subtitle:
+        "Doorstep Repair is a professional HVAC service web platform built to showcase air conditioning, heating, and maintenance solutions with clarity and trust. The website combines strong service messaging, customer testimonials, brand partnerships, and localized service coverage into a conversion-focused layout. Designed for lead generation, it simplifies booking, promotes reliability, and strengthens customer confidence.",
+      image:
+        "/Projects/Website/web 2/thumnail.webp",
+    },
+    overview: {
+
+      heading2: "Doorstep Repair is a service-based corporate website structured to drive inquiries and appointments for HVAC solutions. From prominent hero messaging and emergency service positioning to service breakdowns, customer reviews, blog education, and location-based coverage, the platform is optimized for credibility, accessibility, and high-conversion service engagement.",
+      projectTitle: ["HVAC", "Services", "Corporate", "Booking", "LeadGeneration"],
+      Platform: "Web-based Application",
+      project: "Doorstep Repair",
+      category: "Service",
+      designBy: "LeadsNite",
+      Date: "22nd Oct 2025",
+    },
+    gallery: [
+      "/Projects/Website/web 2/images/Doorstep.webp",
+      "/Projects/Website/web 2/images/doorstepMob.webp",
+      "/Projects/Website/web 2/images/doorstepPad.webp",
+    ],
+  },
+  {
+    id: 13,
+    category: "Web",
+    hero: {
+      title: "Rooflex Website",
+      subtitle:
+        "Rooflex is a modern real estate web platform designed to showcase premium properties through immersive visuals, structured property data, and high-conversion inquiry flows. With featured listings, property highlights, image galleries, agent profiles, testimonials, and consultation forms, the website blends credibility and presentation to support buyer engagement and lead generation.",
+      image:
+        "/Projects/Website/web 3/thumnail.webp",
+    },
+    overview: {
+
+      heading2: "Rooflex is a real estate listing web application built to present residential properties with clarity and impact. From hero-based property showcases and feature breakdowns to gallery filtering, agent introductions, and testimonial integration, the platform is structured to attract buyers, build trust, and streamline consultation requests through a professional digital experience.",
+      projectTitle: ["RealEstate", "Property", "Listings", "Showcase", "Leads"],
+      Platform: "Web-based Application",
+      project: "Rooflex",
+      category: "Real Estate",
+      designBy: "LeadsNite",
+      Date: "22nd Oct 2025",
+    },
+    gallery: [
+      "/Projects/Website/web 3/images/Rooflex.webp",
+      "/Projects/Website/web 3/images/RooflexMob.webp",
+      "/Projects/Website/web 3/images/RooflexPad.webp",
+    ],
+  },
+  {
+    id: 14,
+    category: "Web",
+    hero: {
+      title: "Texora Website",
+      subtitle:
+        "Texora is a modern textile manufacturing web platform designed to present industrial capabilities, production services, and global expertise with clarity and authority. Through structured service sections, process breakdowns, statistics highlights, and visual manufacturing showcases, the website positions the brand as a trusted textile partner while driving inquiries and B2B engagement.",
+      image:
+        "/Projects/Website/web 4/thumnail.webp",
+    },
+    overview: {
+
+      heading2: "Texora is a corporate manufacturing website built to showcase textile production, fabric treatment, and industrial technology services. From hero messaging and capability highlights to process steps, performance metrics, and industry blogs, the platform is structured to communicate scale, reliability, and innovation while supporting lead generation for textile solutions.",
+      projectTitle: ["Textile Manufacturing", "Industrial", "B2B", "Production"],
+      Platform: "Web-based Application",
+      project: "Texora",
+      category: "Manufacturing",
+      designBy: "LeadsNite",
+      Date: "22nd Oct 2025",
+    },
+    gallery: [
+      "/Projects/Website/web 4/images/Texora.webp",
+      "/Projects/Website/web 4/images/texoraMob.webp",
+      "/Projects/Website/web 4/images/Texorapad.webp",
+    ],
+  },
+  {
+    id: 26,
+    category: "Web",
+    hero: {
+      title: "Medicare Website ",
+      subtitle:
+        "Medicare is a modern healthcare web platform designed to present medical services, departments, and patient support with clarity and trust. Featuring service categories, doctor highlights, environment showcases, health blogs, and appointment-focused CTAs, the website is structured to strengthen credibility while simplifying patient engagement and clinic communication.",
+      image:
+        "/Projects/Website/web 5/thumnail.webp",
+    },
+    overview: {
+
+      heading2: "Medicare is a healthcare service website built to deliver structured medical information and streamline appointment inquiries. From hero messaging and care categories to department listings, operating hours, doctor insights, and blog education, the platform is optimized for accessibility, reassurance, and conversion-driven patient interaction.",
+      projectTitle: ["Healthcare", "Medical", "Clinic", "Care", "Appointments"],
+      Platform: "Web-based Application",
+      project: "Medicare",
+      category: "Healthcare",
+      designBy: "LeadsNite",
+      Date: "22nd Oct 2025",
+    },
+    gallery: [
+      "/Projects/Website/web 5/images/Medicare.webp",
+      "/Projects/Website/web 5/images/medicareMob.webp",
+      "/Projects/Website/web 5/images/medicarePad.webp",
+    ],
+  },
+  {
+    id: 27,
+    category: "Web",
+    hero: {
+      title: "GlobalNest Website ",
+      subtitle:
+        "GlobalNest is a modern travel booking web application crafted to inspire exploration and simplify tour discovery. With immersive hero visuals, destination highlights, categorized tour packages, dynamic pricing cards, and trust-driven testimonials, the platform blends aspirational travel branding with structured booking architecture to deliver a seamless end-to-end holiday planning experience.",
+      image:
+        "/Projects/Website/web 11/thumnail.webp",
+    },
+    overview: {
+
+      heading2: "GlobalNest is a travel and tour booking website designed to guide users from inspiration to reservation. From hero search filters and destination showcases to curated tour packages, limited-time deals, guide profiles, and blog content, the platform balances visual storytelling with conversion-focused structure tailored for global travelers.",
+      projectTitle: ["Travel Booking", "Tours", "Adventure", "Destinations"],
+      Platform: "Web-based Application",
+      project: "GlobalNest",
+      category: "Travel",
+      designBy: "LeadsNite",
+      Date: "22nd Oct 2025",
+    },
+    gallery: [
+      "/Projects/Website/web 11/images/GlobalNest.webp",
+      "/Projects/Website/web 11/images/globalNestmob.webp",
+      "/Projects/Website/web 11/images/globalNestPad.webp",
+    ],
+  },
+  {
+    id: 28,
+    category: "Web",
+    hero: {
+      title: "Wayo Website ",
+      subtitle:
+        "Wayo is a modern hostel and short-stay booking web application designed to make travel accommodation simple, affordable, and memorable. With intuitive date selection, room listings with live pricing, guest reviews, trust ratings, and lifestyle-driven visuals, the platform blends hospitality branding with structured booking functionality to create a seamless experience from discovery to reservation.",
+      image:
+        "/Projects/Website/web 12/thumnail.webp",
+    },
+    overview: {
+
+      heading2: "Wayo is a hospitality booking website focused on hostels and budget-friendly stays. It guides users from search to confirmation through structured room listings, seasonal offers, guest testimonials, trust badges, and travel journal content. The layout combines warmth and minimalism, ensuring clarity in booking while maintaining a lifestyle-driven travel aesthetic.",
+      projectTitle: ["Hospitality", "Booking", "Hostel", "Accommodation", "Travel"],
+      Platform: "Web-based Application",
+      project: "Wayo",
+      category: "Travel",
+      designBy: "LeadsNite",
+      Date: "22nd Oct 2025",
+    },
+    gallery: [
+      "/Projects/Website/web 12/images/Wayo.webp",
+      "/Projects/Website/web 12/images/wayoMob.webp",
+      "/Projects/Website/web 12/images/wayoPad.webp",
+    ],
+  },
+  {
+    id: 29,
+    category: "Web",
+    hero: {
+      title: "Learnivo Website ",
+      subtitle:
+        "Learnivo is a modern online learning web platform designed to connect students with expert-led courses across diverse disciplines. Featuring categorized topics, structured course cards with ratings and pricing, instructor profiles, upcoming events, testimonials, and clear call-to-action flows, the platform combines educational credibility with conversion-focused design to deliver an engaging and scalable e-learning experience.",
+      image:
+        "/Projects/Website/web 13/thumnail.webp",
+    },
+    overview: {
+
+      heading2: "Learnivo is an e-learning web application built to offer structured online education. From topic-based course discovery and detailed program listings to instructor showcases, client testimonials, and event highlights, the platform is designed to guide users seamlessly from exploration to enrollment while maintaining a professional academic aesthetic.",
+      projectTitle: ["E-learning", "Courses", "Education", "Online", "Training"],
+      Platform: "Web-based Application",
+      project: "Learnivo",
+      category: "Education",
+      designBy: "LeadsNite",
+      Date: "22nd Oct 2025",
+    },
+    gallery: [
+      "/Projects/Website/web 13/images/Learnivo.webp",
+      "/Projects/Website/web 13/images/learnivoMob.webp",
+      "/Projects/Website/web 13/images/learnivoPad.webp",
+    ],
+  },
+
+
+
   // Add after id: 14
   // ML Data Put here  
   {

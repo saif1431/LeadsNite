@@ -1,0 +1,16 @@
+Rooflex
+Web Application Description (470–480 characters)
+
+Rooflex is a modern real estate web platform designed to showcase premium properties through immersive visuals, structured property data, and high-conversion inquiry flows. With featured listings, property highlights, image galleries, agent profiles, testimonials, and consultation forms, the website blends credibility and presentation to support buyer engagement and lead generation.
+
+Overview
+
+Rooflex is a real estate listing web application built to present residential properties with clarity and impact. From hero-based property showcases and feature breakdowns to gallery filtering, agent introductions, and testimonial integration, the platform is structured to attract buyers, build trust, and streamline consultation requests through a professional digital experience.
+
+Keywords
+
+RealEstate
+Property
+Listings
+Showcase
+Leads

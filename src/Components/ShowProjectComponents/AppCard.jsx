@@ -7,14 +7,14 @@ function AppCard() {
 
   const allCards = [
     { id: 3, title: "YumBite App", description: "We built YumBites, a mobile app that blends culinary curiosity with useful tech to make cooking joyful. ", image: "/Projects/Mobile Application/YumBites/projectImg4.webp" },
-    { id: 4, title: "SafeBite App", description: "SafeBite is a smart gluten-free companion app designed to help users make confident food choices every day. ", image: "/Projects/Mobile Application/project 1/thumnail.png" },
-    { id: 5, title: "Cart n Mart App", description: "Cart n Mart is a smart grocery delivery mobile application designed to simplify everyday shopping. ", image: "/Projects/Mobile Application/project 2/thumnail.png" },
-    { id: 6, title: "CampusKart App", description: "CampusKart is a unified campus commerce platform designed to streamline everyday student needs.", image: "/Projects/Mobile Application/project 3/thumnai.png" },
-    { id: 7, title: "LifeLine Connect App", description: "LifeLine Connect is a real-time emergency response platform designed to bridge the gap between patients.", image: "/Projects/Mobile Application/project 4/thumnail.png" },
-    { id: 17, title: "Culina App", description: "Culina is a thoughtfully crafted mobile experience designed for today’s food enthusiasts. ", image: "/Projects/Mobile Application/project 5/thumnail.png" },
-    { id: 18, title: "FlowRider Smart Delivery Companion App", description: "FlowRider is a modern rider-focused delivery management application built to streamline last-mile logistics. ", image: "/Projects/Mobile Application/project 6/thumnail.png" },
-    { id: 19, title: "LearnU – Smart Learning Reimagined App", description: "LearnU is a modern e-learning mobile platform designed to help users discover new skills,", image: "/Projects/Mobile Application/project 7/thumnail.png" },
-    { id: 20, title: "CarPoolin App", description: "CarPoolin is a modern ride-sharing platform designed to make everyday travel affordable, ", image: "/Projects/Mobile Application/project 8/thumnail.png" },
+    { id: 4, title: "SafeBite App", description: "SafeBite is a smart gluten-free companion app designed to help users make confident food choices every day. ", image: "/Projects/Mobile Application/project 1/thumnail.webp" },
+    { id: 5, title: "Cart n Mart App", description: "Cart n Mart is a smart grocery delivery mobile application designed to simplify everyday shopping. ", image: "/Projects/Mobile Application/project 2/thumnail.webp" },
+    { id: 6, title: "CampusKart App", description: "CampusKart is a unified campus commerce platform designed to streamline everyday student needs.", image: "/Projects/Mobile Application/project 3/thumnai.webp" },
+    { id: 7, title: "LifeLine Connect App", description: "LifeLine Connect is a real-time emergency response platform designed to bridge the gap between patients.", image: "/Projects/Mobile Application/project 4/thumnail.webp" },
+    { id: 17, title: "Culina App", description: "Culina is a thoughtfully crafted mobile experience designed for today’s food enthusiasts. ", image: "/Projects/Mobile Application/project 5/thumnail.webp" },
+    { id: 18, title: "FlowRider Smart Delivery Companion App", description: "FlowRider is a modern rider-focused delivery management application built to streamline last-mile logistics. ", image: "/Projects/Mobile Application/project 6/thumnail.webp" },
+    { id: 19, title: "LearnU – Smart Learning Reimagined App", description: "LearnU is a modern e-learning mobile platform designed to help users discover new skills,", image: "/Projects/Mobile Application/project 7/thumnail.webp" },
+    { id: 20, title: "CarPoolin App", description: "CarPoolin is a modern ride-sharing platform designed to make everyday travel affordable, ", image: "/Projects/Mobile Application/project 8/thumnail.webp" },
   ];
 
   // Function to convert title to URL-friendly slug
@@ -61,7 +61,7 @@ function AppCard() {
         <div className="text-center mt-6">
           <button
             onClick={handleLoadMore}
-            className="bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-900"
+            className="btn"
           >
             Load More
           </button>
