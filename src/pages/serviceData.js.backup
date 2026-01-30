@@ -14,15 +14,30 @@ export const webData = {
 
 export const appData = {
   relatedProjects: [
-    { id: 3, title: "YumBite App", image: "/Projects/Mobile Application/YumBites/projectImg4.webp", link: "/app-projects/yumbite-app" },
-    { id: 4, title: "SafeBite App", image: "/Projects/Mobile Application/project 1/thumnail.webp ", link: "/app-projects/safebite-app" },
-    { id: 5, title: "Cart n Mart App", image: "/Projects/Mobile Application/project 2/thumnail.webp", link: "/app-projects/cart-n-mart-app" },
-    { id: 6, title: "CampusKart App", image: "/Projects/Mobile Application/project 3/thumnai.webp", link: "/app-projects/campuskart-app" },
-    { id: 7, title: "LifeLine Connect App", image: "/Projects/Mobile Application/project 4/thumnail.webp", link: "/app-projects/lifeline-connect-app" },
-    { id: 17, title: "Culina App", image: "/Projects/Mobile Application/project 5/thumnail.webp", link: "/app-projects/culina-app" },
-    { id: 18, title: "FlowRider Smart Delivery Companion App", image: "/Projects/Mobile Application/project 6/thumnail.webp", link: "/app-projects/flowrider-smart-delivery-companion-app" },
-    { id: 19, title: "LearnU – Smart Learning Reimagined App", image: "/Projects/Mobile Application/project 7/thumnail.png", link: "/app-projects/learnu-smart-learning-reimagined-app" },
-    { id: 20, title: "CarPoolin App", image: "/Projects/Mobile Application/project 8/thumnail.png", link: "/app-projects/carpoolin-app" },
+    // Web Dev
+
+    { id: 8, title: "Ecommerece Website", description: "ElectroMart is a full-featured e-commerce site crafted to make buying electronics simple and satisfying. ", image: "/Projects/Website/Ecommerece/projectImg3.webp" },
+    { id: 9, title: "Rent a Car Website", description: "CarMaxel is a vibrant online platform crafted for car buyers, simplifying vehicle shopping with ease. ", image: "/HomeImage/projectImg2.webp" },
+    { id: 10, title: "Tour Booking Website ", description: "Travolo is a dynamic travel platform crafted to make trip planning effortless and exciting", image: "/Projects/Website/Tour Booking/projectImg5.webp" },
+    { id: 11, title: "Greytag Website ", description: "Greytag is a modern fashion eCommerce web application designed to deliver a seamless shopping experience", image: "/Projects/Website/web 1/thumnial.webp" },
+    { id: 12, title: "Doorstep Repair Website ", description: "Doorstep Repair is a professional HVAC service web platform built to showcase air conditioning,", image: "/Projects/Website/web 2/thumnail.webp" },
+    { id: 13, title: "Rooflex Website ", description: "Rooflex is a modern real estate web platform designed to showcase premium properties through a user-friendly interface", image: "/Projects/Website/web 3/thumnail.webp" },
+    { id: 14, title: "Texora Website ", description: "Texora is a modern textile manufacturing web platform designed to present industrial capabilities,", image: "/Projects/Website/web 4/thumnail.webp" },
+    { id: 26, title: "Medicare Website ", description: "Medicare is a modern healthcare web platform designed to present medical services, departments", image: "/Projects/Website/web 5/thumnail.webp" },
+    { id: 27, title: "GlobalNest Website ", description: "GlobalNest is a modern travel booking web application crafted to inspire exploration and simplify tour discovery.", image: "/Projects/Website/web 11/thumnail.webp" },
+    { id: 28, title: "Wayo Website ", description: "TWayo is a modern hostel and short-stay booking web application designed to make travel accommodation simple,", image: "/Projects/Website/web 12/thumnail.webp" },
+    { id: 29, title: "Learnivo Website ", description: "Learnivo is a modern online learning web platform designed to connect students with expert-led courses and resources.", image: "/Projects/Website/web 13/thumnail.webp" },
+    // App Dev
+    { id: 3, title: "YumBite App", description: "We built YumBites, a mobile app that blends culinary curiosity with useful tech to make cooking joyful. ", image: "/Projects/Mobile Application/YumBites/projectImg4.webp", link: "/app-projects/yumbite-app" },
+    { id: 4, title: "SafeBite App", description: "SafeBite is a smart gluten-free companion app designed to help users make confident food choices every day. ", image: "/Projects/Mobile Application/project 1/thumnail.webp ", link: "/app-projects/safebite-app" },
+    { id: 5, title: "Cart n Mart App", description: "Cart n Mart is a smart grocery delivery mobile application designed to simplify everyday shopping. ", image: "/Projects/Mobile Application/project 2/thumnail.webp", link: "/app-projects/cart-n-mart-app" },
+    { id: 6, title: "CampusKart App", description: "CampusKart is a unified campus commerce platform designed to streamline everyday student needs.", image: "/Projects/Mobile Application/project 3/thumnai.webp", link: "/app-projects/campuskart-app" },
+    { id: 7, title: "LifeLine Connect App", description: "LifeLine Connect is a real-time emergency response platform designed to bridge the gap between patients.", image: "/Projects/Mobile Application/project 4/thumnail.webp", link: "/app-projects/lifeline-connect-app" },
+    { id: 17, title: "Culina App", description: "Culina is a thoughtfully crafted mobile experience designed for today’s food enthusiasts. ", image: "/Projects/Mobile Application/project 5/thumnail.webp" },
+    { id: 18, title: "FlowRider Smart Delivery Companion App", description: "FlowRider is a modern rider-focused delivery management application built to streamline last-mile logistics. ", image: "/Projects/Mobile Application/project 6/thumnail.webp", link: "/app-projects/flowrider-smart-delivery-companion-app" },
+    { id: 19, title: "LearnU – Smart Learning Reimagined App", description: "LearnU is a modern e-learning mobile platform designed to help users discover new skills,", image: "/Projects/Mobile Application/project 7/thumnail.png", link: "/app-projects/learnu-smart-learning-reimagined-app" },
+    { id: 20, title: "CarPoolin App", description: "CarPoolin is a modern ride-sharing platform designed to make everyday travel affordable, ", image: "/Projects/Mobile Application/project 8/thumnail.png", link: "/app-projects/carpoolin-app" },
+
   ],
 };
 

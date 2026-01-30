@@ -76,8 +76,13 @@ function RelatedProject({ data }) {
             className="flex-shrink-0 w-[calc(100%-2rem)] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1rem)] cursor-pointer"
             onClick={() => {
               window.scrollTo(0, 0);
-              const slug = createSlug(relatedProject.title);
-              navigate(`/app-projects/${slug}`);
+              // Use the link property if it exists, otherwise generate slug-based link
+              if (relatedProject.link) {
+                navigate(relatedProject.link);
+              } else {
+                const slug = createSlug(relatedProject.title);
+                navigate(`/app-projects/${slug}`);
+              }
             }}
           >
             <div className="flex flex-col rounded-xl items-start shadow-lg py-6 gap-4 h-[550px] mt-4">

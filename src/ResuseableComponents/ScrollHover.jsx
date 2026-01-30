@@ -57,8 +57,8 @@ const ScrollImageCard = ({ image, title }) => {
         {!isHovered && (
           <div>
             <div 
-              style={{background: "linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7))"}} 
-              className="absolute mx-auto top-96 inset-0 h-fit w-fit py-2 px-6 flex flex-col items-center justify-end rounded-lg z-10 ease-in transition-opacity duration-900"
+             
+              className="absolute bg-black/60 mx-auto top-96 inset-0 h-fit w-fit py-2 px-6 flex flex-col items-center justify-end rounded-lg z-10 ease-in transition-opacity duration-900"
             >
               <span className="text-white text-lg font-semibold mb-2">Hover or Scroll</span>
               <svg
