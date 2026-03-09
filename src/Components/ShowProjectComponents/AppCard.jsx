@@ -46,7 +46,7 @@ function AppCard() {
             }}
             className="cursor-pointer bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition"
           >
-            <img src={card.image} alt={card.title} className="w-full object-fill h-80" />
+            <img src={card.image} alt={card.title} className="w-full object-fit  h-[300px]" />
             <div className="p-4 space-y-4">
               <h3 className="text-xl font-bold">{card.title}</h3>
               <p className="text-gray-600 text-sm">{card.description}</p>
