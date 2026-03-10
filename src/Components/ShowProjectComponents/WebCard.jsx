@@ -47,7 +47,8 @@ function WebCard() {
             }}
             className="cursor-pointer bg-white border border-gray-200 shadow-md rounded-xl overflow-hidden hover:shadow-xl transition"
           >
-            <img src={card.image} alt={card.title} className="w-full object-fit  lg:h-[200px] 
+            <img src={card.image} alt={card.title} className="w-full object-fit h-[200px] 
+              lg:h-[200px] 
             xl:h-[250px]" />
             <div className="p-4 space-y-4">
               <h3 className="text-xl font-bold">{card.title}</h3>
